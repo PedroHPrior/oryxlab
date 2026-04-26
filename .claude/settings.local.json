@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf /c/dpsCalculator/.git)",
+      "Bash(git init *)"
+    ]
+  }
+}
