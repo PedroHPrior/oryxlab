@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react"
+import { createPortal } from "react-dom"
 import type {
   BuildSlots,
   Item,
@@ -72,7 +73,11 @@ export function SlotPicker({
       if (e.key === "Escape") onClose()
     }
     window.addEventListener("keydown", onKey)
-    return () => window.removeEventListener("keydown", onKey)
+    document.body.style.overflow = "hidden"
+    return () => {
+      window.removeEventListener("keydown", onKey)
+      document.body.style.overflow = ""
+    }
   }, [onClose])
 
   const filtered = useMemo(() => {
@@ -106,17 +111,18 @@ export function SlotPicker({
     return matched
   }, [items, slot, classId, search, rarity, sortKey])
 
-  return (
+  const modal = (
     <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-zinc-950/40 p-4 backdrop-blur sm:items-center"
+      className="fixed inset-0 z-[60] flex items-end justify-center bg-zinc-950/60 p-4 backdrop-blur-sm sm:items-center"
       onClick={onClose}
+      style={{ fontFamily: '"Inter", system-ui, sans-serif' }}
     >
       <div
         role="dialog"
+        aria-modal="true"
         aria-label={`Choose ${slot}`}
-        className="w-full max-w-md overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-2xl dark:border-zinc-800 dark:bg-zinc-900"
+        className="w-full max-w-md overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] dark:border-zinc-800 dark:bg-zinc-900"
         onClick={(e) => e.stopPropagation()}
-        style={{ fontFamily: '"Inter", system-ui, sans-serif' }}
       >
         <header className="flex items-center justify-between border-b border-zinc-200 px-4 py-3 dark:border-zinc-800">
           <div>
@@ -194,7 +200,7 @@ export function SlotPicker({
           </div>
         </div>
 
-        <ul className="max-h-[420px] overflow-y-auto">
+        <ul className="oryx-no-scrollbar max-h-[min(60vh,440px)] overflow-y-auto">
           {currentItemId && (
             <li>
               <button
@@ -251,6 +257,9 @@ export function SlotPicker({
       </div>
     </div>
   )
+
+  if (typeof document === "undefined") return null
+  return createPortal(modal, document.body)
 }
 
 const WEAPON_BASE_ROF: Record<string, number> = {

@@ -257,10 +257,29 @@
     content-visibility: auto;
     contain-intrinsic-size: 240px 200px;
   }
+  /* Hide native scrollbar on overflow containers (still scrollable). */
+  .oryx-no-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(161 161 170 / 0.3) transparent;
+  }
+  .oryx-no-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .oryx-no-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .oryx-no-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgb(161 161 170 / 0.3);
+    border-radius: 999px;
+  }
+  .oryx-no-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(161 161 170 / 0.6);
+  }
   /* Build-id marker — forces a unique CSS output hash on each deploy so the
    * CDN can't serve a stale 500-error response cached against an old hash.
    * The selector itself is never matched in markup. */
-  .oryx-build-bid-0105726-class-picker { display: none; }
+  .oryx-build-bid-b636a05-portal-modal { display: none; }
 }
 
 /* driver.js — restyle the onboarding tour to match the OryxLab dark theme */
