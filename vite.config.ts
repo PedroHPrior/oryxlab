@@ -10,6 +10,15 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
+      // selfDestroying ships a SW whose only job is to unregister itself and
+      // wipe all caches. We're using it to clean up after a previous SW
+      // generation that poisoned its CacheFirst entries with failed RealmEye
+      // sprite responses AND a stale precache that mapped /assets/* URLs to
+      // broken responses (causing 500s on the JS bundle and text/html on the
+      // CSS for any returning user). Once telemetry confirms the install
+      // base has wiped, flip this back to false and re-enable normal PWA
+      // behavior in a follow-up deploy.
+      selfDestroying: true,
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'data/items.json', 'data/classes.json', 'data/sets.json'],
       manifest: {

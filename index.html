@@ -47,6 +47,38 @@
       })()
     </script>
     <script>
+      // One-shot rescue: a previous SW generation cached failed responses for
+      // /assets/* + RealmEye sprite URLs. Even after we ship a new SW, returning
+      // users may be served broken cached responses for one navigation before
+      // the new SW activates — long enough for the JS bundle to fail to load
+      // and the page to render blank. This unregisters every controller and
+      // wipes every Cache Storage entry on the very first paint, then forces a
+      // single reload so the next request goes direct to network.
+      //
+      // Versioned localStorage flag — bump RESCUE_VERSION the next time we
+      // need to force-wipe across the install base. Idempotent: skips entirely
+      // if the user has already been rescued at this version.
+      ;(function () {
+        var RESCUE_VERSION = "1"
+        try {
+          if (!("serviceWorker" in navigator)) return
+          if (window.localStorage.getItem("oryxlab.swRescue") === RESCUE_VERSION) return
+          navigator.serviceWorker.getRegistrations().then(function (regs) {
+            window.localStorage.setItem("oryxlab.swRescue", RESCUE_VERSION)
+            if (!regs.length) return
+            Promise.all(regs.map(function (r) { return r.unregister() })).then(function () {
+              if (typeof caches === "undefined") { window.location.reload(); return }
+              caches.keys().then(function (names) {
+                Promise.all(names.map(function (n) { return caches.delete(n) })).then(function () {
+                  window.location.reload()
+                })
+              }).catch(function () { window.location.reload() })
+            })
+          })
+        } catch (e) { /* ignore */ }
+      })()
+    </script>
+    <script>
       // Apply persisted theme as early as possible to avoid flash of wrong
       // theme on first paint. Falls back to OS preference if not set.
       ;(function () {
