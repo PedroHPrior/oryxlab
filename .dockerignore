@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.github
+.audit
+.claude
+coverage
+docs
+product-plan
+*.log
+.env
+.env.*
+README.md
+tests
