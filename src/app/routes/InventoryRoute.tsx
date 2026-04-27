@@ -1,13 +1,34 @@
 import { useRef } from "react"
+import { useNavigate } from "react-router-dom"
 import { InventoryView } from "../../sections/inventory/InventoryView"
+import { CharactersPanel } from "../../sections/inventory/components/CharactersPanel"
 import { useOryxLab } from "../state"
 
 export function InventoryRoute() {
   const { state, actions } = useOryxLab()
+  const navigate = useNavigate()
   const fileInputRef = useRef<HTMLInputElement | null>(null)
+
+  // RealmEye returns characters with equipped items in `realmEyeImport.preview`
+  // — keep that around even after the modal is closed so users can see + act on
+  // their loadouts.
+  const previewChars = state.realmEyeImport.preview?.characters ?? []
+  const showCharsPanel = previewChars.length > 0 && state.realmEyeImport.step !== "enter-username"
 
   return (
     <>
+      {showCharsPanel && (
+        <div className="mb-6">
+          <CharactersPanel
+            characters={previewChars}
+            items={state.items}
+            onCompareCharacter={(classId, equipped) => {
+              actions.createBuildFromCharacter(classId, equipped)
+              navigate("/app")
+            }}
+          />
+        </div>
+      )}
       <InventoryView
         view={state.inventoryView}
         search={state.inventorySearch}
@@ -37,7 +58,6 @@ export function InventoryRoute() {
         onChange={async (e) => {
           const file = e.target.files?.[0]
           if (file) await actions.importInventoryJson(file)
-          // Allow re-uploading the same file later by resetting the input
           e.target.value = ""
         }}
       />

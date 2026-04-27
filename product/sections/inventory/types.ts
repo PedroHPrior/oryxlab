@@ -25,7 +25,9 @@ export interface RealmEyeCharacter {
   id: string
   classId: string
   className: string
-  equippedItems: (string | null)[]
+  /** Items currently equipped on this character — slug + display name as
+   * RealmEye returns. The catalog map them to local item ids. */
+  equippedItems: Array<string | null | { slug: string; name: string }>
 }
 
 export interface RealmEyeImportDelta {

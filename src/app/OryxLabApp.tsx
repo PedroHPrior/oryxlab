@@ -476,6 +476,44 @@ export function OryxLabApp() {
         setRealmEyeImport((s) => ({ ...s, open: false, step: "enter-username", input: "" })),
       removeInventoryEntry: (itemId) =>
         setInventoryOwnedEntries((curr) => curr.filter((e) => e.itemId !== itemId)),
+      // Create a Comparator build from a RealmEye character's currently
+      // equipped items. Slot assignment is type-driven from our catalog so
+      // the build matches the player's actual loadout for fair comparison
+      // against optimizer suggestions.
+      createBuildFromCharacter: (
+        classId: string,
+        equipped: Array<{ slug: string; name: string }>,
+      ) => {
+        const slugMap = new Map(items.map((i) => [i.id, i]))
+        const nameMap = new Map(
+          items.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
+        )
+        const slots: BuildSlots = {
+          weapon: null, ability: null, armor: null, ring: null, talisman: null,
+        }
+        for (const e of equipped) {
+          const cleanName = e.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim()
+          const item = slugMap.get(e.slug) ?? nameMap.get(cleanName)
+          if (!item) continue
+          if (item.type === "weapon" && !slots.weapon) slots.weapon = item.id
+          else if (item.type === "ability" && !slots.ability) slots.ability = item.id
+          else if (item.type === "armor" && !slots.armor) slots.armor = item.id
+          else if (item.type === "ring" && !slots.ring) slots.ring = item.id
+          else if (item.type === "talisman" && !slots.talisman) slots.talisman = item.id
+        }
+        const className = classId.charAt(0).toUpperCase() + classId.slice(1)
+        setBuilds((curr) => [
+          ...curr,
+          {
+            ...STARTER_BUILDS[0],
+            id: `build-char-${classId}-${Date.now()}`,
+            name: `${className} (current)`,
+            classId,
+            tags: ["from-realmeye"],
+            slots,
+          },
+        ])
+      },
       addInventoryEntry: (itemId: string) => {
         setInventoryOwnedEntries((curr) => {
           if (curr.some((e) => e.itemId === itemId)) return curr

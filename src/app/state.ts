@@ -98,6 +98,10 @@ export interface OryxLabActions {
   closeRealmEyeImport: () => void
   removeInventoryEntry: (itemId: string) => void
   addInventoryEntry: (itemId: string) => void
+  createBuildFromCharacter: (
+    classId: string,
+    equipped: Array<{ slug: string; name: string }>,
+  ) => void
   clearInventory: () => void
 
   // Constraint applied across constraints array

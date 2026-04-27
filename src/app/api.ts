@@ -44,10 +44,16 @@ export async function importRealmEye(username: string): Promise<{
     username: string
     vaultCount: number
     characterCount: number
-    characters: { id: string; classId: string; className: string; equippedItems: (string | null)[] }[]
+    characters: {
+      id: string
+      classId: string
+      className: string
+      equippedItems: Array<string | null | { slug: string; name: string }>
+    }[]
     delta: { added: number; removed: number; unchanged: number }
   }
   items: { slug: string; name: string; imageUrl: string }[]
+  isPrivate?: boolean
 }> {
   // Try Vercel-style endpoint first, fall back to dev backend
   let url = "/api/inventory-import"

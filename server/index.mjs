@@ -194,20 +194,44 @@ app.post('/api/inventory/realmeye-import', realmEyeLimiter, async (req, res) => 
       })
     }
 
-    // Characters: extract class + fame from each character row in the
-    // characters table. Class is in a <td> immediately following the char id.
+    // Characters: extract class + equipped items from each character row.
+    // Each row in the characters table is structured as:
+    //   <td>#</td><td>CLASS</td><td>LVL</td><td>FAME</td><td>EXP</td>
+    //   <td>EQUIPPED_ITEMS</td>
+    // We grab the 5th <td> and pull all wiki-linked items from it.
     const characters = []
     const charClasses = ['Wizard','Necromancer','Mystic','Priest','Sorcerer','Summoner','Druid','Archer','Huntress','Bard','Knight','Paladin','Warrior','Rogue','Trickster','Assassin','Ninja','Samurai','Kensei']
-    const charRowRe = new RegExp(`<td>(${charClasses.join('|')})</td>`, 'g')
+    const charItemRe = new RegExp(
+      `<td>(${charClasses.join('|')})<\\/td>\\s*` +
+      `<td[^>]*>\\d+<\\/td>\\s*` +
+      `<td[^>]*>[\\d,]+<\\/td>\\s*` +
+      `<td[^>]*>[\\d,]+<\\/td>\\s*` +
+      `<td[^>]*>([\\s\\S]*?)<\\/td>`,
+      'g',
+    )
     let cm
     let charIdx = 0
-    while ((cm = charRowRe.exec(html)) !== null) {
+    while ((cm = charItemRe.exec(html)) !== null) {
       const className = cm[1]
+      const equipBlock = cm[2]
+      const equipRe = /<a href="\/wiki\/([^"]+)"[^>]*>\s*<span class="item[^"]*"[^>]*title="([^"]+)"/g
+      const equippedItems = []
+      let im
+      while ((im = equipRe.exec(equipBlock)) !== null) {
+        const slug = im[1]
+        if (slug === 'backpack' || slug === 'realm-of-the-mad-god') continue
+        const titleRaw = decodeHtml(im[2].split('\n')[0]).trim()
+        const name = titleRaw
+          .replace(/^(Legendary|Rare|Uncommon|Common|Mythical)\s+/i, '')
+          .replace(/\s+(T\d{1,2}|UT|ST|Talisman)$/i, '')
+          .trim()
+        equippedItems.push({ slug, name })
+      }
       characters.push({
         id: `char-${charIdx++}`,
         classId: className.toLowerCase(),
         className,
-        equippedItems: [],
+        equippedItems,
       })
     }
 
