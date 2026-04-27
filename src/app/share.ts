@@ -67,8 +67,21 @@ async function decompress(bytes: Uint8Array): Promise<string> {
   return new TextDecoder().decode(out)
 }
 
+// derivedStats placeholder for decoded builds. The real values are recomputed
+// from the build + scenario + class data once classesData/items are loaded —
+// but ComparatorView reads `b.derivedStats.dpsCurve` synchronously on first
+// render, which crashes if derivedStats is undefined. Shipping a zeroed-out
+// shape here lets the chart draw an empty curve for one frame instead of
+// throwing, then the recompute pass replaces it with real numbers.
+const ZERO_DERIVED_STATS = {
+  dps: 0, dpsAtZeroDef: 0, ehp: 0,
+  att: 0, dex: 0, spd: 0, vit: 0, wis: 0, def: 0, hp: 0, mp: 0,
+  timeToKill1k: 0, dpsCurve: [],
+} as Build["derivedStats"]
+
 export async function encodeShareState(builds: Build[], scenario: Scenario): Promise<string> {
-  // Strip derivedStats — they're recomputed on load
+  // Strip derivedStats from the wire payload — they're recomputed on load
+  // and would just bloat the URL otherwise.
   const trimmedBuilds = builds.map((b) => {
     const { derivedStats: _omit, ...rest } = b
     void _omit
@@ -86,6 +99,13 @@ export async function decodeShareState(b64: string): Promise<ShareState | null> 
     const json = await decompress(bytes)
     const data = JSON.parse(json) as ShareState
     if (data.v !== SHARE_VERSION) return null
+    // Re-attach a zeroed derivedStats so consumers that read into the shape
+    // before the recompute effect runs (DpsCurveChart, table view, focus
+    // diff) don't blow up with `Cannot read properties of undefined`.
+    data.builds = data.builds.map((b) => ({
+      ...b,
+      derivedStats: b.derivedStats ?? ZERO_DERIVED_STATS,
+    }))
     return data
   } catch {
     return null
