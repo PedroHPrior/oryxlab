@@ -11675,8 +11675,11 @@
     "stats": {
       "att": 4,
       "dex": 4,
-      "procDamage": 450,
-      "procRate": 0.15
+      "dmgMin": 450,
+      "dmgMax": 450,
+      "dmgAvg": 450,
+      "rateOfFireMod": 0.5,
+      "shots": 1
     },
     "tags": [],
     "sprite": "wavecrest-concertina",
@@ -11815,8 +11818,11 @@
     ],
     "stats": {
       "def": 5,
-      "procDamage": 225,
-      "procRate": 0.2
+      "dmgMin": 225,
+      "dmgMax": 225,
+      "dmgAvg": 225,
+      "rateOfFireMod": 0.5,
+      "shots": 1
     },
     "tags": [],
     "sprite": "thundering-chorus",
@@ -11838,8 +11844,11 @@
       "range": 5,
       "att": 5,
       "cooldown": 12,
-      "procDamage": 100,
-      "procRate": 0.2
+      "dmgMin": 100,
+      "dmgMax": 300,
+      "dmgAvg": 200,
+      "rateOfFireMod": 0.5,
+      "shots": 1
     },
     "tags": [],
     "sprite": "sacred-lute",
@@ -11949,8 +11958,11 @@
     "stats": {
       "att": 4,
       "dex": 4,
-      "procDamage": 450,
-      "procRate": 0.15
+      "dmgMin": 450,
+      "dmgMax": 450,
+      "dmgAvg": 450,
+      "rateOfFireMod": 0.5,
+      "shots": 1
     },
     "tags": [],
     "sprite": "joker-timbrel",
@@ -11971,8 +11983,11 @@
     "stats": {
       "att": 4,
       "dex": 4,
-      "procDamage": 450,
-      "procRate": 0.15
+      "dmgMin": 450,
+      "dmgMax": 450,
+      "dmgAvg": 450,
+      "rateOfFireMod": 0.5,
+      "shots": 1
     },
     "tags": [],
     "sprite": "ghost-ship-s-bell",
@@ -21645,7 +21660,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "mp": 12,
       "dex": 3,
@@ -21664,7 +21681,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 3,
       "mp": 13,
@@ -21684,7 +21703,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 3,
       "mp": 14,
@@ -21704,7 +21725,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 6,
       "mp": 15,
@@ -21724,7 +21747,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 6,
       "mp": 16,
@@ -21744,7 +21769,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 9,
       "mp": 17,
@@ -21764,7 +21791,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 9,
       "hp": 20,
@@ -21785,7 +21814,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 12,
       "hp": 40,
@@ -21806,7 +21837,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "mp": 8,
       "spd": 2,
@@ -21825,7 +21858,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {},
     "tags": [],
     "sprite": "unshuriken",
@@ -21840,7 +21875,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 275,
       "dmgMax": 375,
@@ -21865,7 +21902,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 400,
       "dmgMax": 500,
@@ -21888,7 +21927,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 325,
       "dmgMax": 525,
@@ -21913,7 +21954,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 325,
       "dmgMax": 525,
@@ -21938,7 +21981,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "mp": 28,
       "spd": -10,
@@ -21958,7 +22003,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "mp": 28,
       "spd": -10,
@@ -21978,7 +22025,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dex": 4,
       "spd": -10,
@@ -21998,7 +22047,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 325,
       "dmgMax": 525,
@@ -22023,7 +22074,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 400,
       "dmgMax": 600,
@@ -22047,7 +22100,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 350,
       "dmgMax": 450,
@@ -22069,7 +22124,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "mp": 60,
       "wis": 15,
@@ -22089,7 +22146,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "mp": 20,
       "def": 10
@@ -22106,7 +22165,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 4,
       "mp": 18,
@@ -22127,7 +22188,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {},
     "tags": [],
     "sprite": "clover-star",
@@ -22142,7 +22205,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 9,
       "hp": 20,
@@ -22163,7 +22228,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 9,
       "hp": 20,
@@ -22184,7 +22251,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "vit": 9,
       "hp": 20,
@@ -22205,7 +22274,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dmgMin": 400,
       "dmgMax": 600,
@@ -22229,7 +22300,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "mp": 20,
       "def": 10
@@ -22246,7 +22319,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "star",
-    "classes": [],
+    "classes": [
+      "ninja"
+    ],
     "stats": {
       "dex": 4,
       "spd": -10,
@@ -25647,7 +25722,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 3,
@@ -25668,7 +25745,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 4,
@@ -25694,7 +25773,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 4,
@@ -25715,7 +25796,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 5,
@@ -25741,7 +25824,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 5,
@@ -25767,7 +25852,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 6,
@@ -25793,7 +25880,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 6,
@@ -25821,7 +25910,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 7,
@@ -25842,7 +25933,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "mpCost": 80,
       "cooldown": 5
@@ -25860,7 +25953,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "wis": 5,
       "cooldown": 2
@@ -25880,7 +25975,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "range": 15,
       "def": 10,
@@ -25901,7 +25998,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "shots": 2,
       "range": 13.52,
@@ -25926,7 +26025,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 5,
@@ -25953,7 +26054,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "shots": 1,
       "range": 8.05,
@@ -25977,7 +26080,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 350,
       "dmgMax": 450,
@@ -26003,7 +26108,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 350,
       "dmgMax": 450,
@@ -26029,7 +26136,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 7,
@@ -26055,7 +26164,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 8,
@@ -26081,7 +26192,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "shots": 4,
       "range": 9.6,
@@ -26104,7 +26217,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "shots": 3,
       "range": 14.23,
@@ -26128,7 +26243,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 6,
@@ -26156,7 +26273,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 350,
       "dmgMax": 400,
@@ -26183,7 +26302,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 350,
       "dmgMax": 400,
@@ -26210,7 +26331,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sheath",
-    "classes": [],
+    "classes": [
+      "kensei"
+    ],
     "stats": {
       "dmgMin": 1,
       "dmgMax": 6,
@@ -26231,7 +26354,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 45,
       "dmgMax": 65,
@@ -26256,7 +26381,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 90,
       "dmgMax": 110,
@@ -26282,7 +26409,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 150,
       "dmgMax": 170,
@@ -26308,7 +26437,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 200,
       "dmgMax": 220,
@@ -26334,7 +26465,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 250,
       "dmgMax": 270,
@@ -26360,7 +26493,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 310,
       "dmgMax": 330,
@@ -26386,7 +26521,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 360,
       "dmgMax": 380,
@@ -26414,7 +26551,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 420,
       "dmgMax": 440,
@@ -26440,7 +26579,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "mpCost": 10,
       "mp": 150,
@@ -26464,7 +26605,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 40,
       "dmgMax": 60,
@@ -26492,7 +26635,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 285,
       "dmgMax": 385,
@@ -26519,7 +26664,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 285,
       "dmgMax": 365,
@@ -26546,7 +26693,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 15,
       "dmgMax": 15,
@@ -26572,7 +26721,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 110,
       "dmgMax": 130,
@@ -26598,7 +26749,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 220,
       "dmgMax": 300,
@@ -26624,7 +26777,9 @@
     "rarity": "st",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "mpCost": 100,
       "dex": 5,
@@ -26651,7 +26806,9 @@
     "rarity": "tiered",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 360,
       "dmgMax": 380,
@@ -26679,7 +26836,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 360,
       "dmgMax": 380,
@@ -26708,7 +26867,9 @@
     "rarity": "ut",
     "type": "ability",
     "abilityType": "sigil",
-    "classes": [],
+    "classes": [
+      "druid"
+    ],
     "stats": {
       "dmgMin": 360,
       "dmgMax": 380,
@@ -37989,8 +38150,10 @@
       "shots": 1,
       "hp": 30,
       "dex": 5,
-      "procDamage": 440,
-      "procRate": 0.15
+      "dmgMin": 440,
+      "dmgMax": 440,
+      "dmgAvg": 440,
+      "rateOfFireMod": 0.5
     },
     "tags": [],
     "sprite": "peacekeeper-rehearsal",

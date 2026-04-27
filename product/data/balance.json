@@ -22,7 +22,7 @@
     "kensei": 1.0,
     "bard": 0.85,
     "summoner": 1.0,
-    "druid": 0.95
+    "druid": 1.05
   },
 
   "statusDamageTaken": {

@@ -38,10 +38,9 @@ const TARGETS = [
   { classId: "kensei",     weapon: "Masamune",              ref: 1100, label: "Masamune on Kensei" },
   { classId: "trickster",  weapon: "Dirk of Cronus",        ref: 1900, label: "Dirk on Trickster (clone bonus)" },
   { classId: "assassin",   weapon: "Dirk of Cronus",        ref: 1500, label: "Dirk on Assassin" },
-  // Note: Bard primary weapon is the Lute, but lutes are support items
-  // (the wiki Damage cell is empty / per-tier strings) — Bard DPS comes
-  // mostly from the Bard's *party-buff* effect, not the lute itself,
-  // and the engine doesn't yet model lutes as primary DPS.
+  // Bard's Sacred Lute now models the wiki's tiered "100/200/300" damage
+  // values (charge levels) as min/avg/max — engine no longer outputs zero.
+  { classId: "bard",       weapon: "Sacred Lute",           ref: 600,  label: "Sacred Lute on Bard" },
 ]
 
 describe("DPS benchmark vs community references", () => {

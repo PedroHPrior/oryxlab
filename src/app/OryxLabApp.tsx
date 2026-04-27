@@ -28,6 +28,22 @@ const log = createLogger("oryxlab.app")
 const SCENARIO_PRESETS = comparatorData.scenarioPresets as ScenarioPreset[]
 const STARTER_BUILDS = comparatorData.builds as Build[]
 
+// Distinct colors for build columns / chart curves. Picked to be visually
+// separable in both dark and light mode, and to map cleanly onto Tailwind
+// utility classes (`text-{color}-400`, `bg-{color}-400/10`).
+const BUILD_COLORS = ["violet", "amber", "lime", "rose", "sky", "emerald"] as const
+
+// Returns the first color from BUILD_COLORS that's not already used by
+// an existing build. Falls back to a hash-based pick after 6 builds (the
+// hard cap for the comparator) so duplicates can't sneak in via odd flows.
+function pickBuildColor(existing: Pick<Build, "color">[]): Build["color"] {
+  const used = new Set(existing.map((b) => b.color))
+  for (const c of BUILD_COLORS) if (!used.has(c)) return c
+  // All six slots used; deterministic fallback so the same new-build click
+  // always yields the same color.
+  return BUILD_COLORS[existing.length % BUILD_COLORS.length]
+}
+
 const NAV_ITEMS_DEFAULT = [
   { label: "Comparator", href: "/app", isActive: false },
   { label: "Catalog", href: "/app/catalog", isActive: false },
@@ -235,6 +251,7 @@ export function OryxLabApp() {
             ...orig,
             id: `${orig.id}-copy-${Date.now()}`,
             name: `${orig.name} (copy)`,
+            color: pickBuildColor(curr),
           }
           return [...curr, copy]
         }),
@@ -264,6 +281,7 @@ export function OryxLabApp() {
             ...STARTER_BUILDS[0],
             id: `build-new-${Date.now()}`,
             name: "New build",
+            color: pickBuildColor(curr),
             tags: [],
           },
         ]),
@@ -289,6 +307,7 @@ export function OryxLabApp() {
             id: `build-${itemId}-${Date.now()}`,
             name: `${item.name} build`,
             classId: targetClass,
+            color: pickBuildColor(curr),
             tags: [],
             slots: {
               weapon: null,
@@ -310,6 +329,7 @@ export function OryxLabApp() {
             id: `build-opt-${Date.now()}`,
             name,
             classId,
+            color: pickBuildColor(curr),
             tags: [],
             slots,
           },
@@ -549,6 +569,7 @@ export function OryxLabApp() {
             id: `build-char-${classId}-${Date.now()}`,
             name: `${className} (current)`,
             classId,
+            color: pickBuildColor(curr),
             tags: ["from-realmeye"],
             slots,
           },
