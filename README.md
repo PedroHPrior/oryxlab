@@ -19,8 +19,8 @@
 ---
 
 OryxLab answers the only ROTMG question that actually matters in the field:
-*"is this drop an upgrade?"* It runs a calibrated DPS engine over **1,500
-real items**, **100 ST sets**, and **19 classes**, lets you slot builds
+*"is this drop an upgrade?"* It runs a calibrated DPS engine over **1,601
+real items**, **102 ST sets**, and **19 classes**, lets you slot builds
 side-by-side, runs a beam-search optimizer for any class in under 100ms,
 and pulls your live RealmEye loadout so each character can be benchmarked
 against its own best-in-slot.
@@ -28,7 +28,7 @@ against its own best-in-slot.
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │                                                                          │
-│   1,500 items   ·   100 sets   ·   19 classes   ·   100% real data       │
+│   1,601 items   ·   102 sets   ·   19 classes   ·   100% real data       │
 │                                                                          │
 │   Engine validated against community calculators (Crystal Wand, Doom     │
 │   Bow, Staff of Esben — all within ±10%).                                │
@@ -50,7 +50,7 @@ against its own best-in-slot.
 | 🛒 | **Quick compare** — pick 2–4 items in the catalog, get a verdict (*"Crystal Wand wins on DPS, +47% vs Doom Bow"*), DPS curve, ✦-marked winner per metric |
 | 👤 | **RealmEye import** — drop your username, get every character with current loadout, one-click compare each against optimizer suggestions |
 | 🛠️ | **Build editor** — live stat-source breakdown (base / items / exalts / buffs), exalt sliders with caps, undo/redo (⌘Z), notes per build |
-| 📚 | **Catalog** — virtualized list of 1,500 items, filters (type/class/tier/rarity/mechanic) with live counts, item detail modal with proc tooltips |
+| 📚 | **Catalog** — virtualized list of 1,601 items (every weapon family including spellblades / tachis / longbows / flails / morning-stars / dual-blades), filters (type/class/tier/rarity/mechanic) with live counts, item detail modal with proc tooltips |
 | 💾 | **Persistence** — schema-versioned localStorage with migration path, share-state via URL (gzip + base64) |
 | 📲 | **PWA** — installable, offline-capable, dark-mode persisted |
 | 🛡️ | **Production hardening** — Helmet headers, rate limiting on RealmEye proxy (10 req/min/IP), CORS allowlist, gzip compression, 8s outbound timeout |
@@ -80,7 +80,7 @@ against its own best-in-slot.
   </tr>
   <tr>
     <td><b>Data</b></td>
-    <td>1,500 items · 100 sets · 19 classes — all scraped from RealmEye, validated against in-game values</td>
+    <td>1,601 items · 102 sets · 19 classes — all scraped from RealmEye, validated against in-game values (100% category coverage)</td>
   </tr>
 </table>
 

@@ -6,6 +6,49 @@ uses [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-04-27
+
+### Added
+- **Guided onboarding tour** (driver.js): 9-step spotlight walkthrough on
+  first visit, replayable from the footer "Take the tour" link.
+- **ClassPicker modal** in the comparator: click a build's class portrait
+  to reassign it; weapon / ability / armor wipe (class-restricted), rings
+  + talismans stay.
+- **SlotPicker filters**: rarity pills (All / UT / ST / Tiered) and sort
+  pills (Tier ↓ / A → Z / Damage ↓).
+- **Catalog completeness**: 6 missing weapon families added — spellblades,
+  tachis, longbows, flails, morning-stars, dual-blades. Catalog grew from
+  1,500 → 1,601 items, 100% coverage of every RealmEye category.
+- **Real ST tier classification**: 393 items now correctly tagged `ST`
+  (was 0). Sets re-scraped with a corrected parser that no longer
+  misclassifies cross-class items.
+- **Custom domain**: `oryxlab.app` (with `www.oryxlab.app` as canonical).
+- **Open Graph + Twitter Card** meta + a hand-crafted `og-image.png`.
+
+### Fixed
+- Inventory empty-state buttons: "Mark items I own" navigates to the
+  Catalog (existing per-item Mark-as-owned), and "Import from RealmEye"
+  panel renders in both empty and populated states.
+- Saved-builds badge: was hardcoded to sample-data length (always "7"),
+  now reflects the actual saved-builds count from localStorage.
+- Save / Share / Load actions now show toast feedback.
+- Ring SlotPicker showed 0 items because rings have empty `classes` array
+  (class-agnostic in RotMG); filter now treats empty classes as "any".
+- Modal flicker on hover: ClassPicker / SlotPicker now portal to
+  `document.body` so a parent's hover transform can't capture
+  `position: fixed`.
+- CDN cache poisoning: ETag-driven 5xx responses cached forever broke
+  asset loads after deploy rollovers. Disabled ETag on `/assets/*`,
+  added `Cache-Control: no-cache` on `index.html`, and the SPA catch-all
+  returns a `Cache-Control: no-store` 503 for any `/assets/*` miss.
+
+### Changed
+- Repo cleanup: community files (CONTRIBUTING / CODE_OF_CONDUCT /
+  SECURITY) moved to `.github/` (GitHub still surfaces them at the same
+  URLs); root has only README + CHANGELOG + LICENSE + CLAUDE alongside
+  build configs.
+- Added `scripts/README.md` documenting the scrape and fixup pipelines.
+
 ## [1.0.0] — 2026-04-27
 
 First public release.
