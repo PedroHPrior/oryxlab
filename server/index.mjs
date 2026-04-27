@@ -33,10 +33,40 @@ app.set('trust proxy', 1) // Railway / Vercel terminate TLS upstream
 app.disable('x-powered-by')
 
 // --- Security hardening ---------------------------------------------------
+// CSP allow-list: 'self' for everything served from this origin, plus the
+// specific third-party origins the SPA legitimately fetches from. Anything
+// not in this list will be blocked by the browser, which closes off most
+// stored-XSS exploitation paths even if React's escaping ever fails.
 app.use(
   helmet({
-    contentSecurityPolicy: false, // SPA loads from RealmEye CDN — let app set it
-    crossOriginEmbedderPolicy: false,
+    contentSecurityPolicy: {
+      useDefaults: true,
+      directives: {
+        defaultSrc: ["'self'"],
+        // Inline `<script>` runs the theme bootstrap and Plausible loader in
+        // index.html. Keep it allowed but no eval / new Function — Vite-built
+        // code never needs them.
+        scriptSrc: ["'self'", "'unsafe-inline'", 'https://plausible.io'],
+        // Tailwind's runtime + Google Fonts use inline style attributes.
+        styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
+        fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
+        // RealmEye sprite CDN + favicon data URIs.
+        imgSrc: ["'self'", 'data:', 'https://www.realmeye.com', 'https://www.oryxlab.app'],
+        // /api/* on this origin + Plausible event ingestion.
+        connectSrc: ["'self'", 'https://plausible.io'],
+        // No <iframe> embeds anywhere.
+        frameSrc: ["'none'"],
+        objectSrc: ["'none'"],
+        baseUri: ["'self'"],
+        formAction: ["'self'"],
+        // PWA manifest references same-origin images.
+        manifestSrc: ["'self'"],
+      },
+    },
+    crossOriginEmbedderPolicy: false, // RealmEye sprites are not COEP-compliant
+    // Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-
+    // Options: DENY, Referrer-Policy, X-DNS-Prefetch-Control all come from
+    // helmet defaults.
   }),
 )
 
