@@ -65,6 +65,7 @@ export interface OryxLabActions {
   addBuildFromSlots: (classId: string, slots: import("../../product/sections/comparator/types").BuildSlots, name: string) => void
   saveOptimizerResult: (classId: string, slots: import("../../product/sections/comparator/types").BuildSlots, name: string) => void
   applySwapToBuild: (buildId: string, slot: keyof import("../../product/sections/comparator/types").BuildSlots, itemId: string) => void
+  changeBuildClass: (buildId: string, classId: string) => void
   exportInventoryJson: () => void
   importInventoryJson: (file: File) => Promise<void>
   applyStarterCard: (cardId: string) => void

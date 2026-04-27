@@ -54,6 +54,7 @@ export function ComparatorRoute() {
       onAddBuild={actions.addBuild}
       onApplyStarterCard={actions.applyStarterCard}
       onChangeBuildSlot={actions.changeBuildSlot}
+      onChangeBuildClass={actions.changeBuildClass}
       onRenameBuild={actions.renameBuild}
       onToggleCustomScenario={actions.toggleCustomScenario}
       onChangeBuildScenario={actions.changeBuildScenario}

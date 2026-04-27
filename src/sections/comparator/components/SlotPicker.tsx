@@ -23,6 +23,38 @@ const SLOT_TO_TYPE: Record<keyof BuildSlots, Item["type"]> = {
   talisman: "talisman",
 }
 
+type RarityFilter = "all" | "ut" | "st" | "tiered"
+type SortKey = "tier-desc" | "name" | "dps"
+
+const RARITY_LABEL: Record<RarityFilter, string> = {
+  all: "All",
+  ut: "UT",
+  st: "ST",
+  tiered: "Tiered",
+}
+
+const SORT_LABEL: Record<SortKey, string> = {
+  "tier-desc": "Tier ↓",
+  name: "A → Z",
+  dps: "Damage ↓",
+}
+
+function tierRank(item: Item): number {
+  if (item.tier === "UT") return 100
+  if (item.tier === "ST") return 99
+  const m = /^T(\d+)$/.exec(item.tier)
+  return m ? parseInt(m[1], 10) : 0
+}
+
+function avgDmg(item: Item): number {
+  const s = item.stats
+  if (typeof s.dmgAvg === "number") return s.dmgAvg
+  if (typeof s.dmgMin === "number" && typeof s.dmgMax === "number") {
+    return (s.dmgMin + s.dmgMax) / 2
+  }
+  return 0
+}
+
 export function SlotPicker({
   slot,
   classId,
@@ -32,6 +64,8 @@ export function SlotPicker({
   onClose,
 }: SlotPickerProps) {
   const [search, setSearch] = useState("")
+  const [rarity, setRarity] = useState<RarityFilter>("all")
+  const [sortKey, setSortKey] = useState<SortKey>("tier-desc")
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -44,14 +78,33 @@ export function SlotPicker({
   const filtered = useMemo(() => {
     const wantedType = SLOT_TO_TYPE[slot]
     const q = search.trim().toLowerCase()
-    return items
-      .filter((i) => i.type === wantedType && i.classes.includes(classId))
-      .filter((i) => (q ? i.name.toLowerCase().includes(q) : true))
-      .sort((a, b) => {
-        if (a.rarity !== b.rarity) return a.rarity === "ut" ? -1 : 1
+    const matched = items.filter((i) => {
+      if (i.type !== wantedType) return false
+      // Empty `classes` array means class-agnostic (rings, talismans, and
+      // most generic accessories). Restrict only when a class list is
+      // explicitly provided AND non-empty.
+      if (Array.isArray(i.classes) && i.classes.length > 0) {
+        if (!i.classes.includes(classId)) return false
+      }
+      if (rarity !== "all" && i.rarity !== rarity) return false
+      if (q && !i.name.toLowerCase().includes(q)) return false
+      return true
+    })
+    matched.sort((a, b) => {
+      if (sortKey === "tier-desc") {
+        const r = tierRank(b) - tierRank(a)
+        if (r !== 0) return r
         return a.name.localeCompare(b.name)
-      })
-  }, [items, slot, classId, search])
+      }
+      if (sortKey === "dps") {
+        const r = avgDmg(b) - avgDmg(a)
+        if (r !== 0) return r
+        return a.name.localeCompare(b.name)
+      }
+      return a.name.localeCompare(b.name)
+    })
+    return matched
+  }, [items, slot, classId, search, rarity, sortKey])
 
   return (
     <div
@@ -84,7 +137,7 @@ export function SlotPicker({
           </button>
         </header>
 
-        <div className="border-b border-zinc-200 p-3 dark:border-zinc-800">
+        <div className="flex flex-col gap-2 border-b border-zinc-200 p-3 dark:border-zinc-800">
           <input
             autoFocus
             type="text"
@@ -93,6 +146,52 @@ export function SlotPicker({
             onChange={(e) => setSearch(e.target.value)}
             className="w-full rounded-md border border-zinc-300 bg-zinc-50 px-3 py-1.5 text-sm focus:border-amber-400 focus:outline-none focus:ring-1 focus:ring-amber-400 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100"
           />
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+              Rarity
+            </span>
+            {(Object.keys(RARITY_LABEL) as RarityFilter[]).map((r) => {
+              const active = rarity === r
+              return (
+                <button
+                  key={r}
+                  type="button"
+                  onClick={() => setRarity(r)}
+                  className={`rounded-full border px-2 py-0.5 text-[11px] transition-colors ${
+                    active
+                      ? "border-amber-400 bg-amber-400/10 text-amber-700 dark:text-amber-300"
+                      : "border-zinc-200 text-zinc-600 hover:border-amber-400/60 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  }`}
+                >
+                  {RARITY_LABEL[r]}
+                </button>
+              )
+            })}
+          </div>
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+              Sort
+            </span>
+            {(Object.keys(SORT_LABEL) as SortKey[]).map((k) => {
+              const active = sortKey === k
+              const showDps = slot === "weapon" || slot === "ability"
+              if (k === "dps" && !showDps) return null
+              return (
+                <button
+                  key={k}
+                  type="button"
+                  onClick={() => setSortKey(k)}
+                  className={`rounded-full border px-2 py-0.5 text-[11px] transition-colors ${
+                    active
+                      ? "border-amber-400 bg-amber-400/10 text-amber-700 dark:text-amber-300"
+                      : "border-zinc-200 text-zinc-600 hover:border-amber-400/60 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-100"
+                  }`}
+                >
+                  {SORT_LABEL[k]}
+                </button>
+              )
+            })}
+          </div>
         </div>
 
         <ul className="max-h-[420px] overflow-y-auto">

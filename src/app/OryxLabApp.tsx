@@ -347,6 +347,23 @@ export function OryxLabApp() {
           slots: { ...b.slots, [slot]: itemId },
         }))
       },
+      // Reassign a build to a different class. Wipes class-restricted slots
+      // (weapon / ability / armor) so the user doesn't end up with an item
+      // that no longer fits the new class. Rings + talismans are class-
+      // agnostic and stay equipped.
+      changeBuildClass: (buildId: string, classId: string) => {
+        updateBuild(buildId, (b) => ({
+          ...b,
+          classId,
+          slots: {
+            weapon: null,
+            ability: null,
+            armor: null,
+            ring: b.slots.ring,
+            talisman: b.slots.talisman,
+          } as BuildSlots,
+        }))
+      },
       applyStarterCard: () => setBuilds(STARTER_BUILDS.slice(0, 2)),
 
       setCatalogViewMode,

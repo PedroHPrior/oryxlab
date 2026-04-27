@@ -22,6 +22,7 @@ export function ComparatorView({
   onAddBuild,
   onApplyStarterCard,
   onChangeBuildSlot,
+  onChangeBuildClass,
   onRenameBuild,
   onToggleCustomScenario,
   onChangeBuildScenario,
@@ -125,8 +126,10 @@ export function ComparatorView({
               reference={reference}
               playerClass={classMap.get(b.classId)}
               items={items}
+              classes={classes}
               globalScenario={globalScenario}
               onChangeSlot={(slot, itemId) => onChangeBuildSlot?.(b.id, slot, itemId)}
+              onChangeClass={(classId) => onChangeBuildClass?.(b.id, classId)}
               onRename={(name) => onRenameBuild?.(b.id, name)}
               onToggleCustomScenario={(useCustom) => onToggleCustomScenario?.(b.id, useCustom)}
               onChangeScenario={(scenario) => onChangeBuildScenario?.(b.id, scenario)}

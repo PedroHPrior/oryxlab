@@ -197,6 +197,8 @@ export interface ComparatorProps {
     slot: keyof BuildSlots,
     itemId: string | null,
   ) => void
+  /** Reassign a build to a different class (clears class-restricted slots). */
+  onChangeBuildClass?: (buildId: string, classId: string) => void
   /** Edit a build's name. */
   onRenameBuild?: (buildId: string, name: string) => void
   /** Toggle whether a build uses its own scenario or the global one. */

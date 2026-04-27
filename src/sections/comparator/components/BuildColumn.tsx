@@ -12,14 +12,17 @@ import { ItemSprite } from "../../_shared/ItemSprite"
 import { TierBadge } from "../../_shared/TierBadge"
 import { Stat } from "../../_shared/Stat"
 import { SlotPicker } from "./SlotPicker"
+import { ClassPicker } from "./ClassPicker"
 
 interface BuildColumnProps {
   build: Build
   reference?: Build | null
   playerClass: PlayerClass | undefined
   items: Item[]
+  classes?: PlayerClass[]
   globalScenario: Scenario
   onChangeSlot?: (slot: keyof BuildSlots, itemId: string | null) => void
+  onChangeClass?: (classId: string) => void
   onRename?: (name: string) => void
   onToggleCustomScenario?: (useCustom: boolean) => void
   onChangeScenario?: (scenario: Scenario) => void
@@ -43,8 +46,10 @@ export function BuildColumn({
   reference,
   playerClass,
   items,
+  classes,
   globalScenario,
   onChangeSlot,
+  onChangeClass,
   onRename,
   onToggleCustomScenario,
   onOpenInEditor,
@@ -56,6 +61,7 @@ export function BuildColumn({
   const [menuOpen, setMenuOpen] = useState(false)
   const [nameDraft, setNameDraft] = useState(build.name)
   const [editingName, setEditingName] = useState(false)
+  const [classPickerOpen, setClassPickerOpen] = useState(false)
 
   const itemMap = new Map(items.map((i) => [i.id, i]))
   const isReference = reference?.id === build.id || !reference
@@ -79,13 +85,21 @@ export function BuildColumn({
       data-build-id={build.id}
     >
       <header className="flex items-start gap-3">
-        <ClassPortrait
-          classId={build.classId}
-          name={playerClass?.name ?? build.classId}
-          imageUrl={playerClass?.imageUrl}
-          color={build.color}
-          size="md"
-        />
+        <button
+          type="button"
+          onClick={() => setClassPickerOpen(true)}
+          aria-label="Change class"
+          title="Click to change class"
+          className="rounded-full ring-2 ring-transparent transition-all hover:ring-amber-400/60"
+        >
+          <ClassPortrait
+            classId={build.classId}
+            name={playerClass?.name ?? build.classId}
+            imageUrl={playerClass?.imageUrl}
+            color={build.color}
+            size="md"
+          />
+        </button>
         <div className="min-w-0 flex-1">
           {editingName ? (
             <input
@@ -259,6 +273,18 @@ export function BuildColumn({
             setOpenSlot(null)
           }}
           onClose={() => setOpenSlot(null)}
+        />
+      )}
+
+      {classPickerOpen && classes && (
+        <ClassPicker
+          classes={classes}
+          currentClassId={build.classId}
+          onSelect={(classId) => {
+            if (classId !== build.classId) onChangeClass?.(classId)
+            setClassPickerOpen(false)
+          }}
+          onClose={() => setClassPickerOpen(false)}
         />
       )}
     </article>
