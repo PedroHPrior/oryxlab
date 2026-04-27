@@ -222,7 +222,9 @@ oryxlab/
 │       ├── optimizer/      ClassPicker, ConstraintsPanel, ResultCard
 │       └── inventory/      OwnedSummaryCards, RealmEyeImportPanel, CharactersPanel
 ├── server/index.mjs        Express server (API + static SPA)
-├── scripts/                RealmEye scrapers (one-shot + delta + canon-enforce)
+├── scripts/
+│   ├── scrape/             RealmEye scrapers (full + incremental rescrape)
+│   └── fixups/             One-shot data migrations / canon enforcement
 ├── product/data/           Source-of-truth: items / classes / sets / balance JSON
 ├── public/data/            Bundled JSON shipped to clients (trimmed for size)
 └── tests/                  Engine + components + routes + validation suites
