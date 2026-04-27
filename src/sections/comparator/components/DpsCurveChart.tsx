@@ -52,7 +52,15 @@ export function DpsCurveChart({
       .map((v, i) => `${i === 0 ? "M" : "L"} ${xFor(i).toFixed(1)} ${yFor(v).toFixed(1)}`)
       .join(" ")
 
+  // Empty values arrays show up briefly when builds are decoded from a share
+  // URL — derivedStats.dpsCurve starts as [] until the recompute pass runs,
+  // and `path([])` yields a string with no leading M, which the browser logs
+  // as a "Expected moveto" SVG path error. Returning `undefined` skips the
+  // <path d=…> attribute entirely for that frame instead.
+  const path2 = (values: number[]) => (values.length > 0 ? path(values) : undefined)
+
   const areaPath = (values: number[]) => {
+    if (values.length === 0) return undefined
     const top = path(values)
     const lastX = xFor(values.length - 1).toFixed(1)
     const baseY = (padding.top + innerH).toFixed(1)
@@ -237,7 +245,7 @@ export function DpsCurveChart({
         return (
           <g key={curve.id}>
             <path
-              d={path(curve.values)}
+              d={path2(curve.values)}
               fill="none"
               stroke={color}
               strokeWidth={isProminent ? 3 : 2}
