@@ -117,8 +117,30 @@ function safeRemove(key: string) {
   }
 }
 
+// Distinct chart colors. Mirrors the palette in OryxLabApp's pickBuildColor —
+// duplicated here intentionally so storage.ts has no dependency on app code.
+const BUILD_COLOR_PALETTE = ["violet", "amber", "lime", "rose", "sky", "emerald"] as const
+
 export function loadBuilds(): Build[] | null {
-  return safeGet<Build[]>(KEYS.builds)
+  const builds = safeGet<Build[]>(KEYS.builds)
+  if (!builds || builds.length <= 1) return builds
+  // Deduplicate colors: if a returning user has stale builds saved with
+  // duplicate colors (old data, before pickBuildColor existed), reassign
+  // any duplicate to the first unused palette slot. Persists the fix back
+  // to localStorage so we only do this once.
+  const seen = new Set<string>()
+  let touched = false
+  for (const b of builds) {
+    if (!b.color || seen.has(b.color)) {
+      const next = BUILD_COLOR_PALETTE.find((c) => !seen.has(c))
+        ?? BUILD_COLOR_PALETTE[seen.size % BUILD_COLOR_PALETTE.length]
+      b.color = next
+      touched = true
+    }
+    seen.add(b.color)
+  }
+  if (touched) safeSet(KEYS.builds, builds)
+  return builds
 }
 
 export function saveBuilds(builds: Build[]) {
