@@ -323,6 +323,17 @@ if (IS_PROD && existsSync(DIST)) {
         // revalidation on every load.
         if (filePath.endsWith('index.html')) {
           res.setHeader('Cache-Control', 'no-cache, must-revalidate')
+          // One-deploy rescue: a previous build's express.static config
+          // accidentally let the `immutable` cache directive stick to non-200
+          // asset responses for a window of minutes, leaving returning users
+          // with permanently-cached 500/text-html entries for the JS bundle
+          // and CSS file. `Clear-Site-Data: "cache"` instructs the browser to
+          // drop its HTTP + Cache API entries on this navigation — bumps any
+          // poisoned asset URLs out of cache so the next request goes to
+          // network. Scoped to "cache" only so localStorage (saved builds)
+          // and cookies survive untouched. Remove this line in the next
+          // deploy after confirming the install base has been wiped.
+          res.setHeader('Clear-Site-Data', '"cache"')
         }
       },
     }),
