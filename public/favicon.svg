@@ -1,0 +1,27 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#27272a"/>
+      <stop offset="1" stop-color="#18181b"/>
+    </linearGradient>
+    <radialGradient id="e" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="0.5" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </radialGradient>
+  </defs>
+  <path d="M16 1.5 L28.7 8.6 L28.7 23.4 L16 30.5 L3.3 23.4 L3.3 8.6 Z" fill="url(#g)" stroke="#92400e" stroke-width="0.5" stroke-linejoin="round"/>
+  <path d="M16 4.5 L25.7 10 L25.7 22 L16 27.5 L6.3 22 L6.3 10 Z" fill="url(#d)"/>
+  <g fill="#fbbf24">
+    <path d="M11 9 L10 14 L11.2 16 L12 14 L11.8 9 Z"/>
+    <path d="M21 9 L22 14 L20.8 16 L20 14 L20.2 9 Z"/>
+    <path d="M13 14 L14 12 L18 12 L19 14 L18.5 17 L13.5 17 Z"/>
+    <path d="M13.5 17 L18.5 17 L18 21 L16 22.5 L14 21 Z"/>
+  </g>
+  <circle cx="16" cy="18" r="1.6" fill="url(#e)"/>
+  <circle cx="15.5" cy="17.5" r="0.5" fill="#fef9c3" opacity="0.9"/>
+</svg>

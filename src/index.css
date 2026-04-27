@@ -207,3 +207,51 @@
     }
   }
 }
+
+/* OryxLab micro-interactions */
+@layer utilities {
+  .oryx-sprite-hover {
+    transition: transform 200ms cubic-bezier(0.2, 0.9, 0.3, 1.4);
+  }
+  .oryx-sprite-hover:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+  .oryx-card-hover {
+    transition: box-shadow 200ms ease, border-color 200ms ease, transform 200ms ease;
+  }
+  .oryx-card-hover:hover {
+    transform: translateY(-1px);
+  }
+  .oryx-press {
+    transition: transform 80ms ease;
+  }
+  .oryx-press:active {
+    transform: scale(0.98);
+  }
+  .oryx-skeleton {
+    background: linear-gradient(90deg, rgba(0,0,0,0.04), rgba(0,0,0,0.08), rgba(0,0,0,0.04));
+    background-size: 200% 100%;
+    animation: oryx-shimmer 1.4s infinite;
+  }
+  .dark .oryx-skeleton {
+    background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+    background-size: 200% 100%;
+  }
+  @keyframes oryx-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  *:focus-visible {
+    outline: 2px solid rgb(251 191 36 / 0.7);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+/* Catalog virtualization — native browser content-visibility */
+@layer utilities {
+  .oryx-virtual-card {
+    content-visibility: auto;
+    contain-intrinsic-size: 240px 200px;
+  }
+}

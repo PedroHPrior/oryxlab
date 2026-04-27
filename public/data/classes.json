@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "wizard",
+    "name": "Wizard",
+    "portraitColor": "violet",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/QAtKJFt.png",
+    "weaponType": "staff",
+    "abilityType": "spell",
+    "armorType": "robe",
+    "stats": {
+      "hp": {
+        "base": 100,
+        "perLevel": "25",
+        "atMax": 575,
+        "cap": 700
+      },
+      "mp": {
+        "base": 150,
+        "perLevel": "7",
+        "atMax": 283,
+        "cap": 400
+      },
+      "att": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 17,
+        "perLevel": "1",
+        "atMax": 36,
+        "cap": 50
+      },
+      "dex": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 36,
+        "cap": 40
+      },
+      "wis": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      }
+    }
+  },
+  {
+    "id": "priest",
+    "name": "Priest",
+    "portraitColor": "sky",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/MPcn792.png",
+    "weaponType": "wand",
+    "abilityType": "tome",
+    "armorType": "robe",
+    "stats": {
+      "hp": {
+        "base": 100,
+        "perLevel": "25",
+        "atMax": 575,
+        "cap": 700
+      },
+      "mp": {
+        "base": 150,
+        "perLevel": "7",
+        "atMax": 283,
+        "cap": 400
+      },
+      "att": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 22,
+        "perLevel": "1",
+        "atMax": 41,
+        "cap": 55
+      },
+      "dex": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      }
+    }
+  },
+  {
+    "id": "archer",
+    "name": "Archer",
+    "portraitColor": "lime",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/OrNGRgy.png",
+    "weaponType": "bow",
+    "abilityType": "quiver",
+    "armorType": "leather",
+    "stats": {
+      "hp": {
+        "base": 150,
+        "perLevel": "25",
+        "atMax": 625,
+        "cap": 750
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 22,
+        "perLevel": "1",
+        "atMax": 41,
+        "cap": 55
+      },
+      "dex": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      }
+    }
+  },
+  {
+    "id": "knight",
+    "name": "Knight",
+    "portraitColor": "amber",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/snm8oKO.png",
+    "weaponType": "sword",
+    "abilityType": "shield",
+    "armorType": "heavy",
+    "stats": {
+      "hp": {
+        "base": 200,
+        "perLevel": "25",
+        "atMax": 675,
+        "cap": 800
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      },
+      "def": {
+        "base": 1,
+        "perLevel": "1",
+        "atMax": 20,
+        "cap": 40
+      },
+      "spd": {
+        "base": 17,
+        "perLevel": "1",
+        "atMax": 36,
+        "cap": 50
+      },
+      "dex": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      },
+      "vit": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "wis": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      }
+    }
+  },
+  {
+    "id": "paladin",
+    "name": "Paladin",
+    "portraitColor": "sky",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/caT4rO5.png",
+    "weaponType": "sword",
+    "abilityType": "seal",
+    "armorType": "heavy",
+    "stats": {
+      "hp": {
+        "base": 200,
+        "perLevel": "25",
+        "atMax": 675,
+        "cap": 800
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 16,
+        "perLevel": "1",
+        "atMax": 35,
+        "cap": 55
+      },
+      "def": {
+        "base": 1,
+        "perLevel": "0 to 1",
+        "atMax": 10,
+        "cap": 30
+      },
+      "spd": {
+        "base": 22,
+        "perLevel": "1",
+        "atMax": 41,
+        "cap": 55
+      },
+      "dex": {
+        "base": 18,
+        "perLevel": "1",
+        "atMax": 37,
+        "cap": 55
+      },
+      "vit": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "wis": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      }
+    }
+  },
+  {
+    "id": "warrior",
+    "name": "Warrior",
+    "portraitColor": "rose",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/It4sclp.png",
+    "weaponType": "sword",
+    "abilityType": "helm",
+    "armorType": "heavy",
+    "stats": {
+      "hp": {
+        "base": 200,
+        "perLevel": "25",
+        "atMax": 675,
+        "cap": 800
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 17,
+        "perLevel": "1",
+        "atMax": 36,
+        "cap": 50
+      },
+      "dex": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      },
+      "vit": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "wis": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      }
+    }
+  },
+  {
+    "id": "necromancer",
+    "name": "Necromancer",
+    "portraitColor": "emerald",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/pmOEcsZ.png",
+    "weaponType": "staff",
+    "abilityType": "skull",
+    "armorType": "robe",
+    "stats": {
+      "hp": {
+        "base": 100,
+        "perLevel": "25",
+        "atMax": 575,
+        "cap": 700
+      },
+      "mp": {
+        "base": 150,
+        "perLevel": "7",
+        "atMax": 283,
+        "cap": 400
+      },
+      "att": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 17,
+        "perLevel": "1",
+        "atMax": 36,
+        "cap": 50
+      },
+      "dex": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      }
+    }
+  },
+  {
+    "id": "huntress",
+    "name": "Huntress",
+    "portraitColor": "fuchsia",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/tylzyyE.png",
+    "weaponType": "bow",
+    "abilityType": "trap",
+    "armorType": "leather",
+    "stats": {
+      "hp": {
+        "base": 150,
+        "perLevel": "25",
+        "atMax": 625,
+        "cap": 750
+      },
+      "mp": {
+        "base": 125,
+        "perLevel": "6",
+        "atMax": 239,
+        "cap": 350
+      },
+      "att": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 17,
+        "perLevel": "1",
+        "atMax": 36,
+        "cap": 50
+      },
+      "dex": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 32,
+        "cap": 60
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      }
+    }
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "portraitColor": "cyan",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/hgiU2hA.png",
+    "weaponType": "dagger",
+    "abilityType": "cloak",
+    "armorType": "leather",
+    "stats": {
+      "hp": {
+        "base": 150,
+        "perLevel": "25",
+        "atMax": 625,
+        "cap": 750
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "dex": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      }
+    }
+  },
+  {
+    "id": "mystic",
+    "name": "Mystic",
+    "portraitColor": "purple",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/bksjGPk.png",
+    "weaponType": "staff",
+    "abilityType": "orb",
+    "armorType": "robe",
+    "stats": {
+      "hp": {
+        "base": 100,
+        "perLevel": "25",
+        "atMax": 575,
+        "cap": 700
+      },
+      "mp": {
+        "base": 150,
+        "perLevel": "7",
+        "atMax": 283,
+        "cap": 400
+      },
+      "att": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 27,
+        "perLevel": "1",
+        "atMax": 46,
+        "cap": 60
+      },
+      "dex": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      }
+    }
+  },
+  {
+    "id": "trickster",
+    "name": "Trickster",
+    "portraitColor": "amber",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/E66uyda.png",
+    "weaponType": "dagger",
+    "abilityType": "prism",
+    "armorType": "leather",
+    "stats": {
+      "hp": {
+        "base": 150,
+        "perLevel": "25",
+        "atMax": 625,
+        "cap": 750
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 23,
+        "perLevel": "2",
+        "atMax": 61,
+        "cap": 75
+      },
+      "dex": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 32,
+        "cap": 60
+      }
+    }
+  },
+  {
+    "id": "sorcerer",
+    "name": "Sorcerer",
+    "portraitColor": "pink",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/dzsmUSA.png",
+    "weaponType": "wand",
+    "abilityType": "scepter",
+    "armorType": "robe",
+    "stats": {
+      "hp": {
+        "base": 100,
+        "perLevel": "25",
+        "atMax": 575,
+        "cap": 700
+      },
+      "mp": {
+        "base": 150,
+        "perLevel": "7",
+        "atMax": 283,
+        "cap": 400
+      },
+      "att": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 51,
+        "cap": 70
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 27,
+        "perLevel": "1",
+        "atMax": 46,
+        "cap": 60
+      },
+      "dex": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "vit": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "wis": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      }
+    }
+  },
+  {
+    "id": "assassin",
+    "name": "Assassin",
+    "portraitColor": "purple",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Xy1Lqha.png",
+    "weaponType": "dagger",
+    "abilityType": "poison",
+    "armorType": "leather",
+    "stats": {
+      "hp": {
+        "base": 150,
+        "perLevel": "25",
+        "atMax": 625,
+        "cap": 750
+      },
+      "mp": {
+        "base": 125,
+        "perLevel": "6",
+        "atMax": 239,
+        "cap": 350
+      },
+      "att": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "dex": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      }
+    }
+  },
+  {
+    "id": "ninja",
+    "name": "Ninja",
+    "portraitColor": "indigo",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/WS5AQZ7.png",
+    "weaponType": "katana",
+    "abilityType": "star",
+    "armorType": "leather",
+    "stats": {
+      "hp": {
+        "base": 200,
+        "perLevel": "25",
+        "atMax": 675,
+        "cap": 800
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 12,
+        "perLevel": "2",
+        "atMax": 50,
+        "cap": 70
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 27,
+        "perLevel": "1",
+        "atMax": 46,
+        "cap": 60
+      },
+      "dex": {
+        "base": 12,
+        "perLevel": "2",
+        "atMax": 50,
+        "cap": 70
+      },
+      "vit": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "wis": {
+        "base": 12,
+        "perLevel": "2",
+        "atMax": 50,
+        "cap": 70
+      }
+    }
+  },
+  {
+    "id": "samurai",
+    "name": "Samurai",
+    "portraitColor": "rose",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/be8agu7.png",
+    "weaponType": "katana",
+    "abilityType": "wakizashi",
+    "armorType": "heavy",
+    "stats": {
+      "hp": {
+        "base": 200,
+        "perLevel": "25",
+        "atMax": 675,
+        "cap": 800
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "def": {
+        "base": 1,
+        "perLevel": "0 to 1",
+        "atMax": 10,
+        "cap": 30
+      },
+      "spd": {
+        "base": 22,
+        "perLevel": "1",
+        "atMax": 41,
+        "cap": 55
+      },
+      "dex": {
+        "base": 16,
+        "perLevel": "1",
+        "atMax": 35,
+        "cap": 55
+      },
+      "vit": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "wis": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      }
+    }
+  },
+  {
+    "id": "bard",
+    "name": "Bard",
+    "portraitColor": "violet",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/h5Os4xa.png",
+    "weaponType": "bow",
+    "abilityType": null,
+    "armorType": "robe",
+    "stats": {
+      "hp": {
+        "base": 150,
+        "perLevel": "25",
+        "atMax": 625,
+        "cap": 750
+      },
+      "mp": {
+        "base": 150,
+        "perLevel": "7",
+        "atMax": 283,
+        "cap": 400
+      },
+      "att": {
+        "base": 20,
+        "perLevel": "1",
+        "atMax": 39,
+        "cap": 55
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 22,
+        "perLevel": "1",
+        "atMax": 36,
+        "cap": 55
+      },
+      "dex": {
+        "base": 12,
+        "perLevel": "2",
+        "atMax": 50,
+        "cap": 70
+      },
+      "vit": {
+        "base": 10,
+        "perLevel": "1",
+        "atMax": 29,
+        "cap": 45
+      },
+      "wis": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      }
+    }
+  },
+  {
+    "id": "summoner",
+    "name": "Summoner",
+    "portraitColor": "teal",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/4QnFwS9.png",
+    "weaponType": "wand",
+    "abilityType": null,
+    "armorType": "robe",
+    "stats": {
+      "hp": {
+        "base": 100,
+        "perLevel": "25",
+        "atMax": 575,
+        "cap": 700
+      },
+      "mp": {
+        "base": 150,
+        "perLevel": "7",
+        "atMax": 283,
+        "cap": 400
+      },
+      "att": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 27,
+        "perLevel": "1",
+        "atMax": 44,
+        "cap": 60
+      },
+      "dex": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      }
+    }
+  },
+  {
+    "id": "kensei",
+    "name": "Kensei",
+    "portraitColor": "rose",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/L48PGQT.png",
+    "weaponType": "katana",
+    "abilityType": "sheath",
+    "armorType": "heavy",
+    "stats": {
+      "hp": {
+        "base": 200,
+        "perLevel": "25",
+        "atMax": 675,
+        "cap": 800
+      },
+      "mp": {
+        "base": 100,
+        "perLevel": "5",
+        "atMax": 195,
+        "cap": 300
+      },
+      "att": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 27,
+        "perLevel": "1",
+        "atMax": 46,
+        "cap": 60
+      },
+      "dex": {
+        "base": 26,
+        "perLevel": "1",
+        "atMax": 45,
+        "cap": 65
+      },
+      "vit": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "wis": {
+        "base": 15,
+        "perLevel": "1",
+        "atMax": 34,
+        "cap": 50
+      }
+    }
+  },
+  {
+    "id": "druid",
+    "name": "Druid",
+    "portraitColor": "lime",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/6miC182.png",
+    "weaponType": "wand",
+    "abilityType": "sigil",
+    "armorType": "leather",
+    "stats": {
+      "hp": {
+        "base": 150,
+        "perLevel": "25",
+        "atMax": 625,
+        "cap": 750
+      },
+      "mp": {
+        "base": 125,
+        "perLevel": "6",
+        "atMax": 239,
+        "cap": 350
+      },
+      "att": {
+        "base": 20,
+        "perLevel": "1",
+        "atMax": 39,
+        "cap": 60
+      },
+      "def": {
+        "base": 0,
+        "perLevel": "0 to 1",
+        "atMax": 9,
+        "cap": 25
+      },
+      "spd": {
+        "base": 23,
+        "perLevel": "1",
+        "atMax": 42,
+        "cap": 60
+      },
+      "dex": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 65
+      },
+      "vit": {
+        "base": 5,
+        "perLevel": "1",
+        "atMax": 24,
+        "cap": 40
+      },
+      "wis": {
+        "base": 17,
+        "perLevel": "2",
+        "atMax": 55,
+        "cap": 75
+      }
+    }
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "description": "Tunable engine constants. Edit here without touching code; community feedback can iterate on these values.",
+
+  "classDpsMultiplier": {
+    "wizard": 1.0,
+    "necromancer": 1.15,
+    "priest": 0.95,
+    "archer": 1.0,
+    "knight": 1.0,
+    "paladin": 1.05,
+    "warrior": 1.10,
+    "rogue": 1.0,
+    "huntress": 1.0,
+    "sentry": 1.0,
+    "mystic": 1.0,
+    "trickster": 1.6,
+    "sorcerer": 1.10,
+    "assassin": 1.05,
+    "ninja": 1.05,
+    "samurai": 1.0,
+    "kensei": 1.0,
+    "bard": 0.85,
+    "summoner": 1.4,
+    "druid": 0.95
+  },
+
+  "statusDamageTaken": {
+    "exposed": 0.20,
+    "cursed": 0.25,
+    "bleeding": 0.0
+  },
+
+  "partyBuffDamageDealt": {
+    "paladinSeal": 0.15,
+    "warriorHelm": 0.20,
+    "bardInspire": 0.10,
+    "bardCrescendo": 0.12,
+    "bardEncore": 0.12,
+    "mysticCurse": 0
+  },
+
+  "partyBuffFlatStats": {
+    "paladinSeal": { "att": 8 },
+    "warriorHelm": { "att": 12, "dex": 12 },
+    "bardInspire": { "dex": 8 },
+    "bardCrescendo": { "att": 6, "dex": 6 },
+    "bardEncore": { "att": 12, "dex": 12 }
+  },
+
+  "weaponInflictBonus": {
+    "inflicts-exposed": 0.10,
+    "exposed": 0.10,
+    "inflicts-cursed": 0.125,
+    "inflicts-curse": 0.125,
+    "curse": 0.125,
+    "cursed": 0.125,
+    "inflicts-bleeding": 0.03,
+    "bleeding": 0.03,
+    "inflicts-paralyze": 0.08,
+    "inflicts-paralyzed": 0.08,
+    "paralyze": 0.08,
+    "paralyzed": 0.08,
+    "inflicts-slowed": 0.05,
+    "slowed": 0.05,
+    "inflicts-stunned": 0.10,
+    "stunned": 0.10,
+    "inflicts-petrified": 0.08,
+    "petrified": 0.08,
+    "inflicts-dazed": 0.06,
+    "dazed": 0.06
+  },
+
+  "weaponSelfBuffDps": {
+    "self-berserk": 0.08,
+    "berserk": 0.08,
+    "self-damaging": 0.08,
+    "damaging": 0.08,
+    "self-inspired": 0.04,
+    "inspired": 0.04,
+    "self-armored": 0,
+    "armored": 0,
+    "self-healing": 0,
+    "healing": 0,
+    "self-invulnerable": 0,
+    "invulnerable": 0,
+    "self-speedy": 0.02,
+    "speedy": 0.02
+  }
+}

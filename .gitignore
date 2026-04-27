@@ -21,3 +21,14 @@ dist/
 # Logs
 *.log
 npm-debug.log*
+
+# Test coverage
+coverage/
+
+# Local audit screenshots
+.audit/
+
+# Claude Code session state
+.claude/scheduled_tasks.lock
+.claude/agents/
+.mcp.json

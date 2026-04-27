@@ -1,0 +1,571 @@
+{
+  "_meta": {
+    "models": {
+      "item": "Any equippable game object — weapon, ability, armor, ring, or talisman. Carries stats, mechanics, drop sources, and lore.",
+      "itemSet": "An ST set: 4 items (weapon + ability + armor + ring) with a named set bonus that activates when the full set is equipped.",
+      "filterState": "The user's current selection across the filter rail — which item types, classes, tiers, rarities, mechanics tags, and stat thresholds are active.",
+      "quickCompareEntry": "An item the user has selected for the Quick Compare drawer.",
+      "dropSource": "A dungeon, boss, or event from which an item drops, with rarity hint."
+    },
+    "relationships": [
+      "Item belongs to one or more PlayerClasses (via classes array)",
+      "Item drops from many DropSources",
+      "ItemSet has exactly four Items and belongs to one or more PlayerClasses",
+      "FilterState filters the visible Items in the grid",
+      "QuickCompareEntry references one Item"
+    ]
+  },
+  "viewMode": "cards",
+  "ownedOnly": false,
+  "search": "",
+  "sort": "name-asc",
+  "filters": {
+    "types": [
+      "weapon"
+    ],
+    "classes": [
+      "wizard"
+    ],
+    "tierMin": 8,
+    "tierMax": 14,
+    "rarities": [
+      "tiered",
+      "ut"
+    ],
+    "mechanicsTags": [],
+    "statThresholds": []
+  },
+  "items": [
+    {
+      "id": "crystal-wand",
+      "name": "Crystal Wand",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "weapon",
+      "weaponType": "wand",
+      "classes": [
+        "wizard",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "trickster"
+      ],
+      "stats": {
+        "dmgMin": 100,
+        "dmgMax": 180,
+        "shotsPerSec": 1.5,
+        "shots": 1
+      },
+      "tags": [
+        "high-damage"
+      ],
+      "sprite": "crystal_wand",
+      "dropsFrom": [
+        "Crystal Cavern"
+      ],
+      "lore": "Carved from the prismatic shard of a fallen mage king.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/k6tGqcD.png"
+    },
+    {
+      "id": "wand-of-the-bulwark",
+      "name": "Wand of the Bulwark",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "weapon",
+      "weaponType": "wand",
+      "classes": [
+        "wizard",
+        "necromancer"
+      ],
+      "stats": {
+        "dmgMin": 50,
+        "dmgMax": 110,
+        "shotsPerSec": 1.6,
+        "shots": 2
+      },
+      "tags": [
+        "multi-shot"
+      ],
+      "sprite": "wand_bulwark",
+      "dropsFrom": [
+        "Heroic Encore"
+      ],
+      "lore": "Twin barrels of arcane focus.",
+      "owned": false,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/FVbME6f.png"
+    },
+    {
+      "id": "t14-wand",
+      "name": "T14 Wand of Ancient Warning",
+      "tier": "T14",
+      "tierNumeric": 14,
+      "rarity": "tiered",
+      "type": "weapon",
+      "weaponType": "wand",
+      "classes": [
+        "wizard",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "trickster"
+      ],
+      "stats": {
+        "dmgMin": 90,
+        "dmgMax": 165,
+        "shotsPerSec": 1.5,
+        "shots": 1
+      },
+      "tags": [],
+      "sprite": "wand_t14",
+      "dropsFrom": [
+        "The Shatters"
+      ],
+      "lore": "Standard endgame tiered wand.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/2idkCvn.png"
+    },
+    {
+      "id": "t13-wand",
+      "name": "T13 Wand of Recompense",
+      "tier": "T13",
+      "tierNumeric": 13,
+      "rarity": "tiered",
+      "type": "weapon",
+      "weaponType": "wand",
+      "classes": [
+        "wizard",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "trickster"
+      ],
+      "stats": {
+        "dmgMin": 85,
+        "dmgMax": 155,
+        "shotsPerSec": 1.5,
+        "shots": 1
+      },
+      "tags": [],
+      "sprite": "wand_t13",
+      "dropsFrom": [
+        "The Shatters",
+        "Cnidarian Reef"
+      ],
+      "lore": "Twelve sigils etched into oak.",
+      "owned": false,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/YdwFDes.png"
+    },
+    {
+      "id": "t12-wand",
+      "name": "T12 Wand of the Fallen",
+      "tier": "T12",
+      "tierNumeric": 12,
+      "rarity": "tiered",
+      "type": "weapon",
+      "weaponType": "wand",
+      "classes": [
+        "wizard",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "trickster"
+      ],
+      "stats": {
+        "dmgMin": 80,
+        "dmgMax": 145,
+        "shotsPerSec": 1.5,
+        "shots": 1
+      },
+      "tags": [],
+      "sprite": "wand_t12",
+      "dropsFrom": [
+        "Lost Halls"
+      ],
+      "lore": "Drips with the dust of lost worlds.",
+      "owned": false,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Y0owA0u.png"
+    },
+    {
+      "id": "doom-bow",
+      "name": "Doom Bow",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "weapon",
+      "weaponType": "bow",
+      "classes": [
+        "archer",
+        "huntress",
+        "sentry"
+      ],
+      "stats": {
+        "dmgMin": 600,
+        "dmgMax": 800,
+        "shotsPerSec": 1,
+        "shots": 1
+      },
+      "tags": [
+        "armor-piercing",
+        "slow-rof"
+      ],
+      "sprite": "doom_bow",
+      "dropsFrom": [
+        "Davy Jones' Locker"
+      ],
+      "lore": "Pierces the souls of the slain.",
+      "owned": false,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/3GjgWJy.png"
+    },
+    {
+      "id": "demon-blade",
+      "name": "Demon Blade",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "weapon",
+      "weaponType": "sword",
+      "classes": [
+        "knight",
+        "paladin",
+        "warrior"
+      ],
+      "stats": {
+        "dmgMin": 320,
+        "dmgMax": 360,
+        "shotsPerSec": 1.6,
+        "shots": 1
+      },
+      "tags": [
+        "high-damage"
+      ],
+      "sprite": "demon_blade",
+      "dropsFrom": [
+        "The Void Entity"
+      ],
+      "lore": "Forged in the wail of a thousand fiends.",
+      "owned": false,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/UcQg1tr.png"
+    },
+    {
+      "id": "deca-katana",
+      "name": "Masamune",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "weapon",
+      "weaponType": "katana",
+      "classes": [
+        "samurai",
+        "kensei"
+      ],
+      "stats": {
+        "dmgMin": 130,
+        "dmgMax": 170,
+        "shotsPerSec": 1.8,
+        "shots": 5
+      },
+      "tags": [
+        "multi-shot",
+        "directional"
+      ],
+      "sprite": "masamune",
+      "dropsFrom": [
+        "Daichi"
+      ],
+      "lore": "Five souls cut at once.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/XXdbpMB.png"
+    },
+    {
+      "id": "ep",
+      "name": "Spell of the Planewalker",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "ability",
+      "abilityType": "spell",
+      "classes": [
+        "wizard"
+      ],
+      "stats": {
+        "mpCost": 90,
+        "dmgMin": 1200,
+        "dmgMax": 1400
+      },
+      "tags": [
+        "aoe"
+      ],
+      "sprite": "ep",
+      "dropsFrom": [
+        "The Crawling Depths"
+      ],
+      "lore": "A scream of light through dimensions.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7ZsEjTv.png"
+    },
+    {
+      "id": "t6-spell",
+      "name": "Spell of the Burning Sun",
+      "tier": "T6",
+      "tierNumeric": 6,
+      "rarity": "tiered",
+      "type": "ability",
+      "abilityType": "spell",
+      "classes": [
+        "wizard"
+      ],
+      "stats": {
+        "mpCost": 100,
+        "dmgMin": 600,
+        "dmgMax": 700
+      },
+      "tags": [
+        "aoe"
+      ],
+      "sprite": "spell_sun",
+      "dropsFrom": [
+        "Crystal Cavern"
+      ],
+      "lore": "The corona of a captured star.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/yW8ww7i.png"
+    },
+    {
+      "id": "ce",
+      "name": "Cloak of the Planewalker",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "armor",
+      "classes": [
+        "wizard",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "summoner"
+      ],
+      "stats": {
+        "def": 15,
+        "att": 5,
+        "dex": 5,
+        "wis": 5
+      },
+      "tags": [
+        "balanced"
+      ],
+      "sprite": "cloak_pw",
+      "dropsFrom": [
+        "Lost Halls"
+      ],
+      "lore": "Stitched from the fabric between worlds.",
+      "owned": false,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Xqt2Cbq.png"
+    },
+    {
+      "id": "robe-of-the-master",
+      "name": "Robe of the Grand Sorcerer",
+      "tier": "T14",
+      "tierNumeric": 14,
+      "rarity": "tiered",
+      "type": "armor",
+      "classes": [
+        "wizard",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "summoner"
+      ],
+      "stats": {
+        "def": 25,
+        "wis": 4,
+        "vit": 4
+      },
+      "tags": [],
+      "sprite": "robe_t14",
+      "dropsFrom": [
+        "The Shatters"
+      ],
+      "lore": "A robe woven by the Grand Sorcerer himself.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Oup28jC.png"
+    },
+    {
+      "id": "acclaim",
+      "name": "Ring of Unbound Wisdom",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "ring",
+      "classes": [
+        "wizard",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "priest",
+        "trickster"
+      ],
+      "stats": {
+        "wis": 10,
+        "att": 4,
+        "mp": 100
+      },
+      "tags": [],
+      "sprite": "ring_acclaim",
+      "dropsFrom": [
+        "Heroic Oryx"
+      ],
+      "lore": "Acclaimed across the realm.",
+      "owned": false,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/4gWKX78.png"
+    },
+    {
+      "id": "ubhp",
+      "name": "Ring of Unbound Health",
+      "tier": "UT",
+      "tierNumeric": 99,
+      "rarity": "ut",
+      "type": "ring",
+      "classes": [
+        "wizard",
+        "knight",
+        "paladin",
+        "warrior",
+        "archer",
+        "huntress",
+        "rogue",
+        "assassin",
+        "ninja",
+        "samurai"
+      ],
+      "stats": {
+        "hp": 200,
+        "vit": 4
+      },
+      "tags": [],
+      "sprite": "ring_ubhp",
+      "dropsFrom": [
+        "Heroic Oryx"
+      ],
+      "lore": "Beats with a heart not quite your own.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/SLc4Sam.png"
+    },
+    {
+      "id": "scattered",
+      "name": "Scattered Talisman of the Realm",
+      "tier": "Talisman",
+      "tierNumeric": 99,
+      "rarity": "talisman",
+      "type": "talisman",
+      "classes": [
+        "wizard",
+        "knight",
+        "paladin",
+        "warrior",
+        "archer",
+        "huntress",
+        "rogue",
+        "assassin",
+        "ninja",
+        "samurai",
+        "necromancer",
+        "mystic",
+        "sorcerer",
+        "summoner",
+        "trickster",
+        "priest",
+        "bard",
+        "kensei"
+      ],
+      "stats": {
+        "att": 6,
+        "dex": 4
+      },
+      "tags": [
+        "realm-shard-cost"
+      ],
+      "sprite": "talisman_realm",
+      "dropsFrom": [
+        "Realm completion"
+      ],
+      "lore": "Crafted from realm shards.",
+      "owned": true,
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Kasaza0.png"
+    }
+  ],
+  "itemSets": [
+    {
+      "id": "wizard-prophet",
+      "name": "Prophetic Wizard Set (ST)",
+      "classId": "wizard",
+      "items": [
+        "t14-wand",
+        "t6-spell",
+        "robe-of-the-master",
+        "acclaim"
+      ],
+      "setBonus": "+8 ATT, +8 WIS, +50 MP when full set equipped",
+      "sprite": "set_prophet"
+    },
+    {
+      "id": "knight-immortal",
+      "name": "Immortal Knight Set (ST)",
+      "classId": "knight",
+      "items": [
+        "demon-blade",
+        "exalted-helm",
+        "acrop",
+        "ubhp"
+      ],
+      "setBonus": "+15 DEF, +60 HP, immune to Stunned for 5s after using ability",
+      "sprite": "set_immortal"
+    }
+  ],
+  "dropSources": [
+    {
+      "id": "lost-halls",
+      "name": "Lost Halls",
+      "tier": "endgame"
+    },
+    {
+      "id": "shatters",
+      "name": "The Shatters",
+      "tier": "endgame"
+    },
+    {
+      "id": "crystal-cavern",
+      "name": "Crystal Cavern",
+      "tier": "endgame"
+    },
+    {
+      "id": "heroic-oryx",
+      "name": "Heroic Oryx",
+      "tier": "endgame"
+    },
+    {
+      "id": "void-entity",
+      "name": "The Void Entity",
+      "tier": "raid"
+    }
+  ],
+  "tagPalette": [
+    "high-damage",
+    "multi-shot",
+    "armor-piercing",
+    "directional",
+    "aoe",
+    "slow-rof",
+    "balanced",
+    "paralyze",
+    "single-target",
+    "self-stun-immune",
+    "realm-shard-cost"
+  ],
+  "quickCompare": {
+    "open": false,
+    "selectedIds": []
+  }
+}
