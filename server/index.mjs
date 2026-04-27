@@ -265,9 +265,15 @@ app.post('/api/inventory/realmeye-import', realmEyeLimiter, async (req, res) => 
 if (IS_PROD && existsSync(DIST)) {
   app.use(
     express.static(DIST, {
-      etag: true,
-      lastModified: true,
-      maxAge: '1d',
+      // ETags + If-None-Match revalidation are explicitly disabled on assets:
+      // a transient 5xx during deploy rollover ends up cached in browsers
+      // alongside the file's etag, and on subsequent visits the browser
+      // sends If-None-Match → server returns 304 → browser serves the
+      // poisoned 500 from disk cache. Without etags every request gets a
+      // fresh 200 + new bytes.
+      etag: false,
+      lastModified: false,
+      maxAge: 0,
       setHeaders: (res, filePath) => {
         // Hashed asset filenames are content-addressed → safe to cache forever.
         if (/\/assets\/.+\.(js|css|woff2?)$/.test(filePath)) {
