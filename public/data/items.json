@@ -11478,7 +11478,9 @@
     "stats": {
       "def": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "silver-lute",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/jEYKONZ.png"
   },
@@ -11497,7 +11499,9 @@
     "stats": {
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "battle-lute",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/uK0VnFa.png"
   },
@@ -11516,7 +11520,9 @@
     "stats": {
       "def": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "regal-lute",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/xKXYSaD.png"
   },
@@ -11537,7 +11543,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "skyward-lute",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7QhzvyK.png"
   },
@@ -11558,7 +11566,9 @@
       "hp": 40,
       "mp": 40
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "nebular-lute",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/bWsosoU.png"
   },
@@ -11597,7 +11607,9 @@
       "hp": 20,
       "vit": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "piper-s-pan-flute",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/AeJWMu4.png"
   },
@@ -11617,7 +11629,9 @@
       "def": 4,
       "spd": 7
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "snake-charmer-pungi",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/2QpfLCz.png"
   },
@@ -11638,7 +11652,9 @@
       "dex": 3,
       "cooldown": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "chief-s-war-horn",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/DCGwhPx.png"
   },
@@ -11705,7 +11721,9 @@
       "def": 4,
       "vit": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "pharaoh-s-requiem",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/wcUJKHq.png"
   },
@@ -11725,7 +11743,9 @@
       "def": 6,
       "dex": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "taiko-drums",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/pXEtNxl.png"
   },
@@ -11745,7 +11765,9 @@
       "att": 5,
       "vit": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "motivational-megaphone",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/tPfgva5.png"
   },
@@ -11855,7 +11877,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-drums",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/dJUGOxv.png"
   },
@@ -11876,7 +11900,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-singing-glass",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/v3XYnXn.png"
   },
@@ -11897,7 +11923,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "oryxmas-carol",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/9bSZEgI.png"
   },
@@ -12625,7 +12653,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 45,
+      "dmgMax": 65,
+      "dmgAvg": 55,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-decimation",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/qohAPAQ.png"
@@ -12644,7 +12679,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 50,
+      "dmgMax": 70,
+      "dmgAvg": 60,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-nightmares",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ajB5etj.png"
@@ -12663,7 +12705,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 50,
+      "dmgMax": 70,
+      "dmgAvg": 60,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-arcane-magic",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Qcm8i5c.png"
@@ -12682,7 +12731,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 85,
+      "dmgAvg": 75,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-corrupt-premonitions",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/OOZNU3A.png"
@@ -12701,7 +12757,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 85,
+      "dmgAvg": 75,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-starry-insight",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7brV6am.png"
@@ -12720,7 +12783,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 90,
+      "dmgAvg": 80,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-the-sun",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/hQyNy8j.png"
@@ -12739,7 +12809,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 85,
+      "dmgMax": 90,
+      "dmgAvg": 87.5,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-the-heavens-light",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/eTvrJ3Y.png"
@@ -12758,7 +12835,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 85,
+      "dmgMax": 100,
+      "dmgAvg": 92.5,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "spellblade-of-the-everlasting-death",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/WYFKLKN.png"
@@ -12857,7 +12941,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 100,
+      "dmgMax": 120,
+      "dmgAvg": 110,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 0.85
+    },
     "tags": [],
     "sprite": "rocket-launcher",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/4PIEZSR.png"
@@ -12876,7 +12967,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 90,
+      "dmgAvg": 80,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "snowblind-spellblade",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/pA8mcGH.png"
@@ -12895,7 +12993,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 90,
+      "dmgAvg": 77.5,
+      "shots": 1,
+      "range": 7.91,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "hovering-spellblade",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/O1gC8mh.png"
@@ -12941,7 +13046,15 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 85,
+      "dmgMax": 90,
+      "dmgAvg": 87.5,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1,
+      "wis": 5
+    },
     "tags": [],
     "sprite": "spellblade-of-the-void",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/nt6H6Bh.png"
@@ -12960,7 +13073,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 85,
+      "dmgMax": 90,
+      "dmgAvg": 87.5,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "beach-shovel",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/W5R8CNz.png"
@@ -13007,7 +13127,14 @@
       "necromancer",
       "mystic"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 90,
+      "dmgAvg": 80,
+      "shots": 1,
+      "range": 6.6,
+      "rateOfFireMod": 1
+    },
     "tags": [],
     "sprite": "hero-s-spellblade",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Dp5Pmda.png"
@@ -13391,8 +13518,17 @@
       "samurai",
       "kensei"
     ],
-    "stats": {},
-    "tags": [],
+    "stats": {
+      "dmgMin": 100,
+      "dmgMax": 135,
+      "dmgAvg": 117.5,
+      "range": 4.61,
+      "rateOfFireMod": 0.95,
+      "dex": 5
+    },
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "void-tachi",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vVlJ5DH.png"
   },
@@ -13458,7 +13594,14 @@
       "samurai",
       "kensei"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 290,
+      "dmgMax": 340,
+      "dmgAvg": 315,
+      "shots": 1,
+      "range": 4.5,
+      "rateOfFireMod": 0.33
+    },
     "tags": [],
     "sprite": "blood-ritual-tools",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/swBp3z0.png"
@@ -13737,8 +13880,16 @@
       "huntress",
       "bard"
     ],
-    "stats": {},
-    "tags": [],
+    "stats": {
+      "dmgMin": 95,
+      "dmgMax": 115,
+      "dmgAvg": 105,
+      "range": 7.04,
+      "spd": 2
+    },
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "experimental-cannon",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/bB3OmG9.png"
   },
@@ -13756,7 +13907,13 @@
       "huntress",
       "bard"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 100,
+      "dmgMax": 110,
+      "dmgAvg": 105,
+      "range": 7,
+      "rateOfFireMod": 0.92
+    },
     "tags": [],
     "sprite": "harpoon-longbow",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/92AQw0I.png"
@@ -13825,8 +13982,17 @@
       "huntress",
       "bard"
     ],
-    "stats": {},
-    "tags": [],
+    "stats": {
+      "dmgMin": 105,
+      "dmgMax": 130,
+      "dmgAvg": 117.5,
+      "range": 7.04,
+      "rateOfFireMod": 0.92,
+      "dex": 5
+    },
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "longbow-of-the-void",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/qDurcGi.png"
   },
@@ -13944,8 +14110,16 @@
       "huntress",
       "bard"
     ],
-    "stats": {},
-    "tags": [],
+    "stats": {
+      "dmgMin": 95,
+      "dmgMax": 115,
+      "dmgAvg": 105,
+      "range": 7.04,
+      "spd": 2
+    },
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "frostbite-mittens",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/2VJm2DZ.png"
   },
@@ -13963,7 +14137,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 40,
+      "dmgMax": 60,
+      "dmgAvg": 50,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "gilded-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/lOGLI9j.png"
@@ -13982,7 +14163,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 50,
+      "dmgMax": 70,
+      "dmgAvg": 60,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "champion-s-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/A1HIp06.png"
@@ -14001,7 +14189,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 55,
+      "dmgMax": 70,
+      "dmgAvg": 62.5,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "drakerider-s-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/eTtGtcr.png"
@@ -14020,7 +14215,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 55,
+      "dmgMax": 75,
+      "dmgAvg": 65,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "infernal-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/CXSbYEt.png"
@@ -14039,7 +14241,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 60,
+      "dmgMax": 75,
+      "dmgAvg": 67.5,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "mithril-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/dl0dUvC.png"
@@ -14058,7 +14267,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 60,
+      "dmgMax": 80,
+      "dmgAvg": 70,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "celebrant-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/v7ikhoz.png"
@@ -14077,7 +14293,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 90,
+      "dmgAvg": 77.5,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "divine-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/gTT0FPk.png"
@@ -14096,7 +14319,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 100,
+      "dmgAvg": 85,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "gravelord-s-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/gl4nYs7.png"
@@ -14200,7 +14430,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 55,
+      "dmgMax": 55,
+      "dmgAvg": 55,
+      "shots": 2,
+      "range": 3,
+      "rateOfFireMod": 0.6
+    },
     "tags": [],
     "sprite": "fury-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/wcjhwxu.png"
@@ -14219,7 +14456,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 60,
+      "dmgMax": 80,
+      "dmgAvg": 70,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "lament-of-the-frozen-prisoner",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7EEWSCl.png"
@@ -14238,7 +14482,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 60,
+      "dmgMax": 80,
+      "dmgAvg": 70,
+      "shots": 2,
+      "range": 2.625,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "seismic-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/HhlSETY.png"
@@ -14313,7 +14564,15 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 90,
+      "dmgAvg": 77.5,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5,
+      "vit": 5
+    },
     "tags": [],
     "sprite": "void-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/oHoxah3.png"
@@ -14332,7 +14591,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 90,
+      "dmgAvg": 77.5,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "beach-umbrella",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/MOWYUDT.png"
@@ -14379,7 +14645,14 @@
       "paladin",
       "warrior"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 90,
+      "dmgAvg": 77.5,
+      "shots": 2,
+      "range": 2.81,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "hero-s-flail",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ZbcgDHv.png"
@@ -14676,7 +14949,15 @@
       "summoner",
       "druid"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 45,
+      "dmgMax": 60,
+      "dmgAvg": 52.5,
+      "shots": 2,
+      "range": 11.28,
+      "rateOfFireMod": 0.45,
+      "wis": 5
+    },
     "tags": [],
     "sprite": "morning-square",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/UTOBINB.png"
@@ -14719,7 +15000,13 @@
       "summoner",
       "druid"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 75,
+      "dmgMax": 105,
+      "dmgAvg": 90,
+      "range": 6.4,
+      "rateOfFireMod": 0.35
+    },
     "tags": [],
     "sprite": "acidic-aspergillum",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/DOxS5yU.png"
@@ -14891,7 +15178,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 40,
+      "dmgMax": 70,
+      "dmgAvg": 55,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "royal-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/f60eWc4.png"
@@ -14910,7 +15204,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 50,
+      "dmgMax": 80,
+      "dmgAvg": 65,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "blazing-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/C6jEQWY.png"
@@ -14929,7 +15230,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 50,
+      "dmgMax": 85,
+      "dmgAvg": 67.5,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "garnet-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/bUPmsvL.png"
@@ -14948,7 +15256,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 55,
+      "dmgMax": 85,
+      "dmgAvg": 70,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "verdant-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/35hhyaE.png"
@@ -14967,7 +15282,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 60,
+      "dmgMax": 90,
+      "dmgAvg": 75,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "occult-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/BNNIM99.png"
@@ -14986,7 +15308,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 65,
+      "dmgMax": 95,
+      "dmgAvg": 80,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "bloodshed-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/K8Olium.png"
@@ -15005,7 +15334,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 105,
+      "dmgAvg": 87.5,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "moonstone-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7wxKwCd.png"
@@ -15024,7 +15360,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 80,
+      "dmgMax": 110,
+      "dmgAvg": 95,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "soulforged-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/dlPdeYG.png"
@@ -15097,7 +15440,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 120,
+      "dmgMax": 160,
+      "dmgAvg": 140,
+      "shots": 1,
+      "range": 3.6,
+      "rateOfFireMod": 0.5
+    },
     "tags": [],
     "sprite": "boomerang-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/DvJRdy0.png"
@@ -15143,7 +15493,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 60,
+      "dmgMax": 95,
+      "dmgAvg": 77.5,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "frostbite-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/oaJAdR0.png"
@@ -15162,7 +15519,15 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 105,
+      "dmgAvg": 87.5,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1,
+      "spd": 5
+    },
     "tags": [],
     "sprite": "void-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/aDrhETp.png"
@@ -15181,7 +15546,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 105,
+      "dmgAvg": 87.5,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "dual-pops",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/J1jkG6S.png"
@@ -15228,7 +15600,14 @@
       "trickster",
       "assassin"
     ],
-    "stats": {},
+    "stats": {
+      "dmgMin": 70,
+      "dmgMax": 105,
+      "dmgAvg": 87.5,
+      "shots": 1,
+      "range": 4.8,
+      "rateOfFireMod": 1.1
+    },
     "tags": [],
     "sprite": "hero-s-blades",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/2nMvO0R.png"
@@ -15665,7 +16044,9 @@
       "def": 5,
       "cooldown": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "esben-s-vows",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/es4f5XM.png"
   },
@@ -16127,7 +16508,9 @@
       "wis": 20,
       "dex": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-the-seeker",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/EoTkHWV.png"
   },
@@ -16147,7 +16530,9 @@
       "wis": 20,
       "dex": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-the-aspirant",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Akq1Xjm.png"
   },
@@ -16167,7 +16552,9 @@
       "wis": 20,
       "dex": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-the-divine",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/aFrkfEy.png"
   },
@@ -16187,7 +16574,9 @@
       "wis": 20,
       "dex": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-the-holy-warrior",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/zD4KcQ8.png"
   },
@@ -16209,7 +16598,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-the-blessed-champion",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/xRGtewS.png"
   },
@@ -16231,7 +16622,9 @@
       "mp": 40,
       "dex": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-invocation",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/QC6f0pP.png"
   },
@@ -16272,7 +16665,9 @@
       "hp": 40,
       "dex": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "sandstone-seal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Uvdalnc.png"
   },
@@ -16291,9 +16686,12 @@
     "stats": {
       "mpCost": 80,
       "def": 4,
-      "cooldown": 2
+      "cooldown": 2,
+      "att": 100
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-the-battle-god",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/rpYgiBQ.png"
   },
@@ -16315,7 +16713,9 @@
       "dex": 4,
       "cooldown": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scholar-s-seal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/YLj6XLl.png"
   },
@@ -16335,7 +16735,9 @@
       "hp": 50,
       "def": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-cubic-conundra",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/pXO3kh8.png"
   },
@@ -16379,7 +16781,9 @@
       "spd": 4,
       "cooldown": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-blasphemous-prayer",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/YxQsMy1.png"
   },
@@ -16398,7 +16802,9 @@
       "def": 5,
       "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "marble-seal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Hq1NeMV.png"
   },
@@ -16418,7 +16824,9 @@
       "hp": 50,
       "att": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "seal-of-the-enchanted-forest",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/qP0R62n.png"
   },
@@ -16486,7 +16894,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-seal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ncE69QX.png"
   },
@@ -16508,7 +16918,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-seal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/pIZZ693.png"
   },
@@ -16530,7 +16942,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "advent-seal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/eRvwhB1.png"
   },
@@ -16550,7 +16964,9 @@
       "vit": 5,
       "wis": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legacy-seal-of-the-enchanted-forest",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/qP0R62n.png"
   },
@@ -16570,7 +16986,9 @@
       "hp": 50,
       "att": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "sacrilege-seal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/0acFZlA.png"
   },
@@ -17746,7 +18164,9 @@
       "hp": 65,
       "att": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "demon-lord-s-skull",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Kqp1Cdz.png"
   },
@@ -17821,7 +18241,9 @@
       "spd": 4,
       "vit": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "perennial-cranium",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/SHy3DA5.png"
   },
@@ -17843,7 +18265,9 @@
       "spd": 4,
       "vit": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "maw-of-malignance",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ivmU6yl.png"
   },
@@ -17967,7 +18391,9 @@
       "projectileSpeed": 13.5,
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cubic-frame",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/rfIsInw.png"
   },
@@ -18013,7 +18439,9 @@
       "vit": 5,
       "att": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "memento-mori",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/sI7HjoW.png"
   },
@@ -18130,7 +18558,9 @@
       "projectileSpeed": 13.5,
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "blood-essence",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/KNjezjW.png"
   },
@@ -18176,7 +18606,9 @@
       "vit": 5,
       "att": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hooded-skull",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/PDjlWkY.png"
   },
@@ -18197,7 +18629,9 @@
       "spd": 4,
       "vit": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "ever-green-skull",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/rl8rRP7.png"
   },
@@ -18214,7 +18648,8 @@
       "rogue"
     ],
     "stats": {
-      "mp": 2
+      "mp": 2,
+      "cooldown": 5.5
     },
     "tags": [],
     "sprite": "cloak-of-shadows",
@@ -18233,7 +18668,8 @@
       "rogue"
     ],
     "stats": {
-      "mp": 2
+      "mp": 2,
+      "cooldown": 5.5
     },
     "tags": [],
     "sprite": "cloak-of-darkness",
@@ -18253,9 +18689,12 @@
     ],
     "stats": {
       "mp": 2,
-      "spd": 3
+      "spd": 3,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-speed",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7Zj6lxW.png"
   },
@@ -18273,9 +18712,12 @@
     ],
     "stats": {
       "mp": 2,
-      "spd": 5
+      "spd": 5,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-the-night-thief",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/PjM3yUA.png"
   },
@@ -18294,9 +18736,12 @@
     "stats": {
       "mp": 2,
       "spd": 5,
-      "dex": 3
+      "dex": 3,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-the-red-agent",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/zqlh62K.png"
   },
@@ -18315,9 +18760,12 @@
     "stats": {
       "mp": 2,
       "spd": 5,
-      "dex": 4
+      "dex": 4,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-endless-twilight",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/tfSIkBb.png"
   },
@@ -18337,9 +18785,12 @@
       "mp": 20,
       "spd": 5,
       "dex": 5,
-      "hp": 20
+      "hp": 20,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-ghostly-concealment",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vvDokyq.png"
   },
@@ -18359,9 +18810,12 @@
       "mp": 40,
       "spd": 6,
       "dex": 6,
-      "hp": 40
+      "hp": 40,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-nightmares",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/hp2lfQt.png"
   },
@@ -18401,7 +18855,9 @@
       "spd": 15,
       "dex": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-the-planewalker",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Xqt2Cbq.png"
   },
@@ -18419,9 +18875,12 @@
     ],
     "stats": {
       "mp": 4,
-      "def": 6
+      "def": 6,
+      "cooldown": 3.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-the-mad-god",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/5wzATeW.png"
   },
@@ -18444,7 +18903,9 @@
       "dex": 4,
       "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-the-darkened-sun",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/CfblKuv.png"
   },
@@ -18465,7 +18926,9 @@
       "def": 5,
       "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-cubic-enigma",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/V27k4Sz.png"
   },
@@ -18488,7 +18951,9 @@
       "cooldown": 5.5,
       "duration": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-refraction",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/P4v3VhO.png"
   },
@@ -18508,7 +18973,9 @@
       "mp": 50,
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-the-deep",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/rUNGXXP.png"
   },
@@ -18531,7 +18998,9 @@
       "vit": 4,
       "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-bloody-surprises",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/pgSngpE.png"
   },
@@ -18574,7 +19043,9 @@
       "spd": 5,
       "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "vampiric-cape",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/oMfuCxt.png"
   },
@@ -18619,7 +19090,9 @@
       "hp": 20,
       "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-cloak",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/G3SHqE6.png"
   },
@@ -18642,7 +19115,9 @@
       "hp": 20,
       "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-cloak",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/V0ZCVYs.png"
   },
@@ -18662,9 +19137,12 @@
       "mp": 20,
       "spd": 5,
       "dex": 5,
-      "hp": 20
+      "hp": 20,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-winter",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/e11lEVq.png"
   },
@@ -18684,9 +19162,12 @@
       "spd": -40,
       "att": 30,
       "def": 4,
-      "vit": 4
+      "vit": 4,
+      "cooldown": 5.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloak-of-eerie-trepidation",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/LB0K4IK.png"
   },
@@ -18702,7 +19183,8 @@
       "rogue"
     ],
     "stats": {
-      "mpCost": 110
+      "mpCost": 110,
+      "cooldown": 6.5
     },
     "tags": [],
     "sprite": "legacy-ghastly-drape",
@@ -18724,7 +19206,9 @@
       "range": 4.5,
       "def": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "combat-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/y23fV83.png"
   },
@@ -18744,7 +19228,9 @@
       "range": 4.5,
       "def": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "bronze-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/jRRrMof.png"
   },
@@ -18764,7 +19250,9 @@
       "range": 4.5,
       "def": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "black-iron-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/iYNCa95.png"
   },
@@ -18784,7 +19272,9 @@
       "range": 4.5,
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "red-iron-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/p7jOh2O.png"
   },
@@ -18804,7 +19294,9 @@
       "range": 4.5,
       "def": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "steel-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/AUTLnFS.png"
   },
@@ -18824,7 +19316,9 @@
       "range": 4.5,
       "def": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "golden-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vyWyX1b.png"
   },
@@ -18846,7 +19340,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "helm-of-the-great-general",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vzrYC5J.png"
   },
@@ -18868,7 +19364,9 @@
       "hp": 40,
       "mp": 40
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "helm-of-the-tribune",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/8P8pY5c.png"
   },
@@ -18908,7 +19406,9 @@
       "def": 6,
       "spd": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "amber-encrusted-helmet",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/j4B8mAN.png"
   },
@@ -18929,7 +19429,9 @@
       "spd": 10,
       "vit": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "bubblegum-bucket",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vRwsuLU.png"
   },
@@ -18951,7 +19453,9 @@
       "vit": 10,
       "def": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tipsy-topper",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Af8QY5N.png"
   },
@@ -18972,7 +19476,9 @@
       "def": 10,
       "att": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "adamantine-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/C3ZF6hy.png"
   },
@@ -19043,7 +19549,9 @@
       "att": 4,
       "vit": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "vanguard-s-visage",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/WVxIOvi.png"
   },
@@ -19064,7 +19572,9 @@
       "def": 10,
       "spd": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "helm-of-the-juggernaut",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/9ZwaB2b.png"
   },
@@ -19085,7 +19595,9 @@
       "spd": 4,
       "def": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "burlap-cowl",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/fiBPxFG.png"
   },
@@ -19131,7 +19643,9 @@
       "range": 5,
       "def": 7
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tricorne-of-the-high-seas",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/6UiNnNB.png"
   },
@@ -19153,7 +19667,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/uR2Po9F.png"
   },
@@ -19175,7 +19691,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/4DKKTCR.png"
   },
@@ -19196,7 +19714,9 @@
       "spd": 10,
       "vit": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "helm-of-the-swift-bunny",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/BSAd8oG.png"
   },
@@ -19218,7 +19738,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "pathfinder-s-helm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ePNBUbG.png"
   },
@@ -19243,7 +19765,9 @@
       "att": 4,
       "vit": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "vanguard-s-visage-rehearsal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/NbirX1R.png"
   },
@@ -19264,7 +19788,9 @@
       "def": 10,
       "spd": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "helm-of-the-jack-o-naut",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/LJeuiCv.png"
   },
@@ -19283,7 +19809,9 @@
       "range": 5,
       "def": 7
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "beastly-mane",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/l1Neycg.png"
   },
@@ -19685,7 +20213,9 @@
     "stats": {
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "fractured-gemstone-wakizashi",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/d6dBKvS.png"
   },
@@ -19736,7 +20266,9 @@
       "dex": 5,
       "cooldown": 0.8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "sentinel-s-sidearm",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/8MAEM43.png"
   },
@@ -19942,7 +20474,9 @@
       "dex": 5,
       "cooldown": 0.8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "sentinel-s-sidearm-rehearsal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/6cXc6hR.png"
   },
@@ -19960,7 +20494,9 @@
     "stats": {
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "sweetcut-wakizashi",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/mUFpKmL.png"
   },
@@ -20056,7 +20592,9 @@
       "range": 9,
       "spd": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cloudflash-scepter",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/w0XwkMZ.png"
   },
@@ -20076,7 +20614,9 @@
       "range": 9,
       "spd": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-skybolts",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/gslGqoL.png"
   },
@@ -20098,7 +20638,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-storms",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/DIRbsr6.png"
   },
@@ -20120,7 +20662,9 @@
       "mp": 40,
       "spd": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-the-firmament",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/gI8eitI.png"
   },
@@ -20159,7 +20703,9 @@
       "att": 2,
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-fulmination",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/4S9VsG7.png"
   },
@@ -20180,7 +20726,9 @@
       "att": 2,
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "storm-caller",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vKveimG.png"
   },
@@ -20241,7 +20789,9 @@
       "range": 9,
       "wis": 7
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-rust",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/89fuCh7.png"
   },
@@ -20263,7 +20813,9 @@
       "dex": 2,
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cnidaria-rod",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/fc82s46.png"
   },
@@ -20286,7 +20838,9 @@
       "vit": -5,
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-devastation",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/SvWphtM.png"
   },
@@ -20328,7 +20882,9 @@
       "range": 9,
       "spd": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "grotesque-scepter",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/n75lO60.png"
   },
@@ -20392,7 +20948,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-scepter",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/hwJQvva.png"
   },
@@ -20414,7 +20972,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-scepter",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/9psuPfz.png"
   },
@@ -20436,7 +20996,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-sainthood",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/jhYy5w2.png"
   },
@@ -20458,7 +21020,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "parrot-skeleton-scepter",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/oXhC1XL.png"
   },
@@ -20480,7 +21044,9 @@
       "dex": 2,
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "eggsponential-scepter",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ObnnJzB.png"
   },
@@ -20503,7 +21069,9 @@
       "vit": -5,
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "scepter-of-the-transgressor",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/KzZBvci.png"
   },
@@ -20600,7 +21168,9 @@
       "wis": 10,
       "vit": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "neutralization-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/o3lcxd1.png"
   },
@@ -20620,7 +21190,9 @@
       "wis": 10,
       "dex": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "timelock-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vDkiw5y.png"
   },
@@ -20640,7 +21212,9 @@
       "wis": 10,
       "dex": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "banishment-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/U1vsiyc.png"
   },
@@ -20662,7 +21236,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "planefetter-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/FDRA6b5.png"
   },
@@ -20684,7 +21260,9 @@
       "hp": 40,
       "mp": 40
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "dimensiongate-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/jsq5zMC.png"
   },
@@ -20745,7 +21323,9 @@
       "lifetime": 6.8,
       "mp": 80
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "forbidden-artifact",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/M8YDoZj.png"
   },
@@ -20765,7 +21345,9 @@
       "lifetime": 6.8,
       "mp": 80
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "vision-of-draconis",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/6bFvA7S.png"
   },
@@ -20787,7 +21369,9 @@
       "cooldown": 1,
       "duration": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "command-cornea",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/8rmwaES.png"
   },
@@ -20808,7 +21392,9 @@
       "dex": 5,
       "cooldown": 0.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "orb-of-conflict",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Hm2yTCv.png"
   },
@@ -20916,7 +21502,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/x2EdvZ4.png"
   },
@@ -20938,7 +21526,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/yTVxwmw.png"
   },
@@ -20960,7 +21550,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "snowbound-orb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/qp4Gmh4.png"
   },
@@ -21009,7 +21601,9 @@
       "dex": 5,
       "cooldown": 0.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "orb-of-terror",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/NPxdXi5.png"
   },
@@ -21509,7 +22103,9 @@
       "mp": 18,
       "att": 15
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "crystalline-kunai",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/6MqqxEs.png"
   },
@@ -21724,7 +22320,9 @@
     "stats": {
       "att": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "savage-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/IUNXEoQ.png"
   },
@@ -21743,7 +22341,9 @@
     "stats": {
       "att": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "demonhunter-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/tQJ9cwB.png"
   },
@@ -21762,7 +22362,9 @@
     "stats": {
       "att": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "dragonstalker-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/9c7MZYN.png"
   },
@@ -21783,7 +22385,9 @@
       "mp": 20,
       "att": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "giantcatcher-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Vs5zLp8.png"
   },
@@ -21805,7 +22409,9 @@
       "att": 6,
       "duration": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "depthchaser-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/S7s7W4K.png"
   },
@@ -21868,7 +22474,9 @@
       "mp": 25,
       "duration": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "sulfuric-stone",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/4rBV117.png"
   },
@@ -21889,7 +22497,9 @@
       "vit": 8,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "deadly-keg",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/mQpLQWw.png"
   },
@@ -21931,7 +22541,9 @@
       "dex": 4,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "coral-venom-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/TWsORRd.png"
   },
@@ -21953,7 +22565,9 @@
       "cooldown": 0.5,
       "duration": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cave-dweller-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/J0lgclR.png"
   },
@@ -21971,9 +22585,12 @@
     ],
     "stats": {
       "mp": 100,
-      "dex": 6
+      "dex": 6,
+      "cooldown": 0.4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "rain-maker",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/WCoe58G.png"
   },
@@ -21993,7 +22610,9 @@
       "dex": 5,
       "wis": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "ocular-entrapment",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/3gEiYPi.png"
   },
@@ -22012,9 +22631,12 @@
     "stats": {
       "def": -3,
       "spd": 3,
-      "dex": 5
+      "dex": 5,
+      "cooldown": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "mimicry-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/utSCqep.png"
   },
@@ -22034,7 +22656,9 @@
       "att": 5,
       "spd": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "trap-of-the-vile-spirit",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/k9Dm96S.png"
   },
@@ -22074,7 +22698,9 @@
       "dex": 5,
       "duration": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "lifebringing-lotus",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/aW8BWP2.png"
   },
@@ -22090,9 +22716,12 @@
       "huntress"
     ],
     "stats": {
-      "dex": 4
+      "dex": 4,
+      "cooldown": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "lightning-rod",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/3aQZ9c7.png"
   },
@@ -22137,7 +22766,9 @@
       "att": 5,
       "duration": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/E1604SZ.png"
   },
@@ -22159,7 +22790,9 @@
       "att": 5,
       "duration": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/z47iovT.png"
   },
@@ -22181,7 +22814,9 @@
       "att": 5,
       "duration": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "greedsnatcher-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/kHvXLPb.png"
   },
@@ -22201,7 +22836,9 @@
       "att": 5,
       "spd": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "trap-of-the-blood-spirit",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/LTubHGN.png"
   },
@@ -22220,7 +22857,9 @@
       "mp": 40,
       "dex": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "consecrated-trap",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/AT2fs1W.png"
   },
@@ -22258,7 +22897,9 @@
     "stats": {
       "wis": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "deception-prism",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/WCE1J9Q.png"
   },
@@ -22277,7 +22918,9 @@
     "stats": {
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "illusion-prism",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/mU87Fxi.png"
   },
@@ -22296,7 +22939,9 @@
     "stats": {
       "wis": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hallucination-prism",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/q3KyyNg.png"
   },
@@ -22315,7 +22960,9 @@
     "stats": {
       "wis": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "prism-of-figments",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/CF6D4m3.png"
   },
@@ -22334,7 +22981,9 @@
     "stats": {
       "wis": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "prism-of-phantoms",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/GuzQBiT.png"
   },
@@ -22356,7 +23005,9 @@
       "mp": 20,
       "duration": 9
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "prism-of-apparitions",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/JFAt0Z2.png"
   },
@@ -22378,7 +23029,9 @@
       "mp": 40,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "prism-of-reveries",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/9NgTVtG.png"
   },
@@ -22420,7 +23073,9 @@
       "spd": 6,
       "duration": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "prism-of-shattered-light",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/SqbNX3N.png"
   },
@@ -22442,7 +23097,9 @@
       "hp": 40,
       "duration": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "prism-of-dancing-swords",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ZMPTyOt.png"
   },
@@ -22584,7 +23241,9 @@
     "stats": {
       "dex": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "prismimic",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/u2dVev5.png"
   },
@@ -22605,7 +23264,9 @@
       "cooldown": 2,
       "procRate": 0.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "gambler-s-fate",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ZQTDWH3.png"
   },
@@ -22705,7 +23366,9 @@
       "mp": 20,
       "duration": 9
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-prism",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/hIvrZgc.png"
   },
@@ -22727,7 +23390,9 @@
       "mp": 20,
       "duration": 9
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-prism",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/209eoUz.png"
   },
@@ -22748,7 +23413,9 @@
       "hp": 20,
       "mp": 20
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "ornamental-prism",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/kAJmgI1.png"
   },
@@ -22832,7 +23499,9 @@
       "range": 6.2,
       "vit": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "remedy-tome",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/QtothQf.png"
   },
@@ -22852,7 +23521,9 @@
       "range": 6.4,
       "vit": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "spirit-salve-tome",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/XlBEH1c.png"
   },
@@ -22872,7 +23543,9 @@
       "range": 6.6,
       "vit": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-rejuvenation",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/KzTtqZK.png"
   },
@@ -22892,7 +23565,9 @@
       "range": 6.8,
       "vit": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-renewing",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/aJ7r9pF.png"
   },
@@ -22912,7 +23587,9 @@
       "range": 7,
       "vit": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-divine-favor",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/i9077AE.png"
   },
@@ -22934,7 +23611,9 @@
       "mp": 20,
       "vit": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-holy-guidance",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/63EtuBe.png"
   },
@@ -22956,7 +23635,9 @@
       "mp": 40,
       "vit": 7
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-hallowed-language",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/zXTGFP0.png"
   },
@@ -22996,7 +23677,9 @@
       "vit": 10,
       "wis": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-purification",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/XpQhE6D.png"
   },
@@ -23067,7 +23750,9 @@
       "spd": 5,
       "vit": -5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-pain",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ZheqTxR.png"
   },
@@ -23088,7 +23773,9 @@
       "dex": 6,
       "spd": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-the-mushroom-tribes",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/YShpFqv.png"
   },
@@ -23113,7 +23800,9 @@
       "hp": 60,
       "procRate": 0.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-holy-furor",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Qnu3uUJ.png"
   },
@@ -23163,7 +23852,9 @@
       "def": 12,
       "hp": 40
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-holy-protection",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Cn1Clyi.png"
   },
@@ -23182,7 +23873,9 @@
       "hp": 60,
       "vit": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "chaotic-scripture",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/JG0yY9F.png"
   },
@@ -23200,7 +23893,9 @@
     "stats": {
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "bloodletting-leeches",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/vjCoTqH.png"
   },
@@ -23221,7 +23916,9 @@
       "wis": 5,
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "book-of-geb",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/TGbs7pB.png"
   },
@@ -23241,7 +23938,9 @@
       "att": 15,
       "def": -5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "ceremonial-merlot",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/y53TveU.png"
   },
@@ -23263,7 +23962,9 @@
       "mp": 20,
       "vit": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-tome",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/A0Kjwxf.png"
   },
@@ -23285,7 +23986,9 @@
       "mp": 20,
       "vit": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-tome",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/FarYpYn.png"
   },
@@ -23306,7 +24009,9 @@
       "def": 12,
       "hp": 40
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-frigid-protection",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/O4ImD4j.png"
   },
@@ -23328,7 +24033,9 @@
       "mp": 20,
       "vit": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "nativity-tome",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/6P4jYrD.png"
   },
@@ -23350,7 +24057,9 @@
       "mp": 20,
       "vit": 6
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-piracy",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/O1r2TLd.png"
   },
@@ -23375,7 +24084,9 @@
       "hp": 60,
       "procRate": 0.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-the-dragon",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/KczQNS4.png"
   },
@@ -23396,7 +24107,9 @@
       "vit": 10,
       "wis": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "botany-book",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/H29ztrQ.png"
   },
@@ -23414,7 +24127,9 @@
     "stats": {
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "void-leeches",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/d4QRvF5.png"
   },
@@ -23434,7 +24149,9 @@
       "att": 15,
       "def": -5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tome-of-exorcism",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/yaQgElY.png"
   },
@@ -23953,7 +24670,9 @@
       "range": 4,
       "def": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "shockwave-shield",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/VO3QpZx.png"
   },
@@ -24293,7 +25012,9 @@
     "stats": {
       "wis": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "spider-venom",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/c1YyVUz.png"
   },
@@ -24312,7 +25033,9 @@
     "stats": {
       "wis": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "pit-viper-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/2yTuYzh.png"
   },
@@ -24331,7 +25054,9 @@
     "stats": {
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "stingray-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/wntnV3N.png"
   },
@@ -24350,7 +25075,9 @@
     "stats": {
       "wis": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "felwasp-toxin",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/rKl5kZ1.png"
   },
@@ -24369,7 +25096,9 @@
     "stats": {
       "wis": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "nightwing-venom",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/dFYPpvy.png"
   },
@@ -24390,7 +25119,9 @@
       "mp": 20,
       "wis": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "baneserpent-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/GnMp8Q9.png"
   },
@@ -24412,7 +25143,9 @@
       "wis": 4,
       "duration": 4.8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "necrofish-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Ig6IxBQ.png"
   },
@@ -24452,7 +25185,9 @@
       "wis": 8,
       "duration": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "spirit-s-bane",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/mfeB9TG.png"
   },
@@ -24474,7 +25209,9 @@
       "att": 2,
       "duration": 8
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "mighty-stein",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/LuZ3Fls.png"
   },
@@ -24497,7 +25234,9 @@
       "duration": 2,
       "procRate": 0.33
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "tyrant-s-toxin",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/rvhwPXq.png"
   },
@@ -24518,7 +25257,9 @@
       "dex": 3,
       "duration": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "murky-toxin",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/YTRasiP.png"
   },
@@ -24561,7 +25302,9 @@
       "wis": 4,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "plague-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/HM0JDSk.png"
   },
@@ -24607,7 +25350,9 @@
       "wis": 4,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "rusted-barrel",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/jbNizEd.png"
   },
@@ -24628,7 +25373,9 @@
       "dex": 4,
       "duration": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "crystallised-fang-s-venom",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ACein9c.png"
   },
@@ -24648,7 +25395,9 @@
       "wis": 8,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "polarity-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/h1s0g17.png"
   },
@@ -24669,7 +25418,9 @@
       "wis": 5,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "pandemic-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/9v5yYVD.png"
   },
@@ -24714,7 +25465,9 @@
       "vit": -2,
       "duration": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "parasitic-concoction",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/DjK25qQ.png"
   },
@@ -24732,7 +25485,9 @@
     "stats": {
       "def": 5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "virulent-venom",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/1gr1oS8.png"
   },
@@ -24754,7 +25509,9 @@
       "wis": 3,
       "duration": 4.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "legion-elite-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/PiOKTQM.png"
   },
@@ -24776,7 +25533,9 @@
       "wis": 3,
       "duration": 4.5
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "hydroflow-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/WWsLrA3.png"
   },
@@ -24797,7 +25556,9 @@
       "mp": 20,
       "wis": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "holly-poison",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/uh5xbba.png"
   },
@@ -24817,7 +25578,9 @@
       "att": 3,
       "dex": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "cursed-canopic-jar",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/NcBM8fs.png"
   },
@@ -24837,7 +25600,9 @@
       "wis": 8,
       "duration": 10
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "polarity-poison-rehearsal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/YPTQ6gU.png"
   },
@@ -24857,7 +25622,9 @@
       "def": 2,
       "dex": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "bottled-lemonade",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ovN6N98.png"
   },
@@ -25088,7 +25855,9 @@
       "wis": 5,
       "cooldown": 2
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "volcanic-sheath",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/b66TXPg.png"
   },
@@ -25107,7 +25876,9 @@
       "def": 10,
       "cooldown": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "blitz-sheath",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/92vwpqV.png"
   },
@@ -25130,7 +25901,9 @@
       "cooldown": 3,
       "duration": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "quartermaster-scabbard",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/IyEy6lE.png"
   },
@@ -25179,7 +25952,9 @@
       "spd": 6,
       "cooldown": 3
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "labyrinth-dweller-s-sheath",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/5hTq71t.png"
   },
@@ -25302,9 +26077,12 @@
       "range": 9.6,
       "lifetime": 0.8,
       "projectileSpeed": 12,
-      "dex": 5
+      "dex": 5,
+      "cooldown": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "loch-sheath",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/RxMf9ll.png"
   },
@@ -25322,9 +26100,12 @@
       "range": 14.23,
       "lifetime": 0.85,
       "projectileSpeed": 1,
-      "def": 5
+      "def": 5,
+      "cooldown": 4
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "pyro-sheath",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/2lTd3TJ.png"
   },
@@ -25653,9 +26434,9 @@
     "stats": {
       "mpCost": 10,
       "mp": 150,
-      "wis": 8,
+      "wis": 80,
       "shots": 1,
-      "range": 10,
+      "range": 1.4,
       "lifetime": 0.6,
       "projectileSpeed": 14,
       "cooldown": 0.5
@@ -25837,15 +26618,17 @@
     "stats": {
       "mpCost": 100,
       "dex": 5,
-      "att": 5,
-      "vit": 10,
+      "att": 25,
+      "vit": 100,
       "shots": 2,
       "range": 6.75,
       "lifetime": 0.8,
       "projectileSpeed": 13.5,
       "cooldown": 1
     },
-    "tags": [],
+    "tags": [
+      "on-equip"
+    ],
     "sprite": "mechraptor-sigil",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/XUrPuZC.png"
   },
@@ -37158,20 +37941,6 @@
     "tags": [],
     "sprite": "nightmatter-circlet",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/ac4LZLM.png"
-  },
-  {
-    "id": "crown",
-    "slug": "crown",
-    "name": "Crown",
-    "tier": "T0",
-    "tierNumeric": 0,
-    "rarity": "tiered",
-    "type": "ring",
-    "classes": [],
-    "stats": {},
-    "tags": [],
-    "sprite": "crown",
-    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Pxt82KV.png"
   },
   {
     "id": "creator-s-ring",
