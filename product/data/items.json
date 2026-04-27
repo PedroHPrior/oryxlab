@@ -12408,7 +12408,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 25,
@@ -12432,7 +12432,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 50,
@@ -12456,7 +12456,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 75,
@@ -12479,7 +12479,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 100,
@@ -12506,7 +12506,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 135,
@@ -12533,7 +12533,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 170,
@@ -12556,7 +12556,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 205,
@@ -12579,7 +12579,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 240,
@@ -12608,7 +12608,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 145,
@@ -12631,7 +12631,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 90,
@@ -12658,7 +12658,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 200,
@@ -12684,7 +12684,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 100,
@@ -12711,7 +12711,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 50,
@@ -12739,7 +12739,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 240,
@@ -12767,7 +12767,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 70,
@@ -12796,7 +12796,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 500,
@@ -12824,7 +12824,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 150,
@@ -12852,7 +12852,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 600,
@@ -12878,7 +12878,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 205,
@@ -12906,7 +12906,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 205,
@@ -12934,7 +12934,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 205,
@@ -12963,7 +12963,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 50,
@@ -12986,7 +12986,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 300,
@@ -13014,7 +13014,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 150,
@@ -13043,7 +13043,7 @@
     "type": "weapon",
     "weaponType": "mace",
     "classes": [
-      "summoner"
+      "priest"
     ],
     "stats": {
       "dmgMin": 600,
@@ -16384,7 +16384,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2
@@ -16403,7 +16405,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2
@@ -16422,7 +16426,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2,
@@ -16444,7 +16450,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2,
@@ -16466,7 +16474,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2,
@@ -16489,7 +16499,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2,
@@ -16512,7 +16524,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 20,
@@ -16536,7 +16550,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 40,
@@ -16560,7 +16576,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mpCost": 100,
@@ -16583,7 +16601,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "spd": 15,
@@ -16605,7 +16625,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 4,
@@ -16628,7 +16650,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "hp": 1850,
@@ -16653,7 +16677,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2,
@@ -16676,7 +16702,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 2,
@@ -16701,7 +16729,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 50,
@@ -16725,7 +16755,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "spd": -40,
@@ -16750,7 +16782,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 4,
@@ -16779,7 +16813,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "dex": 10,
@@ -16810,7 +16846,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "range": 2,
@@ -16837,7 +16875,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 20,
@@ -16862,7 +16902,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 20,
@@ -16887,7 +16929,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mp": 20,
@@ -16911,7 +16955,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "spd": -40,
@@ -16935,7 +16981,9 @@
     "type": "ability",
     "abilityType": "cloak",
     "classes": [
-      "rogue"
+      "rogue",
+      "assassin",
+      "trickster"
     ],
     "stats": {
       "mpCost": 110
@@ -16956,7 +17004,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -16980,7 +17030,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17004,7 +17056,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17028,7 +17082,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17052,7 +17108,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17076,7 +17134,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17100,7 +17160,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17126,7 +17188,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17154,7 +17218,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "mpCost": 50
@@ -17178,7 +17244,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 5,
@@ -17203,7 +17271,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "def": 10,
@@ -17230,7 +17300,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17257,7 +17329,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "vit": 20,
@@ -17284,7 +17358,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "dex": 30,
@@ -17312,7 +17388,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "def": 6,
@@ -17340,7 +17418,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "shots": 24,
@@ -17369,7 +17449,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17396,7 +17478,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 3,
@@ -17424,7 +17508,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "dmgMin": 500,
@@ -17456,7 +17542,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 5,
@@ -17480,7 +17568,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17508,7 +17598,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17536,7 +17628,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "def": 10,
@@ -17563,7 +17657,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17591,7 +17687,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "shots": 24,
@@ -17620,7 +17718,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 4.5,
@@ -17647,7 +17747,9 @@
     "type": "ability",
     "abilityType": "helm",
     "classes": [
-      "warrior"
+      "warrior",
+      "knight",
+      "paladin"
     ],
     "stats": {
       "range": 5,
@@ -17670,7 +17772,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 150,
@@ -17694,7 +17796,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 250,
@@ -17721,7 +17823,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 300,
@@ -17748,7 +17850,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 350,
@@ -17776,7 +17878,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 350,
@@ -17805,7 +17907,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 450,
@@ -17833,7 +17935,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 500,
@@ -17863,7 +17965,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 550,
@@ -17894,7 +17996,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "shots": 1,
@@ -17919,7 +18021,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 275,
@@ -17949,7 +18051,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 550,
@@ -17979,7 +18081,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 260,
@@ -18010,7 +18112,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 300,
@@ -18041,7 +18143,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 250,
@@ -18066,7 +18168,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 400,
@@ -18096,7 +18198,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "def": 5
@@ -18119,7 +18221,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 400,
@@ -18149,7 +18251,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "shots": 3,
@@ -18178,7 +18280,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 125,
@@ -18208,7 +18310,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 700,
@@ -18232,7 +18334,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 350,
@@ -18263,7 +18365,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 500,
@@ -18294,7 +18396,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 500,
@@ -18325,7 +18427,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 260,
@@ -18356,7 +18458,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "dmgMin": 500,
@@ -18387,7 +18489,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "shots": 3,
@@ -18414,7 +18516,7 @@
     "type": "ability",
     "abilityType": "wakizashi",
     "classes": [
-      "samurai"
+      "kensei"
     ],
     "stats": {
       "def": 5
