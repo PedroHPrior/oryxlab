@@ -37999,5 +37999,78 @@
     "sprite": "peacekeeper-rehearsal",
     "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7g3LgHR.png",
     "weaponType": "wand"
+  },
+  {
+    "id": "orb-of-sweet-demise",
+    "slug": "orb-of-sweet-demise",
+    "name": "Orb of Sweet Demise",
+    "tier": "UT",
+    "tierNumeric": 99,
+    "rarity": "ut",
+    "type": "ability",
+    "abilityType": "orb",
+    "classes": [
+      "mystic"
+    ],
+    "stats": {},
+    "tags": [],
+    "sprite": "orb-of-sweet-demise",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/nuRdcXC.png"
+  },
+  {
+    "id": "karma-orb",
+    "slug": "karma-orb",
+    "name": "Karma Orb",
+    "tier": "UT",
+    "tierNumeric": 99,
+    "rarity": "ut",
+    "type": "ability",
+    "abilityType": "orb",
+    "classes": [
+      "mystic"
+    ],
+    "stats": {
+      "cooldown": 0.5
+    },
+    "tags": [],
+    "sprite": "karma-orb",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/BWUKpN6.png"
+  },
+  {
+    "id": "orb-of-aether",
+    "slug": "orb-of-aether",
+    "name": "Orb of Aether",
+    "tier": "UT",
+    "tierNumeric": 99,
+    "rarity": "ut",
+    "type": "ability",
+    "abilityType": "orb",
+    "classes": [
+      "mystic"
+    ],
+    "stats": {
+      "cooldown": 5
+    },
+    "tags": [],
+    "sprite": "orb-of-aether",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/dLSVqgP.png"
+  },
+  {
+    "id": "vial-of-sustenance",
+    "slug": "vial-of-sustenance",
+    "name": "Vial of Sustenance",
+    "tier": "ST",
+    "tierNumeric": 99,
+    "rarity": "st",
+    "type": "ring",
+    "classes": [],
+    "stats": {
+      "mp": 70,
+      "spd": 5,
+      "dex": 7
+    },
+    "tags": [],
+    "sprite": "vial-of-sustenance",
+    "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/JTjlV7L.png"
   }
 ]
