@@ -16,6 +16,7 @@
     "preview": "vite preview",
     "scrape:items": "node scripts/scrape/scrape-items.mjs",
     "scrape:classes": "node scripts/scrape/scrape-classes.mjs",
+    "build:og": "node scripts/build-og-image.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -52,6 +53,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@resvg/resvg-js": "^2.6.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",

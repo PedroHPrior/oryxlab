@@ -12,8 +12,7 @@ const InventoryRoute = lazy(() => import("@/app/routes/InventoryRoute").then((m)
 const BuildEditorRoute = lazy(() => import("@/app/routes/BuildEditorRoute").then((m) => ({ default: m.BuildEditorRoute })))
 
 export const router = createBrowserRouter([
-  // Root redirects to /app — the Design OS planning surface that used to live
-  // here graduated into the actual product.
+  // The actual product lives under /app. The bare root redirects there.
   { path: "/", element: <Navigate to="/app" replace /> },
   {
     path: "/app",

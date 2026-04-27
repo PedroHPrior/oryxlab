@@ -28,7 +28,9 @@ coverage/
 # Local audit screenshots
 .audit/
 
-# Claude Code session state
-.claude/scheduled_tasks.lock
-.claude/agents/
+# Maintainer-private notes (launch checklists, Reddit drafts, screenshot recipes)
+.notes/
+
+# Claude Code workspace state (per-developer, never committed)
+.claude/
 .mcp.json

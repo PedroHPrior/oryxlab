@@ -8,6 +8,7 @@ import {
   FocusView,
   TableView,
   ViewModeToggle,
+  WelcomeBanner,
 } from "./components"
 
 export function ComparatorView({
@@ -39,6 +40,7 @@ export function ComparatorView({
 
   return (
     <div className="flex flex-col gap-4" style={{ fontFamily: '"Inter", system-ui, sans-serif' }}>
+      <WelcomeBanner />
       <header className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
