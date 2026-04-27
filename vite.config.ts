@@ -27,23 +27,27 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Pre-cache the SPA shell + data files. RealmEye sprite CDN is cached
-        // on first visit per item.
+        // Pre-cache the SPA shell + data files.
         globPatterns: ['**/*.{js,css,html,svg,woff2,json}'],
         // 1500-item items.json is ~800KB — bump default 2MB cap to avoid
         // workbox refusing to precache it.
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        // The previous SW used a CacheFirst rule for /s/* on RealmEye that
+        // poisoned itself with failed opaque responses when the server
+        // briefly served Referrer-Policy: no-referrer. Even after the header
+        // was fixed, CacheFirst kept replaying the broken cache entries —
+        // every sprite stayed broken on returning visits. cleanupOutdatedCaches
+        // drops the old precache; not adding a runtimeCaching rule for
+        // RealmEye means the browser's HTTP cache handles it instead, which
+        // is more robust (RealmEye already serves max-age=2592000).
+        cleanupOutdatedCaches: true,
+        // skipWaiting + clientsClaim make the new SW take over immediately
+        // after install instead of waiting for all tabs to close. Without
+        // these, users with the old (poisoned) SW would keep seeing broken
+        // sprites until they manually quit the browser.
+        skipWaiting: true,
+        clientsClaim: true,
         runtimeCaching: [
-          {
-            // RealmEye sprites — cache opportunistically with a long TTL.
-            urlPattern: /^https:\/\/www\.realmeye\.com\/s\/.*$/,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'realmeye-sprites',
-              expiration: { maxEntries: 2000, maxAgeSeconds: 30 * 24 * 60 * 60 },
-              cacheableResponse: { statuses: [0, 200] },
-            },
-          },
           {
             // API responses — network-first with short cache for offline mode.
             urlPattern: /\/api\/.*$/,
