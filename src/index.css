@@ -260,7 +260,7 @@
   /* Build-id marker — forces a unique CSS output hash on each deploy so the
    * CDN can't serve a stale 500-error response cached against an old hash.
    * The selector itself is never matched in markup. */
-  .oryx-build-bid-9eff0f4-noetag { display: none; }
+  .oryx-build-bid-0105726-class-picker { display: none; }
 }
 
 /* driver.js — restyle the onboarding tour to match the OryxLab dark theme */
