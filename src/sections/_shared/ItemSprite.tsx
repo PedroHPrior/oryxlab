@@ -70,7 +70,6 @@ export function ItemSprite({
           alt={name ?? spriteId}
           loading="lazy"
           decoding="async"
-          referrerPolicy="no-referrer"
           onError={() => setImgFailed(true)}
           className="h-full w-full object-contain"
           style={{ imageRendering: "pixelated" }}

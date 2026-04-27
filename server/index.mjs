@@ -64,9 +64,16 @@ app.use(
       },
     },
     crossOriginEmbedderPolicy: false, // RealmEye sprites are not COEP-compliant
+    // Helmet's default Referrer-Policy is `no-referrer`, which strips the
+    // Referer on every cross-origin image load. RealmEye's image CDN appears
+    // to require a referer (hotlink protection) and otherwise rejects the
+    // request — every sprite came back as ERR_FAILED, falling back to SVG
+    // placeholders. `strict-origin-when-cross-origin` sends only the origin
+    // (`https://www.oryxlab.app/`) cross-origin, matching modern browser
+    // defaults — privacy-preserving without breaking hotlink-checked CDNs.
+    referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
     // Strict-Transport-Security, X-Content-Type-Options: nosniff, X-Frame-
-    // Options: DENY, Referrer-Policy, X-DNS-Prefetch-Control all come from
-    // helmet defaults.
+    // Options: DENY, X-DNS-Prefetch-Control all come from helmet defaults.
   }),
 )
 
