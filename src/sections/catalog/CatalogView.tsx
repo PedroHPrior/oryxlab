@@ -31,7 +31,6 @@ export function CatalogView({
   onClearFilters,
   onToggleQuickCompareItem,
   onOpenQuickCompare,
-  onCloseQuickCompare,
   onOpenItemDetail,
   onAddItemToComparator,
 }: CatalogProps) {
