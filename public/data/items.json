@@ -682,8 +682,7 @@
       "range": 6.6,
       "lifetime": 0.458,
       "projectileSpeed": 14.4,
-      "shots": 1,
-      "procRate": 0.1
+      "shots": 1
     },
     "tags": [],
     "sprite": "wand-of-the-fallen",
@@ -713,7 +712,8 @@
       "dex": 4,
       "wis": 4,
       "procDamage": 200,
-      "shots": 1
+      "shots": 1,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "conducting-wand",
@@ -910,7 +910,8 @@
       "range": 9.42,
       "lifetime": 10,
       "projectileSpeed": 0.94248,
-      "procDamage": 450
+      "procDamage": 450,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "fortitude",
@@ -4497,7 +4498,6 @@
       "range": 4.5,
       "lifetime": 0.45,
       "projectileSpeed": 10,
-      "procDamage": 37.5,
       "shots": 1
     },
     "tags": [],
@@ -4604,7 +4604,8 @@
       "lifetime": 0.26,
       "projectileSpeed": 13,
       "procDamage": 115,
-      "shots": 2
+      "shots": 2,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "sword-of-illumination",
@@ -4686,7 +4687,6 @@
       "lifetime": 0.22,
       "projectileSpeed": 15,
       "spd": 3,
-      "procDamage": 42.5,
       "shots": 1
     },
     "tags": [],
@@ -4821,7 +4821,8 @@
       "lifetime": 0.267,
       "projectileSpeed": 15,
       "procDamage": 700,
-      "shots": 1
+      "shots": 1,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "divinity",
@@ -5729,7 +5730,8 @@
       "lifetime": 0.267,
       "projectileSpeed": 15,
       "procDamage": 700,
-      "shots": 1
+      "shots": 1,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "eternal-echo",
@@ -6249,8 +6251,7 @@
       "dmgMax": 120,
       "dmgAvg": 95,
       "shots": 2,
-      "range": 8.55,
-      "procRate": 0.04
+      "range": 8.55
     },
     "tags": [],
     "sprite": "staff-of-the-cosmic-whole",
@@ -6302,8 +6303,7 @@
       "range": 8.55,
       "lifetime": 0.475,
       "projectileSpeed": 18,
-      "shots": 2,
-      "procRate": 0.05
+      "shots": 2
     },
     "tags": [],
     "sprite": "staff-of-the-fundamental-core",
@@ -6464,9 +6464,7 @@
       "range": 4.004,
       "lifetime": 0.364,
       "projectileSpeed": 11,
-      "procDamage": 60,
-      "shots": 10,
-      "procRate": 0.05
+      "shots": 10
     },
     "tags": [],
     "sprite": "staff-of-extreme-prejudice",
@@ -8423,7 +8421,6 @@
       "range": 10.92,
       "lifetime": 0.42,
       "projectileSpeed": 13,
-      "procDamage": 80,
       "shots": 1
     },
     "tags": [],
@@ -8480,7 +8477,8 @@
       "lifetime": 0.4,
       "projectileSpeed": 13,
       "procDamage": 350,
-      "shots": 1
+      "shots": 1,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "doku-no-ken",
@@ -10056,7 +10054,6 @@
       "range": 5.6,
       "lifetime": 0.4,
       "projectileSpeed": 14,
-      "procDamage": 12,
       "shots": 1
     },
     "tags": [],
@@ -10084,7 +10081,6 @@
       "range": 5.02,
       "lifetime": 0.32,
       "projectileSpeed": 15,
-      "procDamage": 87.5,
       "shots": 1
     },
     "tags": [],
@@ -10728,7 +10724,8 @@
       "projectileSpeed": 13,
       "cooldown": 0.4,
       "duration": 1,
-      "procDamage": 500
+      "procDamage": 500,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "toxic-toad",
@@ -11678,7 +11675,8 @@
     "stats": {
       "att": 4,
       "dex": 4,
-      "procDamage": 450
+      "procDamage": 450,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "wavecrest-concertina",
@@ -11817,7 +11815,8 @@
     ],
     "stats": {
       "def": 5,
-      "procDamage": 225
+      "procDamage": 225,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "thundering-chorus",
@@ -11839,7 +11838,8 @@
       "range": 5,
       "att": 5,
       "cooldown": 12,
-      "procDamage": 100
+      "procDamage": 100,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "sacred-lute",
@@ -11949,7 +11949,8 @@
     "stats": {
       "att": 4,
       "dex": 4,
-      "procDamage": 450
+      "procDamage": 450,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "joker-timbrel",
@@ -11970,7 +11971,8 @@
     "stats": {
       "att": 4,
       "dex": 4,
-      "procDamage": 450
+      "procDamage": 450,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "ghost-ship-s-bell",
@@ -12411,7 +12413,8 @@
       "projectileSpeed": 9,
       "hp": 30,
       "dex": 5,
-      "procDamage": 550
+      "procDamage": 550,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "peacekeeper",
@@ -12436,7 +12439,8 @@
       "range": 7,
       "lifetime": 7,
       "att": 5,
-      "procDamage": 1250
+      "procDamage": 1250,
+      "procRate": 0.08
     },
     "tags": [],
     "sprite": "b-o-o-m",
@@ -12614,7 +12618,8 @@
       "range": 7,
       "lifetime": 7,
       "att": 5,
-      "procDamage": 1250
+      "procDamage": 1250,
+      "procRate": 0.08
     },
     "tags": [],
     "sprite": "ghastly-mace",
@@ -13111,8 +13116,7 @@
       "rateOfFireMod": 1,
       "range": 6.6,
       "lifetime": 0.44,
-      "projectileSpeed": 15,
-      "procDamage": 75
+      "projectileSpeed": 15
     },
     "tags": [],
     "sprite": "royal-sekhem",
@@ -13578,8 +13582,7 @@
       "dmgMin": 90,
       "dmgMax": 120,
       "shots": 1,
-      "range": 4.608,
-      "procDamage": 75
+      "range": 4.608
     },
     "tags": [],
     "sprite": "ritual-khopesh",
@@ -14045,7 +14048,6 @@
       "range": 7.04,
       "lifetime": 0.44,
       "projectileSpeed": 16,
-      "procDamage": 75,
       "shots": 3
     },
     "tags": [],
@@ -14521,7 +14523,8 @@
       "range": 2.625,
       "lifetime": 0.7,
       "projectileSpeed": 7.5,
-      "procDamage": 362.5
+      "procDamage": 362.5,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "egg-basher",
@@ -14629,8 +14632,7 @@
       "rateOfFireMod": 0.5,
       "range": 1.88,
       "lifetime": 0.75,
-      "projectileSpeed": 5,
-      "procDamage": 75
+      "projectileSpeed": 5
     },
     "tags": [],
     "sprite": "gilded-chain-scythe",
@@ -15138,8 +15140,7 @@
       "rateOfFireMod": 0.9,
       "range": 7.5,
       "lifetime": 0.4,
-      "projectileSpeed": 16,
-      "procDamage": 75
+      "projectileSpeed": 16
     },
     "tags": [],
     "sprite": "obsidian-macuahuitl",
@@ -15584,8 +15585,7 @@
       "rateOfFireMod": 1.1,
       "range": 4.8,
       "lifetime": 0.4,
-      "projectileSpeed": 12,
-      "procDamage": 75
+      "projectileSpeed": 12
     },
     "tags": [],
     "sprite": "pirate-s-sidearms",
@@ -15637,8 +15637,7 @@
       "range": 16,
       "lifetime": 1,
       "projectileSpeed": 16,
-      "mpCost": 20,
-      "procRate": 1
+      "mpCost": 20
     },
     "tags": [],
     "sprite": "fire-spray-spell",
@@ -15692,8 +15691,7 @@
       "lifetime": 1,
       "projectileSpeed": 16,
       "wis": 2,
-      "mpCost": 40,
-      "procRate": 1
+      "mpCost": 40
     },
     "tags": [],
     "sprite": "fire-nova-spell",
@@ -15874,7 +15872,6 @@
       "projectileSpeed": 1.2,
       "def": 3,
       "spd": 3,
-      "procRate": 0.2,
       "mpCost": 85
     },
     "tags": [],
@@ -15928,7 +15925,6 @@
       "lifetime": 0.5,
       "projectileSpeed": 15,
       "def": 15,
-      "procRate": 0.5,
       "mpCost": 100
     },
     "tags": [],
@@ -16097,9 +16093,7 @@
     ],
     "stats": {
       "mpCost": 120,
-      "procDamage": 350,
-      "cooldown": 4,
-      "procRate": 1
+      "cooldown": 4
     },
     "tags": [],
     "sprite": "genesis-spell",
@@ -16172,7 +16166,6 @@
       "projectileSpeed": 0,
       "mp": 20,
       "vit": 5,
-      "procDamage": 95,
       "mpCost": 90
     },
     "tags": [],
@@ -16455,7 +16448,6 @@
       "dmgMin": 85,
       "dmgMax": 145,
       "dmgAvg": 115,
-      "procDamage": 95,
       "mpCost": 90
     },
     "tags": [],
@@ -16767,7 +16759,8 @@
       "vit": 4,
       "cooldown": 2,
       "procDamage": 750,
-      "mpCost": 90
+      "mpCost": 90,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "doom-s-emblem",
@@ -16854,7 +16847,8 @@
       "vit": 5,
       "cooldown": 5,
       "procDamage": 175,
-      "mpCost": 140
+      "mpCost": 140,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "abyssal-insignia",
@@ -16878,7 +16872,8 @@
       "spd": -5,
       "cooldown": 4.5,
       "procDamage": 200,
-      "mpCost": 200
+      "mpCost": 200,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "symbol-of-the-lost",
@@ -17016,7 +17011,8 @@
       "vit": 5,
       "cooldown": 5,
       "procDamage": 175,
-      "mpCost": 140
+      "mpCost": 140,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "carrot-cake-crest",
@@ -17333,7 +17329,6 @@
       "att": 15,
       "dex": -3,
       "cooldown": 3,
-      "procRate": 0.33,
       "mpCost": 120
     },
     "tags": [],
@@ -18423,7 +18418,8 @@
       "att": 4,
       "dex": 2,
       "procDamage": 250,
-      "mpCost": 150
+      "mpCost": 150,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "ritual-skull",
@@ -18590,7 +18586,8 @@
       "att": 4,
       "dex": 2,
       "procDamage": 250,
-      "mpCost": 150
+      "mpCost": 150,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "mask-of-passion",
@@ -19028,7 +19025,6 @@
       "att": 5,
       "wis": 3,
       "cooldown": 5.5,
-      "procDamage": 6,
       "mpCost": 85
     },
     "tags": [],
@@ -19073,7 +19069,8 @@
       "mpCost": 90,
       "spd": 5,
       "cooldown": 5.5,
-      "procDamage": 150
+      "procDamage": 150,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "spectre-cloak",
@@ -19508,7 +19505,8 @@
       "def": 10,
       "cooldown": 6.5,
       "procDamage": 1000,
-      "mpCost": 95
+      "mpCost": 95,
+      "procRate": 0.08
     },
     "tags": [],
     "sprite": "helm-of-exalted-might",
@@ -19530,7 +19528,8 @@
       "def": 6,
       "spd": 6,
       "procDamage": 120,
-      "mpCost": 80
+      "mpCost": 80,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "hivemaster-helm",
@@ -20148,7 +20147,6 @@
       "lifetime": 0.35,
       "projectileSpeed": 18,
       "att": 5,
-      "procRate": 0.2,
       "mpCost": 120
     },
     "tags": [],
@@ -20347,7 +20345,8 @@
       "projectileSpeed": 22.5,
       "hp": 50,
       "procDamage": 175,
-      "mpCost": 90
+      "mpCost": 90,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "sublimation-sidearm",
@@ -20775,7 +20774,8 @@
       "range": 6,
       "def": 5,
       "procDamage": 200,
-      "mpCost": 100
+      "mpCost": 100,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "siege-scepter",
@@ -20869,7 +20869,8 @@
       "hp": 50,
       "vit": 5,
       "procDamage": 175,
-      "mpCost": 100
+      "mpCost": 100,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "tezutsu-hanabi",
@@ -20912,7 +20913,8 @@
       "dmgMax": 160,
       "dmgAvg": 120,
       "procDamage": 120,
-      "mpCost": 120
+      "mpCost": 120,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "totem-scepter",
@@ -21309,7 +21311,8 @@
       "dex": 4,
       "cooldown": 2,
       "procDamage": 600,
-      "mpCost": 110
+      "mpCost": 110,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "orb-of-conquest",
@@ -21486,7 +21489,8 @@
     "stats": {
       "mp": -50,
       "procDamage": 250,
-      "mpCost": 180
+      "mpCost": 180,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "cosmic-astrolabe",
@@ -21584,8 +21588,6 @@
       "lifetime": 0.35,
       "projectileSpeed": 40,
       "dex": 8,
-      "procRate": 0.33,
-      "procDamage": 90,
       "mpCost": 105
     },
     "tags": [],
@@ -21848,7 +21850,6 @@
       "projectileSpeed": 25,
       "att": 15,
       "dex": 15,
-      "procRate": 0.33,
       "mpCost": 105
     },
     "tags": [],
@@ -22459,7 +22460,8 @@
       "att": 2,
       "dex": 2,
       "procDamage": 100,
-      "mpCost": 40
+      "mpCost": 40,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "mouse-trap",
@@ -22527,7 +22529,8 @@
       "spd": 5,
       "duration": 8,
       "procDamage": 225,
-      "mpCost": 100
+      "mpCost": 100,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "blacklight-artifice",
@@ -23173,7 +23176,8 @@
     ],
     "stats": {
       "mpCost": 60,
-      "procDamage": 1000
+      "procDamage": 1000,
+      "procRate": 0.08
     },
     "tags": [],
     "sprite": "ase-s-echo",
@@ -23269,8 +23273,7 @@
     "stats": {
       "att": 4,
       "dex": 4,
-      "cooldown": 2,
-      "procRate": 0.5
+      "cooldown": 2
     },
     "tags": [
       "on-equip"
@@ -23310,8 +23313,7 @@
       "trickster"
     ],
     "stats": {
-      "mpCost": 65,
-      "procDamage": 0
+      "mpCost": 65
     },
     "tags": [],
     "sprite": "brain-of-the-golem",
@@ -23330,7 +23332,8 @@
     ],
     "stats": {
       "mpCost": 150,
-      "procDamage": 1000
+      "procDamage": 1000,
+      "procRate": 0.08
     },
     "tags": [],
     "sprite": "accursed-memory",
@@ -23465,8 +23468,7 @@
       "trickster"
     ],
     "stats": {
-      "mpCost": 65,
-      "procDamage": 0
+      "mpCost": 65
     },
     "tags": [],
     "sprite": "pumpkin-prism",
@@ -23734,7 +23736,8 @@
       "mp": 60,
       "wis": 7,
       "procDamage": 250,
-      "mpCost": 160
+      "mpCost": 160,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "tome-of-the-tarnished-gods",
@@ -23805,8 +23808,7 @@
       "lifetime": 0.4,
       "projectileSpeed": 25,
       "dex": 12,
-      "hp": 60,
-      "procRate": 0.5
+      "hp": 60
     },
     "tags": [
       "on-equip"
@@ -23836,7 +23838,6 @@
       "hp": -100,
       "mp": 50,
       "cooldown": 3,
-      "procDamage": 95,
       "mpCost": 115
     },
     "tags": [],
@@ -24089,8 +24090,7 @@
       "lifetime": 0.4,
       "projectileSpeed": 25,
       "dex": 12,
-      "hp": 60,
-      "procRate": 0.5
+      "hp": 60
     },
     "tags": [
       "on-equip"
@@ -24630,7 +24630,8 @@
       "spd": 7,
       "def": 10,
       "procDamage": 1100,
-      "mpCost": 100
+      "mpCost": 100,
+      "procRate": 0.08
     },
     "tags": [],
     "sprite": "oryx-s-escutcheon",
@@ -25239,8 +25240,7 @@
       "mp": 50,
       "att": 3,
       "def": 3,
-      "duration": 2,
-      "procRate": 0.33
+      "duration": 2
     },
     "tags": [
       "on-equip"
@@ -25287,7 +25287,8 @@
       "def": 2,
       "dex": 4,
       "procDamage": 2500,
-      "mpCost": 100
+      "mpCost": 100,
+      "procRate": 0.06
     },
     "tags": [],
     "sprite": "bottled-medusozoan",
@@ -25335,7 +25336,8 @@
       "cooldown": 5,
       "duration": 10,
       "procDamage": 160,
-      "mpCost": 120
+      "mpCost": 120,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "pollen-incendiary",
@@ -27160,7 +27162,8 @@
       "def": 15,
       "dex": 4,
       "spd": 4,
-      "procDamage": 275
+      "procDamage": 275,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "snakeskin-armor",
@@ -27187,8 +27190,7 @@
     "stats": {
       "def": 18,
       "spd": 5,
-      "wis": 5,
-      "procDamage": 40
+      "wis": 5
     },
     "tags": [],
     "sprite": "blue-beehemoth-armor",
@@ -27215,8 +27217,7 @@
     "stats": {
       "def": 18,
       "spd": 5,
-      "vit": 8,
-      "procDamage": 40
+      "vit": 8
     },
     "tags": [],
     "sprite": "red-beehemoth-armor",
@@ -27243,8 +27244,7 @@
     "stats": {
       "def": 18,
       "spd": 5,
-      "dex": 3,
-      "procDamage": 40
+      "dex": 3
     },
     "tags": [],
     "sprite": "yellow-beehemoth-armor",
@@ -27272,8 +27272,7 @@
       "hp": 60,
       "def": 18,
       "spd": 5,
-      "vit": -5,
-      "procDamage": 40
+      "vit": -5
     },
     "tags": [],
     "sprite": "green-beehemoth-armor",
@@ -28277,7 +28276,8 @@
       "def": 14,
       "dex": 8,
       "wis": 8,
-      "procDamage": 550
+      "procDamage": 550,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "bachelor-s-tuxedo",
@@ -29947,7 +29947,8 @@
       "hp": 20,
       "def": 16,
       "spd": 4,
-      "procDamage": 300
+      "procDamage": 300,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "big-bad-fursuit",
@@ -29973,7 +29974,8 @@
       "def": 12,
       "hp": 50,
       "vit": 3,
-      "procDamage": 350
+      "procDamage": 350,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "platinum-segmentata",
@@ -30865,7 +30867,8 @@
     "stats": {
       "mp": 180,
       "wis": 16,
-      "procDamage": 450
+      "procDamage": 450,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "tlatoani-s-shroud",
@@ -33752,8 +33755,7 @@
     "classes": [],
     "stats": {
       "dex": 4,
-      "wis": 4,
-      "procRate": 0.5
+      "wis": 4
     },
     "tags": [],
     "sprite": "crystal-bone-ring",
@@ -33771,7 +33773,8 @@
     "stats": {
       "vit": 5,
       "def": 5,
-      "procDamage": 800
+      "procDamage": 800,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "spider-s-eye-ring",
@@ -35134,7 +35137,8 @@
     "stats": {
       "hp": 75,
       "dex": 5,
-      "procDamage": 162.5
+      "procDamage": 162.5,
+      "procRate": 0.2
     },
     "tags": [],
     "sprite": "lucky-grenade",
@@ -35629,8 +35633,7 @@
       "hp": 60,
       "att": 6,
       "def": 4,
-      "spd": 4,
-      "procRate": 0.05
+      "spd": 4
     },
     "tags": [],
     "sprite": "protective-gloves",
@@ -35754,8 +35757,7 @@
     "stats": {
       "hp": 10,
       "mp": 10,
-      "dex": 7,
-      "procDamage": 65
+      "dex": 7
     },
     "tags": [],
     "sprite": "amulet-of-superior-dexterity",
@@ -35773,8 +35775,7 @@
     "stats": {
       "hp": 10,
       "mp": 10,
-      "vit": 7,
-      "procDamage": 65
+      "vit": 7
     },
     "tags": [],
     "sprite": "amulet-of-superior-vitality",
@@ -35792,8 +35793,7 @@
     "stats": {
       "hp": 10,
       "mp": 10,
-      "wis": 7,
-      "procDamage": 65
+      "wis": 7
     },
     "tags": [],
     "sprite": "amulet-of-superior-wisdom",
@@ -35883,8 +35883,7 @@
     "stats": {
       "hp": 20,
       "mp": 20,
-      "dex": 8,
-      "procDamage": 65
+      "dex": 8
     },
     "tags": [],
     "sprite": "amulet-of-paramount-dexterity",
@@ -35902,8 +35901,7 @@
     "stats": {
       "hp": 20,
       "mp": 20,
-      "vit": 8,
-      "procDamage": 65
+      "vit": 8
     },
     "tags": [],
     "sprite": "amulet-of-paramount-vitality",
@@ -35921,8 +35919,7 @@
     "stats": {
       "hp": 20,
       "mp": 20,
-      "wis": 8,
-      "procDamage": 65
+      "wis": 8
     },
     "tags": [],
     "sprite": "amulet-of-paramount-wisdom",
@@ -35994,8 +35991,7 @@
     "stats": {
       "hp": 30,
       "mp": 30,
-      "dex": 9,
-      "procDamage": 65
+      "dex": 9
     },
     "tags": [],
     "sprite": "amulet-of-exalted-dexterity",
@@ -36013,8 +36009,7 @@
     "stats": {
       "hp": 30,
       "mp": 30,
-      "vit": 9,
-      "procDamage": 65
+      "vit": 9
     },
     "tags": [],
     "sprite": "amulet-of-exalted-vitality",
@@ -36032,8 +36027,7 @@
     "stats": {
       "hp": 30,
       "mp": 30,
-      "wis": 9,
-      "procDamage": 65
+      "wis": 9
     },
     "tags": [],
     "sprite": "amulet-of-exalted-wisdom",
@@ -36163,8 +36157,7 @@
     "stats": {
       "hp": 40,
       "mp": 40,
-      "dex": 10,
-      "procDamage": 65
+      "dex": 10
     },
     "tags": [],
     "sprite": "amulet-of-unbound-dexterity",
@@ -36182,8 +36175,7 @@
     "stats": {
       "hp": 40,
       "mp": 40,
-      "vit": 10,
-      "procDamage": 65
+      "vit": 10
     },
     "tags": [],
     "sprite": "amulet-of-unbound-vitality",
@@ -36201,8 +36193,7 @@
     "stats": {
       "hp": 40,
       "mp": 40,
-      "wis": 10,
-      "procDamage": 65
+      "wis": 10
     },
     "tags": [],
     "sprite": "amulet-of-unbound-wisdom",
@@ -36554,8 +36545,7 @@
     "stats": {
       "hp": 50,
       "mp": 50,
-      "dex": 11,
-      "procDamage": 65
+      "dex": 11
     },
     "tags": [],
     "sprite": "amulet-of-transcendent-dexterity",
@@ -36573,8 +36563,7 @@
     "stats": {
       "hp": 50,
       "mp": 50,
-      "vit": 11,
-      "procDamage": 65
+      "vit": 11
     },
     "tags": [],
     "sprite": "amulet-of-transcendent-vitality",
@@ -36592,8 +36581,7 @@
     "stats": {
       "hp": 50,
       "mp": 50,
-      "wis": 11,
-      "procDamage": 65
+      "wis": 11
     },
     "tags": [],
     "sprite": "amulet-of-transcendent-wisdom",
@@ -38001,7 +37989,8 @@
       "shots": 1,
       "hp": 30,
       "dex": 5,
-      "procDamage": 440
+      "procDamage": 440,
+      "procRate": 0.15
     },
     "tags": [],
     "sprite": "peacekeeper-rehearsal",
