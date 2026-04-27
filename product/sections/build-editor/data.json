@@ -102,7 +102,8 @@
         "high-damage"
       ],
       "sprite": "crystal_wand",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/k6tGqcD.png"
+      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/k6tGqcD.png",
+      "rarity": "ut"
     },
     {
       "id": "ep",

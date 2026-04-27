@@ -63,57 +63,98 @@
       "id": "oryx-3-marble",
       "label": "Oryx 3 · Marble Defender",
       "targetDefense": 50,
-      "targetStatuses": ["armorBroken"],
-      "partyBuffs": ["paladinSeal", "bardInspire"]
+      "targetStatuses": [
+        "armorBroken"
+      ],
+      "partyBuffs": [
+        "paladinSeal",
+        "bardInspire"
+      ]
     },
     {
       "id": "oryx-3-sword",
       "label": "Oryx 3 · Sword Phase",
       "targetDefense": 60,
-      "targetStatuses": ["exposed"],
-      "partyBuffs": ["paladinSeal", "bardInspire", "warriorHelm"]
+      "targetStatuses": [
+        "exposed"
+      ],
+      "partyBuffs": [
+        "paladinSeal",
+        "bardInspire",
+        "warriorHelm"
+      ]
     },
     {
       "id": "void-entity",
       "label": "Void Entity",
       "targetDefense": 70,
-      "targetStatuses": ["exposed"],
-      "partyBuffs": ["paladinSeal", "bardInspire", "warriorHelm"]
+      "targetStatuses": [
+        "exposed"
+      ],
+      "partyBuffs": [
+        "paladinSeal",
+        "bardInspire",
+        "warriorHelm"
+      ]
     },
     {
       "id": "lost-halls",
       "label": "Lost Halls bosses",
       "targetDefense": 40,
-      "targetStatuses": ["armorBroken"],
-      "partyBuffs": ["paladinSeal", "bardInspire"]
+      "targetStatuses": [
+        "armorBroken"
+      ],
+      "partyBuffs": [
+        "paladinSeal",
+        "bardInspire"
+      ]
     },
     {
       "id": "shatters",
       "label": "The Shatters",
       "targetDefense": 35,
-      "targetStatuses": ["armorBroken"],
-      "partyBuffs": ["paladinSeal", "bardInspire"]
+      "targetStatuses": [
+        "armorBroken"
+      ],
+      "partyBuffs": [
+        "paladinSeal",
+        "bardInspire"
+      ]
     },
     {
       "id": "crystal-cavern",
       "label": "Crystal Cavern",
       "targetDefense": 25,
-      "targetStatuses": ["armorBroken"],
-      "partyBuffs": ["paladinSeal"]
+      "targetStatuses": [
+        "armorBroken"
+      ],
+      "partyBuffs": [
+        "paladinSeal"
+      ]
     },
     {
       "id": "fungal",
       "label": "Fungal Cavern",
       "targetDefense": 60,
-      "targetStatuses": ["exposed"],
-      "partyBuffs": ["paladinSeal", "bardInspire"]
+      "targetStatuses": [
+        "exposed"
+      ],
+      "partyBuffs": [
+        "paladinSeal",
+        "bardInspire"
+      ]
     },
     {
       "id": "nightmare-colony",
       "label": "Nightmare Colony (parasite)",
       "targetDefense": 100,
-      "targetStatuses": ["armorBroken"],
-      "partyBuffs": ["paladinSeal", "bardInspire"]
+      "targetStatuses": [
+        "armorBroken"
+      ],
+      "partyBuffs": [
+        "paladinSeal",
+        "bardInspire"
+      ]
     },
     {
       "id": "party-o3",
@@ -409,7 +450,7 @@
     {
       "id": "robe-of-the-master",
       "name": "Robe of the Grand Sorcerer",
-      "tier": "T14",
+      "tier": "T8",
       "rarity": "tiered",
       "type": "armor",
       "classes": [

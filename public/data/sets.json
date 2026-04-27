@@ -1,242 +1,103 @@
 [
   {
-    "id": "coral-huntress-set",
-    "name": "Coral Huntress Set",
-    "classId": "huntress",
+    "id": "acidified-assassin-set",
+    "name": "Acidified Assassin Set",
+    "classId": "assassin",
     "items": [
-      "coral-bow",
-      "coral-venom-trap",
-      "coral-silk-armor",
-      "coral-ring"
+      "toxin-tooth",
+      "virulent-venom",
+      "acidic-armor",
+      "pernicious-peridot"
     ],
-    "setBonus": "+75 MP, +16 DEF, +12 SPD, +8 DEX, +5 WIS",
+    "setBonus": "+2 ATT, +5 DEF, -5 SPD, +5 VIT 3rd Piece Bonus +50 MP, +3 ATT, +5 DEF, +10 VIT 4th Piece Bonus +100 HP, +10 ATT, +10 DEF, +15 VIT Subtotal of Bonuses +100 HP, +15 ATT, +20 DEF, -5 SPD, +30 VIT Overall Stat Bonus TBA",
     "setBonusStats": {
-      "mp": 75,
-      "def": 16,
-      "spd": 12,
-      "dex": 8,
-      "wis": 5
+      "att": 15,
+      "def": 20,
+      "vit": 30,
+      "mp": 50,
+      "hp": 100
     },
-    "sprite": "coral-huntress-set"
+    "sprite": "acidified-assassin-set"
   },
   {
-    "id": "crystal-necromancer-set",
-    "name": "Crystal Necromancer Set",
-    "classId": "necromancer",
+    "id": "akuma-slayer-set",
+    "name": "Akuma Slayer Set",
+    "classId": null,
     "items": [
-      "sealed-crystal-skull",
-      "staff-of-the-crystal-serpent",
-      "cracked-crystal-skull",
-      "robe-of-the-tlatoani",
-      "crystal-bone-ring"
+      "kamishimo",
+      "akuma-s-tear",
+      "kazekiri",
+      "ryu-s-blade"
     ],
-    "setBonus": "+50 HP, +45 MP, +3 DEX, +11 WIS",
+    "setBonus": "+2 DEF, +2 DEX, +4 SPD 3rd Piece Bonus +40 HP, +4 DEF, +4 DEX 4th Piece Bonus +60 HP, +4 DEF, +6 DEX, +4 VIT Subtotal of Bonuses +100 HP, +10 DEF, +4 SPD, +12 DEX, +4 VIT Overall Stat Bonus TBA",
     "setBonusStats": {
-      "hp": 50,
-      "mp": 45,
-      "dex": 3,
-      "wis": 11
+      "def": 10,
+      "dex": 12,
+      "spd": 4,
+      "hp": 100,
+      "vit": 4
     },
-    "sprite": "crystal-necromancer-set"
+    "sprite": "akuma-slayer-set"
   },
   {
-    "id": "purified-priest-set",
-    "name": "Purified Priest Set",
-    "classId": "priest",
+    "id": "alchemist-assassin-set",
+    "name": "Alchemist Assassin Set",
+    "classId": "assassin",
     "items": [
-      "robe-of-the-grand-sorcerer",
-      "tome-of-purification",
-      "chasuble-of-holy-light",
-      "ring-of-divine-faith"
+      "toxic-toad",
+      "makeshift-blowpipe",
+      "alchemist-s-disheveled-garbs",
+      "protective-gloves"
     ],
-    "setBonus": "+90 HP, +90 MP, +12 DEF, +27 VIT, +27 WIS",
+    "setBonus": "+6 DEF, +4 SPD 3rd Piece Bonus +50 MP, +6 ATT, +4 SPD 4th Piece Bonus +60 HP, +5 ATT, +6 DEF Subtotal of Bonuses +60 HP, +50 MP, +11 ATT, +12 DEF, +4 SPD Overall Stat Bonus TBA",
     "setBonusStats": {
-      "hp": 90,
-      "mp": 90,
       "def": 12,
-      "vit": 27,
-      "wis": 27
-    },
-    "sprite": "purified-priest-set"
-  },
-  {
-    "id": "ghostly-trickster-set",
-    "name": "Ghostly Trickster Set",
-    "classId": "trickster",
-    "items": [
-      "wyrmhide-armor",
-      "spirit-dagger",
-      "ghostly-prism",
-      "spectral-cloth-armor"
-    ],
-    "setBonus": "+50 HP, +6 ATT, +14 DEF, +3 SPD, +6 DEX",
-    "setBonusStats": {
-      "hp": 50,
-      "att": 6,
-      "def": 14,
-      "spd": 3,
-      "dex": 6
-    },
-    "sprite": "ghostly-trickster-set"
-  },
-  {
-    "id": "mad-scientist-sorcerer-set",
-    "name": "Mad Scientist Sorcerer Set",
-    "classId": "sorcerer",
-    "items": [
-      "conducting-wand",
-      "scepter-of-fulmination",
-      "robe-of-the-mad-scientist",
-      "experimental-ring"
-    ],
-    "setBonus": "+50 HP, +50 MP, +2 ATT, +16 DEF, +4 DEX, +9 VIT, +11 WIS",
-    "setBonusStats": {
-      "hp": 50,
+      "spd": 4,
       "mp": 50,
-      "att": 2,
-      "def": 16,
-      "dex": 4,
-      "vit": 9,
+      "att": 11,
+      "hp": 60
+    },
+    "sprite": "alchemist-assassin-set"
+  },
+  {
+    "id": "ancestral-shaman-set",
+    "name": "Ancestral Shaman Set",
+    "classId": null,
+    "items": [
+      "firestarter",
+      "ritualistic-pa-u",
+      "tiki-pendant"
+    ],
+    "setBonus": "+35 HP, +5 ATT, +5 DEX 3rd Piece Bonus +35 MP, +7 DEF, +7 SPD 4th Piece Bonus +10 ATT, +13 SPD, +15 DEX Subtotal of Bonuses +35 HP, +35 MP, +15 ATT, +7 DEF, +20 SPD, +20 DEX Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 35,
+      "att": 15,
+      "dex": 20,
+      "mp": 35,
+      "def": 7,
+      "spd": 20
+    },
+    "sprite": "ancestral-shaman-set"
+  },
+  {
+    "id": "angelic-bard-set",
+    "name": "Angelic Bard Set",
+    "classId": "bard",
+    "items": [
+      "angel-s-fanfare",
+      "wings-of-sanctity",
+      "heavenly-halo"
+    ],
+    "setBonus": "+20 HP, +3 DEF, +3 DEX 3rd Piece Bonus +20 HP, +40 MP, +3 DEX 4th Piece Bonus +40 HP, +20 MP, +5 DEF, +4 DEX Subtotal of Bonuses +80 HP, +60 MP, +8 DEF, +10 DEX Overall Stat Bonus +150 HP, +160 MP, +18 DEF, +15 DEX, +5 VIT, +11 WIS",
+    "setBonusStats": {
+      "hp": 150,
+      "def": 18,
+      "dex": 15,
+      "mp": 160,
+      "vit": 5,
       "wis": 11
     },
-    "sprite": "mad-scientist-sorcerer-set"
-  },
-  {
-    "id": "marble-paladin-set",
-    "name": "Marble Paladin Set",
-    "classId": "paladin",
-    "items": [
-      "sword-of-the-colossus",
-      "marble-seal",
-      "breastplate-of-new-life",
-      "magical-lodestone",
-      "his-majesty-s-eminence",
-      "omnipotence-ring"
-    ],
-    "setBonus": "+160 HP, +6 ATT, +25 DEF, +6 SPD, +6 DEX",
-    "setBonusStats": {
-      "hp": 160,
-      "att": 6,
-      "def": 25,
-      "spd": 6,
-      "dex": 6
-    },
-    "sprite": "marble-paladin-set"
-  },
-  {
-    "id": "cultist-necromancer-set",
-    "name": "Cultist Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "staff-of-unholy-sacrifice",
-      "skull-of-corrupted-souls",
-      "ritual-robe",
-      "bloodshed-ring"
-    ],
-    "setBonus": "+176 HP, +50 MP, +5 ATT, +18 DEF, +6 VIT, +28 WIS",
-    "setBonusStats": {
-      "hp": 176,
-      "mp": 50,
-      "att": 5,
-      "def": 18,
-      "vit": 6,
-      "wis": 28
-    },
-    "sprite": "cultist-necromancer-set"
-  },
-  {
-    "id": "void-archer-set",
-    "name": "Void Archer Set",
-    "classId": "archer",
-    "items": [
-      "warmonger",
-      "bow-of-deep-enchantment",
-      "bow-of-the-void",
-      "quiver-of-shadows",
-      "armor-of-nil",
-      "sourcestone"
-    ],
-    "setBonus": "+110 HP, +110 MP, +36 DEF, -1 SPD",
-    "setBonusStats": {
-      "hp": 110,
-      "mp": 110,
-      "def": 36
-    },
-    "sprite": "void-archer-set"
-  },
-  {
-    "id": "spirit-mystic-set",
-    "name": "Spirit Mystic Set",
-    "classId": "mystic",
-    "items": [
-      "spirit-staff",
-      "enchantment-orb",
-      "woodland-robe",
-      "fairy-ring"
-    ],
-    "setBonus": "+15 MP, +5 DEF, +5 SPD, +5 DEX, +2 VIT, +2 WIS",
-    "setBonusStats": {
-      "mp": 15,
-      "def": 5,
-      "spd": 5,
-      "dex": 5,
-      "vit": 2,
-      "wis": 2
-    },
-    "sprite": "spirit-mystic-set"
-  },
-  {
-    "id": "esben-necromancer-set",
-    "name": "Esben Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "staff-of-esben",
-      "skullish-remains-of-esben"
-    ],
-    "setBonus": "+180 HP, +80 MP, +20 ATT, +13 DEF, -3 SPD",
-    "setBonusStats": {
-      "hp": 180,
-      "mp": 80,
-      "att": 20,
-      "def": 13
-    },
-    "sprite": "esben-necromancer-set"
-  },
-  {
-    "id": "chancellor-wizard-set",
-    "name": "Chancellor Wizard Set",
-    "classId": "wizard",
-    "items": [
-      "superior",
-      "genesis-spell",
-      "diplomatic-robe"
-    ],
-    "setBonus": "+170 HP, +10 ATT, +17 DEF, +3 DEX",
-    "setBonusStats": {
-      "hp": 170,
-      "att": 10,
-      "def": 17,
-      "dex": 3
-    },
-    "sprite": "chancellor-wizard-set"
-  },
-  {
-    "id": "treasurer-trickster-set",
-    "name": "Treasurer Trickster Set",
-    "classId": "trickster",
-    "items": [
-      "avarice",
-      "turncoat-cape"
-    ],
-    "setBonus": "+140 HP, +12 ATT, +18 DEF, +10 SPD, +4 DEX",
-    "setBonusStats": {
-      "hp": 140,
-      "att": 12,
-      "def": 18,
-      "spd": 10,
-      "dex": 4
-    },
-    "sprite": "treasurer-trickster-set"
+    "sprite": "angelic-bard-set"
   },
   {
     "id": "archbishop-priest-set",
@@ -261,12 +122,88 @@
     "sprite": "archbishop-priest-set"
   },
   {
+    "id": "archexorcist-priest-set",
+    "name": "Archexorcist Priest Set",
+    "classId": "priest",
+    "items": [
+      "holy-artifact",
+      "tome-of-exorcism",
+      "garb-of-the-ordained",
+      "pontifex-ring"
+    ],
+    "setBonus": "+4 DEX, +4 ATT 3rd Piece Bonus +5 DEX, +5 ATT 4th Piece Bonus +100 HP, +6 DEX, +6 ATT Subtotal of Bonuses +100 HP, +15 ATT, +15 DEX Overall Stat Bonus +160 HP, +20 MP, +19 ATT, +18 DEF, +18 DEX, -8 VIT, +7 WIS",
+    "setBonusStats": {
+      "dex": 18,
+      "att": 19,
+      "hp": 160,
+      "mp": 20,
+      "def": 18,
+      "wis": 7
+    },
+    "sprite": "archexorcist-priest-set"
+  },
+  {
+    "id": "astral-arcanist-set",
+    "name": "Astral Arcanist Set",
+    "classId": null,
+    "items": [
+      "nebular-rod",
+      "cosmic-astrolabe",
+      "astronomer-s-gown"
+    ],
+    "setBonus": "+33 HP, +33 MP, +4 ATT 3rd Piece Bonus +44 HP, +44 MP, +6 ATT 4th Piece Bonus +55 HP, +55 MP, +8 ATT Subtotal of Bonuses +132 HP, +132 MP, +18 ATT Overall Stat Bonus",
+    "setBonusStats": {
+      "hp": 132,
+      "mp": 132,
+      "att": 18
+    },
+    "sprite": "astral-arcanist-set"
+  },
+  {
+    "id": "blood-viking-knight-set",
+    "name": "Blood Viking Knight Set",
+    "classId": "knight",
+    "items": [
+      "blood-axe",
+      "sun-star-buckler",
+      "fur-coat",
+      "winter-boots"
+    ],
+    "setBonus": "+25 HP, +3 ATT, +2 SPD 3rd Piece Bonus +35 HP, +3 ATT, +4 SPD 4th Piece Bonus +60 HP, +6 ATT, +6 SPD Subtotal of Bonuses +120 HP, +12 ATT, +12 SPD Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 120,
+      "att": 12,
+      "spd": 12
+    },
+    "sprite": "blood-viking-knight-set"
+  },
+  {
+    "id": "chancellor-wizard-set",
+    "name": "Chancellor Wizard Set",
+    "classId": "wizard",
+    "items": [
+      "superior",
+      "genesis-spell",
+      "diplomatic-robe",
+      "chancellor-s-cranium"
+    ],
+    "setBonus": "+170 HP, +10 ATT, +17 DEF, +3 DEX",
+    "setBonusStats": {
+      "hp": 170,
+      "att": 10,
+      "def": 17,
+      "dex": 3
+    },
+    "sprite": "chancellor-wizard-set"
+  },
+  {
     "id": "chief-ninja-set",
     "name": "Chief Ninja Set",
     "classId": "ninja",
     "items": [
       "enforcer",
       "ballistic-star",
+      "centaur-s-shielding",
       "battalion-banner"
     ],
     "setBonus": "+90 HP, +5 ATT, +13 DEF, +4 SPD, +11 DEX",
@@ -280,12 +217,350 @@
     "sprite": "chief-ninja-set"
   },
   {
+    "id": "chocolate-bunny-summoner-set",
+    "name": "Chocolate Bunny Summoner Set",
+    "classId": "summoner",
+    "items": [
+      "sweet-desire-wand",
+      "chocolate-glazed-robe",
+      "chocolate-bunny-ears"
+    ],
+    "setBonus": "+30 HP, +6 VIT, +2 ATT 3rd Piece Bonus +40 HP, +20 MP, +4 DEF, +3 ATT 4th Piece Bonus +60 HP, +40 MP, +10 ATT Subtotal of Bonuses +130 HP, +60 MP, +15 ATT, +4 DEF, +6 VIT Overall Stat Bonus +210 HP, +100 MP, +15 ATT, +33 DEF, -5 DEX, +10 VIT",
+    "setBonusStats": {
+      "hp": 210,
+      "vit": 10,
+      "att": 15,
+      "mp": 100,
+      "def": 33
+    },
+    "sprite": "chocolate-bunny-summoner-set"
+  },
+  {
+    "id": "coral-huntress-set",
+    "name": "Coral Huntress Set",
+    "classId": "huntress",
+    "items": [
+      "coral-bow",
+      "coral-venom-trap",
+      "coral-silk-armor",
+      "coral-ring"
+    ],
+    "setBonus": "+75 MP, +16 DEF, +12 SPD, +8 DEX, +5 WIS",
+    "setBonusStats": {
+      "mp": 75,
+      "def": 16,
+      "spd": 12,
+      "dex": 8,
+      "wis": 5
+    },
+    "sprite": "coral-huntress-set"
+  },
+  {
+    "id": "corrupted-paladin-set",
+    "name": "Corrupted Paladin Set",
+    "classId": "paladin",
+    "items": [
+      "fallen-one-s-blade",
+      "abyssal-insignia",
+      "vortex-plating",
+      "eye-of-the-void"
+    ],
+    "setBonus": "+4 DEF, +5 VIT 3rd Piece Bonus +40 HP, +5 DEX 4th Piece Bonus +60 HP, +5 VIT, +10 DEX Subtotal of Bonuses +100 HP, +4 DEF, +15 DEX, +10 VIT Overall Stat Bonus +260 HP, +28 DEF, +15 DEX, +20 VIT",
+    "setBonusStats": {
+      "def": 28,
+      "vit": 20,
+      "hp": 260,
+      "dex": 15
+    },
+    "sprite": "corrupted-paladin-set"
+  },
+  {
+    "id": "court-magician-sorcerer-set",
+    "name": "Court Magician Sorcerer Set",
+    "classId": "sorcerer",
+    "items": [
+      "magic-wand",
+      "lightshow-scepter",
+      "magician-s-robe",
+      "performer-s-hat"
+    ],
+    "setBonus": "+3 DEF, +2 DEX 3rd Piece Bonus +4 DEF, +3 DEX, +5 WIS 4th Piece Bonus -185 MP, +60 WIS Subtotal of Bonuses -185 MP, +7 DEF, +5 DEX, +65 WIS Overall Stat Bonus +107 HP, -235 MP, +19 DEF, +15 DEX, +75 WIS",
+    "setBonusStats": {
+      "def": 19,
+      "dex": 15,
+      "wis": 75,
+      "hp": 107
+    },
+    "sprite": "court-magician-sorcerer-set"
+  },
+  {
+    "id": "crystal-kunoichi-set",
+    "name": "Crystal Kunoichi Set",
+    "classId": null,
+    "items": [
+      "quartz-cutter",
+      "crystalline-kunai",
+      "luminous-armor",
+      "radiant-heart"
+    ],
+    "setBonus": "+30 HP, +4 ATT, +5 VIT 3rd Piece Bonus +30 HP, +5 ATT, +5 VIT 4th Piece Bonus +120 HP, +6 ATT, +5 DEF, +10 VIT Subtotal of Bonuses +180 HP, +15 ATT, +5 DEF, +20 VIT Overall Stat Bonus +480 HP, +20 ATT, +5 DEF, +10 SPD, +25 VIT",
+    "setBonusStats": {
+      "hp": 480,
+      "att": 20,
+      "vit": 25,
+      "def": 5,
+      "spd": 10
+    },
+    "sprite": "crystal-kunoichi-set"
+  },
+  {
+    "id": "crystal-necromancer-set",
+    "name": "Crystal Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "staff-of-the-crystal-serpent",
+      "cracked-crystal-skull",
+      "robe-of-the-tlatoani",
+      "crystal-bone-ring"
+    ],
+    "setBonus": "+50 HP, +45 MP, +3 DEX, +11 WIS",
+    "setBonusStats": {
+      "hp": 50,
+      "mp": 45,
+      "dex": 3,
+      "wis": 11
+    },
+    "sprite": "crystal-necromancer-set"
+  },
+  {
+    "id": "cuboid-necromancer-set",
+    "name": "Cuboid Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "squaroid-staff",
+      "cubic-frame",
+      "polygonal-garbs",
+      "cuband"
+    ],
+    "setBonus": "+5 DEF 3rd Piece Bonus +50 HP, +5 VIT 4th Piece Bonus +50 HP, +5 DEX, +10 VIT Subtotal of Bonuses +100 HP, +5 DEF, +5 DEX, +15 VIT Overall Stat Bonus +210 HP, +20 DEF, +15 DEX, +15 VIT",
+    "setBonusStats": {
+      "def": 20,
+      "hp": 210,
+      "vit": 15,
+      "dex": 15
+    },
+    "sprite": "cuboid-necromancer-set"
+  },
+  {
+    "id": "cultist-necromancer-set",
+    "name": "Cultist Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "staff-of-unholy-sacrifice",
+      "skull-of-corrupted-souls",
+      "ritual-robe",
+      "bloodshed-ring"
+    ],
+    "setBonus": "+176 HP, +50 MP, +5 ATT, +18 DEF, +6 VIT, +28 WIS",
+    "setBonusStats": {
+      "hp": 176,
+      "mp": 50,
+      "att": 5,
+      "def": 18,
+      "vit": 6,
+      "wis": 28
+    },
+    "sprite": "cultist-necromancer-set"
+  },
+  {
+    "id": "cursed-cursebreaker-huntress-set",
+    "name": "Cursed Cursebreaker Huntress Set",
+    "classId": "huntress",
+    "items": [
+      "silver-revolvers",
+      "consecrated-trap",
+      "metal-plated-corset"
+    ],
+    "setBonus": "+20 MP, +3 SPD, +3 DEX 3rd Piece Bonus +30 HP, +40 MP, +5 SPD, +5 DEX 4th Piece Bonus +70 HP, +3 DEF, +5 SPD, +5 DEX Subtotal of Bonuses +100 HP, +60 MP, +3 DEF, +13 SPD, +13 DEX Overall Stat Bonus +100 HP, +170 MP, +14 DEF, +21 SPD, +33 DEX, +5 VIT",
+    "setBonusStats": {
+      "mp": 170,
+      "spd": 21,
+      "dex": 33,
+      "hp": 100,
+      "def": 14,
+      "vit": 5
+    },
+    "sprite": "cursed-cursebreaker-huntress-set"
+  },
+  {
+    "id": "daeva-trickster-set",
+    "name": "Daeva Trickster Set",
+    "classId": "trickster",
+    "items": [
+      "daevite-progenitor",
+      "archangel-s-judgement",
+      "seraphim-s-guard",
+      "flames-of-genesis"
+    ],
+    "setBonus": "+20 HP, +20 MP, +5 VIT, +5 WIS 3rd Piece Bonus +20 HP, +20 MP, +2 ATT, +2 DEF 4th Piece Bonus +30 HP, +30 MP, +3 ATT, +3 DEF Subtotal of Bonuses +70 HP, +70 MP, +5 ATT, +5 DEF, +5 VIT, +5 WIS Overall Stat Bonus +150 HP, +120 MP, +5 ATT, +21 DEF, +20 ",
+    "setBonusStats": {
+      "hp": 150,
+      "mp": 120,
+      "vit": 5,
+      "wis": 5,
+      "att": 5,
+      "def": 21
+    },
+    "sprite": "daeva-trickster-set"
+  },
+  {
+    "id": "daring-discoverer-samurai-set",
+    "name": "Daring Discoverer Samurai Set",
+    "classId": "samurai",
+    "items": [
+      "kiritsukeru",
+      "reinforced-root-armor",
+      "traveler-s-trinket"
+    ],
+    "setBonus": "+40 MP, +4 DEF, +4 SPD 3rd Piece Bonus +50 MP, +4 DEF, +4 ATT 4th Piece Bonus +40 HP, +8 ATT, +8 DEF Subtotal of Bonuses +40 HP, +90 MP, +12 ATT, +16 DEF, +4 SPD Overall Stat Bonus +110 HP, +150 MP, +15 ATT, +36 DEF, +10 SPD",
+    "setBonusStats": {
+      "mp": 150,
+      "def": 36,
+      "spd": 10,
+      "att": 15,
+      "hp": 110
+    },
+    "sprite": "daring-discoverer-samurai-set"
+  },
+  {
+    "id": "demon-guitarist-set",
+    "name": "Demon Guitarist Set",
+    "classId": null,
+    "items": [
+      "electric-guitar",
+      "wings-of-the-fallen",
+      "pointy-tail"
+    ],
+    "setBonus": "+20 HP, +3 DEF, +3 DEX 3rd Piece Bonus +20 HP, +40 MP, +3 DEX 4th Piece Bonus +40 HP, +20 MP, +5 DEF, +4 DEX Subtotal of Bonuses +80 HP, +60 MP, +8 DEF, +10 DEX Overall Stat Bonus +150 HP, +160 MP, +18 DEF, +15 DEX, +5 VIT, +11 WIS",
+    "setBonusStats": {
+      "hp": 150,
+      "def": 18,
+      "dex": 15,
+      "mp": 160,
+      "vit": 5,
+      "wis": 11
+    },
+    "sprite": "demon-guitarist-set"
+  },
+  {
+    "id": "dragon-tamer-set",
+    "name": "Dragon Tamer Set",
+    "classId": null,
+    "items": [
+      "indomptable",
+      "helm-of-draconic-dominance",
+      "zaarvox-s-heart",
+      "amulet-of-drakefyre"
+    ],
+    "setBonus": "+5 ATT, +10 SPD 3rd Piece Bonus +30 HP, +30 MP, +5 DEF, +5 DEX 4th Piece Bonus +55 HP, +50 MP, +5 ATT, +5 SPD, +5 DEX Subtotal of Bonuses +85 HP, +80 MP, +10 ATT, +5 DEF, +15 SPD, +10 DEX Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "att": 10,
+      "spd": 15,
+      "hp": 85,
+      "mp": 80,
+      "def": 5,
+      "dex": 10
+    },
+    "sprite": "dragon-tamer-set"
+  },
+  {
+    "id": "earthen-bulwark-summoner-set",
+    "name": "Earthen Bulwark Summoner Set",
+    "classId": "summoner",
+    "items": [
+      "earthen-ward",
+      "rocky-robe",
+      "steadfast-glyph"
+    ],
+    "setBonus": "+30 HP, +6 VIT, +2 ATT 3rd Piece Bonus +40 HP, +20 MP, +4 DEF, +3 ATT 4th Piece Bonus +60 HP, +40 MP, +10 ATT Subtotal of Bonuses +130 HP, +60 MP, +15 ATT, +4 DEF, +6 VIT Overall Stat Bonus +210 HP, +100 MP, +15 ATT, +33 DEF, -5 DEX, +10 VIT",
+    "setBonusStats": {
+      "hp": 210,
+      "vit": 10,
+      "att": 15,
+      "mp": 100,
+      "def": 33
+    },
+    "sprite": "earthen-bulwark-summoner-set"
+  },
+  {
+    "id": "easter-knight-set",
+    "name": "Easter Knight Set",
+    "classId": "knight",
+    "items": [
+      "eternal-graved-great-sword",
+      "spriteful-shield",
+      "eggre-battle-armor",
+      "tiara-of-eggscellent-sturdiness"
+    ],
+    "setBonus": "+20 MP, +3 SPD, +4 VIT 3rd Piece Bonus +30 MP, +4 SPD, +4 WIS 4th Piece Bonus +40 MP, +6 SPD, +4 DEX Subtotal of Bonuses +90 MP, +4 DEX, +13 SPD, +4 VIT, +4 WIS Overall Stat Bonus +90 MP, +6 ATT, +37 DEF, +18 SPD, +4 DEX, +7 VIT, +4 WIS",
+    "setBonusStats": {
+      "mp": 90,
+      "spd": 18,
+      "vit": 7,
+      "wis": 4,
+      "dex": 4,
+      "att": 6,
+      "def": 37
+    },
+    "sprite": "easter-knight-set"
+  },
+  {
+    "id": "esben-necromancer-set",
+    "name": "Esben Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "esben-s-shaman-attire",
+      "esben-s-wedding-ring",
+      "staff-of-esben",
+      "skullish-remains-of-esben"
+    ],
+    "setBonus": "+180 HP, +80 MP, +20 ATT, +13 DEF, -3 SPD",
+    "setBonusStats": {
+      "hp": 180,
+      "mp": 80,
+      "att": 20,
+      "def": 13
+    },
+    "sprite": "esben-necromancer-set"
+  },
+  {
+    "id": "esben-wizard-set",
+    "name": "Esben Wizard Set",
+    "classId": "wizard",
+    "items": [
+      "esben-s-shaman-attire",
+      "esben-s-wedding-ring",
+      "staff-of-esben",
+      "esben-s-vows"
+    ],
+    "setBonus": "+140 HP, +80 MP, +16 ATT, +10% ATT equal to DEF , +18 DEF",
+    "setBonusStats": {
+      "hp": 140,
+      "mp": 80,
+      "att": 16,
+      "def": 18
+    },
+    "sprite": "esben-wizard-set"
+  },
+  {
     "id": "exalted-knight-set",
     "name": "Exalted Knight Set",
     "classId": "knight",
     "items": [
       "divinity",
-      "gladiator-guard"
+      "oryx-s-escutcheon",
+      "gladiator-guard",
+      "exalted-god-s-horn"
     ],
     "setBonus": "+140 HP, +5 ATT, +35 DEF, +14 SPD, +5 DEX",
     "setBonusStats": {
@@ -298,38 +573,181 @@
     "sprite": "exalted-knight-set"
   },
   {
-    "id": "summer-solstice-set",
-    "name": "Summer Solstice Set",
+    "id": "fiery-kensei-set",
+    "name": "Fiery Kensei Set",
+    "classId": "kensei",
+    "items": [
+      "fiery-katana",
+      "pyro-sheath",
+      "flame-guard",
+      "firelight-necklace"
+    ],
+    "setBonus": "+20 HP, 5 ATT, 5 VIT 3rd Piece Bonus +40 HP, 5 ATT, 5 VIT 4th Piece Bonus +60 HP, 10 ATT, 10 VIT Subtotal of Bonuses +120 HP, 20 ATT, 20 VIT Overall Stat Bonus +220 HP, 40 MP, 26 ATT, 20 DEF, 20 VIT",
+    "setBonusStats": {
+      "hp": 220
+    },
+    "sprite": "fiery-kensei-set"
+  },
+  {
+    "id": "flesh-collector-set",
+    "name": "Flesh Collector Set",
     "classId": null,
     "items": [
-      "staff-of-the-cosmic-whole",
-      "elemental-detonation-spell",
-      "robe-of-the-grand-sorcerer",
-      "ring-of-exalted-defense",
-      "staff-of-the-rising-sun",
-      "thousand-suns-spell",
-      "robe-of-the-summer-solstice",
-      "ring-of-the-burning-sun"
+      "rags-of-the-host",
+      "symbiotic-ripper",
+      "parasitic-concoction",
+      "hivemind-circlet"
     ],
-    "setBonus": "+20 HP, +75 MP, +4 ATT, +21 DEF, +12 WIS",
+    "setBonus": "+2 ATT, +2 VIT, +6 WIS 3rd Piece Bonus +50 HP, +5 ATT, +2 VIT 4th Piece Bonus +30 HP, +5 ATT, +6 VIT, +6 WIS Subtotal of Bonuses +80 HP,+12 ATT, +10 VIT, +6 WIS Overall Stat Bonus TBA",
     "setBonusStats": {
-      "hp": 20,
-      "mp": 75,
-      "att": 4,
-      "def": 21,
-      "wis": 12
+      "att": 12,
+      "vit": 10,
+      "wis": 6,
+      "hp": 80
     },
-    "sprite": "summer-solstice-set"
+    "sprite": "flesh-collector-set"
+  },
+  {
+    "id": "fresh-carrot-paladin-set",
+    "name": "Fresh Carrot Paladin Set",
+    "classId": "paladin",
+    "items": [
+      "nutrient-rich-carrot-blade",
+      "carrot-cake-crest",
+      "hardened-carrot-armor",
+      "sun-bathed-straw-hat"
+    ],
+    "setBonus": "+4 DEF, +5 VIT 3rd Piece Bonus +40 HP, +5 DEX 4th Piece Bonus +60 HP, +5 VIT, +10 DEX Subtotal of Bonuses +100 HP, +4 DEF, +15 DEX, +10 VIT Overall Stat Bonus +260 HP, +28 DEF, +15 DEX, +20 VIT",
+    "setBonusStats": {
+      "def": 28,
+      "vit": 20,
+      "hp": 260,
+      "dex": 15
+    },
+    "sprite": "fresh-carrot-paladin-set"
+  },
+  {
+    "id": "frost-advisor-set",
+    "name": "Frost Advisor Set",
+    "classId": null,
+    "items": [
+      "iceborn-arsenal",
+      "sublimation-sidearm",
+      "retainer-s-battlesuit",
+      "legacy-s-pendant"
+    ],
+    "setBonus": "+25 HP, +3 DEF, +3 DEX, -2 VIT 3rd Piece Bonus +30 HP, +4 DEF, +4 DEX, -3 VIT 4th Piece Bonus +35 HP, +5 DEF, +5 DEX, -4 VIT Subtotal of Bonuses +90 HP, +12 DEF, +12 DEX, -9 VIT Overall Stat Bonus",
+    "setBonusStats": {
+      "hp": 90,
+      "def": 12,
+      "dex": 12
+    },
+    "sprite": "frost-advisor-set"
+  },
+  {
+    "id": "frost-harbinger-set",
+    "name": "Frost Harbinger Set",
+    "classId": null,
+    "items": [
+      "heartsteel-claymore",
+      "symbol-of-the-lost",
+      "hull-of-the-tundra",
+      "frozen-heart"
+    ],
+    "setBonus": "+30 HP, +30 MP, +2 ATT, +2 DEF 3rd Piece Bonus +35 HP, +35 MP, +3 ATT, +3 DEF 4th Piece Bonus +40 HP, +40 MP, +4 ATT, +4 DEF Subtotal of Bonuses +105 HP, +105 MP, +9 ATT, +9 DEF Overall Stat Bonus +150 HP, 150 MP, 9 ATT, 34 DEF, -10 SPD",
+    "setBonusStats": {
+      "hp": 150,
+      "mp": 105,
+      "att": 9,
+      "def": 9
+    },
+    "sprite": "frost-harbinger-set"
+  },
+  {
+    "id": "frost-wander-archer-set",
+    "name": "Frost Wander Archer Set",
+    "classId": "archer",
+    "items": [
+      "snow-critters",
+      "blizzard-jacket",
+      "magical-winter-scarf"
+    ],
+    "setBonus": "+25 MP, +4 WIS, +1 DEF, +1 SPD 3rd Piece Bonus +35 MP, +6 WIS, +3 DEF, +2 SPD 4th Piece Bonus +60 MP, +10 WIS, +5 DEF, +4 SPD Subtotal of Bonuses +120 MP, +20 WIS, +9 DEF, +7 SPD Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "mp": 120,
+      "wis": 20,
+      "def": 9,
+      "spd": 7
+    },
+    "sprite": "frost-wander-archer-set"
+  },
+  {
+    "id": "ghostly-banshee-summoner-set",
+    "name": "Ghostly Banshee Summoner Set",
+    "classId": "summoner",
+    "items": [
+      "tormented-shriek",
+      "lacerated-gown",
+      "unresolved-grudge"
+    ],
+    "setBonus": "+20 HP, +2 ATT, +2 VIT 3rd Piece Bonus +30 HP, +5 ATT, +3 DEF 4th Piece Bonus +60 HP, +60 MP, +8 ATT, +2 DEF, +3 VIT Subtotal of Bonuses +110 HP, +60 MP, +15 ATT, +5 DEF, +5 VIT Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 110,
+      "att": 15,
+      "vit": 5,
+      "def": 5,
+      "mp": 60
+    },
+    "sprite": "ghostly-banshee-summoner-set"
+  },
+  {
+    "id": "ghostly-trickster-set",
+    "name": "Ghostly Trickster Set",
+    "classId": "trickster",
+    "items": [
+      "spirit-dagger",
+      "ghostly-prism",
+      "spectral-cloth-armor",
+      "captain-s-ring"
+    ],
+    "setBonus": "+50 HP, +6 ATT, +14 DEF, +3 SPD, +6 DEX",
+    "setBonusStats": {
+      "hp": 50,
+      "att": 6,
+      "def": 14,
+      "spd": 3,
+      "dex": 6
+    },
+    "sprite": "ghostly-trickster-set"
+  },
+  {
+    "id": "globular-necromancer-set",
+    "name": "Globular Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "bloody-pitch-fork-staff",
+      "blood-essence",
+      "curse-binding-robes",
+      "spike-headband"
+    ],
+    "setBonus": "+5 DEF 3rd Piece Bonus +50 HP, +5 VIT 4th Piece Bonus +50 HP, +5 DEX, +10 VIT Subtotal of Bonuses +100 HP, +5 DEF, +5 DEX, +15 VIT Overall Stat Bonus +210 HP, +20 DEF, +15 DEX, +15 VIT",
+    "setBonusStats": {
+      "def": 20,
+      "hp": 210,
+      "vit": 15,
+      "dex": 15
+    },
+    "sprite": "globular-necromancer-set"
   },
   {
     "id": "golden-archer-set",
     "name": "Golden Archer Set",
     "classId": "archer",
     "items": [
-      "brilliance-bow",
-      "quintessential-quiver",
       "luxurious-leather",
-      "regal-ring"
+      "regal-ring",
+      "brilliance-bow",
+      "quintessential-quiver"
     ],
     "setBonus": "+1 HP Subtotal of Bonuses +1 HP Overall Stat Bonus +1 HP, +1 DEF, +1 DEX",
     "setBonusStats": {
@@ -340,106 +758,141 @@
     "sprite": "golden-archer-set"
   },
   {
-    "id": "priest-of-geb-set",
-    "name": "Priest of Geb Set",
-    "classId": "priest",
+    "id": "hollow-king-necromancer-set",
+    "name": "Hollow King Necromancer Set",
+    "classId": "necromancer",
     "items": [
-      "wand-of-geb",
-      "book-of-geb",
-      "shendyt-of-geb"
+      "edictum-praetoris",
+      "toga-picta",
+      "memento-mori",
+      "interregnum"
     ],
-    "setBonus": "+5 ATT, +5 WIS 3rd Piece Bonus +5 ATT, +5 VIS 4th Piece Bonus +150 HP, +150 MP, +5 VIT, +5 WIS Subtotal of Bonuses +150 HP, +150 MP, +10 ATT, +10 VIT, +10 WIS Overall Stat Bonus +200 HP, +200 MP, +10 ATT, +20 DEF, +25 VIT, +30 WIS",
+    "setBonus": "+30 MP, +3 DEF, 6 VIT 3rd Piece Bonus +45 HP, +7 ATT, +5 DEX, +4 VIT 4th Piece Bonus +40 HP, +3 ATT, +4 DEF Subtotal of Bonuses +85 HP, +30 MP, +10 ATT, +7 DEF, +5 DEX, +10 VIT Overall Stat Bonus TBA",
     "setBonusStats": {
-      "att": 10,
-      "wis": 30,
-      "hp": 200,
-      "mp": 200,
-      "vit": 25,
-      "def": 20
-    },
-    "sprite": "priest-of-geb-set"
-  },
-  {
-    "id": "phylactery-mystic-set",
-    "name": "Phylactery Mystic Set",
-    "classId": "mystic",
-    "items": [
-      "the-phylactery",
-      "soul-of-the-bearer",
-      "soulless-robe",
-      "ring-of-the-covetous-heart"
-    ],
-    "setBonus": "+20 HP, +15 MP, +6 SPD, +7 WIS 3rd Piece Bonus +20 HP, +15 MP, +6 DEF, +8 VIT 4th Piece Bonus +20 HP, +15 MP, +7 ATT, +6 DEF Subtotal of Bonuses +60 HP, +45 MP, +7 ATT, +12 DEF, +6 SPD, +8 VIT, +7 WIS Overall Stat Bonus +120 HP, +125 MP, +15 ATT, +27",
-    "setBonusStats": {
-      "hp": 120,
-      "mp": 125,
-      "spd": 6,
-      "wis": 7,
-      "def": 12,
-      "vit": 8,
-      "att": 15
-    },
-    "sprite": "phylactery-mystic-set"
-  },
-  {
-    "id": "skuld-2-the-reghostening-set",
-    "name": "Skuld 2 The ReGhostening Set",
-    "classId": null,
-    "items": [
-      "etherite-dagger",
-      "ghastly-drape",
-      "mantle-of-skuld",
-      "spectral-ring-of-horrors"
-    ],
-    "setBonus": "+4 WIS, +4 DEX 3rd Piece Bonus +30 MP, +4 ATT, +4 WIS 4th Piece Bonus +80 HP, +5 DEX, +5 ATT Subtotal of Bonuses +80 HP, +30 MP, +9 ATT, +9 DEX, +8 WIS Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "wis": 8,
-      "dex": 9,
       "mp": 30,
-      "att": 9,
-      "hp": 80
+      "def": 7,
+      "hp": 85,
+      "att": 10,
+      "dex": 5,
+      "vit": 10
     },
-    "sprite": "skuld-2-the-reghostening-set"
+    "sprite": "hollow-king-necromancer-set"
   },
   {
-    "id": "vampire-rogue-set",
-    "name": "Vampire Rogue Set",
-    "classId": "rogue",
+    "id": "horrific-sorcerer-set",
+    "name": "Horrific Sorcerer Set",
+    "classId": "sorcerer",
     "items": [
-      "soulcursed-scythe",
-      "vampiric-cape",
-      "hallowed-hide"
+      "abomination-s-wrath",
+      "grotesque-scepter",
+      "garment-of-the-beast",
+      "horrific-claws"
     ],
-    "setBonus": "+5 DEX, +5 VIT 3rd Piece Bonus +30 HP, +20 MP, +5 DEX, +10 VIT 4th Piece Bonus +30 HP, +30 MP, +5 DEF, +15 DEX, +20 VIT Subtotal of Bonuses +60 HP, 50 MP, +5 DEF, +25 DEX, +35 VIT Overall Stat Bonus +170 HP, +50 MP, +5 ATT, +19 DEF, +5 SPD, +25 DEX, ",
+    "setBonus": "+3 DEF, +3 SPD, +3 WIS 3rd Piece Bonus +4 ATT, +5 DEF, +4 WIS 4th Piece Bonus +40 HP, +10 DEF, +10 SPD Subtotal of Bonuses +40 HP, +4 ATT, +18 DEF, +13 SPD, +7 WIS Overall Stat Bonus TBA",
     "setBonusStats": {
-      "dex": 25,
-      "vit": 35,
-      "hp": 170,
-      "mp": 50,
+      "def": 18,
+      "spd": 13,
+      "wis": 7,
+      "att": 4,
+      "hp": 40
+    },
+    "sprite": "horrific-sorcerer-set"
+  },
+  {
+    "id": "horticultural-huntress-set",
+    "name": "Horticultural Huntress Set",
+    "classId": "huntress",
+    "items": [
+      "bergenia-bow",
+      "lifebringing-lotus",
+      "hollyhock-hide",
+      "chrysanthemum-corsage"
+    ],
+    "setBonus": "+20 MP, +3 SPD, +3 DEX 3rd Piece Bonus +30 HP, +40 MP, +5 SPD, +5 DEX 4th Piece Bonus +70 HP, +3 DEF, +5 SPD, +5 DEX Subtotal of Bonuses +100 HP, +60 MP, +3 DEF, +13 SPD, +13 DEX Overall Stat Bonus +100 HP, +170 MP, +14 DEF, +21 SPD, +33 DEX, +5 VIT",
+    "setBonusStats": {
+      "mp": 170,
+      "spd": 21,
+      "dex": 33,
+      "hp": 100,
+      "def": 14,
+      "vit": 5
+    },
+    "sprite": "horticultural-huntress-set"
+  },
+  {
+    "id": "incubus-sorcerer-set",
+    "name": "Incubus Sorcerer Set",
+    "classId": "sorcerer",
+    "items": [
+      "heartbreaker-wand",
+      "lovesick-scepter",
+      "devilish-robes",
+      "devil-horn-headband"
+    ],
+    "setBonus": "+3 DEF, +2 DEX 3rd Piece Bonus +4 DEF, +3 DEX, +5 WIS 4th Piece Bonus -185 MP, +60 WIS Subtotal of Bonuses -185 MP, +7 DEF, +5 DEX, +65 WIS Overall Stat Bonus +107 HP, -235 MP, +19 DEF, +15 DEX, +75 WIS",
+    "setBonusStats": {
       "def": 19,
-      "att": 5,
-      "spd": 5
+      "dex": 15,
+      "wis": 75,
+      "hp": 107
     },
-    "sprite": "vampire-rogue-set"
+    "sprite": "incubus-sorcerer-set"
   },
   {
-    "id": "spectral-sentry-rogue-set",
-    "name": "Spectral Sentry Rogue Set",
-    "classId": "rogue",
+    "id": "killbilly-warrior-set",
+    "name": "Killbilly Warrior Set",
+    "classId": "warrior",
     "items": [
-      "phantom-sickle",
-      "spectre-cloak",
-      "soul-necklace"
+      "jagged-hatchet",
+      "burlap-cowl",
+      "overalls-of-endurance",
+      "headless-ted"
     ],
-    "setBonus": "+3 SPD, +3 DEX 3rd Piece Bonus +5 SPD, +5 DEX, +5 WIS 4th Piece Bonus +70 HP, +6 ATT, +6 DEX, +6 WIS Subtotal of Bonuses +70 HP, +6 ATT, +8 SPD, +8 DEX, +8 WIS Overall Stat Bonus TBA",
+    "setBonus": "+25 HP, +4 DEX, +2 DEF 3rd Piece Bonus +40 HP, +6 DEX, +4 DEF 4th Piece Bonus +75 HP, +4 SPD, +15 DEX, +6 DEF Subtotal of Bonuses +140 HP, +4 SPD, +25 DEX, +12 DEF Overall Stat Bonus TBA",
     "setBonusStats": {
-      "spd": 8,
-      "dex": 8,
-      "wis": 8,
-      "hp": 70,
-      "att": 6
+      "hp": 140,
+      "dex": 25,
+      "def": 12,
+      "spd": 4
     },
-    "sprite": "spectral-sentry-rogue-set"
+    "sprite": "killbilly-warrior-set"
+  },
+  {
+    "id": "kogbold-pyrotechnician-wizard-set",
+    "name": "Kogbold Pyrotechnician Wizard Set",
+    "classId": "wizard",
+    "items": [
+      "unstable-firework",
+      "blast-proof-robes",
+      "lucky-grenade"
+    ],
+    "setBonus": "+15 HP, +10 MP, +3 DEX, +1 DEF 3rd Piece Bonus +25 HP, +20 MP, +5 DEX, +2 DEF 4th Piece Bonus +50 HP, +30 MP, +8 DEX, +3 DEF Subtotal of Bonuses +90 HP, +60 MP, +16 DEX, +6 DEF Overall Stat Bonus +235 HP, +60 MP, +26 DEX, +16 DEF",
+    "setBonusStats": {
+      "hp": 235,
+      "mp": 60,
+      "dex": 26,
+      "def": 16
+    },
+    "sprite": "kogbold-pyrotechnician-wizard-set"
+  },
+  {
+    "id": "kogbold-turretsmith-archer-set",
+    "name": "Kogbold Turretsmith Archer Set",
+    "classId": "archer",
+    "items": [
+      "sentry-turret",
+      "tinkerers-apron",
+      "targeting-monocular"
+    ],
+    "setBonus": "+25 MP, +4 WIS, +1 DEF, +1 SPD 3rd Piece Bonus +35 MP, +6 WIS, +3 DEF, +2 SPD 4th Piece Bonus +60 MP, +10 WIS, +5 DEF, +4 SPD Subtotal of Bonuses +120 MP, +20 WIS, +9 DEF, +7 SPD Overall Stat Bonus +50 HP, +200 MP, +20 WIS, +38 DEF, +13 SPD",
+    "setBonusStats": {
+      "mp": 200,
+      "wis": 20,
+      "def": 38,
+      "spd": 13,
+      "hp": 50
+    },
+    "sprite": "kogbold-turretsmith-archer-set"
   },
   {
     "id": "legacy-skuld-2-the-reghostening-set",
@@ -463,244 +916,25 @@
     "sprite": "legacy-skuld-2-the-reghostening-set"
   },
   {
-    "id": "phantom-archer-set",
-    "name": "Phantom Archer Set",
-    "classId": "archer",
+    "id": "legacy-swoll-paladin-set",
+    "name": "Legacy Swoll Paladin Set",
+    "classId": "paladin",
     "items": [
-      "deathless-crossbow",
-      "quiver-of-shrieking-specters",
-      "revenant-ring"
+      "legacy-pixie-enchanted-sword",
+      "legacy-seal-of-the-enchanted-forest",
+      "legacy-fairy-plate",
+      "legacy-ring-of-pure-wishes"
     ],
-    "setBonus": "+20 HP, +20 MP, +3 ATT, +3 SPD 3rd Piece Bonus +30 HP, +30 MP, +3 DEF, +6 SPD 4th Piece Bonus +50 HP, +50 MP, +6 ATT, +6 DEF Subtotal of Bonuses + 100 HP, +100 MP, + 9 ATT, +9 DEF, +9 SPD Overall Stat Bonus TBA",
+    "setBonus": "+50 HP, +50 MP, +3 ATT, +25 DEF, +5 VIT, +5 WIS",
     "setBonusStats": {
-      "hp": 100,
-      "mp": 100,
-      "att": 9,
-      "spd": 9,
-      "def": 9
-    },
-    "sprite": "phantom-archer-set"
-  },
-  {
-    "id": "treasure-hunter-archer-set",
-    "name": "Treasure Hunter Archer Set",
-    "classId": "archer",
-    "items": [
-      "resplendent-bow",
-      "embellished-quiver",
-      "ornate-armor",
-      "aquamarine-amulet"
-    ],
-    "setBonus": "+25 HP, +20 MP 3rd Piece Bonus +30 MP, +5 DEX, +5 VIT 4th Piece Bonus +50 HP, +50 MP, +10 ATT, +5 DEX Subtotal of Bonuses +75 HP, +100 MP, +10 ATT, +10 DEX, +5 VIT Overall Stat Bonus +125 HP, +100 MP, +10 ATT, +21 DEF, +10 DEX, +20 VIT",
-    "setBonusStats": {
-      "hp": 125,
-      "mp": 100,
-      "dex": 10,
-      "vit": 20,
-      "att": 10,
-      "def": 21
-    },
-    "sprite": "treasure-hunter-archer-set"
-  },
-  {
-    "id": "kogbold-turretsmith-archer-set",
-    "name": "Kogbold Turretsmith Archer Set",
-    "classId": "archer",
-    "items": [
-      "sentry-turret",
-      "tinkerers-apron",
-      "targeting-monocular"
-    ],
-    "setBonus": "+25 MP, +4 WIS, +1 DEF, +1 SPD 3rd Piece Bonus +35 MP, +6 WIS, +3 DEF, +2 SPD 4th Piece Bonus +60 MP, +10 WIS, +5 DEF, +4 SPD Subtotal of Bonuses +120 MP, +20 WIS, +9 DEF, +7 SPD Overall Stat Bonus +50 HP, +200 MP, +20 WIS, +38 DEF, +13 SPD",
-    "setBonusStats": {
-      "mp": 200,
-      "wis": 20,
-      "def": 38,
-      "spd": 13,
-      "hp": 50
-    },
-    "sprite": "kogbold-turretsmith-archer-set"
-  },
-  {
-    "id": "reanimated-archer-set",
-    "name": "Reanimated Archer Set",
-    "classId": "archer",
-    "items": [
-      "bone-bow",
-      "spinal-quiver",
-      "torso-tunic",
-      "collarbone-collar"
-    ],
-    "setBonus": "+20 HP, +20 MP, +3 ATT, +3 SPD 3rd Piece Bonus +30 HP, +30 MP, +3 DEF, +6 SPD 4th Piece Bonus +50 HP, +50 MP, +6 ATT, +6 DEF Subtotal of Bonuses + 100 HP, +100 MP, + 9 ATT, +9 DEF, +9 SPD Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 100,
-      "mp": 100,
-      "att": 9,
-      "spd": 9,
-      "def": 9
-    },
-    "sprite": "reanimated-archer-set"
-  },
-  {
-    "id": "valentine-s-day-archer-set",
-    "name": "Valentine&apos;s Day Archer Set",
-    "classId": "archer",
-    "items": [
-      "leaf-bow",
-      "quiver-of-thunder",
-      "coral-silk-armor",
-      "ring-of-unbound-health",
-      "heartstruck-bow",
-      "quiver-of-dazing-love",
-      "ring-of-unbound-love"
-    ],
-    "setBonus": "+20 HP, +3 DEX, +3 VIT 3rd Piece Bonus +30 HP, +5 SPD, +5 VIT 4th Piece Bonus +40 HP, +4 DEF, +7 VIT Subtotal of Bonuses +90 HP, +4 DEF, +5 SPD, +3 DEX, +15 VIT Overall Stat Bonus +270 HP, +5 ATT, +18 DEF, +10 SPD, +11 DEX, +15 VIT, +8 WIS",
-    "setBonusStats": {
-      "hp": 270,
-      "dex": 11,
-      "vit": 15,
-      "spd": 10,
-      "def": 18,
-      "att": 5,
-      "wis": 8
-    },
-    "sprite": "valentine-s-day-archer-set"
-  },
-  {
-    "id": "painted-egg-archer-set",
-    "name": "Painted Egg Archer Set",
-    "classId": "archer",
-    "items": [
-      "spring-wonder-bow",
-      "fresh-breeze-quiver",
-      "painted-eggshell-armor",
-      "painted-egg-amulet"
-    ],
-    "setBonus": "+25 HP, +20 MP 3rd Piece Bonus +30 MP, +5 DEX, +5 VIT 4th Piece Bonus +50 HP, +50 MP, +10 ATT, +5 DEX Subtotal of Bonuses +75 HP, +100 MP, +10 ATT, +10 DEX, +5 VIT Overall Stat Bonus +125 HP, +100 MP, +10 ATT, +21 DEF, +10 DEX, +20 VIT",
-    "setBonusStats": {
-      "hp": 125,
-      "mp": 100,
-      "dex": 10,
-      "vit": 20,
-      "att": 10,
-      "def": 21
-    },
-    "sprite": "painted-egg-archer-set"
-  },
-  {
-    "id": "frost-wander-archer-set",
-    "name": "Frost Wander Archer Set",
-    "classId": "archer",
-    "items": [
-      "snow-critters",
-      "blizzard-jacket",
-      "magical-winter-scarf"
-    ],
-    "setBonus": "+25 MP, +4 WIS, +1 DEF, +1 SPD 3rd Piece Bonus +35 MP, +6 WIS, +3 DEF, +2 SPD 4th Piece Bonus +60 MP, +10 WIS, +5 DEF, +4 SPD Subtotal of Bonuses +120 MP, +20 WIS, +9 DEF, +7 SPD Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "mp": 120,
-      "wis": 20,
-      "def": 9,
-      "spd": 7
-    },
-    "sprite": "frost-wander-archer-set"
-  },
-  {
-    "id": "twilight-archmage-set",
-    "name": "Twilight Archmage Set",
-    "classId": null,
-    "items": [
-      "corruption-tether",
-      "ancient-eminence",
-      "twilight-shroud",
-      "defiled-equilibrium"
-    ],
-    "setBonus": "+15 HP, +15 MP, +3 DEF, +5 WIS 3rd Piece Bonus +15 HP, +25 MP, +3 DEF, +5 WIS 4th Piece Bonus +20 HP, +30 MP, +4 DEF, +5 VIT, +10 WIS Subtotal of Bonuses +50 HP, +70 MP, +10 DEF, +5 VIT, +20 WIS Overall Stat Bonus +170 HP, +160 MP, +25 DEF, +10 SPD, ",
-    "setBonusStats": {
-      "hp": 170,
-      "mp": 160,
+      "hp": 50,
+      "mp": 50,
+      "att": 3,
       "def": 25,
-      "wis": 20,
       "vit": 5,
-      "spd": 10
+      "wis": 5
     },
-    "sprite": "twilight-archmage-set"
-  },
-  {
-    "id": "slurp-scion-wizard-set",
-    "name": "Slurp Scion Wizard Set",
-    "classId": "wizard",
-    "items": [
-      "tideturner-trident",
-      "slurpian-sea-scroll",
-      "oceanic-apparel",
-      "imperial-keepsake"
-    ],
-    "setBonus": "+20 HP, +2 DEF, +2 SPD 3rd Piece Bonus +30 HP, +4 DEF, +3 SPD 4th Piece Bonus +40 HP, +10 ATT, +6 DEF, +4 SPD Subtotal of Bonuses +90 HP, +10 ATT, +12 DEF, +9 SPD Overall Stat Bonus +200 HP, +10 ATT, +20 DEF, +25 SPD",
-    "setBonusStats": {
-      "hp": 200,
-      "def": 20,
-      "spd": 25,
-      "att": 10
-    },
-    "sprite": "slurp-scion-wizard-set"
-  },
-  {
-    "id": "kogbold-pyrotechnician-wizard-set",
-    "name": "Kogbold Pyrotechnician Wizard Set",
-    "classId": "wizard",
-    "items": [
-      "unstable-firework",
-      "blast-proof-robes",
-      "lucky-grenade"
-    ],
-    "setBonus": "+15 HP, +10 MP, +3 DEX, +1 DEF 3rd Piece Bonus +25 HP, +20 MP, +5 DEX, +2 DEF 4th Piece Bonus +50 HP, +30 MP, +8 DEX, +3 DEF Subtotal of Bonuses +90 HP, +60 MP, +16 DEX, +6 DEF Overall Stat Bonus +235 HP, +60 MP, +26 DEX, +16 DEF",
-    "setBonusStats": {
-      "hp": 235,
-      "mp": 60,
-      "dex": 26,
-      "def": 16
-    },
-    "sprite": "kogbold-pyrotechnician-wizard-set"
-  },
-  {
-    "id": "paranormal-wizard-set",
-    "name": "Paranormal Wizard Set",
-    "classId": "wizard",
-    "items": [
-      "supernatural-staff",
-      "spectral-spell",
-      "immortal-mantle",
-      "phantom-pendant"
-    ],
-    "setBonus": "+15 HP, +15 MP, +3 DEF 3rd Piece Bonus +15 HP, +15 MP, +3 DEF 4th Piece Bonus +15 HP, +15 MP, +3 DEF Subtotal of Bonuses +45 HP, +45 MP, +9 DEF Overall Stat Bonus +105 HP, +170 MP, +25 DEF, +3 SPD, +7 DEX",
-    "setBonusStats": {
-      "hp": 105,
-      "mp": 170,
-      "def": 25,
-      "spd": 3,
-      "dex": 7
-    },
-    "sprite": "paranormal-wizard-set"
-  },
-  {
-    "id": "undersea-phantom-wizard-set",
-    "name": "Undersea Phantom Wizard Set",
-    "classId": "wizard",
-    "items": [
-      "cursed-harpoon",
-      "depth-charge",
-      "phosphorescent-rags",
-      "diving-weights"
-    ],
-    "setBonus": "+20 HP, +2 DEF, +2 SPD 3rd Piece Bonus +30 HP, +4 DEF, +3 SPD 4th Piece Bonus +40 HP, +10 ATT, +6 DEF, +4 SPD Subtotal of Bonuses +90 HP, +10 ATT, +12 DEF, +9 SPD Overall Stat Bonus +200 HP, +10 ATT, +20 DEF, +25 SPD",
-    "setBonusStats": {
-      "hp": 200,
-      "def": 20,
-      "spd": 25,
-      "att": 10
-    },
-    "sprite": "undersea-phantom-wizard-set"
+    "sprite": "legacy-swoll-paladin-set"
   },
   {
     "id": "legacy-twilight-archmage-set",
@@ -725,140 +959,65 @@
     "sprite": "legacy-twilight-archmage-set"
   },
   {
-    "id": "mad-god-s-messenger-set",
-    "name": "Mad God&apos;s Messenger Set",
+    "id": "lei-gong-set",
+    "name": "Lei Gong Set",
     "classId": null,
     "items": [
-      "theurgy-wand",
-      "ceremonial-merlot",
-      "anointed-robe",
-      "ring-of-pagan-favor"
+      "thunder-mallet",
+      "enchanted-chisel",
+      "daopao",
+      "mala-beads"
     ],
-    "setBonus": "+4 DEX, +4 ATT 3rd Piece Bonus +5 DEX, +5 ATT 4th Piece Bonus +100 HP, +6 DEX, +6 ATT Subtotal of Bonuses +100 HP, +15 ATT, +15 DEX Overall Stat Bonus +160 HP, +20 MP, +19 ATT, +18 DEF, +18 DEX, -8 VIT, +7 WIS",
+    "setBonus": "+6 DEF, +3 DEX 3rd Piece Bonus +3 ATT, +8 DEF 4th Piece Bonus +90 HP, +10 DEF, +5 SPD Subtotal of Bonuses +90 HP, +3 ATT, +24 DEF, +5 SPD, +3 DEX Overall Stat Bonus +170 HP, +11 ATT, +33 DEF, +10 SPD, +11 DEX, +5 VIT",
     "setBonusStats": {
-      "dex": 18,
-      "att": 19,
-      "hp": 160,
-      "mp": 20,
-      "def": 18,
-      "wis": 7
+      "def": 33,
+      "dex": 11,
+      "att": 11,
+      "hp": 170,
+      "spd": 10,
+      "vit": 5
     },
-    "sprite": "mad-god-s-messenger-set"
+    "sprite": "lei-gong-set"
   },
   {
-    "id": "plague-doctor-priest-set",
-    "name": "Plague Doctor Priest Set",
-    "classId": "priest",
-    "items": [
-      "cane-of-caduceus",
-      "bloodletting-leeches",
-      "plague-mask"
-    ],
-    "setBonus": "+35 HP, +4 DEF, +5 DEX 3rd Piece Bonus +45 HP, +5 DEF, +6 DEX 4th Piece Bonus +55 HP, +6 DEF, +7 DEX Subtotal of Bonuses +135 HP, +15 DEF, +18 DEX Overall Stat Bonus +200 HP, +34 DEF, +29 DEX, +13 WIS",
-    "setBonusStats": {
-      "hp": 200,
-      "def": 34,
-      "dex": 29,
-      "wis": 13
-    },
-    "sprite": "plague-doctor-priest-set"
-  },
-  {
-    "id": "archexorcist-priest-set",
-    "name": "Archexorcist Priest Set",
-    "classId": "priest",
-    "items": [
-      "holy-artifact",
-      "tome-of-exorcism",
-      "garb-of-the-ordained",
-      "pontifex-ring"
-    ],
-    "setBonus": "+4 DEX, +4 ATT 3rd Piece Bonus +5 DEX, +5 ATT 4th Piece Bonus +100 HP, +6 DEX, +6 ATT Subtotal of Bonuses +100 HP, +15 ATT, +15 DEX Overall Stat Bonus +160 HP, +20 MP, +19 ATT, +18 DEF, +18 DEX, -8 VIT, +7 WIS",
-    "setBonusStats": {
-      "dex": 18,
-      "att": 19,
-      "hp": 160,
-      "mp": 20,
-      "def": 18,
-      "wis": 7
-    },
-    "sprite": "archexorcist-priest-set"
-  },
-  {
-    "id": "void-doctor-priest-set",
-    "name": "Void Doctor Priest Set",
-    "classId": "priest",
-    "items": [
-      "cane-of-the-void",
-      "void-leeches",
-      "darkness-overcoat",
-      "void-mask"
-    ],
-    "setBonus": "+35 HP, +4 DEF, +5 DEX 3rd Piece Bonus +45 HP, +5 DEF, +6 DEX 4th Piece Bonus +55 HP, +6 DEF, +7 DEX Subtotal of Bonuses +135 HP, +15 DEF, +18 DEX Overall Stat Bonus +200 HP, +34 DEF, +29 DEX, +13 WIS",
-    "setBonusStats": {
-      "hp": 200,
-      "def": 34,
-      "dex": 29,
-      "wis": 13
-    },
-    "sprite": "void-doctor-priest-set"
-  },
-  {
-    "id": "dragon-tamer-set",
-    "name": "Dragon Tamer Set",
+    "id": "lost-golem-set",
+    "name": "Lost Golem Set",
     "classId": null,
     "items": [
-      "indomptable",
-      "helm-of-draconic-dominance",
-      "amulet-of-drakefyre"
+      "carved-golem-remains",
+      "brain-of-the-golem",
+      "golem-garments",
+      "rusty-cuffs"
     ],
-    "setBonus": "+5 ATT, +10 SPD 3rd Piece Bonus +30 HP, +30 MP, +5 DEF, +5 DEX 4th Piece Bonus +55 HP, +50 MP, +5 ATT, +5 SPD, +5 DEX Subtotal of Bonuses +85 HP, +80 MP, +10 ATT, +5 DEF, +15 SPD, +10 DEX Overall Stat Bonus TBA",
+    "setBonus": "+3 DEF, +15 VIT 3rd Piece Bonus +5 ATT, +5 DEX 4th Piece Bonus +80 HP, +5 ATT, +5 DEF, +5 DEX Subtotal of Bonuses +80 HP, +10 ATT, +8 DEF, +10 DEX, +15 VIT Overall Stat Bonus TBA",
     "setBonusStats": {
+      "def": 8,
+      "vit": 15,
       "att": 10,
-      "spd": 15,
-      "hp": 85,
-      "mp": 80,
-      "def": 5,
-      "dex": 10
+      "dex": 10,
+      "hp": 80
     },
-    "sprite": "dragon-tamer-set"
+    "sprite": "lost-golem-set"
   },
   {
-    "id": "pirate-king-warrior-set",
-    "name": "Pirate King Warrior Set",
-    "classId": "warrior",
+    "id": "love-witch-necromancer-set",
+    "name": "Love Witch Necromancer Set",
+    "classId": "necromancer",
     "items": [
-      "tricorne-of-the-high-seas",
-      "naval-uniform"
+      "gloves-of-love",
+      "mask-of-passion",
+      "boudoir-robe",
+      "essence-of-love"
     ],
-    "setBonus": "+30 HP, +30 MP, +5 ATT, -2 DEX 3rd Piece Bonus +50 HP, +50 MP, +10 ATT, -3 DEX 4th Piece Bonus +80 HP, +80 MP, +15 ATT, -5 SPD, -8 DEX Subtotal of Bonuses +160 HP, +160 MP, +30 ATT, -5 SPD, -13 DEX Overall Stat Bonus TBA",
+    "setBonus": "+3 DEX, +5 VIT 3rd Piece Bonus +50 HP, +3 ATT 4th Piece Bonus +50 HP, +4 ATT, +4 DEX Subtotal of Bonuses +100 HP, +7 ATT, +7 DEX, +5 VIT, Overall Stat Bonus +100 HP, +18 ATT, +11 DEF, +18 DEX, +10 VIT",
     "setBonusStats": {
-      "hp": 160,
-      "mp": 160,
-      "att": 30
+      "dex": 18,
+      "vit": 10,
+      "hp": 100,
+      "att": 18,
+      "def": 11
     },
-    "sprite": "pirate-king-warrior-set"
-  },
-  {
-    "id": "killbilly-warrior-set",
-    "name": "Killbilly Warrior Set",
-    "classId": "warrior",
-    "items": [
-      "gladiator-guard",
-      "his-majesty-s-eminence",
-      "jagged-hatchet",
-      "burlap-cowl",
-      "overalls-of-endurance",
-      "headless-ted"
-    ],
-    "setBonus": "+25 HP, +4 DEX, +2 DEF 3rd Piece Bonus +40 HP, +6 DEX, +4 DEF 4th Piece Bonus +75 HP, +4 SPD, +15 DEX, +6 DEF Subtotal of Bonuses +140 HP, +4 SPD, +25 DEX, +12 DEF Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 140,
-      "dex": 25,
-      "def": 12,
-      "spd": 4
-    },
-    "sprite": "killbilly-warrior-set"
+    "sprite": "love-witch-necromancer-set"
   },
   {
     "id": "lycan-warrior-set",
@@ -879,21 +1038,25 @@
     "sprite": "lycan-warrior-set"
   },
   {
-    "id": "nordic-knight-set",
-    "name": "Nordic Knight Set",
-    "classId": "knight",
+    "id": "mad-god-s-messenger-set",
+    "name": "Mad God&apos;s Messenger Set",
+    "classId": null,
     "items": [
-      "sunken-buckler",
-      "chainmail-body-armor",
-      "gjallarhorn"
+      "theurgy-wand",
+      "ceremonial-merlot",
+      "anointed-robe",
+      "ring-of-pagan-favor"
     ],
-    "setBonus": "+25 HP, +3 ATT, +2 SPD 3rd Piece Bonus +35 HP, +3 ATT, +4 SPD 4th Piece Bonus +60 HP, +6 ATT, +6 SPD Subtotal of Bonuses +120 HP, +12 ATT, +12 SPD Overall Stat Bonus TBA",
+    "setBonus": "+4 DEX, +4 ATT 3rd Piece Bonus +5 DEX, +5 ATT 4th Piece Bonus +100 HP, +6 DEX, +6 ATT Subtotal of Bonuses +100 HP, +15 ATT, +15 DEX Overall Stat Bonus +160 HP, +20 MP, +19 ATT, +18 DEF, +18 DEX, -8 VIT, +7 WIS",
     "setBonusStats": {
-      "hp": 120,
-      "att": 12,
-      "spd": 12
+      "dex": 18,
+      "att": 19,
+      "hp": 160,
+      "mp": 20,
+      "def": 18,
+      "wis": 7
     },
-    "sprite": "nordic-knight-set"
+    "sprite": "mad-god-s-messenger-set"
   },
   {
     "id": "mad-minotaur-set",
@@ -916,458 +1079,26 @@
     "sprite": "mad-minotaur-set"
   },
   {
-    "id": "easter-knight-set",
-    "name": "Easter Knight Set",
-    "classId": "knight",
+    "id": "mad-scientist-sorcerer-set",
+    "name": "Mad Scientist Sorcerer Set",
+    "classId": "sorcerer",
     "items": [
-      "ancient-stone-sword",
-      "spiteful-scutum",
-      "fire-dragon-battle-armor",
-      "ring-of-unbound-defense",
-      "eternal-graved-great-sword",
-      "spriteful-shield",
-      "eggre-battle-armor",
-      "tiara-of-eggscellent-sturdiness"
+      "experimental-ring",
+      "scepter-of-fulmination",
+      "robe-of-the-mad-scientist",
+      "conducting-wand"
     ],
-    "setBonus": "+20 MP, +3 SPD, +4 VIT 3rd Piece Bonus +30 MP, +4 SPD, +4 WIS 4th Piece Bonus +40 MP, +6 SPD, +4 DEX Subtotal of Bonuses +90 MP, +4 DEX, +13 SPD, +4 VIT, +4 WIS Overall Stat Bonus +90 MP, +6 ATT, +37 DEF, +18 SPD, +4 DEX, +7 VIT, +4 WIS",
-    "setBonusStats": {
-      "mp": 90,
-      "spd": 18,
-      "vit": 7,
-      "wis": 4,
-      "dex": 4,
-      "att": 6,
-      "def": 37
-    },
-    "sprite": "easter-knight-set"
-  },
-  {
-    "id": "blood-viking-knight-set",
-    "name": "Blood Viking Knight Set",
-    "classId": "knight",
-    "items": [
-      "blood-axe",
-      "sun-star-buckler",
-      "fur-coat",
-      "winter-boots"
-    ],
-    "setBonus": "+25 HP, +3 ATT, +2 SPD 3rd Piece Bonus +35 HP, +3 ATT, +4 SPD 4th Piece Bonus +60 HP, +6 ATT, +6 SPD Subtotal of Bonuses +120 HP, +12 ATT, +12 SPD Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 120,
-      "att": 12,
-      "spd": 12
-    },
-    "sprite": "blood-viking-knight-set"
-  },
-  {
-    "id": "oryx-awesome-set",
-    "name": "Oryx Awesome Set",
-    "classId": null,
-    "items": [
-      "sword-of-the-mad-god",
-      "onyx-shield-of-the-mad-god",
-      "almandine-armor-of-anger",
-      "almandine-ring-of-wrath"
-    ],
-    "setBonus": "+140 HP, +36 DEF, +2 VIT, +2 WIS",
-    "setBonusStats": {
-      "hp": 140,
-      "def": 36,
-      "vit": 2,
-      "wis": 2
-    },
-    "sprite": "oryx-awesome-set"
-  },
-  {
-    "id": "swoll-paladin-set",
-    "name": "Swoll Paladin Set",
-    "classId": "paladin",
-    "items": [
-      "pixie-enchanted-sword",
-      "seal-of-the-enchanted-forest",
-      "fairy-plate",
-      "ring-of-pure-wishes"
-    ],
-    "setBonus": "+30 HP, +25 MP, +2 ATT 3rd Piece Bonus +40 HP, +25 MP, +4 ATT 4th Piece Bonus +50 HP, +50 MP, +6 ATT Subtotal of Bonuses +120 HP, +100 MP, +12 ATT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 120,
-      "mp": 100,
-      "att": 12
-    },
-    "sprite": "swoll-paladin-set"
-  },
-  {
-    "id": "corrupted-paladin-set",
-    "name": "Corrupted Paladin Set",
-    "classId": "paladin",
-    "items": [
-      "abyssal-insignia",
-      "vortex-plating",
-      "eye-of-the-void"
-    ],
-    "setBonus": "+4 DEF, +5 VIT 3rd Piece Bonus +40 HP, +5 DEX 4th Piece Bonus +60 HP, +5 VIT, +10 DEX Subtotal of Bonuses +100 HP, +4 DEF, +15 DEX, +10 VIT Overall Stat Bonus +260 HP, +28 DEF, +15 DEX, +20 VIT",
-    "setBonusStats": {
-      "def": 28,
-      "vit": 20,
-      "hp": 260,
-      "dex": 15
-    },
-    "sprite": "corrupted-paladin-set"
-  },
-  {
-    "id": "frost-harbinger-set",
-    "name": "Frost Harbinger Set",
-    "classId": null,
-    "items": [
-      "heartsteel-claymore",
-      "symbol-of-the-lost",
-      "hull-of-the-tundra",
-      "frozen-heart"
-    ],
-    "setBonus": "+30 HP, +30 MP, +2 ATT, +2 DEF 3rd Piece Bonus +35 HP, +35 MP, +3 ATT, +3 DEF 4th Piece Bonus +40 HP, +40 MP, +4 ATT, +4 DEF Subtotal of Bonuses +105 HP, +105 MP, +9 ATT, +9 DEF Overall Stat Bonus +150 HP, 150 MP, 9 ATT, 34 DEF, -10 SPD",
-    "setBonusStats": {
-      "hp": 150,
-      "mp": 105,
-      "att": 9,
-      "def": 9
-    },
-    "sprite": "frost-harbinger-set"
-  },
-  {
-    "id": "unholy-paladin-set",
-    "name": "Unholy Paladin Set",
-    "classId": "paladin",
-    "items": [
-      "hellfire-broadsword",
-      "sacrilege-seal",
-      "horned-ring"
-    ],
-    "setBonus": "+30 HP, +25 MP, +2 ATT 3rd Piece Bonus +40 HP, +25 MP, +4 ATT 4th Piece Bonus +50 HP, +50 MP, +6 ATT Subtotal of Bonuses +120 HP, +100 MP, +12 ATT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 120,
-      "mp": 100,
-      "att": 12
-    },
-    "sprite": "unholy-paladin-set"
-  },
-  {
-    "id": "fresh-carrot-paladin-set",
-    "name": "Fresh Carrot Paladin Set",
-    "classId": "paladin",
-    "items": [
-      "nutrient-rich-carrot-blade",
-      "carrot-cake-crest",
-      "hardened-carrot-armor",
-      "sun-bathed-straw-hat"
-    ],
-    "setBonus": "+4 DEF, +5 VIT 3rd Piece Bonus +40 HP, +5 DEX 4th Piece Bonus +60 HP, +5 VIT, +10 DEX Subtotal of Bonuses +100 HP, +4 DEF, +15 DEX, +10 VIT Overall Stat Bonus +260 HP, +28 DEF, +15 DEX, +20 VIT",
-    "setBonusStats": {
-      "def": 28,
-      "vit": 20,
-      "hp": 260,
-      "dex": 15
-    },
-    "sprite": "fresh-carrot-paladin-set"
-  },
-  {
-    "id": "legacy-swoll-paladin-set",
-    "name": "Legacy Swoll Paladin Set",
-    "classId": "paladin",
-    "items": [
-      "legacy-pixie-enchanted-sword",
-      "legacy-seal-of-the-enchanted-forest",
-      "legacy-fairy-plate",
-      "legacy-ring-of-pure-wishes"
-    ],
-    "setBonus": "+50 HP, +50 MP, +3 ATT, +25 DEF, +5 VIT, +5 WIS",
+    "setBonus": "+50 HP, +50 MP, +2 ATT, +16 DEF, +4 DEX, +9 VIT, +11 WIS",
     "setBonusStats": {
       "hp": 50,
       "mp": 50,
-      "att": 3,
-      "def": 25,
-      "vit": 5,
-      "wis": 5
+      "att": 2,
+      "def": 16,
+      "dex": 4,
+      "vit": 9,
+      "wis": 11
     },
-    "sprite": "legacy-swoll-paladin-set"
-  },
-  {
-    "id": "flesh-collector-set",
-    "name": "Flesh Collector Set",
-    "classId": null,
-    "items": [
-      "symbiotic-ripper",
-      "parasitic-concoction",
-      "rags-of-the-host",
-      "hivemind-circlet"
-    ],
-    "setBonus": "+2 ATT, +2 VIT, +6 WIS 3rd Piece Bonus +50 HP, +5 ATT, +2 VIT 4th Piece Bonus +30 HP, +5 ATT, +6 VIT, +6 WIS Subtotal of Bonuses +80 HP,+12 ATT, +10 VIT, +6 WIS Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "att": 12,
-      "vit": 10,
-      "wis": 6,
-      "hp": 80
-    },
-    "sprite": "flesh-collector-set"
-  },
-  {
-    "id": "acidified-assassin-set",
-    "name": "Acidified Assassin Set",
-    "classId": "assassin",
-    "items": [
-      "toxin-tooth",
-      "virulent-venom",
-      "acidic-armor",
-      "pernicious-peridot"
-    ],
-    "setBonus": "+2 ATT, +5 DEF, -5 SPD, +5 VIT 3rd Piece Bonus +50 MP, +3 ATT, +5 DEF, +10 VIT 4th Piece Bonus +100 HP, +10 ATT, +10 DEF, +15 VIT Subtotal of Bonuses +100 HP, +15 ATT, +20 DEF, -5 SPD, +30 VIT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "att": 15,
-      "def": 20,
-      "vit": 30,
-      "mp": 50,
-      "hp": 100
-    },
-    "sprite": "acidified-assassin-set"
-  },
-  {
-    "id": "alchemist-assassin-set",
-    "name": "Alchemist Assassin Set",
-    "classId": "assassin",
-    "items": [
-      "toxic-toad",
-      "makeshift-blowpipe",
-      "protective-gloves"
-    ],
-    "setBonus": "+6 DEF, +4 SPD 3rd Piece Bonus +50 MP, +6 ATT, +4 SPD 4th Piece Bonus +60 HP, +5 ATT, +6 DEF Subtotal of Bonuses +60 HP, +50 MP, +11 ATT, +12 DEF, +4 SPD Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "def": 12,
-      "spd": 4,
-      "mp": 50,
-      "att": 11,
-      "hp": 60
-    },
-    "sprite": "alchemist-assassin-set"
-  },
-  {
-    "id": "hollow-king-necromancer-set",
-    "name": "Hollow King Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "edictum-praetoris",
-      "memento-mori",
-      "toga-picta",
-      "interregnum"
-    ],
-    "setBonus": "+30 MP, +3 DEF, 6 VIT 3rd Piece Bonus +45 HP, +7 ATT, +5 DEX, +4 VIT 4th Piece Bonus +40 HP, +3 ATT, +4 DEF Subtotal of Bonuses +85 HP, +30 MP, +10 ATT, +7 DEF, +5 DEX, +10 VIT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "mp": 30,
-      "def": 7,
-      "hp": 85,
-      "att": 10,
-      "dex": 5,
-      "vit": 10
-    },
-    "sprite": "hollow-king-necromancer-set"
-  },
-  {
-    "id": "cuboid-necromancer-set",
-    "name": "Cuboid Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "squaroid-staff",
-      "cubic-frame",
-      "polygonal-garbs",
-      "cuband"
-    ],
-    "setBonus": "+5 DEF 3rd Piece Bonus +50 HP, +5 VIT 4th Piece Bonus +50 HP, +5 DEX, +10 VIT Subtotal of Bonuses +100 HP, +5 DEF, +5 DEX, +15 VIT Overall Stat Bonus +210 HP, +20 DEF, +15 DEX, +15 VIT",
-    "setBonusStats": {
-      "def": 20,
-      "hp": 210,
-      "vit": 15,
-      "dex": 15
-    },
-    "sprite": "cuboid-necromancer-set"
-  },
-  {
-    "id": "shaman-necromancer-set",
-    "name": "Shaman Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "ritual-skull",
-      "ragged-robes",
-      "fang-necklace",
-      "soul-gem-amulet"
-    ],
-    "setBonus": "+3 DEX, +5 VIT 3rd Piece Bonus +50 HP, +3 ATT 4th Piece Bonus +50 HP, +4 ATT, +4 DEX Subtotal of Bonuses +100 HP, +7 ATT, +7 DEX, +5 VIT, Overall Stat Bonus +100 HP, +18 ATT, +11 DEF, +18 DEX, +10 VIT",
-    "setBonusStats": {
-      "dex": 18,
-      "vit": 10,
-      "hp": 100,
-      "att": 18,
-      "def": 11
-    },
-    "sprite": "shaman-necromancer-set"
-  },
-  {
-    "id": "reaper-necromancer-set",
-    "name": "Reaper Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "hooded-skull",
-      "grim-goblet"
-    ],
-    "setBonus": "+30 MP, +3 DEF, 6 VIT 3rd Piece Bonus +45 HP, +7 ATT, +5 DEX, +4 VIT 4th Piece Bonus +40 HP, +3 ATT, +4 DEF Subtotal of Bonuses +85 HP, +30 MP, +10 ATT, +7 DEF, +5 DEX, +10 VIT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "mp": 30,
-      "def": 7,
-      "hp": 85,
-      "att": 10,
-      "dex": 5,
-      "vit": 10
-    },
-    "sprite": "reaper-necromancer-set"
-  },
-  {
-    "id": "globular-necromancer-set",
-    "name": "Globular Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "bloody-pitch-fork-staff",
-      "blood-essence",
-      "curse-binding-robes",
-      "spike-headband"
-    ],
-    "setBonus": "+5 DEF 3rd Piece Bonus +50 HP, +5 VIT 4th Piece Bonus +50 HP, +5 DEX, +10 VIT Subtotal of Bonuses +100 HP, +5 DEF, +5 DEX, +15 VIT Overall Stat Bonus +210 HP, +20 DEF, +15 DEX, +15 VIT",
-    "setBonusStats": {
-      "def": 20,
-      "hp": 210,
-      "vit": 15,
-      "dex": 15
-    },
-    "sprite": "globular-necromancer-set"
-  },
-  {
-    "id": "love-witch-necromancer-set",
-    "name": "Love Witch Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "gloves-of-love",
-      "mask-of-passion",
-      "boudoir-robe",
-      "essence-of-love",
-      "essence-of-enlightened-love"
-    ],
-    "setBonus": "+3 DEX, +5 VIT 3rd Piece Bonus +50 HP, +3 ATT 4th Piece Bonus +50 HP, +4 ATT, +4 DEX Subtotal of Bonuses +100 HP, +7 ATT, +7 DEX, +5 VIT, Overall Stat Bonus +100 HP, +18 ATT, +11 DEF, +18 DEX, +10 VIT",
-    "setBonusStats": {
-      "dex": 18,
-      "vit": 10,
-      "hp": 100,
-      "att": 18,
-      "def": 11
-    },
-    "sprite": "love-witch-necromancer-set"
-  },
-  {
-    "id": "rose-keeper-necromancer-set",
-    "name": "Rose Keeper Necromancer Set",
-    "classId": "necromancer",
-    "items": [
-      "spring-rose",
-      "ever-green-skull",
-      "floral-corset",
-      "rose-brooch"
-    ],
-    "setBonus": "+5 SPD, +5 VIT 3rd Piece Bonus +4 DEF, +5 VIT 4th Piece Bonus +80 HP, +6 ATT, +5 SPD Subtotal of Bonuses +80 HP, +6 ATT, +5 SPD, +10 VIT Overall Stat Bonus +215 HP, +75 MP, +12 ATT, +19 DEF, +15 SPD, +25 VIT",
-    "setBonusStats": {
-      "spd": 15,
-      "vit": 25,
-      "def": 19,
-      "hp": 215,
-      "att": 12,
-      "mp": 75
-    },
-    "sprite": "rose-keeper-necromancer-set"
-  },
-  {
-    "id": "swarming-huntress-set",
-    "name": "Swarming Huntress Set",
-    "classId": "huntress",
-    "items": [
-      "nectar-crossfire",
-      "honeytomb-snare",
-      "apiary-armor",
-      "honey-circlet"
-    ],
-    "setBonus": "+5 DEF, +5 SPD 3rd Piece Bonus +40 HP, +5 ATT 4th Piece Bonus +8 DEX Subtotal of Bonuses +40 HP, +5 ATT, +5 DEF, +5 SPD, +8 DEX Overall Stat Bonus +120 HP, +12 ATT, +23 DEF, +12 SPD, +8 DEX",
-    "setBonusStats": {
-      "def": 23,
-      "spd": 12,
-      "hp": 120,
-      "att": 12,
-      "dex": 8
-    },
-    "sprite": "swarming-huntress-set"
-  },
-  {
-    "id": "horticultural-huntress-set",
-    "name": "Horticultural Huntress Set",
-    "classId": "huntress",
-    "items": [
-      "bergenia-bow",
-      "lifebringing-lotus",
-      "hollyhock-hide",
-      "chrysanthemum-corsage"
-    ],
-    "setBonus": "+20 MP, +3 SPD, +3 DEX 3rd Piece Bonus +30 HP, +40 MP, +5 SPD, +5 DEX 4th Piece Bonus +70 HP, +3 DEF, +5 SPD, +5 DEX Subtotal of Bonuses +100 HP, +60 MP, +3 DEF, +13 SPD, +13 DEX Overall Stat Bonus +100 HP, +170 MP, +14 DEF, +21 SPD, +33 DEX, +5 VIT",
-    "setBonusStats": {
-      "mp": 170,
-      "spd": 21,
-      "dex": 33,
-      "hp": 100,
-      "def": 14,
-      "vit": 5
-    },
-    "sprite": "horticultural-huntress-set"
-  },
-  {
-    "id": "resurrected-huntress-set",
-    "name": "Resurrected Huntress Set",
-    "classId": "huntress",
-    "items": [
-      "bolt-thrower",
-      "lightning-rod",
-      "wedding-dress",
-      "gothic-bouffant"
-    ],
-    "setBonus": "+20 HP, +10 MP, +2 ATT, +2 VIT 3rd Piece Bonus +40 HP, +30 MP, +3 ATT, +2 DEF, +3 VIT 4th Piece Bonus +60 HP, +40 MP, +5 ATT, +3 DEF, +5 VIT Subtotal of Bonuses +120 HP, +80 MP, +10 ATT, +5 DEF, +10 VIT Overall Stat Bonus +180 HP, +80 MP, +14 ATT, +2",
-    "setBonusStats": {
-      "hp": 180,
-      "mp": 80,
-      "att": 14,
-      "vit": 10,
-      "def": 5
-    },
-    "sprite": "resurrected-huntress-set"
-  },
-  {
-    "id": "cursed-cursebreaker-huntress-set",
-    "name": "Cursed Cursebreaker Huntress Set",
-    "classId": "huntress",
-    "items": [
-      "silver-revolvers",
-      "consecrated-trap",
-      "metal-plated-corset"
-    ],
-    "setBonus": "+20 MP, +3 SPD, +3 DEX 3rd Piece Bonus +30 HP, +40 MP, +5 SPD, +5 DEX 4th Piece Bonus +70 HP, +3 DEF, +5 SPD, +5 DEX Subtotal of Bonuses +100 HP, +60 MP, +3 DEF, +13 SPD, +13 DEX Overall Stat Bonus +100 HP, +170 MP, +14 DEF, +21 SPD, +33 DEX, +5 VIT",
-    "setBonusStats": {
-      "mp": 170,
-      "spd": 21,
-      "dex": 33,
-      "hp": 100,
-      "def": 14,
-      "vit": 5
-    },
-    "sprite": "cursed-cursebreaker-huntress-set"
+    "sprite": "mad-scientist-sorcerer-set"
   },
   {
     "id": "magmatic-mystic-set",
@@ -1391,29 +1122,189 @@
     "sprite": "magmatic-mystic-set"
   },
   {
-    "id": "astral-arcanist-set",
-    "name": "Astral Arcanist Set",
-    "classId": null,
+    "id": "marble-paladin-set",
+    "name": "Marble Paladin Set",
+    "classId": "paladin",
     "items": [
-      "nebular-rod",
-      "cosmic-astrolabe"
+      "sword-of-the-colossus",
+      "marble-seal",
+      "breastplate-of-new-life",
+      "magical-lodestone"
     ],
-    "setBonus": "+33 HP, +33 MP, +4 ATT 3rd Piece Bonus +44 HP, +44 MP, +6 ATT 4th Piece Bonus +55 HP, +55 MP, +8 ATT Subtotal of Bonuses +132 HP, +132 MP, +18 ATT Overall Stat Bonus",
+    "setBonus": "+160 HP, +6 ATT, +25 DEF, +6 SPD, +6 DEX",
     "setBonusStats": {
-      "hp": 132,
-      "mp": 132,
-      "att": 18
+      "hp": 160,
+      "att": 6,
+      "def": 25,
+      "spd": 6,
+      "dex": 6
     },
-    "sprite": "astral-arcanist-set"
+    "sprite": "marble-paladin-set"
   },
   {
-    "id": "totalia-mystic-set",
-    "name": "Totalia Mystic Set",
+    "id": "mechanical-raptor-druid-set",
+    "name": "Mechanical Raptor Druid Set",
+    "classId": "druid",
+    "items": [
+      "mechpilot-s-jerkin",
+      "pressure-gauge-band"
+    ],
+    "setBonus": "+80 HP, +40 MP, +3 DEF 3rd Piece Bonus +80 HP, +5 ATT, +5 WIS 4th Piece Bonus +60 MP, +10 ATT, +5 DEF Subtotal of Bonuses +160 HP, +100 MP, +15 ATT, +8 DEF, +5 WIS Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 160,
+      "mp": 100,
+      "def": 8,
+      "att": 15,
+      "wis": 5
+    },
+    "sprite": "mechanical-raptor-druid-set"
+  },
+  {
+    "id": "nordic-knight-set",
+    "name": "Nordic Knight Set",
+    "classId": "knight",
+    "items": [
+      "dalvar-s-battle-axe",
+      "sunken-buckler",
+      "chainmail-body-armor",
+      "gjallarhorn"
+    ],
+    "setBonus": "+25 HP, +3 ATT, +2 SPD 3rd Piece Bonus +35 HP, +3 ATT, +4 SPD 4th Piece Bonus +60 HP, +6 ATT, +6 SPD Subtotal of Bonuses +120 HP, +12 ATT, +12 SPD Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 120,
+      "att": 12,
+      "spd": 12
+    },
+    "sprite": "nordic-knight-set"
+  },
+  {
+    "id": "onmyoji-ninja-set",
+    "name": "Onmyoji Ninja Set",
+    "classId": "ninja",
+    "items": [
+      "shakujo",
+      "invocation-scroll",
+      "divination-cloak",
+      "omamori"
+    ],
+    "setBonus": "+4 ATT, +4 DEF 3rd Piece Bonus +4 DEX, +75 HP 4th Piece Bonus +6 ATT, +75 MP Subtotal of Bonuses +10 ATT, +4 DEF, +4 DEX, +75 MP, +75 HP Overall Stat Bonus +10 ATT, +19 DEF, +14 DEX, +175 MP, +125 HP",
+    "setBonusStats": {
+      "att": 10,
+      "def": 19,
+      "dex": 14,
+      "hp": 125,
+      "mp": 175
+    },
+    "sprite": "onmyoji-ninja-set"
+  },
+  {
+    "id": "oryx-awesome-set",
+    "name": "Oryx Awesome Set",
+    "classId": null,
+    "items": [
+      "sword-of-the-mad-god",
+      "onyx-shield-of-the-mad-god",
+      "almandine-armor-of-anger",
+      "almandine-ring-of-wrath"
+    ],
+    "setBonus": "+140 HP, +36 DEF, +2 VIT, +2 WIS",
+    "setBonusStats": {
+      "hp": 140,
+      "def": 36,
+      "vit": 2,
+      "wis": 2
+    },
+    "sprite": "oryx-awesome-set"
+  },
+  {
+    "id": "oryx-s-battle-attires-set",
+    "name": "Oryx&apos;s Battle Attires Set",
+    "classId": null,
+    "items": [
+      "oryx-s-greatsword",
+      "champion-s-bastion",
+      "mercy-s-bane",
+      "bloodstone-ring"
+    ],
+    "setBonus": "+5 ATT 3rd Piece Bonus +5 DEX, +15 DEF 4th Piece Bonus +75 HP Subtotal of Bonuses +75 HP, +5 ATT, +15 DEF, +5 DEX Overall Stat Bonus +195 HP, +12 ATT, +29 DEF, +12 DEX",
+    "setBonusStats": {
+      "att": 12,
+      "dex": 12,
+      "def": 29,
+      "hp": 195
+    },
+    "sprite": "oryx-s-battle-attires-set"
+  },
+  {
+    "id": "painted-egg-archer-set",
+    "name": "Painted Egg Archer Set",
+    "classId": "archer",
+    "items": [
+      "spring-wonder-bow",
+      "fresh-breeze-quiver",
+      "painted-eggshell-armor",
+      "painted-egg-amulet"
+    ],
+    "setBonus": "+25 HP, +20 MP 3rd Piece Bonus +30 MP, +5 DEX, +5 VIT 4th Piece Bonus +50 HP, +50 MP, +10 ATT, +5 DEX Subtotal of Bonuses +75 HP, +100 MP, +10 ATT, +10 DEX, +5 VIT Overall Stat Bonus +125 HP, +100 MP, +10 ATT, +21 DEF, +10 DEX, +20 VIT",
+    "setBonusStats": {
+      "hp": 125,
+      "mp": 100,
+      "dex": 10,
+      "vit": 20,
+      "att": 10,
+      "def": 21
+    },
+    "sprite": "painted-egg-archer-set"
+  },
+  {
+    "id": "paranormal-wizard-set",
+    "name": "Paranormal Wizard Set",
+    "classId": "wizard",
+    "items": [
+      "supernatural-staff",
+      "spectral-spell",
+      "immortal-mantle",
+      "phantom-pendant"
+    ],
+    "setBonus": "+15 HP, +15 MP, +3 DEF 3rd Piece Bonus +15 HP, +15 MP, +3 DEF 4th Piece Bonus +15 HP, +15 MP, +3 DEF Subtotal of Bonuses +45 HP, +45 MP, +9 DEF Overall Stat Bonus +105 HP, +170 MP, +25 DEF, +3 SPD, +7 DEX",
+    "setBonusStats": {
+      "hp": 105,
+      "mp": 170,
+      "def": 25,
+      "spd": 3,
+      "dex": 7
+    },
+    "sprite": "paranormal-wizard-set"
+  },
+  {
+    "id": "phantom-archer-set",
+    "name": "Phantom Archer Set",
+    "classId": "archer",
+    "items": [
+      "wraith-s-brigandine",
+      "revenant-ring",
+      "deathless-crossbow",
+      "quiver-of-shrieking-specters"
+    ],
+    "setBonus": "+20 HP, +20 MP, +3 ATT, +3 SPD 3rd Piece Bonus +30 HP, +30 MP, +3 DEF, +6 SPD 4th Piece Bonus +50 HP, +50 MP, +6 ATT, +6 DEF Subtotal of Bonuses + 100 HP, +100 MP, + 9 ATT, +9 DEF, +9 SPD Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 100,
+      "mp": 100,
+      "att": 9,
+      "spd": 9,
+      "def": 9
+    },
+    "sprite": "phantom-archer-set"
+  },
+  {
+    "id": "phylactery-mystic-set",
+    "name": "Phylactery Mystic Set",
     "classId": "mystic",
     "items": [
-      "stygian-torch",
-      "orb-of-the-sabbath",
-      "robe-of-the-enchantress"
+      "the-phylactery",
+      "soul-of-the-bearer",
+      "soulless-robe",
+      "ring-of-the-covetous-heart"
     ],
     "setBonus": "+20 HP, +15 MP, +6 SPD, +7 WIS 3rd Piece Bonus +20 HP, +15 MP, +6 DEF, +8 VIT 4th Piece Bonus +20 HP, +15 MP, +7 ATT, +6 DEF Subtotal of Bonuses +60 HP, +45 MP, +7 ATT, +12 DEF, +6 SPD, +8 VIT, +7 WIS Overall Stat Bonus +120 HP, +125 MP, +15 ATT, +27",
     "setBonusStats": {
@@ -1425,159 +1316,85 @@
       "vit": 8,
       "att": 15
     },
-    "sprite": "totalia-mystic-set"
+    "sprite": "phylactery-mystic-set"
   },
   {
-    "id": "lost-golem-set",
-    "name": "Lost Golem Set",
-    "classId": null,
+    "id": "pirate-king-warrior-set",
+    "name": "Pirate King Warrior Set",
+    "classId": "warrior",
     "items": [
-      "carved-golem-remains",
-      "brain-of-the-golem",
-      "golem-garments",
-      "rusty-cuffs"
+      "swashbuckler-s-sickle",
+      "tricorne-of-the-high-seas",
+      "naval-uniform",
+      "first-mate-s-hook"
     ],
-    "setBonus": "+3 DEF, +15 VIT 3rd Piece Bonus +5 ATT, +5 DEX 4th Piece Bonus +80 HP, +5 ATT, +5 DEF, +5 DEX Subtotal of Bonuses +80 HP, +10 ATT, +8 DEF, +10 DEX, +15 VIT Overall Stat Bonus TBA",
+    "setBonus": "+30 HP, +30 MP, +5 ATT, -2 DEX 3rd Piece Bonus +50 HP, +50 MP, +10 ATT, -3 DEX 4th Piece Bonus +80 HP, +80 MP, +15 ATT, -5 SPD, -8 DEX Subtotal of Bonuses +160 HP, +160 MP, +30 ATT, -5 SPD, -13 DEX Overall Stat Bonus TBA",
     "setBonusStats": {
-      "def": 8,
-      "vit": 15,
+      "hp": 160,
+      "mp": 160,
+      "att": 30
+    },
+    "sprite": "pirate-king-warrior-set"
+  },
+  {
+    "id": "plague-doctor-priest-set",
+    "name": "Plague Doctor Priest Set",
+    "classId": "priest",
+    "items": [
+      "cane-of-caduceus",
+      "bloodletting-leeches",
+      "doctor-s-overcoat",
+      "plague-mask"
+    ],
+    "setBonus": "+35 HP, +4 DEF, +5 DEX 3rd Piece Bonus +45 HP, +5 DEF, +6 DEX 4th Piece Bonus +55 HP, +6 DEF, +7 DEX Subtotal of Bonuses +135 HP, +15 DEF, +18 DEX Overall Stat Bonus +200 HP, +34 DEF, +29 DEX, +13 WIS",
+    "setBonusStats": {
+      "hp": 200,
+      "def": 34,
+      "dex": 29,
+      "wis": 13
+    },
+    "sprite": "plague-doctor-priest-set"
+  },
+  {
+    "id": "priest-of-geb-set",
+    "name": "Priest of Geb Set",
+    "classId": "priest",
+    "items": [
+      "wand-of-geb",
+      "shendyt-of-geb",
+      "geb-s-ring-of-wisdom",
+      "book-of-geb"
+    ],
+    "setBonus": "+5 ATT, +5 WIS 3rd Piece Bonus +5 ATT, +5 VIS 4th Piece Bonus +150 HP, +150 MP, +5 VIT, +5 WIS Subtotal of Bonuses +150 HP, +150 MP, +10 ATT, +10 VIT, +10 WIS Overall Stat Bonus +200 HP, +200 MP, +10 ATT, +20 DEF, +25 VIT, +30 WIS",
+    "setBonusStats": {
       "att": 10,
-      "dex": 10,
-      "hp": 80
-    },
-    "sprite": "lost-golem-set"
-  },
-  {
-    "id": "daeva-trickster-set",
-    "name": "Daeva Trickster Set",
-    "classId": "trickster",
-    "items": [
-      "daevite-progenitor",
-      "flames-of-genesis"
-    ],
-    "setBonus": "+20 HP, +20 MP, +5 VIT, +5 WIS 3rd Piece Bonus +20 HP, +20 MP, +2 ATT, +2 DEF 4th Piece Bonus +30 HP, +30 MP, +3 ATT, +3 DEF Subtotal of Bonuses +70 HP, +70 MP, +5 ATT, +5 DEF, +5 VIT, +5 WIS Overall Stat Bonus +150 HP, +120 MP, +5 ATT, +21 DEF, +20 ",
-    "setBonusStats": {
-      "hp": 150,
-      "mp": 120,
-      "vit": 5,
-      "wis": 5,
-      "att": 5,
-      "def": 21
-    },
-    "sprite": "daeva-trickster-set"
-  },
-  {
-    "id": "spellbound-soulthief-set",
-    "name": "Spellbound Soulthief Set",
-    "classId": null,
-    "items": [
-      "blade-of-fates",
-      "accursed-memory",
-      "jewel-of-vengeance"
-    ],
-    "setBonus": "+30 HP, +4 DEF, +5 DEX 3rd Piece Bonus +40 HP, +5 DEF, +7 DEX 4th Piece Bonus +50 HP, +5 DEF, +9 DEX Subtotal of Bonuses +120 HP, +14 DEF, +21 DEX Overall Stat Bonus",
-    "setBonusStats": {
-      "hp": 120,
-      "def": 14,
-      "dex": 21
-    },
-    "sprite": "spellbound-soulthief-set"
-  },
-  {
-    "id": "scarecrow-trickster-set",
-    "name": "Scarecrow Trickster Set",
-    "classId": "trickster",
-    "items": [
-      "maize-machete",
-      "pumpkin-prism",
-      "withered-poncho",
-      "burlap-hat"
-    ],
-    "setBonus": "+3 DEF, +15 VIT 3rd Piece Bonus +5 ATT, +5 DEX 4th Piece Bonus +80 HP, +5 ATT, +5 DEF, +5 DEX Subtotal of Bonuses +80 HP, +10 ATT, +8 DEF, +10 DEX, +15 VIT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "def": 8,
-      "vit": 15,
-      "att": 10,
-      "dex": 10,
-      "hp": 80
-    },
-    "sprite": "scarecrow-trickster-set"
-  },
-  {
-    "id": "horrific-sorcerer-set",
-    "name": "Horrific Sorcerer Set",
-    "classId": "sorcerer",
-    "items": [
-      "grotesque-scepter",
-      "garment-of-the-beast",
-      "horrific-claws"
-    ],
-    "setBonus": "+3 DEF, +3 SPD, +3 WIS 3rd Piece Bonus +4 ATT, +5 DEF, +4 WIS 4th Piece Bonus +40 HP, +10 DEF, +10 SPD Subtotal of Bonuses +40 HP, +4 ATT, +18 DEF, +13 SPD, +7 WIS Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "def": 18,
-      "spd": 13,
-      "wis": 7,
-      "att": 4,
-      "hp": 40
-    },
-    "sprite": "horrific-sorcerer-set"
-  },
-  {
-    "id": "court-magician-sorcerer-set",
-    "name": "Court Magician Sorcerer Set",
-    "classId": "sorcerer",
-    "items": [
-      "magic-wand",
-      "lightshow-scepter"
-    ],
-    "setBonus": "+3 DEF, +2 DEX 3rd Piece Bonus +4 DEF, +3 DEX, +5 WIS 4th Piece Bonus -185 MP, +60 WIS Subtotal of Bonuses -185 MP, +7 DEF, +5 DEX, +65 WIS Overall Stat Bonus +107 HP, -235 MP, +19 DEF, +15 DEX, +75 WIS",
-    "setBonusStats": {
-      "def": 19,
-      "dex": 15,
-      "wis": 75,
-      "hp": 107
-    },
-    "sprite": "court-magician-sorcerer-set"
-  },
-  {
-    "id": "storm-shaman-set",
-    "name": "Storm Shaman Set",
-    "classId": null,
-    "items": [
-      "lightning-wand",
-      "totem-scepter",
-      "thunderstorm-tunic",
-      "bolt-in-a-bottle"
-    ],
-    "setBonus": "+10 HP, +50 MP, +4 SPD, +5 WIS 3rd Piece Bonus +20 HP, +50 MP, +6 SPD, +10 WIS 4th Piece Bonus +30 HP, +50 MP, +10 SPD, +15 WIS Subtotal of Bonuses +60 HP, +150 MP, +20 SPD, +30 WIS Overall Stat Bonus +60 HP, +210 MP, +5 ATT, +19 DEF, +29 SPD, +30 WI",
-    "setBonusStats": {
-      "hp": 60,
-      "mp": 210,
-      "spd": 29,
       "wis": 30,
-      "att": 5,
-      "def": 19
+      "hp": 200,
+      "mp": 200,
+      "vit": 25,
+      "def": 20
     },
-    "sprite": "storm-shaman-set"
+    "sprite": "priest-of-geb-set"
   },
   {
-    "id": "incubus-sorcerer-set",
-    "name": "Incubus Sorcerer Set",
-    "classId": "sorcerer",
+    "id": "purified-priest-set",
+    "name": "Purified Priest Set",
+    "classId": "priest",
     "items": [
-      "heartbreaker-wand",
-      "lovesick-scepter",
-      "devilish-robes",
-      "devil-horn-headband"
+      "tome-of-purification",
+      "st-abraham-s-wand",
+      "chasuble-of-holy-light",
+      "ring-of-divine-faith"
     ],
-    "setBonus": "+3 DEF, +2 DEX 3rd Piece Bonus +4 DEF, +3 DEX, +5 WIS 4th Piece Bonus -185 MP, +60 WIS Subtotal of Bonuses -185 MP, +7 DEF, +5 DEX, +65 WIS Overall Stat Bonus +107 HP, -235 MP, +19 DEF, +15 DEX, +75 WIS",
+    "setBonus": "+90 HP, +90 MP, +12 DEF, +27 VIT, +27 WIS",
     "setBonusStats": {
-      "def": 19,
-      "dex": 15,
-      "wis": 75,
-      "hp": 107
+      "hp": 90,
+      "mp": 90,
+      "def": 12,
+      "vit": 27,
+      "wis": 27
     },
-    "sprite": "incubus-sorcerer-set"
+    "sprite": "purified-priest-set"
   },
   {
     "id": "raijin-disciple-set",
@@ -1601,65 +1418,503 @@
     "sprite": "raijin-disciple-set"
   },
   {
-    "id": "crystal-kunoichi-set",
-    "name": "Crystal Kunoichi Set",
+    "id": "reanimated-archer-set",
+    "name": "Reanimated Archer Set",
+    "classId": "archer",
+    "items": [
+      "bone-bow",
+      "spinal-quiver",
+      "torso-tunic",
+      "collarbone-collar"
+    ],
+    "setBonus": "+20 HP, +20 MP, +3 ATT, +3 SPD 3rd Piece Bonus +30 HP, +30 MP, +3 DEF, +6 SPD 4th Piece Bonus +50 HP, +50 MP, +6 ATT, +6 DEF Subtotal of Bonuses + 100 HP, +100 MP, + 9 ATT, +9 DEF, +9 SPD Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 100,
+      "mp": 100,
+      "att": 9,
+      "spd": 9,
+      "def": 9
+    },
+    "sprite": "reanimated-archer-set"
+  },
+  {
+    "id": "reaper-necromancer-set",
+    "name": "Reaper Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "gravekeeper-s-scythe",
+      "hooded-skull",
+      "executioner-s-garb",
+      "grim-goblet"
+    ],
+    "setBonus": "+30 MP, +3 DEF, 6 VIT 3rd Piece Bonus +45 HP, +7 ATT, +5 DEX, +4 VIT 4th Piece Bonus +40 HP, +3 ATT, +4 DEF Subtotal of Bonuses +85 HP, +30 MP, +10 ATT, +7 DEF, +5 DEX, +10 VIT Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "mp": 30,
+      "def": 7,
+      "hp": 85,
+      "att": 10,
+      "dex": 5,
+      "vit": 10
+    },
+    "sprite": "reaper-necromancer-set"
+  },
+  {
+    "id": "resurrected-huntress-set",
+    "name": "Resurrected Huntress Set",
+    "classId": "huntress",
+    "items": [
+      "bolt-thrower",
+      "lightning-rod",
+      "wedding-dress",
+      "gothic-bouffant"
+    ],
+    "setBonus": "+20 HP, +10 MP, +2 ATT, +2 VIT 3rd Piece Bonus +40 HP, +30 MP, +3 ATT, +2 DEF, +3 VIT 4th Piece Bonus +60 HP, +40 MP, +5 ATT, +3 DEF, +5 VIT Subtotal of Bonuses +120 HP, +80 MP, +10 ATT, +5 DEF, +10 VIT Overall Stat Bonus +180 HP, +80 MP, +14 ATT, +2",
+    "setBonusStats": {
+      "hp": 180,
+      "mp": 80,
+      "att": 14,
+      "vit": 10,
+      "def": 5
+    },
+    "sprite": "resurrected-huntress-set"
+  },
+  {
+    "id": "rose-keeper-necromancer-set",
+    "name": "Rose Keeper Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "spring-rose",
+      "ever-green-skull",
+      "floral-corset",
+      "rose-brooch"
+    ],
+    "setBonus": "+5 SPD, +5 VIT 3rd Piece Bonus +4 DEF, +5 VIT 4th Piece Bonus +80 HP, +6 ATT, +5 SPD Subtotal of Bonuses +80 HP, +6 ATT, +5 SPD, +10 VIT Overall Stat Bonus +215 HP, +75 MP, +12 ATT, +19 DEF, +15 SPD, +25 VIT",
+    "setBonusStats": {
+      "spd": 15,
+      "vit": 25,
+      "def": 19,
+      "hp": 215,
+      "att": 12,
+      "mp": 75
+    },
+    "sprite": "rose-keeper-necromancer-set"
+  },
+  {
+    "id": "scarecrow-trickster-set",
+    "name": "Scarecrow Trickster Set",
+    "classId": "trickster",
+    "items": [
+      "maize-machete",
+      "pumpkin-prism",
+      "withered-poncho",
+      "burlap-hat"
+    ],
+    "setBonus": "+3 DEF, +15 VIT 3rd Piece Bonus +5 ATT, +5 DEX 4th Piece Bonus +80 HP, +5 ATT, +5 DEF, +5 DEX Subtotal of Bonuses +80 HP, +10 ATT, +8 DEF, +10 DEX, +15 VIT Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "def": 8,
+      "vit": 15,
+      "att": 10,
+      "dex": 10,
+      "hp": 80
+    },
+    "sprite": "scarecrow-trickster-set"
+  },
+  {
+    "id": "scientific-summoner-set",
+    "name": "Scientific Summoner Set",
+    "classId": "summoner",
+    "items": [
+      "c-l-a-w",
+      "a-r-m-o-r",
+      "c-o-n-t-r-o-l-l-e-r"
+    ],
+    "setBonus": "+20 HP, +2 ATT, +2 VIT 3rd Piece Bonus +30 HP, +5 ATT, +3 DEF 4th Piece Bonus +60 HP, +60 MP, +8 ATT, +2 DEF, +3 VIT Subtotal of Bonuses +110 HP, +60 MP, +15 ATT, +5 DEF, +5 VIT Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 110,
+      "att": 15,
+      "vit": 5,
+      "def": 5,
+      "mp": 60
+    },
+    "sprite": "scientific-summoner-set"
+  },
+  {
+    "id": "shaman-necromancer-set",
+    "name": "Shaman Necromancer Set",
+    "classId": "necromancer",
+    "items": [
+      "shaman-s-staff",
+      "ritual-skull",
+      "ragged-robes",
+      "fang-necklace"
+    ],
+    "setBonus": "+3 DEX, +5 VIT 3rd Piece Bonus +50 HP, +3 ATT 4th Piece Bonus +50 HP, +4 ATT, +4 DEX Subtotal of Bonuses +100 HP, +7 ATT, +7 DEX, +5 VIT, Overall Stat Bonus +100 HP, +18 ATT, +11 DEF, +18 DEX, +10 VIT",
+    "setBonusStats": {
+      "dex": 18,
+      "vit": 10,
+      "hp": 100,
+      "att": 18,
+      "def": 11
+    },
+    "sprite": "shaman-necromancer-set"
+  },
+  {
+    "id": "skuld-2-the-reghostening-set",
+    "name": "Skuld 2 The ReGhostening Set",
     "classId": null,
     "items": [
-      "quartz-cutter",
-      "crystalline-kunai",
-      "luminous-armor",
-      "radiant-heart"
+      "etherite-dagger",
+      "ghastly-drape",
+      "mantle-of-skuld",
+      "spectral-ring-of-horrors"
     ],
-    "setBonus": "+30 HP, +4 ATT, +5 VIT 3rd Piece Bonus +30 HP, +5 ATT, +5 VIT 4th Piece Bonus +120 HP, +6 ATT, +5 DEF, +10 VIT Subtotal of Bonuses +180 HP, +15 ATT, +5 DEF, +20 VIT Overall Stat Bonus +480 HP, +20 ATT, +5 DEF, +10 SPD, +25 VIT",
+    "setBonus": "+4 WIS, +4 DEX 3rd Piece Bonus +30 MP, +4 ATT, +4 WIS 4th Piece Bonus +80 HP, +5 DEX, +5 ATT Subtotal of Bonuses +80 HP, +30 MP, +9 ATT, +9 DEX, +8 WIS Overall Stat Bonus TBA",
     "setBonusStats": {
-      "hp": 480,
-      "att": 20,
-      "vit": 25,
+      "wis": 8,
+      "dex": 9,
+      "mp": 30,
+      "att": 9,
+      "hp": 80
+    },
+    "sprite": "skuld-2-the-reghostening-set"
+  },
+  {
+    "id": "slurp-scion-wizard-set",
+    "name": "Slurp Scion Wizard Set",
+    "classId": "wizard",
+    "items": [
+      "tideturner-trident",
+      "slurpian-sea-scroll",
+      "oceanic-apparel",
+      "imperial-keepsake"
+    ],
+    "setBonus": "+20 HP, +2 DEF, +2 SPD 3rd Piece Bonus +30 HP, +4 DEF, +3 SPD 4th Piece Bonus +40 HP, +10 ATT, +6 DEF, +4 SPD Subtotal of Bonuses +90 HP, +10 ATT, +12 DEF, +9 SPD Overall Stat Bonus +200 HP, +10 ATT, +20 DEF, +25 SPD",
+    "setBonusStats": {
+      "hp": 200,
+      "def": 20,
+      "spd": 25,
+      "att": 10
+    },
+    "sprite": "slurp-scion-wizard-set"
+  },
+  {
+    "id": "spectral-sentry-rogue-set",
+    "name": "Spectral Sentry Rogue Set",
+    "classId": "rogue",
+    "items": [
+      "phantom-sickle",
+      "spectre-cloak",
+      "reaper-s-shroud",
+      "soul-necklace"
+    ],
+    "setBonus": "+3 SPD, +3 DEX 3rd Piece Bonus +5 SPD, +5 DEX, +5 WIS 4th Piece Bonus +70 HP, +6 ATT, +6 DEX, +6 WIS Subtotal of Bonuses +70 HP, +6 ATT, +8 SPD, +8 DEX, +8 WIS Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "spd": 8,
+      "dex": 8,
+      "wis": 8,
+      "hp": 70,
+      "att": 6
+    },
+    "sprite": "spectral-sentry-rogue-set"
+  },
+  {
+    "id": "spellbound-soulthief-set",
+    "name": "Spellbound Soulthief Set",
+    "classId": null,
+    "items": [
+      "blade-of-fates",
+      "accursed-memory",
+      "gravetender-s-vest",
+      "jewel-of-vengeance"
+    ],
+    "setBonus": "+30 HP, +4 DEF, +5 DEX 3rd Piece Bonus +40 HP, +5 DEF, +7 DEX 4th Piece Bonus +50 HP, +5 DEF, +9 DEX Subtotal of Bonuses +120 HP, +14 DEF, +21 DEX Overall Stat Bonus",
+    "setBonusStats": {
+      "hp": 120,
+      "def": 14,
+      "dex": 21
+    },
+    "sprite": "spellbound-soulthief-set"
+  },
+  {
+    "id": "spirit-mystic-set",
+    "name": "Spirit Mystic Set",
+    "classId": "mystic",
+    "items": [
+      "spirit-staff",
+      "enchantment-orb",
+      "woodland-robe",
+      "fairy-ring"
+    ],
+    "setBonus": "+15 MP, +5 DEF, +5 SPD, +5 DEX, +2 VIT, +2 WIS",
+    "setBonusStats": {
+      "mp": 15,
       "def": 5,
+      "spd": 5,
+      "dex": 5,
+      "vit": 2,
+      "wis": 2
+    },
+    "sprite": "spirit-mystic-set"
+  },
+  {
+    "id": "storm-caller-bard-set",
+    "name": "Storm Caller Bard Set",
+    "classId": "bard",
+    "items": [
+      "hailstorm",
+      "wind-dancer-robe",
+      "augur-of-the-tempest"
+    ],
+    "setBonus": "+25 HP, +3 SPD, +3 DEX 3rd Piece Bonus +45 MP, +4 DEF, +4 SPD 4th Piece Bonus +80 HP, +60 MP, +7 DEX Subtotal of Bonuses +105 HP, +105 MP, +4 DEF, +7 SPD, +10 DEX Overall Stat Bonus +180 HP, +105 MP, +22 DEF, +19 SPD, +20 DEX",
+    "setBonusStats": {
+      "hp": 180,
+      "spd": 19,
+      "dex": 20,
+      "mp": 105,
+      "def": 22
+    },
+    "sprite": "storm-caller-bard-set"
+  },
+  {
+    "id": "storm-shaman-set",
+    "name": "Storm Shaman Set",
+    "classId": null,
+    "items": [
+      "lightning-wand",
+      "totem-scepter",
+      "thunderstorm-tunic",
+      "bolt-in-a-bottle"
+    ],
+    "setBonus": "+10 HP, +50 MP, +4 SPD, +5 WIS 3rd Piece Bonus +20 HP, +50 MP, +6 SPD, +10 WIS 4th Piece Bonus +30 HP, +50 MP, +10 SPD, +15 WIS Subtotal of Bonuses +60 HP, +150 MP, +20 SPD, +30 WIS Overall Stat Bonus +60 HP, +210 MP, +5 ATT, +19 DEF, +29 SPD, +30 WI",
+    "setBonusStats": {
+      "hp": 60,
+      "mp": 210,
+      "spd": 29,
+      "wis": 30,
+      "att": 5,
+      "def": 19
+    },
+    "sprite": "storm-shaman-set"
+  },
+  {
+    "id": "summer-solstice-set",
+    "name": "Summer Solstice Set",
+    "classId": null,
+    "items": [
+      "staff-of-the-rising-sun",
+      "thousand-suns-spell",
+      "robe-of-the-summer-solstice",
+      "ring-of-the-burning-sun"
+    ],
+    "setBonus": "+20 HP, +75 MP, +4 ATT, +21 DEF, +12 WIS",
+    "setBonusStats": {
+      "hp": 20,
+      "mp": 75,
+      "att": 4,
+      "def": 21,
+      "wis": 12
+    },
+    "sprite": "summer-solstice-set"
+  },
+  {
+    "id": "swarming-huntress-set",
+    "name": "Swarming Huntress Set",
+    "classId": "huntress",
+    "items": [
+      "apiary-armor",
+      "honey-circlet",
+      "nectar-crossfire",
+      "honeytomb-snare"
+    ],
+    "setBonus": "+5 DEF, +5 SPD 3rd Piece Bonus +40 HP, +5 ATT 4th Piece Bonus +8 DEX Subtotal of Bonuses +40 HP, +5 ATT, +5 DEF, +5 SPD, +8 DEX Overall Stat Bonus +120 HP, +12 ATT, +23 DEF, +12 SPD, +8 DEX",
+    "setBonusStats": {
+      "def": 23,
+      "spd": 12,
+      "hp": 120,
+      "att": 12,
+      "dex": 8
+    },
+    "sprite": "swarming-huntress-set"
+  },
+  {
+    "id": "swoll-paladin-set",
+    "name": "Swoll Paladin Set",
+    "classId": "paladin",
+    "items": [
+      "pixie-enchanted-sword",
+      "seal-of-the-enchanted-forest",
+      "fairy-plate",
+      "ring-of-pure-wishes"
+    ],
+    "setBonus": "+30 HP, +25 MP, +2 ATT 3rd Piece Bonus +40 HP, +25 MP, +4 ATT 4th Piece Bonus +50 HP, +50 MP, +6 ATT Subtotal of Bonuses +120 HP, +100 MP, +12 ATT Overall Stat Bonus TBA",
+    "setBonusStats": {
+      "hp": 120,
+      "mp": 100,
+      "att": 12
+    },
+    "sprite": "swoll-paladin-set"
+  },
+  {
+    "id": "tidal-wave-kensei-set",
+    "name": "Tidal Wave Kensei Set",
+    "classId": "kensei",
+    "items": [
+      "saif-of-the-deep",
+      "loch-sheath",
+      "barrier-reef",
+      "alexander-s-band"
+    ],
+    "setBonus": "+30 HP, +10 MP, +5 DEX, +5 DEF 3rd Piece Bonus +40 HP, +20 MP, +5 DEX, +5 DEF 4th Piece Bonus +50 HP, +30 MP, +10 DEX Subtotal of Bonuses +120 HP, +60 MP, +20 DEX, +10 DEF Overall Stat Bonus +200 HP, +60 MP, +35 DEX, +31 DEF",
+    "setBonusStats": {
+      "hp": 200,
+      "mp": 60,
+      "dex": 35,
+      "def": 31
+    },
+    "sprite": "tidal-wave-kensei-set"
+  },
+  {
+    "id": "totalia-mystic-set",
+    "name": "Totalia Mystic Set",
+    "classId": "mystic",
+    "items": [
+      "stygian-torch",
+      "orb-of-the-sabbath",
+      "robe-of-the-enchantress",
+      "witch-s-brooch"
+    ],
+    "setBonus": "+20 HP, +15 MP, +6 SPD, +7 WIS 3rd Piece Bonus +20 HP, +15 MP, +6 DEF, +8 VIT 4th Piece Bonus +20 HP, +15 MP, +7 ATT, +6 DEF Subtotal of Bonuses +60 HP, +45 MP, +7 ATT, +12 DEF, +6 SPD, +8 VIT, +7 WIS Overall Stat Bonus +120 HP, +125 MP, +15 ATT, +27",
+    "setBonusStats": {
+      "hp": 120,
+      "mp": 125,
+      "spd": 6,
+      "wis": 7,
+      "def": 12,
+      "vit": 8,
+      "att": 15
+    },
+    "sprite": "totalia-mystic-set"
+  },
+  {
+    "id": "treasure-hunter-archer-set",
+    "name": "Treasure Hunter Archer Set",
+    "classId": "archer",
+    "items": [
+      "resplendent-bow",
+      "embellished-quiver",
+      "ornate-armor",
+      "aquamarine-amulet"
+    ],
+    "setBonus": "+25 HP, +20 MP 3rd Piece Bonus +30 MP, +5 DEX, +5 VIT 4th Piece Bonus +50 HP, +50 MP, +10 ATT, +5 DEX Subtotal of Bonuses +75 HP, +100 MP, +10 ATT, +10 DEX, +5 VIT Overall Stat Bonus +125 HP, +100 MP, +10 ATT, +21 DEF, +10 DEX, +20 VIT",
+    "setBonusStats": {
+      "hp": 125,
+      "mp": 100,
+      "dex": 10,
+      "vit": 20,
+      "att": 10,
+      "def": 21
+    },
+    "sprite": "treasure-hunter-archer-set"
+  },
+  {
+    "id": "treasurer-trickster-set",
+    "name": "Treasurer Trickster Set",
+    "classId": "trickster",
+    "items": [
+      "avarice",
+      "gambler-s-fate",
+      "turncoat-cape",
+      "collector-s-monocle"
+    ],
+    "setBonus": "+140 HP, +12 ATT, +18 DEF, +10 SPD, +4 DEX",
+    "setBonusStats": {
+      "hp": 140,
+      "att": 12,
+      "def": 18,
+      "spd": 10,
+      "dex": 4
+    },
+    "sprite": "treasurer-trickster-set"
+  },
+  {
+    "id": "twilight-archmage-set",
+    "name": "Twilight Archmage Set",
+    "classId": null,
+    "items": [
+      "corruption-tether",
+      "ancient-eminence",
+      "twilight-shroud",
+      "defiled-equilibrium"
+    ],
+    "setBonus": "+15 HP, +15 MP, +3 DEF, +5 WIS 3rd Piece Bonus +15 HP, +25 MP, +3 DEF, +5 WIS 4th Piece Bonus +20 HP, +30 MP, +4 DEF, +5 VIT, +10 WIS Subtotal of Bonuses +50 HP, +70 MP, +10 DEF, +5 VIT, +20 WIS Overall Stat Bonus +170 HP, +160 MP, +25 DEF, +10 SPD, ",
+    "setBonusStats": {
+      "hp": 170,
+      "mp": 160,
+      "def": 25,
+      "wis": 20,
+      "vit": 5,
       "spd": 10
     },
-    "sprite": "crystal-kunoichi-set"
+    "sprite": "twilight-archmage-set"
   },
   {
-    "id": "onmyoji-ninja-set",
-    "name": "Onmyoji Ninja Set",
-    "classId": "ninja",
+    "id": "undersea-phantom-wizard-set",
+    "name": "Undersea Phantom Wizard Set",
+    "classId": "wizard",
     "items": [
-      "shakujo",
-      "invocation-scroll",
-      "divination-cloak",
-      "omamori"
+      "cursed-harpoon",
+      "depth-charge",
+      "phosphorescent-rags",
+      "diving-weights"
     ],
-    "setBonus": "+4 ATT, +4 DEF 3rd Piece Bonus +4 DEX, +75 HP 4th Piece Bonus +6 ATT, +75 MP Subtotal of Bonuses +10 ATT, +4 DEF, +4 DEX, +75 MP, +75 HP Overall Stat Bonus +10 ATT, +19 DEF, +14 DEX, +175 MP, +125 HP",
+    "setBonus": "+20 HP, +2 DEF, +2 SPD 3rd Piece Bonus +30 HP, +4 DEF, +3 SPD 4th Piece Bonus +40 HP, +10 ATT, +6 DEF, +4 SPD Subtotal of Bonuses +90 HP, +10 ATT, +12 DEF, +9 SPD Overall Stat Bonus +200 HP, +10 ATT, +20 DEF, +25 SPD",
     "setBonusStats": {
-      "att": 10,
-      "def": 19,
-      "dex": 14,
-      "hp": 125,
-      "mp": 175
+      "hp": 200,
+      "def": 20,
+      "spd": 25,
+      "att": 10
     },
-    "sprite": "onmyoji-ninja-set"
+    "sprite": "undersea-phantom-wizard-set"
   },
   {
-    "id": "lei-gong-set",
-    "name": "Lei Gong Set",
-    "classId": null,
+    "id": "unholy-paladin-set",
+    "name": "Unholy Paladin Set",
+    "classId": "paladin",
     "items": [
-      "thunder-mallet",
-      "enchanted-chisel",
-      "daopao",
-      "mala-beads"
+      "hellfire-broadsword",
+      "sacrilege-seal",
+      "tormentor-s-chainmail",
+      "horned-ring"
     ],
-    "setBonus": "+6 DEF, +3 DEX 3rd Piece Bonus +3 ATT, +8 DEF 4th Piece Bonus +90 HP, +10 DEF, +5 SPD Subtotal of Bonuses +90 HP, +3 ATT, +24 DEF, +5 SPD, +3 DEX Overall Stat Bonus +170 HP, +11 ATT, +33 DEF, +10 SPD, +11 DEX, +5 VIT",
+    "setBonus": "+30 HP, +25 MP, +2 ATT 3rd Piece Bonus +40 HP, +25 MP, +4 ATT 4th Piece Bonus +50 HP, +50 MP, +6 ATT Subtotal of Bonuses +120 HP, +100 MP, +12 ATT Overall Stat Bonus TBA",
     "setBonusStats": {
-      "def": 33,
+      "hp": 120,
+      "mp": 100,
+      "att": 12
+    },
+    "sprite": "unholy-paladin-set"
+  },
+  {
+    "id": "valentine-s-day-archer-set",
+    "name": "Valentine&apos;s Day Archer Set",
+    "classId": "archer",
+    "items": [
+      "heartstruck-bow",
+      "quiver-of-dazing-love",
+      "cupid-s-garments",
+      "ring-of-unbound-love"
+    ],
+    "setBonus": "+20 HP, +3 DEX, +3 VIT 3rd Piece Bonus +30 HP, +5 SPD, +5 VIT 4th Piece Bonus +40 HP, +4 DEF, +7 VIT Subtotal of Bonuses +90 HP, +4 DEF, +5 SPD, +3 DEX, +15 VIT Overall Stat Bonus +270 HP, +5 ATT, +18 DEF, +10 SPD, +11 DEX, +15 VIT, +8 WIS",
+    "setBonusStats": {
+      "hp": 270,
       "dex": 11,
-      "att": 11,
-      "hp": 170,
+      "vit": 15,
       "spd": 10,
-      "vit": 5
+      "def": 18,
+      "att": 5,
+      "wis": 8
     },
-    "sprite": "lei-gong-set"
+    "sprite": "valentine-s-day-archer-set"
   },
   {
     "id": "valentine-s-day-ninja-set",
@@ -1683,65 +1938,11 @@
     "sprite": "valentine-s-day-ninja-set"
   },
   {
-    "id": "akuma-slayer-set",
-    "name": "Akuma Slayer Set",
-    "classId": null,
-    "items": [
-      "kazekiri",
-      "kamishimo"
-    ],
-    "setBonus": "+2 DEF, +2 DEX, +4 SPD 3rd Piece Bonus +40 HP, +4 DEF, +4 DEX 4th Piece Bonus +60 HP, +4 DEF, +6 DEX, +4 VIT Subtotal of Bonuses +100 HP, +10 DEF, +4 SPD, +12 DEX, +4 VIT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "def": 10,
-      "dex": 12,
-      "spd": 4,
-      "hp": 100,
-      "vit": 4
-    },
-    "sprite": "akuma-slayer-set"
-  },
-  {
-    "id": "daring-discoverer-samurai-set",
-    "name": "Daring Discoverer Samurai Set",
-    "classId": "samurai",
-    "items": [
-      "kiritsukeru",
-      "watarimono",
-      "reinforced-root-armor"
-    ],
-    "setBonus": "+40 MP, +4 DEF, +4 SPD 3rd Piece Bonus +50 MP, +4 DEF, +4 ATT 4th Piece Bonus +40 HP, +8 ATT, +8 DEF Subtotal of Bonuses +40 HP, +90 MP, +12 ATT, +16 DEF, +4 SPD Overall Stat Bonus +110 HP, +150 MP, +15 ATT, +36 DEF, +10 SPD",
-    "setBonusStats": {
-      "mp": 150,
-      "def": 36,
-      "spd": 10,
-      "att": 15,
-      "hp": 110
-    },
-    "sprite": "daring-discoverer-samurai-set"
-  },
-  {
-    "id": "frost-advisor-set",
-    "name": "Frost Advisor Set",
-    "classId": null,
-    "items": [
-      "iceborn-arsenal",
-      "sublimation-sidearm"
-    ],
-    "setBonus": "+25 HP, +3 DEF, +3 DEX, -2 VIT 3rd Piece Bonus +30 HP, +4 DEF, +4 DEX, -3 VIT 4th Piece Bonus +35 HP, +5 DEF, +5 DEX, -4 VIT Subtotal of Bonuses +90 HP, +12 DEF, +12 DEX, -9 VIT Overall Stat Bonus",
-    "setBonusStats": {
-      "hp": 90,
-      "def": 12,
-      "dex": 12
-    },
-    "sprite": "frost-advisor-set"
-  },
-  {
     "id": "valentine-s-day-samurai-set",
     "name": "Valentine&apos;s Day Samurai Set",
     "classId": "samurai",
     "items": [
       "heartseeker-katana",
-      "sweetcut-wakizashi",
       "lovebite-armor",
       "sweetener-ring"
     ],
@@ -1757,216 +1958,62 @@
     "sprite": "valentine-s-day-samurai-set"
   },
   {
-    "id": "angelic-bard-set",
-    "name": "Angelic Bard Set",
-    "classId": "bard",
+    "id": "vampire-rogue-set",
+    "name": "Vampire Rogue Set",
+    "classId": "rogue",
     "items": [
-      "harmonious-harp",
-      "wings-of-sanctity",
-      "heavenly-halo"
+      "soulcursed-scythe",
+      "vampiric-cape",
+      "hallowed-hide",
+      "ruthven-s-rosary"
     ],
-    "setBonus": "+20 HP, +3 DEF, +3 DEX 3rd Piece Bonus +20 HP, +40 MP, +3 DEX 4th Piece Bonus +40 HP, +20 MP, +5 DEF, +4 DEX Subtotal of Bonuses +80 HP, +60 MP, +8 DEF, +10 DEX Overall Stat Bonus +150 HP, +160 MP, +18 DEF, +15 DEX, +5 VIT, +11 WIS",
+    "setBonus": "+5 DEX, +5 VIT 3rd Piece Bonus +30 HP, +20 MP, +5 DEX, +10 VIT 4th Piece Bonus +30 HP, +30 MP, +5 DEF, +15 DEX, +20 VIT Subtotal of Bonuses +60 HP, 50 MP, +5 DEF, +25 DEX, +35 VIT Overall Stat Bonus +170 HP, +50 MP, +5 ATT, +19 DEF, +5 SPD, +25 DEX, ",
     "setBonusStats": {
-      "hp": 150,
-      "def": 18,
-      "dex": 15,
-      "mp": 160,
-      "vit": 5,
-      "wis": 11
+      "dex": 25,
+      "vit": 35,
+      "hp": 170,
+      "mp": 50,
+      "def": 19,
+      "att": 5,
+      "spd": 5
     },
-    "sprite": "angelic-bard-set"
+    "sprite": "vampire-rogue-set"
   },
   {
-    "id": "storm-caller-bard-set",
-    "name": "Storm Caller Bard Set",
-    "classId": "bard",
+    "id": "void-archer-set",
+    "name": "Void Archer Set",
+    "classId": "archer",
     "items": [
-      "hailstorm",
-      "thundering-chorus",
-      "wind-dancer-robe",
-      "augur-of-the-tempest"
+      "bow-of-the-void",
+      "quiver-of-shadows",
+      "armor-of-nil",
+      "sourcestone"
     ],
-    "setBonus": "+25 HP, +3 SPD, +3 DEX 3rd Piece Bonus +45 MP, +4 DEF, +4 SPD 4th Piece Bonus +80 HP, +60 MP, +7 DEX Subtotal of Bonuses +105 HP, +105 MP, +4 DEF, +7 SPD, +10 DEX Overall Stat Bonus +180 HP, +105 MP, +22 DEF, +19 SPD, +20 DEX",
-    "setBonusStats": {
-      "hp": 180,
-      "spd": 19,
-      "dex": 20,
-      "mp": 105,
-      "def": 22
-    },
-    "sprite": "storm-caller-bard-set"
-  },
-  {
-    "id": "ancestral-shaman-set",
-    "name": "Ancestral Shaman Set",
-    "classId": null,
-    "items": [
-      "firestarter",
-      "sacred-lute",
-      "tiki-pendant"
-    ],
-    "setBonus": "+35 HP, +5 ATT, +5 DEX 3rd Piece Bonus +35 MP, +7 DEF, +7 SPD 4th Piece Bonus +10 ATT, +13 SPD, +15 DEX Subtotal of Bonuses +35 HP, +35 MP, +15 ATT, +7 DEF, +20 SPD, +20 DEX Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 35,
-      "att": 15,
-      "dex": 20,
-      "mp": 35,
-      "def": 7,
-      "spd": 20
-    },
-    "sprite": "ancestral-shaman-set"
-  },
-  {
-    "id": "demon-guitarist-set",
-    "name": "Demon Guitarist Set",
-    "classId": null,
-    "items": [
-      "electric-guitar",
-      "inferno-pick",
-      "wings-of-the-fallen",
-      "pointy-tail"
-    ],
-    "setBonus": "+20 HP, +3 DEF, +3 DEX 3rd Piece Bonus +20 HP, +40 MP, +3 DEX 4th Piece Bonus +40 HP, +20 MP, +5 DEF, +4 DEX Subtotal of Bonuses +80 HP, +60 MP, +8 DEF, +10 DEX Overall Stat Bonus +150 HP, +160 MP, +18 DEF, +15 DEX, +5 VIT, +11 WIS",
-    "setBonusStats": {
-      "hp": 150,
-      "def": 18,
-      "dex": 15,
-      "mp": 160,
-      "vit": 5,
-      "wis": 11
-    },
-    "sprite": "demon-guitarist-set"
-  },
-  {
-    "id": "scientific-summoner-set",
-    "name": "Scientific Summoner Set",
-    "classId": "summoner",
-    "items": [
-      "c-l-a-w",
-      "b-o-o-m",
-      "a-r-m-o-r",
-      "c-o-n-t-r-o-l-l-e-r"
-    ],
-    "setBonus": "+20 HP, +2 ATT, +2 VIT 3rd Piece Bonus +30 HP, +5 ATT, +3 DEF 4th Piece Bonus +60 HP, +60 MP, +8 ATT, +2 DEF, +3 VIT Subtotal of Bonuses +110 HP, +60 MP, +15 ATT, +5 DEF, +5 VIT Overall Stat Bonus TBA",
+    "setBonus": "+110 HP, +110 MP, +36 DEF, -1 SPD",
     "setBonusStats": {
       "hp": 110,
-      "att": 15,
-      "vit": 5,
-      "def": 5,
-      "mp": 60
+      "mp": 110,
+      "def": 36
     },
-    "sprite": "scientific-summoner-set"
+    "sprite": "void-archer-set"
   },
   {
-    "id": "earthen-bulwark-summoner-set",
-    "name": "Earthen Bulwark Summoner Set",
-    "classId": "summoner",
+    "id": "void-doctor-priest-set",
+    "name": "Void Doctor Priest Set",
+    "classId": "priest",
     "items": [
-      "earthen-ward",
-      "stonemould-mace",
-      "rocky-robe",
-      "steadfast-glyph"
+      "cane-of-the-void",
+      "void-leeches",
+      "darkness-overcoat",
+      "void-mask"
     ],
-    "setBonus": "+30 HP, +6 VIT, +2 ATT 3rd Piece Bonus +40 HP, +20 MP, +4 DEF, +3 ATT 4th Piece Bonus +60 HP, +40 MP, +10 ATT Subtotal of Bonuses +130 HP, +60 MP, +15 ATT, +4 DEF, +6 VIT Overall Stat Bonus +210 HP, +100 MP, +15 ATT, +33 DEF, -5 DEX, +10 VIT",
-    "setBonusStats": {
-      "hp": 210,
-      "vit": 10,
-      "att": 15,
-      "mp": 100,
-      "def": 33
-    },
-    "sprite": "earthen-bulwark-summoner-set"
-  },
-  {
-    "id": "ghostly-banshee-summoner-set",
-    "name": "Ghostly Banshee Summoner Set",
-    "classId": "summoner",
-    "items": [
-      "tormented-shriek",
-      "ghastly-mace",
-      "lacerated-gown",
-      "unresolved-grudge"
-    ],
-    "setBonus": "+20 HP, +2 ATT, +2 VIT 3rd Piece Bonus +30 HP, +5 ATT, +3 DEF 4th Piece Bonus +60 HP, +60 MP, +8 ATT, +2 DEF, +3 VIT Subtotal of Bonuses +110 HP, +60 MP, +15 ATT, +5 DEF, +5 VIT Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 110,
-      "att": 15,
-      "vit": 5,
-      "def": 5,
-      "mp": 60
-    },
-    "sprite": "ghostly-banshee-summoner-set"
-  },
-  {
-    "id": "chocolate-bunny-summoner-set",
-    "name": "Chocolate Bunny Summoner Set",
-    "classId": "summoner",
-    "items": [
-      "sweet-desire-wand",
-      "chocolate-egg-mace",
-      "chocolate-glazed-robe",
-      "chocolate-bunny-ears"
-    ],
-    "setBonus": "+30 HP, +6 VIT, +2 ATT 3rd Piece Bonus +40 HP, +20 MP, +4 DEF, +3 ATT 4th Piece Bonus +60 HP, +40 MP, +10 ATT Subtotal of Bonuses +130 HP, +60 MP, +15 ATT, +4 DEF, +6 VIT Overall Stat Bonus +210 HP, +100 MP, +15 ATT, +33 DEF, -5 DEX, +10 VIT",
-    "setBonusStats": {
-      "hp": 210,
-      "vit": 10,
-      "att": 15,
-      "mp": 100,
-      "def": 33
-    },
-    "sprite": "chocolate-bunny-summoner-set"
-  },
-  {
-    "id": "tidal-wave-kensei-set",
-    "name": "Tidal Wave Kensei Set",
-    "classId": "kensei",
-    "items": [
-      "saif-of-the-deep",
-      "loch-sheath",
-      "barrier-reef"
-    ],
-    "setBonus": "+30 HP, +10 MP, +5 DEX, +5 DEF 3rd Piece Bonus +40 HP, +20 MP, +5 DEX, +5 DEF 4th Piece Bonus +50 HP, +30 MP, +10 DEX Subtotal of Bonuses +120 HP, +60 MP, +20 DEX, +10 DEF Overall Stat Bonus +200 HP, +60 MP, +35 DEX, +31 DEF",
+    "setBonus": "+35 HP, +4 DEF, +5 DEX 3rd Piece Bonus +45 HP, +5 DEF, +6 DEX 4th Piece Bonus +55 HP, +6 DEF, +7 DEX Subtotal of Bonuses +135 HP, +15 DEF, +18 DEX Overall Stat Bonus +200 HP, +34 DEF, +29 DEX, +13 WIS",
     "setBonusStats": {
       "hp": 200,
-      "mp": 60,
-      "dex": 35,
-      "def": 31
+      "def": 34,
+      "dex": 29,
+      "wis": 13
     },
-    "sprite": "tidal-wave-kensei-set"
-  },
-  {
-    "id": "fiery-kensei-set",
-    "name": "Fiery Kensei Set",
-    "classId": "kensei",
-    "items": [
-      "fiery-katana",
-      "pyro-sheath",
-      "flame-guard",
-      "firelight-necklace"
-    ],
-    "setBonus": "+20 HP, 5 ATT, 5 VIT 3rd Piece Bonus +40 HP, 5 ATT, 5 VIT 4th Piece Bonus +60 HP, 10 ATT, 10 VIT Subtotal of Bonuses +120 HP, 20 ATT, 20 VIT Overall Stat Bonus +220 HP, 40 MP, 26 ATT, 20 DEF, 20 VIT",
-    "setBonusStats": {
-      "hp": 220
-    },
-    "sprite": "fiery-kensei-set"
-  },
-  {
-    "id": "mechanical-raptor-druid-set",
-    "name": "Mechanical Raptor Druid Set",
-    "classId": "druid",
-    "items": [
-      "mechraptor-sigil",
-      "pressure-gauge-band"
-    ],
-    "setBonus": "+80 HP, +40 MP, +3 DEF 3rd Piece Bonus +80 HP, +5 ATT, +5 WIS 4th Piece Bonus +60 MP, +10 ATT, +5 DEF Subtotal of Bonuses +160 HP, +100 MP, +15 ATT, +8 DEF, +5 WIS Overall Stat Bonus TBA",
-    "setBonusStats": {
-      "hp": 160,
-      "mp": 100,
-      "def": 8,
-      "att": 15,
-      "wis": 5
-    },
-    "sprite": "mechanical-raptor-druid-set"
+    "sprite": "void-doctor-priest-set"
   }
 ]
