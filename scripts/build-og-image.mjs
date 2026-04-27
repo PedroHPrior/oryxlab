@@ -77,7 +77,7 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   </g>
 
   <!-- Footer URL -->
-  <text x="80" y="600" font-family="JetBrains Mono, ui-monospace, monospace" font-size="16" fill="#71717a">oryxlab-production.up.railway.app</text>
+  <text x="80" y="600" font-family="JetBrains Mono, ui-monospace, monospace" font-size="16" fill="#71717a">oryxlab.app</text>
   <text x="1120" y="600" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace" font-size="16" fill="#71717a">github.com/PedroHPrior/oryxlab</text>
 </svg>`
 

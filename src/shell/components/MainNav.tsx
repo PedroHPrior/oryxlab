@@ -44,6 +44,7 @@ export function MainNav({ items, orientation = "horizontal", onNavigate }: MainN
             }}
             className={`${baseClasses} ${stateClasses}`}
             aria-current={active ? "page" : undefined}
+            data-tour={`nav-${item.label.toLowerCase()}`}
           >
             {item.label}
             {!isVertical && active && (

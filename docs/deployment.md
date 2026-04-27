@@ -3,8 +3,8 @@
 OryxLab ships as a single Express container that serves both the static SPA
 and the JSON/RealmEye-proxy API. The production site lives on Railway.
 
-- **Production**: <https://oryxlab-production.up.railway.app/app>
-- **Health**: <https://oryxlab-production.up.railway.app/api/health>
+- **Production**: <https://www.oryxlab.app/app>
+- **Health**: <https://www.oryxlab.app/api/health>
 - **Hosting**: Railway · build via `Dockerfile` · auto-deploy from `main`
 
 ---

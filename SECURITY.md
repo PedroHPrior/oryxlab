@@ -16,8 +16,8 @@ responsibly:
 ## Scope
 
 In scope:
-- The hosted app at `oryxlab-production.up.railway.app` and any future custom
-  domain.
+- The hosted app at `www.oryxlab.app` (and the Railway preview URL it sits
+  behind).
 - The Express API endpoints (`/api/*`).
 - Build and deploy pipeline (Dockerfile, Railway config).
 - Code in this repo that handles user input (RealmEye proxy, share-state

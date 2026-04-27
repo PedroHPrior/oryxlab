@@ -8,7 +8,7 @@ import {
   FocusView,
   TableView,
   ViewModeToggle,
-  WelcomeBanner,
+  OnboardingTour,
 } from "./components"
 
 export function ComparatorView({
@@ -40,7 +40,7 @@ export function ComparatorView({
 
   return (
     <div className="flex flex-col gap-4" style={{ fontFamily: '"Inter", system-ui, sans-serif' }}>
-      <WelcomeBanner />
+      <OnboardingTour />
       <header className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -58,6 +58,7 @@ export function ComparatorView({
             <button
               type="button"
               onClick={onAddBuild}
+              data-tour="add-build"
               className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 transition-colors hover:border-amber-400/60 hover:text-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
             >
               + Add build
@@ -65,6 +66,7 @@ export function ComparatorView({
             <button
               type="button"
               onClick={onShareComparator}
+              data-tour="share"
               className="rounded-md border border-amber-400/60 bg-amber-400/10 px-3 py-1.5 text-sm font-semibold text-amber-700 transition-colors hover:bg-amber-400/20 dark:text-amber-300"
             >
               Share

@@ -12,7 +12,7 @@
   [![Tests](https://img.shields.io/badge/tests-165%20passing-brightgreen.svg)](tests)
   [![Issues welcome](https://img.shields.io/badge/feedback-welcome-purple.svg)](https://github.com/PedroHPrior/oryxlab/issues/new/choose)
 
-  ### [→ Try it live ←](https://oryxlab-production.up.railway.app/app)
+  ### [→ Try it live ←](https://www.oryxlab.app/app)
 
 </div>
 

@@ -151,6 +151,13 @@ export function AppShell({
             OryxLab · catalog {catalogVersion ?? "—"}
           </span>
           <span className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent("oryxlab:start-tour"))}
+              className="hover:text-amber-600 dark:hover:text-amber-400"
+            >
+              Take the tour
+            </button>
             <a
               href="https://github.com/PedroHPrior/oryxlab"
               target="_blank"

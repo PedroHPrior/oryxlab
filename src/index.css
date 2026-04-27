@@ -255,3 +255,82 @@
     contain-intrinsic-size: 240px 200px;
   }
 }
+
+/* driver.js — restyle the onboarding tour to match the OryxLab dark theme */
+.driver-overlay {
+  background: rgb(0 0 0 / 0.7) !important;
+}
+.driver-popover {
+  background: #18181b !important;
+  color: #fafafa !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.6) !important;
+  font-family: "Inter", system-ui, sans-serif !important;
+  max-width: 380px !important;
+}
+.driver-popover-title {
+  color: #fafafa !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+}
+.driver-popover-description {
+  color: #d4d4d8 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.55 !important;
+}
+.driver-popover-close-btn {
+  color: #71717a !important;
+  font-size: 1.25rem !important;
+}
+.driver-popover-close-btn:hover {
+  color: #fafafa !important;
+}
+.driver-popover-progress-text {
+  color: #71717a !important;
+  font-family: "JetBrains Mono", ui-monospace, monospace !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.05em !important;
+}
+.driver-popover-footer button {
+  background: #27272a !important;
+  color: #fafafa !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 8px !important;
+  padding: 0.4rem 0.8rem !important;
+  font-size: 0.8125rem !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+  transition: all 0.15s !important;
+}
+.driver-popover-footer button:hover {
+  background: #3f3f46 !important;
+  border-color: #fbbf24 !important;
+}
+.driver-popover-footer .driver-popover-next-btn {
+  background: #fbbf24 !important;
+  color: #0a0a0b !important;
+  border-color: #fbbf24 !important;
+}
+.driver-popover-footer .driver-popover-next-btn:hover {
+  background: #f59e0b !important;
+  border-color: #f59e0b !important;
+}
+.driver-popover-arrow-side-bottom.driver-popover-arrow {
+  border-bottom-color: #18181b !important;
+}
+.driver-popover-arrow-side-top.driver-popover-arrow {
+  border-top-color: #18181b !important;
+}
+.driver-popover-arrow-side-left.driver-popover-arrow {
+  border-left-color: #18181b !important;
+}
+.driver-popover-arrow-side-right.driver-popover-arrow {
+  border-right-color: #18181b !important;
+}
+.driver-active-element {
+  outline: 2px solid #fbbf24 !important;
+  outline-offset: 4px !important;
+  border-radius: 8px !important;
+}
