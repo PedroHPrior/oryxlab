@@ -23,7 +23,7 @@ export function InventoryView({
   ownedEntries,
   realmEyeImport,
   onSearchChange,
-  onOpenManualSelect,
+  onBrowseCatalog,
   onOpenRealmEyeImport,
   onChangeRealmEyeInput,
   onFetchRealmEyePreview,
@@ -51,51 +51,61 @@ export function InventoryView({
 
   if (view === "empty") {
     return (
-      <div
-        className="mx-auto flex max-w-3xl flex-col items-center gap-6 py-10 text-center"
-        style={{ fontFamily: '"Inter", system-ui, sans-serif' }}
-      >
-        <div>
-          <h1 className="text-3xl font-semibold text-zinc-900 dark:text-zinc-100">
-            Set up your inventory
-          </h1>
-          <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-            Choose how to populate the items you own. Stays in your browser only.
-          </p>
+      <>
+        <div
+          className="mx-auto flex max-w-3xl flex-col items-center gap-6 py-10 text-center"
+          style={{ fontFamily: '"Inter", system-ui, sans-serif' }}
+        >
+          <div>
+            <h1 className="text-3xl font-semibold text-zinc-900 dark:text-zinc-100">
+              Set up your inventory
+            </h1>
+            <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+              Choose how to populate the items you own. Stays in your browser only.
+            </p>
+          </div>
+          <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
+            <button
+              type="button"
+              onClick={onBrowseCatalog}
+              className="flex flex-col items-start gap-2 rounded-xl border border-zinc-200 bg-white p-4 text-left transition-colors hover:border-amber-400/60 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-400/15 text-amber-600 dark:text-amber-300">
+                ☑
+              </span>
+              <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                Mark items I own
+              </span>
+              <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                Browse the catalog and tick what's in your vault.
+              </span>
+            </button>
+            <button
+              type="button"
+              onClick={onOpenRealmEyeImport}
+              className="flex flex-col items-start gap-2 rounded-xl border border-zinc-200 bg-white p-4 text-left transition-colors hover:border-amber-400/60 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+            >
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-400/15 text-amber-600 dark:text-amber-300">
+                ⤓
+              </span>
+              <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                Import from RealmEye
+              </span>
+              <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                Pull your vault and characters straight from your public profile.
+              </span>
+            </button>
+          </div>
         </div>
-        <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
-          <button
-            type="button"
-            onClick={onOpenManualSelect}
-            className="flex flex-col items-start gap-2 rounded-xl border border-zinc-200 bg-white p-4 text-left hover:border-amber-400/60 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
-          >
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-400/15 text-amber-600 dark:text-amber-300">
-              ☑
-            </span>
-            <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-              Mark items I own
-            </span>
-            <span className="text-xs text-zinc-500 dark:text-zinc-400">
-              Browse the catalog and tick what's in your vault.
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={onOpenRealmEyeImport}
-            className="flex flex-col items-start gap-2 rounded-xl border border-zinc-200 bg-white p-4 text-left hover:border-amber-400/60 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
-          >
-            <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-400/15 text-amber-600 dark:text-amber-300">
-              ⤓
-            </span>
-            <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-              Import from RealmEye
-            </span>
-            <span className="text-xs text-zinc-500 dark:text-zinc-400">
-              Pull your vault and characters straight from your public profile.
-            </span>
-          </button>
-        </div>
-      </div>
+        <RealmEyeImportPanel
+          state={realmEyeImport}
+          onChangeInput={onChangeRealmEyeInput}
+          onFetch={onFetchRealmEyePreview}
+          onConfirmOverwrite={onConfirmRealmEyeOverwrite}
+          onConfirmMerge={onConfirmRealmEyeMerge}
+          onClose={onCloseRealmEyeImport}
+        />
+      </>
     )
   }
 
@@ -123,8 +133,8 @@ export function InventoryView({
           />
           <button
             type="button"
-            onClick={onOpenManualSelect}
-            className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm font-medium hover:border-amber-400/60 dark:border-zinc-700"
+            onClick={onBrowseCatalog}
+            className="rounded-md border border-zinc-300 px-3 py-1.5 text-sm font-medium transition-colors hover:border-amber-400/60 dark:border-zinc-700"
           >
             + Mark items
           </button>

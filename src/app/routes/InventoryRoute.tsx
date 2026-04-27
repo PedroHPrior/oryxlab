@@ -30,7 +30,7 @@ export function InventoryRoute() {
         </div>
       )}
       <InventoryView
-        view={state.inventoryView}
+        view={state.inventoryOwnedEntries.length === 0 ? "empty" : "populated"}
         search={state.inventorySearch}
         ownedSummary={state.inventoryOwnedSummary}
         ownedEntries={state.inventoryOwnedEntries}
@@ -38,7 +38,7 @@ export function InventoryRoute() {
         manualSelection={state.manualSelection}
         onSwitchView={actions.setInventoryView}
         onSearchChange={actions.setInventorySearch}
-        onOpenManualSelect={actions.openManualSelect}
+        onBrowseCatalog={() => navigate("/app/catalog")}
         onOpenRealmEyeImport={actions.openRealmEyeImport}
         onChangeRealmEyeInput={actions.changeRealmEyeInput}
         onFetchRealmEyePreview={actions.fetchRealmEyePreview}

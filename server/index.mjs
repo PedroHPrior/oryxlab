@@ -268,10 +268,18 @@ if (IS_PROD && existsSync(DIST)) {
       etag: true,
       lastModified: true,
       maxAge: '1d',
-      // Hashed asset filenames safely cache forever.
       setHeaders: (res, filePath) => {
+        // Hashed asset filenames are content-addressed → safe to cache forever.
         if (/\/assets\/.+\.(js|css|woff2?)$/.test(filePath)) {
           res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+          return
+        }
+        // index.html is the *only* place new asset hashes are referenced —
+        // if a CDN/browser caches a stale copy, the page will request asset
+        // URLs from the previous deploy that no longer exist. Force
+        // revalidation on every load.
+        if (filePath.endsWith('index.html')) {
+          res.setHeader('Cache-Control', 'no-cache, must-revalidate')
         }
       },
     }),
@@ -282,7 +290,21 @@ if (IS_PROD && existsSync(DIST)) {
 
   // SPA catch-all: unknown non-/api routes return index.html so React Router
   // can resolve them client-side.
-  app.get(/^(?!\/api).*/, (_, res) => {
+  //
+  // Hard guard for /assets/* — those are hashed bundles served by
+  // express.static above. If a request reaches the catch-all for an /assets/
+  // path it means the file wasn't on disk yet (deploy rollover race), and
+  // returning index.html with `Content-Type: text/html` would let Chrome
+  // refuse to apply it as CSS/JS AND let the CDN cache the wrong response
+  // for a year (since the asset URL carries an `immutable` header upstream).
+  // Respond 503 with explicit `no-store` so neither Fastly nor browsers
+  // cache the failure — clients retry and get the asset on a healthy edge.
+  app.get(/^(?!\/api).*/, (req, res) => {
+    if (req.path.startsWith('/assets/')) {
+      res.setHeader('Cache-Control', 'no-store, must-revalidate')
+      return res.status(503).type('text/plain').send('Asset not ready (deploy in progress)')
+    }
+    res.setHeader('Cache-Control', 'no-cache, must-revalidate')
     res.sendFile(resolve(DIST, 'index.html'))
   })
 }

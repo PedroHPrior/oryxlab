@@ -21,6 +21,7 @@ import {
 } from "./storage"
 import { buildShareUrl, decodeShareState } from "./share"
 import { createLogger } from "./logger"
+import { useToast } from "../sections/_shared"
 
 const log = createLogger("oryxlab.app")
 
@@ -47,6 +48,7 @@ const DEFAULT_FILTERS: CatalogFilters = {
 export function OryxLabApp() {
   const navigate = useNavigate()
   const location = useLocation()
+  const toast = useToast()
 
   const [items, setItems] = useState<Item[]>([])
   const [classesData, setClassesData] = useState<ApiClass[]>([])
@@ -155,6 +157,8 @@ export function OryxLabApp() {
   }, [inventoryOwnedEntries])
   const scenarioRef = useRef(globalScenario)
   useEffect(() => { scenarioRef.current = globalScenario }, [globalScenario])
+  const toastRef = useRef(toast)
+  useEffect(() => { toastRef.current = toast }, [toast])
   const [realmEyeImport, setRealmEyeImport] = useState<RealmEyeImportState>(
     inventoryData.realmEyeImport as RealmEyeImportState,
   )
@@ -163,6 +167,7 @@ export function OryxLabApp() {
   )
 
   const [isSavedBuildsOpen, setSavedBuildsOpen] = useState(false)
+  const [savedBuildsCount, setSavedBuildsCount] = useState(() => loadSavedBuilds().length)
 
   const navItems = useMemo(() => {
     const path = location.pathname
@@ -248,6 +253,9 @@ export function OryxLabApp() {
           notes: "",
           savedAt: new Date().toISOString(),
         })
+        const total = loadSavedBuilds().length
+        setSavedBuildsCount(total)
+        toastRef.current.push(`Saved “${b.name}” · ${total} build${total === 1 ? "" : "s"} in vault`, "success")
       },
       addBuild: () =>
         setBuilds((curr) => [
@@ -328,6 +336,9 @@ export function OryxLabApp() {
           notes: "From optimizer",
           savedAt: new Date().toISOString(),
         })
+        const total = loadSavedBuilds().length
+        setSavedBuildsCount(total)
+        toastRef.current.push(`Saved “${name}” · ${total} build${total === 1 ? "" : "s"} in vault`, "success")
       },
       // Apply a swap suggestion: change one slot in one build to a new item.
       applySwapToBuild: (buildId: string, slot: keyof BuildSlots, itemId: string) => {
@@ -590,9 +601,13 @@ export function OryxLabApp() {
           const url = await buildShareUrl(buildsRef.current, scenarioRef.current)
           if (typeof navigator !== "undefined" && navigator.clipboard) {
             await navigator.clipboard.writeText(url)
+            toastRef.current.push("Comparator link copied to clipboard", "success")
+          } else {
+            toastRef.current.push("Clipboard unavailable — open the URL bar to copy", "info")
           }
         } catch (e) {
           log.error("share failed", e)
+          toastRef.current.push("Could not generate share link", "error")
         }
       },
 
@@ -639,7 +654,7 @@ export function OryxLabApp() {
         navigationItems={navItems}
         scenario={globalScenario}
         scenarioPresets={SCENARIO_PRESETS}
-        savedBuildsCount={comparatorData.savedBuildSnapshots.length}
+        savedBuildsCount={savedBuildsCount}
         catalogVersion="v3.7.0"
         onNavigate={(href) => navigate(href)}
         onScenarioChange={setGlobalScenario}
@@ -663,19 +678,30 @@ export function OryxLabApp() {
           onLoad={(b) => {
             setBuilds((curr) => [...curr, { ...b, id: `b-${Date.now()}` }])
             setSavedBuildsOpen(false)
+            toastRef.current.push(`Loaded “${b.name}” into comparator`, "success")
           }}
+          onCountChange={setSavedBuildsCount}
         />
       )}
     </OryxLabContext.Provider>
   )
 }
 
-function SavedBuildsDrawer({ onClose, onLoad }: { onClose: () => void; onLoad: (b: Build) => void }) {
+function SavedBuildsDrawer({
+  onClose,
+  onLoad,
+  onCountChange,
+}: {
+  onClose: () => void
+  onLoad: (b: Build) => void
+  onCountChange?: (count: number) => void
+}) {
   const [snapshots, setSnapshots] = useState(() => loadSavedBuilds())
 
   const remove = (id: string) => {
     const next = snapshots.filter((s) => s.id !== id)
     setSnapshots(next)
+    onCountChange?.(next.length)
     // also clear from storage
     import("./storage").then((m) => m.saveSavedBuilds(next))
   }

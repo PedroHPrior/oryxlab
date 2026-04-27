@@ -74,6 +74,8 @@ export interface InventoryProps {
 
   /** Open the manual selection mode (catalog with checkboxes). */
   onOpenManualSelect?: () => void
+  /** Send the user to the Catalog so they can mark owned items. */
+  onBrowseCatalog?: () => void
   /** Toggle a single item in manual selection mode. */
   onToggleManualItem?: (itemId: string) => void
   /** Commit pending manual selection changes. */
