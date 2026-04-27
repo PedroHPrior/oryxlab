@@ -9,6 +9,16 @@ const CATEGORIES = [
   { slug: 'daggers', type: 'weapon', weaponType: 'dagger' },
   { slug: 'lutes', type: 'weapon', weaponType: 'lute' },
   { slug: 'maces', type: 'weapon', weaponType: 'mace' },
+  // Newer weapon families introduced after our initial scrape — each one
+  // is its own RealmEye wiki list page. Without these, hundreds of items
+  // (spellblades for Sorcerer, tachis for Samurai/Kensei, etc.) are missing
+  // from the catalog entirely.
+  { slug: 'spellblades', type: 'weapon', weaponType: 'spellblade' },
+  { slug: 'tachis', type: 'weapon', weaponType: 'tachi' },
+  { slug: 'longbows', type: 'weapon', weaponType: 'longbow' },
+  { slug: 'flails', type: 'weapon', weaponType: 'flail' },
+  { slug: 'morning-stars', type: 'weapon', weaponType: 'morning-star' },
+  { slug: 'dual-blades', type: 'weapon', weaponType: 'dual-blade' },
   { slug: 'spells', type: 'ability', abilityType: 'spell' },
   { slug: 'seals', type: 'ability', abilityType: 'seal' },
   { slug: 'quivers', type: 'ability', abilityType: 'quiver' },

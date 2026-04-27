@@ -149,7 +149,8 @@
     "items": [
       "nebular-rod",
       "cosmic-astrolabe",
-      "astronomer-s-gown"
+      "astronomer-s-gown",
+      "eye-of-divination"
     ],
     "setBonus": "+33 HP, +33 MP, +4 ATT 3rd Piece Bonus +44 HP, +44 MP, +6 ATT 4th Piece Bonus +55 HP, +55 MP, +8 ATT Subtotal of Bonuses +132 HP, +132 MP, +18 ATT Overall Stat Bonus",
     "setBonusStats": {
@@ -419,6 +420,7 @@
     "classId": "samurai",
     "items": [
       "kiritsukeru",
+      "watarimono",
       "reinforced-root-armor",
       "traveler-s-trinket"
     ],
@@ -668,6 +670,7 @@
     "name": "Frost Wander Archer Set",
     "classId": "archer",
     "items": [
+      "frostbite-mittens",
       "snow-critters",
       "blizzard-jacket",
       "magical-winter-scarf"
@@ -862,6 +865,7 @@
     "name": "Kogbold Pyrotechnician Wizard Set",
     "classId": "wizard",
     "items": [
+      "rocket-launcher",
       "unstable-firework",
       "blast-proof-robes",
       "lucky-grenade"
@@ -880,6 +884,7 @@
     "name": "Kogbold Turretsmith Archer Set",
     "classId": "archer",
     "items": [
+      "experimental-cannon",
       "sentry-turret",
       "tinkerers-apron",
       "targeting-monocular"
@@ -1063,6 +1068,7 @@
     "name": "Mad Minotaur Set",
     "classId": null,
     "items": [
+      "fury-flail",
       "shockwave-shield",
       "cyclone-chestplate",
       "brass-knuckles"
@@ -1146,6 +1152,8 @@
     "name": "Mechanical Raptor Druid Set",
     "classId": "druid",
     "items": [
+      "gearhawk-morning-star",
+      "mechraptor-sigil",
       "mechpilot-s-jerkin",
       "pressure-gauge-band"
     ],
@@ -1701,7 +1709,7 @@
     "name": "Summer Solstice Set",
     "classId": null,
     "items": [
-      "staff-of-the-rising-sun",
+      "month-of-the-mad-god",
       "thousand-suns-spell",
       "robe-of-the-summer-solstice",
       "ring-of-the-burning-sun"
@@ -1943,6 +1951,7 @@
     "classId": "samurai",
     "items": [
       "heartseeker-katana",
+      "sweetcut-wakizashi",
       "lovebite-armor",
       "sweetener-ring"
     ],
