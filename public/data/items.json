@@ -38120,8 +38120,12 @@
     "tier": "UT",
     "tierNumeric": 99,
     "rarity": "ut",
-    "type": "weapon",
-    "classes": [],
+    "type": "ability",
+    "classes": [
+      "archer",
+      "huntress",
+      "bard"
+    ],
     "stats": {
       "dmgMin": 300,
       "dmgMax": 420,
@@ -38145,7 +38149,9 @@
     "tierNumeric": 99,
     "rarity": "ut",
     "type": "weapon",
-    "classes": [],
+    "classes": [
+      "bard"
+    ],
     "stats": {
       "shots": 1,
       "hp": 30,
