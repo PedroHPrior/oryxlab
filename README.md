@@ -1,8 +1,14 @@
 # OryxLab — DPS Calculator & Build Comparator for Realm of the Mad God
 
+[![CI](https://github.com/PedroHPrior/oryxlab/actions/workflows/ci.yml/badge.svg)](https://github.com/PedroHPrior/oryxlab/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 > Build, compare, and optimize ROTMG characters with theorycrafter-grade calculation fidelity wrapped in a UI fast enough to answer *"is this drop an upgrade?"* in seconds.
 
-**Live demo** — coming soon (Railway).
+**🚀 Live:** <https://oryxlab-production.up.railway.app/app>
+
+**🤝 Contributing:** Wrong stats on an item? Wrong class assignment? Idea for a new feature? See [CONTRIBUTING.md](CONTRIBUTING.md) — most data fixes are 5-minute one-liners.
 
 ---
 
@@ -142,11 +148,33 @@ All write to `product/data/` and `public/data/` (the latter is what the client f
 
 ## Contributing
 
-The engine has a balance.json that the community can iterate on without touching TypeScript. PRs welcome for:
-- Per-item proc accuracy (especially complex UTs)
-- Class-specific mechanics (transforms, summons, stacks)
-- New scenarios / boss presets
-- Test coverage for edge cases
+OryxLab is fan-built and the data is only as good as the community keeps it.
+We have a layered set of contribution paths in [CONTRIBUTING.md](CONTRIBUTING.md):
+
+- **No-code data fixes** (5 min): stat is wrong on an item → edit `items.json`,
+  PR with a RealmEye link.
+- **Balance tuning** (10 min): `balance.json` exposes class DPS multipliers,
+  status uptimes, party-buff peaks. Adjust + run tests + PR.
+- **New scenarios** (15 min): boss-specific scenario presets in
+  `comparator/data.json`.
+- **Per-item unique mechanics** (1–4h): T14 HP-thresholds, Druid/Sigil
+  transforms, Skuld stacks — engine accepts custom code per item.
+- **Translations / a11y / E2E tests** — also welcome.
+
+By contributing you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
+Security issues: see [SECURITY.md](SECURITY.md).
+
+## Roadmap
+
+Tracked in [GitHub Issues](https://github.com/PedroHPrior/oryxlab/issues) and
+[Discussions](https://github.com/PedroHPrior/oryxlab/discussions). Big-ticket
+items on the wishlist:
+
+- Per-item unique mechanics (HP-threshold scaling, transform sigils, stacks)
+- Set-bonus tiers (2/3/4-piece thresholds)
+- Group-DPS scenarios (multi-target piercing math)
+- Translations (PT-BR, ES)
+- Mobile polish for screens < 400px
 
 ## License
 

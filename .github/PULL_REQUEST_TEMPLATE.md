@@ -1,20 +1,36 @@
+<!-- Thanks for the contribution! Fill out the sections below to help reviewers. -->
+
 ## Summary
-<!-- What does this change do and why? Keep it tight. -->
 
-## Linked item
-- Closes: #<number> (must be an open Issue) **OR**
-- Implements: #<number> (must be a Discussion)
+<!-- One or two sentences: what does this change and why? -->
 
-## Checklist
-- [ ] Linked to related Issue/Discussion
-- [ ] Documented steps to test (below)
-- [ ] Drafted “how to use” docs (if this adds new behavior)
-- [ ] Backwards compatibility considered (notes if applicable)
+## Type of change
 
-## Documented steps to test
+- [ ] 🐛 Bug fix (non-breaking)
+- [ ] ✨ New feature (non-breaking)
+- [ ] 💥 Breaking change (changes persisted shapes, API, or default behavior)
+- [ ] 📊 Data correction (items.json / classes.json / sets.json / balance.json)
+- [ ] 🎨 UI / UX polish
+- [ ] 🧪 Tests only
+- [ ] 📚 Docs only
+
+## How to verify
+
+<!-- Steps a reviewer should take to confirm this works. -->
+
 1.
 2.
 3.
 
-## Notes for reviewers
-<!-- Anything to call out, screenshots, logs, perf notes, etc. -->
+## Checklist
+
+- [ ] `npm test` passes locally
+- [ ] `npm run typecheck` passes locally
+- [ ] If I changed engine logic, I added or updated tests in `tests/engine/`
+- [ ] If I changed seed data, I ran the validation suite in `tests/validation/`
+- [ ] If I added a runtime dep, the bundle impact is acceptable (`npm run build`)
+- [ ] If I changed `localStorage` shapes, I added a migration in `src/app/storage.ts`
+
+## Screenshots (UI changes)
+
+<!-- Drag before/after images here. -->

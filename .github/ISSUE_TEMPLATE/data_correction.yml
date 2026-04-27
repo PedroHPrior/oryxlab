@@ -1,0 +1,36 @@
+name: 📊 Data correction
+description: An item, set, or class has wrong stats
+labels: ["data", "good-first-issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        OryxLab's accuracy depends on community fixes. Thanks for flagging.
+        If you can submit a PR directly with the fix, even better — see CONTRIBUTING.md.
+  - type: input
+    id: item-name
+    attributes:
+      label: Item / class / set name
+      placeholder: Crystal Wand
+    validations:
+      required: true
+  - type: textarea
+    id: wrong-value
+    attributes:
+      label: What's wrong
+      placeholder: "Damage shown as 105-150 but should be 110-160 per RealmEye."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source / reference
+      description: A URL we can verify against (RealmEye wiki, Deca patch notes, etc).
+      placeholder: https://www.realmeye.com/wiki/crystal-wand
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      placeholder: Optional — class restriction also wrong, related items affected, etc.

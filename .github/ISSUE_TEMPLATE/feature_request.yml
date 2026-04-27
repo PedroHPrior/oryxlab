@@ -1,0 +1,41 @@
+name: 💡 Feature request
+description: Suggest a new feature, scenario, or improvement
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem this solves
+      description: What's missing or painful today?
+      placeholder: "When I import my RealmEye profile, I can't easily compare each character against optimizer suggestions."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work?
+      placeholder: "After import, show a card per character with a 'Compare in builder' button..."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Optional — other approaches you thought about.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Affected area
+      multiple: true
+      options:
+        - Comparator
+        - Catalog
+        - Optimizer
+        - Inventory / RealmEye import
+        - Build Editor
+        - DPS engine
+        - Data / scrapers
+        - Performance / build
+    validations:
+      required: true

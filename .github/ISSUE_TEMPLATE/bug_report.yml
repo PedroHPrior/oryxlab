@@ -1,0 +1,52 @@
+name: 🐛 Bug report
+description: Something is broken in the app
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please fill in the details below so we can reproduce.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Be specific. "Doesn't work" doesn't help — describe what you saw.
+      placeholder: When I clicked X, Y happened instead of Z.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open /app/optimizer
+        2. Pick Wizard class
+        3. Click Run optimization
+        4. Top result shows DPS 99999 (way too high)
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build / version
+      description: Found in the footer ("OryxLab · catalog vX.Y.Z"). If running locally, the commit hash.
+      placeholder: "v3.7.0 or commit 69f5af8"
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome / Edge / Brave
+        - Firefox
+        - Safari
+        - Mobile Safari
+        - Mobile Chrome
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (if any)
+      description: Open DevTools (F12), Console tab. Paste any red errors.
+      render: text
