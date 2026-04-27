@@ -15,7 +15,7 @@ const IS_PROD = typeof import.meta !== "undefined" && import.meta.env?.PROD
 function emit(level: Level, namespace: string, args: unknown[]) {
   if (IS_PROD && (level === "debug" || level === "info")) return
   const prefix = `[${namespace}]`
-  // eslint-disable-next-line no-console
+   
   const fn = console[level] ?? console.log
   fn(prefix, ...args)
 }

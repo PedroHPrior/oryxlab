@@ -56,7 +56,7 @@ export function OptimizerRoute() {
         setLastDuration(Math.round(durationMs))
       })
       .catch((e) => {
-        // eslint-disable-next-line no-console
+         
         console.error("optimize failed", e)
         setResults([])
       })

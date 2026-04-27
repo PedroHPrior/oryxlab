@@ -23,22 +23,20 @@ export function ComparatorRoute() {
 
   const items = state.items.length > 0 ? state.items : (comparatorData.items as Item[])
 
-  // Saved snapshots come from localStorage (persisted across sessions). Re-read
-  // each render is cheap because the list rarely exceeds a few entries.
-  const savedSnapshots = useMemo<SavedBuildSnapshot[]>(() => {
-    const stored = loadSavedBuilds()
-    if (stored.length === 0) return comparatorData.savedBuildSnapshots as SavedBuildSnapshot[]
-    return stored.map((s) => ({
-      id: s.id,
-      name: s.name,
-      classId: s.classId,
-      dps: s.build.derivedStats?.dps ?? 0,
-      lastModified: s.savedAt,
-      tags: s.tags,
-    }))
-    // state.builds change is the cheapest signal that something might have been
-    // saved during this session; we re-read on those changes.
-  }, [state.builds])
+  // Read saved snapshots straight from localStorage on every render — the list
+  // rarely exceeds a few entries and React Compiler will memoize automatically.
+  const stored = loadSavedBuilds()
+  const savedSnapshots: SavedBuildSnapshot[] =
+    stored.length === 0
+      ? (comparatorData.savedBuildSnapshots as SavedBuildSnapshot[])
+      : stored.map((s) => ({
+          id: s.id,
+          name: s.name,
+          classId: s.classId,
+          dps: s.build.derivedStats?.dps ?? 0,
+          lastModified: s.savedAt,
+          tags: s.tags,
+        }))
 
   return (
     <ComparatorView

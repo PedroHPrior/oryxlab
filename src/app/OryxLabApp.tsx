@@ -78,11 +78,13 @@ export function OryxLabApp() {
     () => loadScenario() ?? (comparatorData.globalScenario as Scenario),
   )
 
+  // Mirror frequently-read state into refs so the giant `actions` object can
+  // close over them without re-creating its identity on every keystroke. Each
+  // ref is kept current via a write-only effect — readers never depend on the
+  // ref itself, so the actions surface stays referentially stable.
   const buildsRef = useRef(builds)
-  buildsRef.current = builds
-
-  // Persist builds + scenario whenever they change (after initial load)
   useEffect(() => {
+    buildsRef.current = builds
     saveBuilds(builds)
   }, [builds])
   useEffect(() => {
@@ -99,7 +101,7 @@ export function OryxLabApp() {
       setBuilds(decoded.builds)
       setGlobalScenarioState(decoded.scenario)
     })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     
   }, [])
 
   const itemMap = useMemo(() => new Map(items.map((i) => [i.id, i])), [items])
@@ -143,9 +145,16 @@ export function OryxLabApp() {
     () => loadInventory() ?? (inventoryData.ownedEntries as InventoryEntry[]),
   )
 
+  // Refs kept current for stale-free reads inside the `actions` closure.
+  const itemsRef = useRef(items)
+  useEffect(() => { itemsRef.current = items }, [items])
+  const inventoryRef = useRef(inventoryOwnedEntries)
   useEffect(() => {
+    inventoryRef.current = inventoryOwnedEntries
     saveInventory(inventoryOwnedEntries)
   }, [inventoryOwnedEntries])
+  const scenarioRef = useRef(globalScenario)
+  useEffect(() => { scenarioRef.current = globalScenario }, [globalScenario])
   const [realmEyeImport, setRealmEyeImport] = useState<RealmEyeImportState>(
     inventoryData.realmEyeImport as RealmEyeImportState,
   )
@@ -254,7 +263,7 @@ export function OryxLabApp() {
       // correct slot based on its type. Used by the Catalog's "Send to comparator"
       // and item-detail "Send to comparator" buttons.
       addBuildWithItem: (itemId: string) => {
-        const item = items.find((i) => i.id === itemId)
+        const item = itemsRef.current.find((i) => i.id === itemId)
         if (!item) return
         // Pick a starter build whose class can equip this item; fall back to the
         // first starter that includes the item's first class.
@@ -327,7 +336,7 @@ export function OryxLabApp() {
           slots: { ...b.slots, [slot]: itemId },
         }))
       },
-      applyStarterCard: (_cardId) => setBuilds(STARTER_BUILDS.slice(0, 2)),
+      applyStarterCard: () => setBuilds(STARTER_BUILDS.slice(0, 2)),
 
       setCatalogViewMode,
       toggleCatalogOwnedOnly: () => setCatalogOwnedOnly((v) => !v),
@@ -417,9 +426,10 @@ export function OryxLabApp() {
         // haven't scraped yet) are silently dropped.
         setRealmEyeImport((s) => {
           const pending = s.pendingItems ?? []
-          const slugMap = new Map(items.map((i) => [i.id, i]))
+          const catalog = itemsRef.current
+          const slugMap = new Map(catalog.map((i) => [i.id, i]))
           const nameMap = new Map(
-            items.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
+            catalog.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
           )
           const entries: InventoryEntry[] = []
           const seen = new Set<string>()
@@ -445,9 +455,10 @@ export function OryxLabApp() {
       confirmRealmEyeMerge: () => {
         setRealmEyeImport((s) => {
           const pending = s.pendingItems ?? []
-          const slugMap = new Map(items.map((i) => [i.id, i]))
+          const catalog = itemsRef.current
+          const slugMap = new Map(catalog.map((i) => [i.id, i]))
           const nameMap = new Map(
-            items.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
+            catalog.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
           )
           setInventoryOwnedEntries((curr) => {
             const existingIds = new Set(curr.map((e) => e.itemId))
@@ -484,9 +495,10 @@ export function OryxLabApp() {
         classId: string,
         equipped: Array<{ slug: string; name: string }>,
       ) => {
-        const slugMap = new Map(items.map((i) => [i.id, i]))
+        const catalog = itemsRef.current
+        const slugMap = new Map(catalog.map((i) => [i.id, i]))
         const nameMap = new Map(
-          items.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
+          catalog.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
         )
         const slots: BuildSlots = {
           weapon: null, ability: null, armor: null, ring: null, talisman: null,
@@ -517,7 +529,7 @@ export function OryxLabApp() {
       addInventoryEntry: (itemId: string) => {
         setInventoryOwnedEntries((curr) => {
           if (curr.some((e) => e.itemId === itemId)) return curr
-          const item = items.find((i) => i.id === itemId)
+          const item = itemsRef.current.find((i) => i.id === itemId)
           if (!item) return curr
           return [
             ...curr,
@@ -540,7 +552,7 @@ export function OryxLabApp() {
         const data = {
           version: 1,
           exportedAt: new Date().toISOString(),
-          entries: inventoryOwnedEntries,
+          entries: inventoryRef.current,
         }
         const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" })
         const url = URL.createObjectURL(blob)
@@ -575,7 +587,7 @@ export function OryxLabApp() {
       isSavedBuildsOpen,
       shareComparator: async () => {
         try {
-          const url = await buildShareUrl(builds, globalScenario)
+          const url = await buildShareUrl(buildsRef.current, scenarioRef.current)
           if (typeof navigator !== "undefined" && navigator.clipboard) {
             await navigator.clipboard.writeText(url)
           }

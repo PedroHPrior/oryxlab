@@ -1,36 +1,19 @@
-<!-- Thanks for the contribution! Fill out the sections below to help reviewers. -->
+<!--
+👋 Thanks for considering a contribution!
 
-## Summary
+OryxLab is a single-maintainer project right now and pull requests from
+external contributors are not accepted. We're not ignoring you — this is
+a deliberate choice to keep the engine + data + balance consistent.
 
-<!-- One or two sentences: what does this change and why? -->
+If you found a bug, want a feature, or spotted wrong data, the right
+path is:
 
-## Type of change
+  → https://github.com/PedroHPrior/oryxlab/issues/new/choose
 
-- [ ] 🐛 Bug fix (non-breaking)
-- [ ] ✨ New feature (non-breaking)
-- [ ] 💥 Breaking change (changes persisted shapes, API, or default behavior)
-- [ ] 📊 Data correction (items.json / classes.json / sets.json / balance.json)
-- [ ] 🎨 UI / UX polish
-- [ ] 🧪 Tests only
-- [ ] 📚 Docs only
+The "Data correction" template is fast-tracked and usually shipped
+within a day. Please file there instead of opening this PR.
 
-## How to verify
+Forks for personal/private use are welcome under MIT.
 
-<!-- Steps a reviewer should take to confirm this works. -->
-
-1.
-2.
-3.
-
-## Checklist
-
-- [ ] `npm test` passes locally
-- [ ] `npm run typecheck` passes locally
-- [ ] If I changed engine logic, I added or updated tests in `tests/engine/`
-- [ ] If I changed seed data, I ran the validation suite in `tests/validation/`
-- [ ] If I added a runtime dep, the bundle impact is acceptable (`npm run build`)
-- [ ] If I changed `localStorage` shapes, I added a migration in `src/app/storage.ts`
-
-## Screenshots (UI changes)
-
-<!-- Drag before/after images here. -->
+This PR will be closed unread by the maintainer.
+-->

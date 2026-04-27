@@ -1,0 +1,51 @@
+# Auto-closes pull requests opened by anyone other than the maintainer with
+# a friendly redirect to file an issue instead. OryxLab uses an
+# issue-and-discussion-only contribution model — see CONTRIBUTING.md.
+
+name: Close external PRs
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.user.login != 'PedroHPrior'
+    steps:
+      - name: Comment + close
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const author = context.payload.pull_request.user.login
+            const body = [
+              `Hey @${author} — thanks for taking the time.`,
+              ``,
+              `OryxLab currently only accepts code changes from the maintainer.`,
+              `That's a deliberate choice (engine + balance consistency); it's`,
+              `not personal.`,
+              ``,
+              `**Want this change to ship?** File an issue and we'll prioritize it:`,
+              `https://github.com/PedroHPrior/oryxlab/issues/new/choose`,
+              ``,
+              `Data corrections (wrong stat, wrong class) are fast-tracked and`,
+              `usually shipped within a day.`,
+              ``,
+              `Forks for your own use are fine under MIT. Closing for now.`,
+            ].join('\n')
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body,
+            })
+            await github.rest.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              state: 'closed',
+            })

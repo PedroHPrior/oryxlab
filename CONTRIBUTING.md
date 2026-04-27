@@ -1,152 +1,89 @@
 # Contributing to OryxLab
 
-Thanks for considering a contribution. OryxLab is a fan tool by-and-for the
-ROTMG community — every kind of help moves the project forward.
+> **OryxLab is currently a single-maintainer project. Code changes (pull requests) are not accepted from external contributors at this time.**
+>
+> What we **do** want from you: bug reports, data corrections, feature ideas, and feedback. The signal you provide via Issues and Discussions directly shapes the roadmap.
 
-## Quick start (5 minutes)
+---
 
-```bash
-git clone https://github.com/PedroHPrior/oryxlab.git
-cd oryxlab
-npm install
-npm run dev:all      # frontend on :3000 + API on :3001
-```
+## How you can help
 
-Run the test suite + typecheck before opening a PR:
+### 🐛 Report a bug
 
-```bash
-npm test
-npm run typecheck
-```
+Found something that doesn't work? Use the **Bug report** issue template:
+[https://github.com/PedroHPrior/oryxlab/issues/new/choose](https://github.com/PedroHPrior/oryxlab/issues/new/choose)
 
-GitHub Actions runs both on every PR; PRs that fail CI won't be merged.
+Include:
+- What you tried
+- What actually happened
+- Browser + version (in the footer of the app)
+- Console errors (F12 → Console tab)
 
-## Where contributions land best
+### 📊 Flag a wrong stat / wrong class / missing proc
 
-We've grouped the most impactful contribution areas by skill level. Pick whatever
-fits your interest and time budget.
+OryxLab's accuracy depends on the catalog being right. The **Data correction**
+template is the fastest way to get a fix shipped:
+[https://github.com/PedroHPrior/oryxlab/issues/new?template=data_correction.yml](https://github.com/PedroHPrior/oryxlab/issues/new?template=data_correction.yml)
 
-### 🎯 No-code: data corrections (5–30 min)
+Just give us:
+- Item / class / set name
+- What's wrong (current vs. expected)
+- A RealmEye URL we can verify against
 
-The fastest way to help. The DPS engine is only as accurate as the underlying
-data — every fix improves what 1000s of players see.
+These get fast-tracked — usually fixed within a day.
 
-- **Wrong damage / RoF / range on an item** — open `product/data/items.json`,
-  fix the values, send a PR. Reference the [RealmEye wiki page](https://www.realmeye.com/wiki) URL in the PR description.
-- **Class restriction wrong** — `item.classes` should match the canonical
-  class set defined in `scripts/enforce-class-canon.mjs`. Re-run that script
-  if you fix many.
-- **Procs / inflict tags missing** — add the right `procDamage`/`procRate`
-  or tag (e.g. `inflicts-cursed`, `self-berserk`) to `item.tags`.
-- **New ROTMG release just dropped new items** — re-run the scrapers (see
-  the README's "Re-scraping data" section), then PR the updated JSON.
+### 💡 Suggest a feature
 
-### 🎲 No-code: balance tuning (10 min)
+Have an idea? **Feature request** template:
+[https://github.com/PedroHPrior/oryxlab/issues/new?template=feature_request.yml](https://github.com/PedroHPrior/oryxlab/issues/new?template=feature_request.yml)
 
-`product/data/balance.json` has every tunable engine constant — class DPS
-multipliers, party-buff uptime modeling, status-effect damage bonuses. If you
-think Trickster's prism multiplier should be 1.7× instead of 1.6×, change one
-number, run `npm test` to confirm the validation suite still passes, send a
-PR with reasoning.
+Or if you want to discuss before formalizing, drop into
+[Discussions](https://github.com/PedroHPrior/oryxlab/discussions).
 
-The community knows ROTMG mechanics far better than any single contributor.
+### 💬 Just want to talk?
 
-### 🗺️ Light coding: new scenarios (15 min)
+Use [Discussions](https://github.com/PedroHPrior/oryxlab/discussions) for
+- Strategy questions ("how should the optimizer model X?")
+- Sharing builds you've discovered
+- General ROTMG theorycrafting that influences the engine
+- Asking how something works
 
-Boss-specific or dungeon-specific scenarios live in
-`product/sections/comparator/data.json` under `scenarioPresets`. Each preset
-sets target defense, status effects on target, and party buffs. Adding a new
-boss preset is a JSON edit + a screenshot in the PR.
+---
 
-### 💻 Code: per-item unique mechanics (1–4 hours)
+## What good feedback looks like
 
-The engine handles ~90% of effects generically (procs, ability damage, set
-bonuses, inflict-status, self-buffs). The long tail is unique mechanics:
+The best issues read like a single sentence even before you click into them:
 
-- T14 weapons that scale damage with player HP%
-- Druid form transformations
-- Skuld stack-based effects
-- Bard crescendo build-up
-- HP-threshold-gated buffs
+✅ `Doom Bow on maxed Archer shows 5,000 DPS but RealmEye DPS calc says 1,200`
+✅ `Crystal Wand classes missing 'sorcerer' (it should be priest/sorcerer/summoner/druid)`
+✅ `Comparator Share button doesn't show feedback when URL is copied`
+✅ `Mobile: scenario panel takes 30% of viewport, hard to dismiss`
 
-Each of these needs item-specific code in `src/engine/dps.ts`. Open an issue
-first to discuss approach before implementing.
+These are precise enough that a fix can ship in minutes.
 
-### 🌐 Translations (2–4 hours)
+❌ `optimizer broken`
+❌ `wizard build wrong`
 
-OryxLab is currently English-only. Adding i18n with locale files for PT-BR,
-ES, etc. would help reach non-English ROTMG communities. Open an issue if
-you want to take this on; we'll need to extract strings first.
+Vague reports turn into back-and-forth conversations and rarely get fixed.
 
-### 🎨 UI/UX & accessibility (variable)
+---
 
-- Mobile polish for screens under 400px
-- Keyboard navigation for the slot picker
-- Better screen-reader labels
-- Color-contrast fixes for low-vision users
+## Code of Conduct
 
-Tests for visual regression aren't set up yet — that's also a great
-contribution.
+We follow the [Contributor Covenant 2.1](CODE_OF_CONDUCT.md). Short version:
+be civil, no harassment, give credit. Anyone violating it gets blocked.
 
-### 🧪 Tests (1–2 hours)
+## Security issues
 
-Test coverage is currently ~17% by LOC. Specific areas wanted:
-- E2E tests with Playwright (we don't have any)
-- Edge cases in the engine (extreme stat values, missing fields)
-- The optimizer's constraint solver corners
+See [SECURITY.md](SECURITY.md). Don't open public issues for vulnerabilities —
+email **pedrohpk17@gmail.com**.
 
-## How to submit
+## License
 
-1. **Fork** the repo, branch off `main`.
-2. Make your change. Keep PRs focused — one logical change per PR is easier
-   to review than a kitchen sink.
-3. Add or update tests if you touched engine logic. The validation suite in
-   `tests/validation/` catches data regressions; the engine tests in
-   `tests/engine/` cover behavior.
-4. Run `npm test` and `npm run typecheck`.
-5. Open a PR against `main`. The PR description should say:
-   - **What** changed (one line).
-   - **Why** (link to issue or explain).
-   - **How to verify** (steps a reviewer should take).
-6. CI will run; address any failures.
-7. A maintainer reviews. Most PRs land in 24–48h.
+MIT — see [LICENSE](LICENSE). You're free to fork and self-host if you want
+to take the project in a different direction.
 
-## Code style
+---
 
-- TypeScript strict mode (`tsc -b` must pass clean).
-- Tailwind for styling (no CSS files except `index.css`).
-- Tests via Vitest + Testing Library.
-- ESLint config in `eslint.config.js` — `npm run lint` enforces it.
-
-Run formatters via your editor or `npm run lint -- --fix`.
-
-## What we won't merge
-
-- Breaking changes to the persisted localStorage shape without a migration in
-  `src/app/storage.ts`.
-- Code that hardcodes class/balance constants instead of reading
-  `product/data/balance.json`.
-- PRs that disable security middleware (rate limiting, CORS, helmet) in
-  `server/index.mjs`.
-- Anything that adds a runtime dep heavier than 50 KB unless it's the only
-  reasonable approach.
-
-## Reporting bugs / feature requests
-
-[Open an issue](https://github.com/PedroHPrior/oryxlab/issues/new/choose)
-with the appropriate template. For data corrections, "Item is wrong"
-template gets fast-tracked.
-
-## Code of conduct
-
-We follow the [Contributor Covenant 2.1](CODE_OF_CONDUCT.md). The short
-version: be civil, give credit, no harassment. Anyone violating it will be
-removed from the project.
-
-## Recognition
-
-Every merged PR's author is listed in the repo's contributors graph. We don't
-maintain a separate AUTHORS file — GitHub does that for us. Significant
-contributions get called out in `CHANGELOG.md` for the release they ship in.
-
-Thanks for helping make OryxLab better.
+Thanks for helping make OryxLab better. Every well-written issue saves real
+hours of bad-data debugging downstream.

@@ -269,7 +269,7 @@ export function computeDerivedStats(input: ComputeInput): DerivedStats {
   const weapon = equipped.find((i) => i.type === "weapon")
   const ability = equipped.find((i) => i.type === "ability")
 
-  let dpsCurve = new Array(17).fill(0)
+  const dpsCurve = new Array(17).fill(0)
   let dpsAtZeroDef = 0
   let dpsAtScenarioDef = 0
   let totalAoeMult = 1

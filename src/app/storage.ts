@@ -76,7 +76,7 @@ function runMigrations() {
     try {
       migrate(ctx)
     } catch (e) {
-      // eslint-disable-next-line no-console
+       
       console.error(`[storage] migration v${appliedVersion} → v${appliedVersion + 1} failed:`, e)
       break
     }

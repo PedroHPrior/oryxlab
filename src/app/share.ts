@@ -69,7 +69,11 @@ async function decompress(bytes: Uint8Array): Promise<string> {
 
 export async function encodeShareState(builds: Build[], scenario: Scenario): Promise<string> {
   // Strip derivedStats — they're recomputed on load
-  const trimmedBuilds = builds.map(({ derivedStats: _ds, ...rest }) => rest as unknown as Build)
+  const trimmedBuilds = builds.map((b) => {
+    const { derivedStats: _omit, ...rest } = b
+    void _omit
+    return rest as unknown as Build
+  })
   const payload: ShareState = { v: SHARE_VERSION, scenario, builds: trimmedBuilds }
   const json = JSON.stringify(payload)
   const compressed = await compress(json)
