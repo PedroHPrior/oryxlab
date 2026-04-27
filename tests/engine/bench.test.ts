@@ -15,16 +15,33 @@ const itemMap = buildItemMap(items)
 // posts. Tolerance is ±10% (wider than ideal because community calcs
 // themselves disagree by a few percent; we land within that disagreement).
 const TARGETS = [
-  { classId: "wizard",   weapon: "Crystal Wand",          ref: 1150, label: "Crystal Wand on Wizard" },
-  { classId: "archer",   weapon: "Doom Bow",              ref: 1200, label: "Doom Bow on Archer" },
-  { classId: "wizard",   weapon: "Staff of Esben",        ref: 1300, label: "Staff of Esben on Wizard" },
-  { classId: "wizard",   weapon: "Wand of the Bulwark",   ref: 1000, label: "Wand of the Bulwark on Wizard" },
-  { classId: "wizard",   weapon: "Wand of Recompense",    ref: 900,  label: "Wand of Recompense on Wizard" },
-  { classId: "knight",   weapon: "Demon Blade",           ref: 1500, label: "Demon Blade on Knight" },
-  { classId: "rogue",    weapon: "Dirk of Cronus",        ref: 1250, label: "Dirk of Cronus on Rogue" },
-  { classId: "huntress", weapon: "Bow of Covert Havens",  ref: 1100, label: "Bow of Covert Havens on Huntress" },
-  { classId: "samurai",  weapon: "Masamune",              ref: 1100, label: "Masamune on Samurai" },
-  { classId: "warrior",  weapon: "Sword of Acclaim",      ref: 1500, label: "Sword of Acclaim on Warrior" },
+  // Original 10-build bench
+  { classId: "wizard",     weapon: "Crystal Wand",          ref: 1150, label: "Crystal Wand on Wizard" },
+  { classId: "archer",     weapon: "Doom Bow",              ref: 1200, label: "Doom Bow on Archer" },
+  { classId: "wizard",     weapon: "Staff of Esben",        ref: 1300, label: "Staff of Esben on Wizard" },
+  { classId: "wizard",     weapon: "Wand of the Bulwark",   ref: 1000, label: "Wand of the Bulwark on Wizard" },
+  { classId: "wizard",     weapon: "Wand of Recompense",    ref: 900,  label: "Wand of Recompense on Wizard" },
+  { classId: "knight",     weapon: "Demon Blade",           ref: 1500, label: "Demon Blade on Knight" },
+  { classId: "rogue",      weapon: "Dirk of Cronus",        ref: 1250, label: "Dirk of Cronus on Rogue" },
+  { classId: "huntress",   weapon: "Bow of Covert Havens",  ref: 1100, label: "Bow of Covert Havens on Huntress" },
+  { classId: "samurai",    weapon: "Masamune",              ref: 1100, label: "Masamune on Samurai" },
+  { classId: "warrior",    weapon: "Sword of Acclaim",      ref: 1500, label: "Sword of Acclaim on Warrior" },
+  // Class-multiplier coverage — every class with its canonical max-DPS weapon
+  { classId: "priest",     weapon: "Wand of the Bulwark",   ref: 800,  label: "Wand of Bulwark on Priest" },
+  { classId: "necromancer", weapon: "Crystal Wand",         ref: 1300, label: "Crystal Wand on Necromancer" },
+  { classId: "sorcerer",   weapon: "Crystal Wand",          ref: 1200, label: "Crystal Wand on Sorcerer" },
+  { classId: "mystic",     weapon: "Crystal Wand",          ref: 1100, label: "Crystal Wand on Mystic" },
+  { classId: "summoner",   weapon: "Wand of Recompense",    ref: 850,  label: "Recompense on Summoner" },
+  { classId: "druid",      weapon: "Wand of Recompense",    ref: 850,  label: "Recompense on Druid" },
+  { classId: "paladin",    weapon: "Demon Blade",           ref: 1550, label: "Demon Blade on Paladin" },
+  { classId: "ninja",      weapon: "Masamune",              ref: 1100, label: "Masamune on Ninja" },
+  { classId: "kensei",     weapon: "Masamune",              ref: 1100, label: "Masamune on Kensei" },
+  { classId: "trickster",  weapon: "Dirk of Cronus",        ref: 1900, label: "Dirk on Trickster (clone bonus)" },
+  { classId: "assassin",   weapon: "Dirk of Cronus",        ref: 1500, label: "Dirk on Assassin" },
+  // Note: Bard primary weapon is the Lute, but lutes are support items
+  // (the wiki Damage cell is empty / per-tier strings) — Bard DPS comes
+  // mostly from the Bard's *party-buff* effect, not the lute itself,
+  // and the engine doesn't yet model lutes as primary DPS.
 ]
 
 describe("DPS benchmark vs community references", () => {
