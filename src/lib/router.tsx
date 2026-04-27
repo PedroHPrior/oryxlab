@@ -1,10 +1,12 @@
 import { lazy } from "react"
 import { createBrowserRouter, Navigate } from "react-router-dom"
 import { OryxLabApp } from "@/app/OryxLabApp"
+import { NotFoundRoute } from "@/app/routes/NotFoundRoute"
 import { LazyRoute } from "./routeHelpers"
 
 // Code-splits the Catalog (1.5K items), Optimizer (Web Worker), Build Editor,
-// and Inventory routes off the initial bundle.
+// and Inventory routes off the initial bundle. NotFoundRoute is intentionally
+// NOT lazy — it should render instantly for users hitting a dead link.
 const ComparatorRoute = lazy(() => import("@/app/routes/ComparatorRoute").then((m) => ({ default: m.ComparatorRoute })))
 const CatalogRoute = lazy(() => import("@/app/routes/CatalogRoute").then((m) => ({ default: m.CatalogRoute })))
 const OptimizerRoute = lazy(() => import("@/app/routes/OptimizerRoute").then((m) => ({ default: m.OptimizerRoute })))
@@ -26,6 +28,7 @@ export const router = createBrowserRouter([
       { path: "editor/:buildId", element: <LazyRoute area="Build Editor"><BuildEditorRoute /></LazyRoute> },
     ],
   },
-  // Anything else lands on the comparator too.
-  { path: "*", element: <Navigate to="/app" replace /> },
+  // Unknown paths render the themed 404 — outside the app shell so the page
+  // can take over the full viewport without nav chrome competing for focus.
+  { path: "*", element: <NotFoundRoute /> },
 ])

@@ -28,9 +28,15 @@ export function LazyRoute({
   area: string
   children: ReactNode
 }) {
+  // The wrapping <div> drives the .oryx-route-enter animation on every route
+  // change. `key={area}` re-keys the subtree per route so the animation
+  // restarts; without it React would diff in place and the keyframe wouldn't
+  // re-trigger on Comparator → Catalog → … navigations.
   return (
     <ErrorBoundary area={area}>
-      <Suspense fallback={<RouteFallback />}>{children}</Suspense>
+      <Suspense fallback={<RouteFallback />}>
+        <div key={area} className="oryx-route-enter">{children}</div>
+      </Suspense>
     </ErrorBoundary>
   )
 }
