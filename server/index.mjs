@@ -78,17 +78,37 @@ app.use(
 )
 
 // CORS: in production restrict to ALLOWED_ORIGIN (csv); in dev allow all.
+//
+// IMPORTANT: ES modules in browsers fetch their dependency graph in `cors`
+// mode even when the request is same-origin. Chrome/Brave/Safari all send
+// `Origin: https://www.oryxlab.app` on those requests. Our previous config
+// passed `new Error('CORS blocked')` to the cors callback when the origin
+// didn't match the allowlist — Express then renders its default 500 HTML
+// error page, which is exactly what users were seeing on the JS bundle and
+// CSS file (status 500, content-type text/html, default-src 'none' CSP).
+// Guard against that by always allowing our own origin and never throwing
+// on mismatch — unknown origins just don't get the Access-Control-Allow-*
+// headers, which is the correct CORS denial path (browser blocks at its
+// end if cross-origin, no-op if same-origin).
 const allowedOrigins = (process.env.ALLOWED_ORIGIN ?? '').split(',').map((s) => s.trim()).filter(Boolean)
+const SAME_ORIGINS = new Set(['https://www.oryxlab.app', 'https://oryxlab.app'])
 app.use(
   cors({
-    origin: IS_PROD && allowedOrigins.length > 0
-      ? (origin, cb) => {
-          // same-origin requests have no Origin header — allow them.
-          if (!origin) return cb(null, true)
-          if (allowedOrigins.includes(origin)) return cb(null, true)
-          return cb(new Error('CORS blocked'))
-        }
-      : true,
+    origin: (origin, cb) => {
+      // No Origin header (curl, server-to-server, navigation requests) → allow.
+      if (!origin) return cb(null, true)
+      // Page loaded from our own canonical hosts → always allow, regardless
+      // of how ALLOWED_ORIGIN happens to be configured on the platform.
+      if (SAME_ORIGINS.has(origin)) return cb(null, true)
+      // Production: extra entries from ALLOWED_ORIGIN env var.
+      if (IS_PROD && allowedOrigins.length > 0 && allowedOrigins.includes(origin)) return cb(null, true)
+      // Dev or unrestricted prod: allow everything.
+      if (!IS_PROD || allowedOrigins.length === 0) return cb(null, true)
+      // Unknown origin in restricted prod: don't add CORS headers, but DO
+      // serve the response. Browser enforces CORS at its end for actually
+      // cross-origin requests; same-origin requests don't care either way.
+      return cb(null, false)
+    },
   }),
 )
 
