@@ -396,7 +396,12 @@ export function OryxLabApp() {
         if (!username) return
         try {
           const r = await importRealmEye(username)
-          setRealmEyeImport((s) => ({ ...s, step: "preview", preview: r.preview }))
+          setRealmEyeImport((s) => ({
+            ...s,
+            step: "preview",
+            preview: r.preview,
+            pendingItems: r.items,
+          }))
         } catch (e) {
           setRealmEyeImport((s) => ({
             ...s,
@@ -406,10 +411,67 @@ export function OryxLabApp() {
           log.error("RealmEye import failed:", e)
         }
       },
-      confirmRealmEyeOverwrite: () =>
-        setRealmEyeImport((s) => ({ ...s, step: "confirmed", open: false })),
-      confirmRealmEyeMerge: () =>
-        setRealmEyeImport((s) => ({ ...s, step: "confirmed", open: false })),
+      confirmRealmEyeOverwrite: () => {
+        // Match imported items to our catalog by slug → id, then by lowercased
+        // name. Items not found in the catalog (e.g. brand-new releases we
+        // haven't scraped yet) are silently dropped.
+        setRealmEyeImport((s) => {
+          const pending = s.pendingItems ?? []
+          const slugMap = new Map(items.map((i) => [i.id, i]))
+          const nameMap = new Map(
+            items.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
+          )
+          const entries: InventoryEntry[] = []
+          const seen = new Set<string>()
+          for (const p of pending) {
+            const cleanName = p.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim()
+            const it = slugMap.get(p.slug) ?? nameMap.get(cleanName)
+            if (!it || seen.has(it.id)) continue
+            seen.add(it.id)
+            entries.push({
+              itemId: it.id,
+              name: it.name,
+              tier: it.tier,
+              type: it.type,
+              sprite: it.sprite ?? it.id,
+              imageUrl: it.imageUrl,
+              addedAt: new Date().toISOString(),
+            })
+          }
+          setInventoryOwnedEntries(entries)
+          return { ...s, step: "confirmed", open: false, pendingItems: undefined }
+        })
+      },
+      confirmRealmEyeMerge: () => {
+        setRealmEyeImport((s) => {
+          const pending = s.pendingItems ?? []
+          const slugMap = new Map(items.map((i) => [i.id, i]))
+          const nameMap = new Map(
+            items.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
+          )
+          setInventoryOwnedEntries((curr) => {
+            const existingIds = new Set(curr.map((e) => e.itemId))
+            const additions: InventoryEntry[] = []
+            for (const p of pending) {
+              const cleanName = p.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim()
+              const it = slugMap.get(p.slug) ?? nameMap.get(cleanName)
+              if (!it || existingIds.has(it.id)) continue
+              existingIds.add(it.id)
+              additions.push({
+                itemId: it.id,
+                name: it.name,
+                tier: it.tier,
+                type: it.type,
+                sprite: it.sprite ?? it.id,
+                imageUrl: it.imageUrl,
+                addedAt: new Date().toISOString(),
+              })
+            }
+            return [...curr, ...additions]
+          })
+          return { ...s, step: "confirmed", open: false, pendingItems: undefined }
+        })
+      },
       closeRealmEyeImport: () =>
         setRealmEyeImport((s) => ({ ...s, open: false, step: "enter-username", input: "" })),
       removeInventoryEntry: (itemId) =>

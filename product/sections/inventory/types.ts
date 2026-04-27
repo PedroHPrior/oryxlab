@@ -47,6 +47,8 @@ export interface RealmEyeImportState {
   step: RealmEyeImportStep
   input: string
   preview: RealmEyeImportPreview | null
+  /** Raw items returned by the proxy — kept until confirm so we can persist them. */
+  pendingItems?: { slug: string; name: string; imageUrl?: string }[]
 }
 
 export interface ManualSelectionState {

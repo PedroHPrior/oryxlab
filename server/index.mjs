@@ -156,19 +156,65 @@ app.post('/api/inventory/realmeye-import', realmEyeLimiter, async (req, res) => 
     }
 
     const html = await r.text()
-    const items = []
-    const equipRe = /<a href="\/wiki\/([^"]+)"><img alt="([^"]+)"[^>]+src="(\/s\/a\/img\/wiki\/i\/[^"]+)"[^>]*class="img-responsive"/g
-    let m
-    while ((m = equipRe.exec(html)) !== null) {
-      items.push({ slug: m[1], name: m[2], imageUrl: `https://www.realmeye.com${m[3]}` })
-    }
-    const charsRe = /<a class="entity-name" href="\/player\/[^"]+\/[^"]+">([^<]+)<\/a>/g
-    const characters = []
-    let cm
-    while ((cm = charsRe.exec(html)) !== null) characters.push(cm[1])
 
-    // Detect private profile: page exists but lists no items + no characters.
-    const isPrivate = items.length === 0 && characters.length === 0 && /This profile is private/i.test(html)
+    // RealmEye now uses CSS sprite sheets instead of <img> tags. Each item
+    // is rendered as `<a href="/wiki/<slug>"><span class="item ..." title="<name>"`.
+    // Title sometimes carries a rarity prefix ("Legendary ", "Rare ",
+    // "Uncommon ") which we strip; tier suffix ("T13", "UT") is kept.
+    const decodeHtml = (s) =>
+      s
+        .replace(/&apos;/g, "'")
+        .replace(/&#39;/g, "'")
+        .replace(/&quot;/g, '"')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&nbsp;/g, ' ')
+    const items = []
+    const seen = new Set()
+    const itemRe = /<a href="\/wiki\/([^"]+)"[^>]*>\s*<span class="item[^"]*"[^>]*title="([^"]+)"/g
+    let m
+    while ((m = itemRe.exec(html)) !== null) {
+      const slug = m[1]
+      if (seen.has(slug)) continue
+      // Skip non-equipment links like /wiki/realm-of-the-mad-god.
+      if (slug === 'realm-of-the-mad-god' || slug === 'backpack') continue
+      seen.add(slug)
+      const titleRaw = decodeHtml(m[2].split('\n')[0]).trim()
+      const name = titleRaw
+        .replace(/^(Legendary|Rare|Uncommon|Common|Mythical)\s+/i, '')
+        // Strip trailing tier marker so we land on the bare item name (engine
+        // resolves tier from items.json).
+        .replace(/\s+(T\d{1,2}|UT|ST|Talisman)$/i, '')
+        .trim()
+      items.push({
+        slug,
+        name,
+        imageUrl: `https://www.realmeye.com/wiki/${slug}`,
+      })
+    }
+
+    // Characters: extract class + fame from each character row in the
+    // characters table. Class is in a <td> immediately following the char id.
+    const characters = []
+    const charClasses = ['Wizard','Necromancer','Mystic','Priest','Sorcerer','Summoner','Druid','Archer','Huntress','Bard','Knight','Paladin','Warrior','Rogue','Trickster','Assassin','Ninja','Samurai','Kensei']
+    const charRowRe = new RegExp(`<td>(${charClasses.join('|')})</td>`, 'g')
+    let cm
+    let charIdx = 0
+    while ((cm = charRowRe.exec(html)) !== null) {
+      const className = cm[1]
+      characters.push({
+        id: `char-${charIdx++}`,
+        classId: className.toLowerCase(),
+        className,
+        equippedItems: [],
+      })
+    }
+
+    // Detect private profile: explicit message OR no items + no characters.
+    const isPrivate =
+      /This profile is private/i.test(html) ||
+      (items.length === 0 && characters.length === 0)
 
     res.json({
       username: safe,
@@ -177,9 +223,7 @@ app.post('/api/inventory/realmeye-import', realmEyeLimiter, async (req, res) => 
         username: safe,
         vaultCount: items.length,
         characterCount: characters.length,
-        characters: characters.map((name, i) => ({
-          id: `char-${i}`, classId: name.toLowerCase(), className: name, equippedItems: [],
-        })),
+        characters,
         delta: { added: items.length, removed: 0, unchanged: 0 },
       },
       items,
