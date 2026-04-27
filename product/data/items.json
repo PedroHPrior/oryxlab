@@ -538,7 +538,7 @@
       "range": 9,
       "lifetime": 0.6,
       "projectileSpeed": 15,
-      "procRate": 0.2,
+      "procRate": 0.1,
       "procDamage": 1050,
       "shots": 1
     },
@@ -682,7 +682,8 @@
       "range": 6.6,
       "lifetime": 0.458,
       "projectileSpeed": 14.4,
-      "shots": 1
+      "shots": 1,
+      "procRate": 0.1
     },
     "tags": [],
     "sprite": "wand-of-the-fallen",
@@ -2309,12 +2310,13 @@
       "bard"
     ],
     "stats": {
-      "dmgMin": 25,
-      "dmgMax": 35,
+      "dmgMin": 70,
+      "dmgMax": 110,
       "shots": 2,
       "range": 7.04,
       "lifetime": 0.44,
-      "projectileSpeed": 16
+      "projectileSpeed": 16,
+      "dmgAvg": 90
     },
     "tags": [],
     "sprite": "bow-of-covert-havens",
@@ -4575,7 +4577,6 @@
       "range": 3.38,
       "lifetime": 0.26,
       "projectileSpeed": 13,
-      "procDamage": 115,
       "shots": 2
     },
     "tags": [],
@@ -6248,7 +6249,8 @@
       "dmgMax": 120,
       "dmgAvg": 95,
       "shots": 2,
-      "range": 8.55
+      "range": 8.55,
+      "procRate": 0.04
     },
     "tags": [],
     "sprite": "staff-of-the-cosmic-whole",
@@ -6300,7 +6302,8 @@
       "range": 8.55,
       "lifetime": 0.475,
       "projectileSpeed": 18,
-      "shots": 2
+      "shots": 2,
+      "procRate": 0.05
     },
     "tags": [],
     "sprite": "staff-of-the-fundamental-core",
@@ -6462,7 +6465,8 @@
       "lifetime": 0.364,
       "projectileSpeed": 11,
       "procDamage": 60,
-      "shots": 10
+      "shots": 10,
+      "procRate": 0.05
     },
     "tags": [],
     "sprite": "staff-of-extreme-prejudice",
@@ -6515,7 +6519,8 @@
       "lifetime": 0.525,
       "projectileSpeed": 16,
       "def": 3,
-      "procDamage": 1650
+      "procDamage": 1650,
+      "procRate": 0.03
     },
     "tags": [],
     "sprite": "staff-of-esben",
@@ -15632,7 +15637,8 @@
       "range": 16,
       "lifetime": 1,
       "projectileSpeed": 16,
-      "mpCost": 20
+      "mpCost": 20,
+      "procRate": 1
     },
     "tags": [],
     "sprite": "fire-spray-spell",
@@ -15686,7 +15692,8 @@
       "lifetime": 1,
       "projectileSpeed": 16,
       "wis": 2,
-      "mpCost": 40
+      "mpCost": 40,
+      "procRate": 1
     },
     "tags": [],
     "sprite": "fire-nova-spell",
@@ -16091,7 +16098,8 @@
     "stats": {
       "mpCost": 120,
       "procDamage": 350,
-      "cooldown": 4
+      "cooldown": 4,
+      "procRate": 1
     },
     "tags": [],
     "sprite": "genesis-spell",

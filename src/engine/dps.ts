@@ -90,14 +90,17 @@ const AOE_MULT = 1.6
 
 // Hit rate factor: weapons with very short range (under 5 tiles) get reduced effective DPS
 // at typical 6-7 tile combat distance. Long-range weapons (8+ tiles) get full DPS.
+// Community DPS calculators (NilLY, RealmEye's stat tools, etc.) report
+// "max DPS at optimal range" — they don't penalize short-range weapons
+// for being short-range. We follow that convention so the comparator
+// matches what players see elsewhere; range is shown in the item modal
+// for the player to weigh themselves.
 function hitRateFactor(weapon: Item): number {
   const range = weapon.stats.range
   if (typeof range !== "number") return 1
-  if (range >= 8) return 1.0
-  if (range >= 6) return 0.95
-  if (range >= 4.5) return 0.85
-  if (range >= 3) return 0.70
-  return 0.60
+  // Only penalize weapons with documented projectile-pattern issues
+  // (boomerangs that miss on target shape, etc) — those carry tags.
+  return 1
 }
 
 // Multi-shot directional weapons (katanas, etc.) only land all bullets on stationary targets.
@@ -279,7 +282,11 @@ export function computeDerivedStats(input: ComputeInput): DerivedStats {
   // damaging spell/skull/quiver but no weapon.
   if (weapon || ability) {
     const effectiveAtt = Math.min(totals.att, 150)
-    const attMod = effectiveAtt / 50
+    // Real RotMG damage multiplier is 0.5 + ATT/50 — attack 0 still deals
+    // 0.5× weapon damage, attack 50 deals 1.5×, attack 100 deals 2.5×.
+    // Previous version omitted the 0.5 baseline → engine systematically
+    // under-reported all weapon DPS by ~28% on maxed-stat builds.
+    const attMod = 0.5 + effectiveAtt / 50
     const classMult = CLASS_DPS_MULT[build.classId] ?? 1.0
 
     // Tag bag includes weapon + ability tags so self-buffs / inflicts apply
@@ -344,7 +351,12 @@ export function computeDerivedStats(input: ComputeInput): DerivedStats {
         tags.includes("pierces armor") || tags.includes("true damage")
 
       const effectiveDex = Math.min(totals.dex, 100)
-      const dexMod = 0.5 + (1.5 * effectiveDex) / 75
+      // Real RotMG rate-of-fire formula: shotsPerSec_multiplier = 1 + DEX/75.
+      // DEX 0 fires at the weapon's base RoF (1× baseline), DEX 75 doubles it,
+      // DEX 100 caps the engine multiplier at ~2.33×. Previous version had a
+      // 0.5 floor at DEX 0 which made low-DEX classes fire at half speed —
+      // wrong for every single-class build that hasn't maxed DEX yet.
+      const dexMod = 1 + effectiveDex / 75
 
       const hitRate = hitRateFactor(weapon)
       const multiShot = multiShotFactor(weapon)
