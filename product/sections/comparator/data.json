@@ -610,11 +610,11 @@
         "max-dps"
       ],
       "slots": {
-        "weapon": "crystal-wand",
-        "ability": "ep",
-        "armor": "ce",
-        "ring": "acclaim",
-        "talisman": "scattered"
+        "weapon": "staff-of-esben",
+        "ability": "genesis-spell",
+        "armor": "robe-of-the-grand-sorcerer",
+        "ring": "ring-of-unbound-health",
+        "talisman": null
       },
       "exaltations": {
         "att": 5,
@@ -663,10 +663,10 @@
         "tiered"
       ],
       "slots": {
-        "weapon": "t14-staff",
-        "ability": "t6-spell",
+        "weapon": "staff-of-the-fundamental-core",
+        "ability": "fire-nova-spell",
         "armor": "robe-of-the-master",
-        "ring": "ubhp",
+        "ring": "ring-of-unbound-health",
         "talisman": null
       },
       "exaltations": {
@@ -717,9 +717,9 @@
       ],
       "slots": {
         "weapon": "demon-blade",
-        "ability": "exalted-helm",
-        "armor": "acrop",
-        "ring": "ubhp",
+        "ability": "colossus-shield",
+        "armor": "acropolis-armor",
+        "ring": "ring-of-unbound-health",
         "talisman": null
       },
       "exaltations": {

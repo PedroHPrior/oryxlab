@@ -55,13 +55,13 @@ describe("Every route renders without errors", () => {
     expect(screen.getByRole("button", { name: /Best in Slot/i })).toBeInTheDocument()
   })
 
-  it("Inventory: import RealmEye + bulk export/import buttons render", async () => {
+  it("Inventory: import + manual-select CTAs render", async () => {
     renderApp("/app/inventory")
+    // Default view is "empty" so both onboarding CTAs are visible.
     await waitFor(() => {
-      expect(screen.getByRole("button", { name: /Import RealmEye/i })).toBeInTheDocument()
+      expect(screen.getByRole("button", { name: /Import from RealmEye/i })).toBeInTheDocument()
     })
-    expect(screen.getByRole("button", { name: /Export JSON/i })).toBeInTheDocument()
-    expect(screen.getByRole("button", { name: /Import JSON/i })).toBeInTheDocument()
+    expect(screen.getByRole("button", { name: /Mark items I own/i })).toBeInTheDocument()
   })
 
   it("Build Editor: notes textarea, equipment slots render", async () => {

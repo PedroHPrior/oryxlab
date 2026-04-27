@@ -193,6 +193,42 @@ describe("Optimizer is healthy for every class", () => {
   })
 })
 
+describe("Seed data integrity (starter builds)", () => {
+  // Lazy-load to keep this test independent of the rest.
+  const seedBuilds: { name: string; classId: string; slots: Record<string, string | null> }[] = JSON.parse(
+    readFileSync(resolve(__dirname, "../../product/sections/comparator/data.json"), "utf-8"),
+  ).builds
+
+  it("every seed-build slot id resolves to a real catalog item", () => {
+    const broken: string[] = []
+    for (const b of seedBuilds) {
+      for (const [slot, id] of Object.entries(b.slots)) {
+        if (!id) continue
+        if (!itemMap.has(id)) broken.push(`${b.name}/${slot} → ${id}`)
+      }
+    }
+    expect(broken).toEqual([])
+  })
+
+  it("every seed-build slot item is equippable by its class", () => {
+    const mismatches: string[] = []
+    for (const b of seedBuilds) {
+      for (const [slot, id] of Object.entries(b.slots)) {
+        if (!id) continue
+        const item = itemMap.get(id)
+        if (!item) continue
+        const classes = item.classes ?? []
+        if (classes.length > 0 && !classes.includes(b.classId)) {
+          mismatches.push(
+            `${b.name} (${b.classId}) → ${slot}=${item.name} only fits: ${classes.join(",")}`,
+          )
+        }
+      }
+    }
+    expect(mismatches).toEqual([])
+  })
+})
+
 describe("Data integrity", () => {
   it("every item has a sprite imageUrl", () => {
     const missing = items.filter((i) => !i.imageUrl)

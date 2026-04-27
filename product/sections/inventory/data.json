@@ -12,140 +12,31 @@
       "RealmEyeCharacter contributes Items to the import preview"
     ]
   },
-  "view": "populated",
+  "view": "empty",
   "search": "",
   "ownedSummary": {
     "weapon": {
-      "owned": 87,
+      "owned": 0,
       "total": 240
     },
     "ability": {
-      "owned": 42,
-      "total": 180
+      "owned": 0,
+      "total": 467
     },
     "armor": {
-      "owned": 38,
-      "total": 160
+      "owned": 0,
+      "total": 226
     },
     "ring": {
-      "owned": 51,
-      "total": 220
+      "owned": 0,
+      "total": 292
     },
     "talisman": {
-      "owned": 12,
+      "owned": 0,
       "total": 35
     }
   },
-  "ownedEntries": [
-    {
-      "itemId": "crystal-wand",
-      "name": "Crystal Wand",
-      "tier": "UT",
-      "type": "weapon",
-      "sprite": "crystal_wand",
-      "addedAt": "2026-04-19T11:00:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/k6tGqcD.png"
-    },
-    {
-      "itemId": "t14-wand",
-      "name": "T14 Wand of Ancient Warning",
-      "tier": "T14",
-      "type": "weapon",
-      "sprite": "wand_t14",
-      "addedAt": "2026-04-22T11:30:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/2idkCvn.png"
-    },
-    {
-      "itemId": "doom-bow",
-      "name": "Doom Bow",
-      "tier": "UT",
-      "type": "weapon",
-      "sprite": "doom_bow",
-      "addedAt": "2026-03-12T22:14:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/3GjgWJy.png"
-    },
-    {
-      "itemId": "demon-blade",
-      "name": "Demon Blade",
-      "tier": "UT",
-      "type": "weapon",
-      "sprite": "demon_blade",
-      "addedAt": "2026-02-08T09:45:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/UcQg1tr.png"
-    },
-    {
-      "itemId": "deca-katana",
-      "name": "Masamune",
-      "tier": "UT",
-      "type": "weapon",
-      "sprite": "masamune",
-      "addedAt": "2026-01-21T17:02:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/XXdbpMB.png"
-    },
-    {
-      "itemId": "ep",
-      "name": "Spell of the Planewalker",
-      "tier": "UT",
-      "type": "ability",
-      "sprite": "ep",
-      "addedAt": "2026-04-19T11:01:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/7ZsEjTv.png"
-    },
-    {
-      "itemId": "t6-spell",
-      "name": "Spell of the Burning Sun",
-      "tier": "T6",
-      "type": "ability",
-      "sprite": "spell_sun",
-      "addedAt": "2025-12-01T13:22:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/yW8ww7i.png"
-    },
-    {
-      "itemId": "exalted-helm",
-      "name": "Helm of the Juggernaut",
-      "tier": "UT",
-      "type": "ability",
-      "sprite": "helm_jug",
-      "addedAt": "2025-11-30T08:03:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/9ZwaB2b.png"
-    },
-    {
-      "itemId": "robe-of-the-master",
-      "name": "Robe of the Grand Sorcerer",
-      "tier": "T14",
-      "type": "armor",
-      "sprite": "robe_t14",
-      "addedAt": "2026-04-22T11:31:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Oup28jC.png"
-    },
-    {
-      "itemId": "acrop",
-      "name": "Acropolis Armor",
-      "tier": "T15",
-      "type": "armor",
-      "sprite": "acrop",
-      "addedAt": "2026-02-08T09:46:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/8PWmkCU.png"
-    },
-    {
-      "itemId": "ubhp",
-      "name": "Ring of Unbound Health",
-      "tier": "UT",
-      "type": "ring",
-      "sprite": "ring_ubhp",
-      "addedAt": "2026-03-12T22:15:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/SLc4Sam.png"
-    },
-    {
-      "itemId": "scattered",
-      "name": "Scattered Talisman of the Realm",
-      "tier": "Talisman",
-      "type": "talisman",
-      "sprite": "talisman_realm",
-      "addedAt": "2026-04-15T10:00:00Z",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Kasaza0.png"
-    }
-  ],
+  "ownedEntries": [],
   "realmEyeImport": {
     "open": false,
     "step": "enter-username",
