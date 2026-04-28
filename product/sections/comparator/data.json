@@ -2,8 +2,8 @@
   "_meta": {
     "models": {
       "build": "A user-configured loadout: a chosen Class plus equipped Items in compatible slots, exaltation levels, and an optional per-build Scenario override. Builds are the unit of comparison shown as columns in the comparator grid.",
-      "buildSlot": "One equipped item within a build (weapon, ability, armor, ring, or talisman). Holds the item reference and derived contribution to the build's stats.",
-      "item": "A game object the user can equip — a weapon, ability, armor piece, ring, or talisman. Provides stats, special mechanics, and a sprite for the slot.",
+      "buildSlot": "One equipped item within a build (weapon, ability, armor, or ring). Holds the item reference and derived contribution to the build's stats.",
+      "item": "A game object the user can equip — a weapon, ability, armor piece, or ring. Provides stats, special mechanics, and a sprite for the slot.",
       "playerClass": "A Realm of the Mad God class (Wizard, Knight, etc.) defining base stats, stat caps, and which item types it can equip.",
       "derivedStats": "The result of running the DPS engine on a build under the active Scenario — DPS, EHP, raw stats, time-to-kill, and DPS-vs-defense curve.",
       "scenario": "The combat context driving DPS calculation: target defense, status effects on target, party buffs on caster. Used as the global default or per-build override.",
@@ -602,42 +602,6 @@
       ],
       "sprite": "leaf_bow",
       "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/HTra5EH.png"
-    },
-    {
-      "id": "scattered",
-      "name": "Scattered Talisman of the Realm",
-      "tier": "Talisman",
-      "rarity": "talisman",
-      "type": "talisman",
-      "classes": [
-        "wizard",
-        "knight",
-        "paladin",
-        "warrior",
-        "archer",
-        "huntress",
-        "rogue",
-        "assassin",
-        "ninja",
-        "samurai",
-        "necromancer",
-        "mystic",
-        "sorcerer",
-        "summoner",
-        "trickster",
-        "priest",
-        "bard",
-        "kensei"
-      ],
-      "stats": {
-        "att": 6,
-        "dex": 4
-      },
-      "tags": [
-        "realm-shard-cost"
-      ],
-      "sprite": "talisman_realm",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Kasaza0.png"
     }
   ],
   "builds": [
@@ -654,8 +618,7 @@
         "weapon": "staff-of-esben",
         "ability": "genesis-spell",
         "armor": "robe-of-the-grand-sorcerer",
-        "ring": "ring-of-unbound-health",
-        "talisman": null
+        "ring": "ring-of-unbound-health"
       },
       "exaltations": {
         "att": 5,
@@ -707,8 +670,7 @@
         "weapon": "staff-of-the-fundamental-core",
         "ability": "fire-nova-spell",
         "armor": "robe-of-the-master",
-        "ring": "ring-of-unbound-health",
-        "talisman": null
+        "ring": "ring-of-unbound-health"
       },
       "exaltations": {
         "att": 3,
@@ -760,8 +722,7 @@
         "weapon": "demon-blade",
         "ability": "colossus-shield",
         "armor": "acropolis-armor",
-        "ring": "ring-of-unbound-health",
-        "talisman": null
+        "ring": "ring-of-unbound-health"
       },
       "exaltations": {
         "att": 5,
@@ -821,8 +782,7 @@
         "weapon": "doom-bow",
         "ability": "quiver-of-thunder",
         "armor": null,
-        "ring": null,
-        "talisman": null
+        "ring": null
       },
       "exaltations": {
         "att": 5,

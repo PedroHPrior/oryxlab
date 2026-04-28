@@ -98,8 +98,6 @@ function ruleLabel(c: Constraint): string {
       return "Max UTs"
     case "max-st-pieces":
       return "Max ST"
-    case "no-talisman":
-      return "No talisman"
     case "weapon-type":
       return `Weapon: ${c.value}`
   }

@@ -17,9 +17,4 @@ describe("<TierBadge />", () => {
     const { container } = render(<TierBadge tier="ST" rarity="st" />)
     expect(container.firstElementChild?.className).toMatch(/rose/)
   })
-
-  it("applies talisman styling", () => {
-    const { container } = render(<TierBadge tier="Talisman" rarity="talisman" />)
-    expect(container.firstElementChild?.className).toMatch(/violet/)
-  })
 })

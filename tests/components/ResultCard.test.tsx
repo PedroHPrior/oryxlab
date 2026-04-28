@@ -11,7 +11,7 @@ const items: Item[] = [
 const result: OptimizationResult = {
   rank: 1, id: "r1", name: "Wiz #1", classId: "wizard",
   score: 92.4, scoreLabel: "Balanced",
-  slots: { weapon: "crystal-wand", ability: null, armor: null, ring: null, talisman: null },
+  slots: { weapon: "crystal-wand", ability: null, armor: null, ring: null },
   derivedStats: { dps: 5410, ehp: 2380, att: 75, dex: 73, wis: 82, def: 35, hp: 920, mp: 360, spd: 50, vit: 40 },
   explanations: ["High DPS"],
   swapSuggestions: [{ slot: "weapon", to: "wand-of-the-bulwark", deltaDps: -650, deltaEhp: 0, label: "−12% DPS" }],

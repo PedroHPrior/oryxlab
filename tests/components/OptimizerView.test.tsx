@@ -22,7 +22,7 @@ const request: OptimizationRequest = {
   classId: "wizard",
   mode: "bis",
   objective: "balanced",
-  slotLocks: { weapon: null, ability: null, armor: null, ring: null, talisman: null },
+  slotLocks: { weapon: null, ability: null, armor: null, ring: null },
   constraints: [],
   ownedItemsCount: 0,
 }
@@ -93,7 +93,7 @@ describe("<OptimizerView />", () => {
     const result: OptimizationResult = {
       rank: 1, id: "r1", name: "Wiz #1", classId: "wizard",
       score: 92.4, scoreLabel: "Balanced",
-      slots: { weapon: null, ability: null, armor: null, ring: null, talisman: null },
+      slots: { weapon: null, ability: null, armor: null, ring: null },
       derivedStats: { dps: 5410, ehp: 2380, att: 75, dex: 73, wis: 82, def: 35, hp: 920, mp: 360, spd: 50, vit: 40 },
       explanations: ["test"], swapSuggestions: [], lockedSlots: [],
     }

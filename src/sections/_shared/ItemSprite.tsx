@@ -4,10 +4,10 @@ interface ItemSpriteProps {
   spriteId: string
   imageUrl?: string | null
   name?: string
-  itemType?: "weapon" | "ability" | "armor" | "ring" | "talisman"
+  itemType?: "weapon" | "ability" | "armor" | "ring"
   weaponType?: string
   abilityType?: string
-  rarity?: "tiered" | "ut" | "st" | "talisman"
+  rarity?: "tiered" | "ut" | "st"
   size?: "xs" | "sm" | "md" | "lg" | "xl"
   className?: string
 }
@@ -24,21 +24,18 @@ const RARITY_BG: Record<NonNullable<ItemSpriteProps["rarity"]>, string> = {
   tiered: "from-zinc-700 via-zinc-800 to-zinc-900",
   ut: "from-amber-500 via-amber-700 to-amber-900",
   st: "from-rose-500 via-rose-700 to-rose-900",
-  talisman: "from-violet-500 via-violet-700 to-violet-900",
 }
 
 const RARITY_RING: Record<NonNullable<ItemSpriteProps["rarity"]>, string> = {
   tiered: "ring-zinc-600/40",
   ut: "ring-amber-300/60",
   st: "ring-rose-300/60",
-  talisman: "ring-violet-300/60",
 }
 
 const RARITY_GLOW: Record<NonNullable<ItemSpriteProps["rarity"]>, string> = {
   tiered: "",
   ut: "shadow-[inset_0_0_8px_rgba(251,191,36,0.4)]",
   st: "shadow-[inset_0_0_8px_rgba(251,113,133,0.4)]",
-  talisman: "shadow-[inset_0_0_8px_rgba(167,139,250,0.4)]",
 }
 
 export function ItemSprite({
@@ -187,7 +184,6 @@ function pickPath(itemType: string, subtype?: string) {
   }
   if (itemType === "armor") return ARMOR
   if (itemType === "ring") return RING
-  if (itemType === "talisman") return TALISMAN
   return SWORD
 }
 
@@ -353,9 +349,3 @@ const RING = (
   </>
 )
 
-const TALISMAN = (
-  <>
-    <path d="M16 4 L24 10 L24 22 L16 28 L8 22 L8 10 Z" />
-    <circle cx="16" cy="16" r="3" fill="rgba(0,0,0,0.4)" />
-  </>
-)

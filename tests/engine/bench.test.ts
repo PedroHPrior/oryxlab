@@ -51,7 +51,7 @@ describe("DPS benchmark vs community references", () => {
       if (!w || !cls) return
       const build = {
         id: "x", name: "x", classId: t.classId, color: "violet", tags: [],
-        slots: { weapon: w.id, ability: null, armor: null, ring: null, talisman: null },
+        slots: { weapon: w.id, ability: null, armor: null, ring: null },
         exaltations: { att: 5, dex: 5, wis: 5, vit: 3, spd: 3, def: 3, hp: 5, mp: 5 },
         useCustomScenario: false,
         derivedStats: { dps:0, dpsAtZeroDef:0, ehp:0, att:0, dex:0, spd:0, vit:0, wis:0, def:0, hp:0, mp:0, timeToKill1k:0, dpsCurve:[] } as never,

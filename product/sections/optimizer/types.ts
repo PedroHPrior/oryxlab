@@ -6,7 +6,6 @@ export type ConstraintOp = "gte" | "lte" | "eq"
 export type ConstraintRule =
   | "max-uts"
   | "max-st-pieces"
-  | "no-talisman"
   | "weapon-type"
 
 export interface OptimizerClass {

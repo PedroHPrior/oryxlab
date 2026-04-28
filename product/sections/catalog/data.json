@@ -1,7 +1,7 @@
 {
   "_meta": {
     "models": {
-      "item": "Any equippable game object — weapon, ability, armor, ring, or talisman. Carries stats, mechanics, drop sources, and lore.",
+      "item": "Any equippable game object — weapon, ability, armor, or ring. Carries stats, mechanics, drop sources, and lore.",
       "itemSet": "An ST set: 4 items (weapon + ability + armor + ring) with a named set bonus that activates when the full set is equipped.",
       "filterState": "The user's current selection across the filter rail — which item types, classes, tiers, rarities, mechanics tags, and stat thresholds are active.",
       "quickCompareEntry": "An item the user has selected for the Quick Compare drawer.",
@@ -452,48 +452,6 @@
       "lore": "Beats with a heart not quite your own.",
       "owned": true,
       "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/SLc4Sam.png"
-    },
-    {
-      "id": "scattered",
-      "name": "Scattered Talisman of the Realm",
-      "tier": "Talisman",
-      "tierNumeric": 99,
-      "rarity": "talisman",
-      "type": "talisman",
-      "classes": [
-        "wizard",
-        "knight",
-        "paladin",
-        "warrior",
-        "archer",
-        "huntress",
-        "rogue",
-        "assassin",
-        "ninja",
-        "samurai",
-        "necromancer",
-        "mystic",
-        "sorcerer",
-        "summoner",
-        "trickster",
-        "priest",
-        "bard",
-        "kensei"
-      ],
-      "stats": {
-        "att": 6,
-        "dex": 4
-      },
-      "tags": [
-        "realm-shard-cost"
-      ],
-      "sprite": "talisman_realm",
-      "dropsFrom": [
-        "Realm completion"
-      ],
-      "lore": "Crafted from realm shards.",
-      "owned": true,
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Kasaza0.png"
     }
   ],
   "itemSets": [

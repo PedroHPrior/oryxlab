@@ -19,7 +19,6 @@ const SLOTS: { key: keyof BuildSlots; label: string }[] = [
   { key: "ability", label: "Ability" },
   { key: "armor", label: "Armor" },
   { key: "ring", label: "Ring" },
-  { key: "talisman", label: "Talisman" },
 ]
 
 export function ResultCard({

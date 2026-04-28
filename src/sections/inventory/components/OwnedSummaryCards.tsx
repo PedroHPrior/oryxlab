@@ -10,7 +10,6 @@ const TYPE_LABEL: Record<ItemType, string> = {
   ability: "Abilities",
   armor: "Armors",
   ring: "Rings",
-  talisman: "Talismans",
 }
 
 export function OwnedSummaryCards({ summary }: OwnedSummaryCardsProps) {

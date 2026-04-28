@@ -11,7 +11,7 @@ const classes: PlayerClass[] = [
 function makeBuild(id: string, name: string, classId: string, color: string, dps: number): Build {
   return {
     id, name, classId, color, tags: [],
-    slots: { weapon: null, ability: null, armor: null, ring: null, talisman: null },
+    slots: { weapon: null, ability: null, armor: null, ring: null },
     exaltations: { att: 0, dex: 0, wis: 0, vit: 0, spd: 0, def: 0, hp: 0, mp: 0 },
     useCustomScenario: false,
     derivedStats: {

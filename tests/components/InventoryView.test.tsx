@@ -8,8 +8,7 @@ const summary: OwnedSummary = {
   ability: { owned: 0, total: 180 },
   armor: { owned: 0, total: 160 },
   ring: { owned: 0, total: 220 },
-  talisman: { owned: 0, total: 35 },
-}
+  }
 
 const entries: InventoryEntry[] = [
   { itemId: "a", name: "Crystal Wand", tier: "UT", type: "weapon", sprite: "a", addedAt: "2026-04-19T11:00:00Z" },

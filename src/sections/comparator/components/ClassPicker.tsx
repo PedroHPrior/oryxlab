@@ -13,7 +13,7 @@ interface ClassPickerProps {
 /**
  * Modal that lets the user reassign a build column to a different class.
  * Selecting a class wipes the build's weapon / ability / armor slots since
- * those are class-restricted; rings + talismans stay (they're class-agnostic).
+ * those are class-restricted; rings stay (class-agnostic).
  *
  * Rendered via portal so the modal always anchors to the viewport — the
  * BuildColumn's `oryx-card-hover` class applies a hover transform which
@@ -58,7 +58,7 @@ export function ClassPicker({ classes, currentClassId, onSelect, onClose }: Clas
               Change class
             </h3>
             <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
-              Switching clears Weapon · Ability · Armor — rings + talismans stay.
+              Switching clears Weapon · Ability · Armor — rings stay.
             </p>
           </div>
           <button

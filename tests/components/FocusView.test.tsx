@@ -13,7 +13,7 @@ const scenario: Scenario = { presetId: null, targetDefense: 50, targetStatuses: 
 function makeBuild(id: string, name: string, dps: number): Build {
   return {
     id, name, classId: "wizard", color: "violet", tags: [],
-    slots: { weapon: null, ability: null, armor: null, ring: null, talisman: null },
+    slots: { weapon: null, ability: null, armor: null, ring: null },
     exaltations: { att: 0, dex: 0, wis: 0, vit: 0, spd: 0, def: 0, hp: 0, mp: 0 },
     useCustomScenario: false,
     derivedStats: {

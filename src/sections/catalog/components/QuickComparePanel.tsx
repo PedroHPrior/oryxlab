@@ -19,7 +19,6 @@ const SLOT_BY_TYPE: Record<string, keyof BuildSlots> = {
   ability: "ability",
   armor: "armor",
   ring: "ring",
-  talisman: "talisman",
 }
 
 // Returns the most appropriate baseline class to equip an item on. Falls back
@@ -72,7 +71,7 @@ export function QuickComparePanel({ items, classes, scenario, onClose, onRemove,
   // Compute DPS impact for each item by equipping it on a baseline build.
   // For weapon comparisons, we test the weapon alone.
   // For ability comparisons, we put a generic baseline weapon for the class.
-  // For armor/ring/talisman comparisons, we equip the item plus the canonical
+  // For armor/ring comparisons, we equip the item plus the canonical
   // weapon for the active class so DPS values are comparable.
   const rows = useMemo<CompareRow[]>(() => {
     if (!activeClass || !slotKey) return []
@@ -81,7 +80,7 @@ export function QuickComparePanel({ items, classes, scenario, onClose, onRemove,
 
     return items.map((item) => {
       const slots: BuildSlots = {
-        weapon: null, ability: null, armor: null, ring: null, talisman: null,
+        weapon: null, ability: null, armor: null, ring: null,
         [slotKey]: item.id,
       } as BuildSlots
       const ds = computeDerivedStats({

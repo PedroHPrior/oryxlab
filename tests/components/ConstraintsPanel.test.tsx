@@ -11,7 +11,7 @@ describe("<ConstraintsPanel />", () => {
 
   const palette: ConstraintPaletteEntry[] = [
     { kind: "stat", stat: "hp", label: "HP ≥", default: 800 },
-    { kind: "rule", rule: "no-talisman", label: "No Talisman", default: null },
+    { kind: "rule", rule: "max-st-pieces", label: "Max ST", default: 1 },
   ]
 
   it("shows active constraints", () => {
@@ -23,15 +23,15 @@ describe("<ConstraintsPanel />", () => {
   it("shows palette options", () => {
     render(<ConstraintsPanel constraints={constraints} palette={palette} />)
     expect(screen.getByText(/HP ≥/)).toBeInTheDocument()
-    expect(screen.getByText("No Talisman")).toBeInTheDocument()
+    expect(screen.getByText(/Max ST/)).toBeInTheDocument()
   })
 
   it("clicking palette entry calls onAdd", () => {
     const onAdd = vi.fn()
     render(<ConstraintsPanel constraints={[]} palette={palette} onAdd={onAdd} />)
-    fireEvent.click(screen.getByText("No Talisman"))
+    fireEvent.click(screen.getByText(/Max ST/))
     expect(onAdd).toHaveBeenCalled()
-    expect(onAdd.mock.calls[0][0].rule).toBe("no-talisman")
+    expect(onAdd.mock.calls[0][0].rule).toBe("max-st-pieces")
   })
 
   it("removing a constraint calls onRemove", () => {

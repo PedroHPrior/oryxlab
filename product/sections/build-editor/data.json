@@ -27,8 +27,7 @@
       "weapon": "crystal-wand",
       "ability": "ep",
       "armor": "ce",
-      "ring": "acclaim",
-      "talisman": "scattered"
+      "ring": "acclaim"
     },
     "exaltations": {
       "att": 5,
@@ -153,21 +152,6 @@
       "tags": [],
       "sprite": "ring_acclaim",
       "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/4gWKX78.png"
-    },
-    {
-      "id": "scattered",
-      "name": "Scattered Talisman of the Realm",
-      "tier": "Talisman",
-      "type": "talisman",
-      "stats": {
-        "att": 6,
-        "dex": 4
-      },
-      "tags": [
-        "realm-shard-cost"
-      ],
-      "sprite": "talisman_realm",
-      "imageUrl": "https://www.realmeye.com/s/a/img/wiki/i/Kasaza0.png"
     }
   ],
   "alternativeItems": {

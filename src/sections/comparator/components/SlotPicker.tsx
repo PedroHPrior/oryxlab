@@ -21,7 +21,6 @@ const SLOT_TO_TYPE: Record<keyof BuildSlots, Item["type"]> = {
   ability: "ability",
   armor: "armor",
   ring: "ring",
-  talisman: "talisman",
 }
 
 type RarityFilter = "all" | "ut" | "st" | "tiered"
@@ -85,9 +84,9 @@ export function SlotPicker({
     const q = search.trim().toLowerCase()
     const matched = items.filter((i) => {
       if (i.type !== wantedType) return false
-      // Empty `classes` array means class-agnostic (rings, talismans, and
-      // most generic accessories). Restrict only when a class list is
-      // explicitly provided AND non-empty.
+      // Empty `classes` array means class-agnostic (rings and most generic
+      // accessories). Restrict only when a class list is explicitly provided
+      // AND non-empty.
       if (Array.isArray(i.classes) && i.classes.length > 0) {
         if (!i.classes.includes(classId)) return false
       }

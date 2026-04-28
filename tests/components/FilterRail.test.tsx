@@ -20,7 +20,6 @@ describe("<FilterRail />", () => {
     expect(screen.getByText("Ability")).toBeInTheDocument()
     expect(screen.getByText("Armor")).toBeInTheDocument()
     expect(screen.getByText("Ring")).toBeInTheDocument()
-    expect(screen.getAllByText("Talisman").length).toBeGreaterThan(0)
   })
 
   it("toggling a type chip emits onChange with type included", () => {

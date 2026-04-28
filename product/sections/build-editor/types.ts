@@ -36,7 +36,6 @@ export interface AlternativeItemsBySlot {
   ability?: AlternativeItem[]
   armor?: AlternativeItem[]
   ring?: AlternativeItem[]
-  talisman?: AlternativeItem[]
 }
 
 export interface StatBreakdown {

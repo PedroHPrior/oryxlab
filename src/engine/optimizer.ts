@@ -27,7 +27,7 @@ export interface OptimizerInput {
   topN?: number
 }
 
-const SLOTS: (keyof BuildSlots)[] = ["weapon", "ability", "armor", "ring", "talisman"]
+const SLOTS: (keyof BuildSlots)[] = ["weapon", "ability", "armor", "ring"]
 
 interface ScoredCandidate {
   build: Build
@@ -101,9 +101,9 @@ function classCanEquip(item: Item, classId: string): boolean {
     const compatible = WEAPON_TYPE_TO_CLASSES[item.weaponType]
     if (compatible) return compatible.includes(classId)
   }
-  // Armor / ring / talisman with empty classes are usually class-agnostic in
-  // ROTMG (rings, talismans) — keep the permissive default for those.
-  return item.type === "ring" || item.type === "talisman" || item.type === "armor"
+  // Armor / ring with empty classes are usually class-agnostic in ROTMG
+  // (rings especially) — keep the permissive default for those.
+  return item.type === "ring" || item.type === "armor"
 }
 
 function compatibleItemsForSlot(
@@ -119,7 +119,6 @@ function compatibleItemsForSlot(
     if (slot === "ability") return it.type === "ability"
     if (slot === "armor") return it.type === "armor"
     if (slot === "ring") return it.type === "ring"
-    if (slot === "talisman") return it.type === "talisman"
     return false
   })
 }
@@ -138,7 +137,7 @@ function isInflatedItem(it: Item): boolean {
 
 function pickTopByDps(items: Item[], k: number): Item[] {
   // Heuristic: sort by avg damage * shots * RoF estimate for weapons,
-  // by total stat sum for abilities/armors/rings/talismans.
+  // by total stat sum for abilities/armors/rings.
   // Inflated items get a 0.4× score penalty so the optimizer prefers
   // matchingly powerful but well-attested alternatives.
   const score = (it: Item) => {
@@ -187,19 +186,12 @@ function checkConstraints(
     }
     if (c.kind === "rule") {
       if (c.rule === "max-uts") {
-        const uts = itemIdsUsed.filter(
-          (id) => itemMap.get(id)?.rarity === "ut" || itemMap.get(id)?.rarity === "talisman",
-        ).length
+        const uts = itemIdsUsed.filter((id) => itemMap.get(id)?.rarity === "ut").length
         if (uts > Number(c.value)) reasons.push(`${uts} UTs > ${c.value}`)
       }
       if (c.rule === "max-st-pieces") {
         const sts = itemIdsUsed.filter((id) => itemMap.get(id)?.rarity === "st").length
         if (sts > Number(c.value)) reasons.push(`${sts} ST pieces > ${c.value}`)
-      }
-      if (c.rule === "no-talisman") {
-        if (itemIdsUsed.some((id) => itemMap.get(id)?.type === "talisman")) {
-          reasons.push("talisman not allowed")
-        }
       }
       if (c.rule === "weapon-type") {
         const w = itemIdsUsed.find((id) => itemMap.get(id)?.type === "weapon")
@@ -231,7 +223,7 @@ export function optimize(input: OptimizerInput): OptimizationResult[] {
 
   // Build candidate pool per slot
   const candidatesBySlot: Record<keyof BuildSlots, (Item | null)[]> = {
-    weapon: [], ability: [], armor: [], ring: [], talisman: [],
+    weapon: [], ability: [], armor: [], ring: [],
   }
 
   for (const slot of SLOTS) {
@@ -255,43 +247,39 @@ export function optimize(input: OptimizerInput): OptimizationResult[] {
   const abilityCands = candidatesBySlot.ability
   const armorCands = candidatesBySlot.armor
   const ringCands = candidatesBySlot.ring
-  const talismanCands = candidatesBySlot.talisman
 
   let candidateIdx = 0
   for (const w of weaponCands) {
     for (const ab of abilityCands) {
       for (const ar of armorCands) {
         for (const r of ringCands) {
-          for (const t of talismanCands) {
-            candidateIdx++
-            const slots: BuildSlots = {
-              weapon: w?.id ?? null,
-              ability: ab?.id ?? null,
-              armor: ar?.id ?? null,
-              ring: r?.id ?? null,
-              talisman: t?.id ?? null,
-            }
-            const build = makeBuild(classId, slots, candidateIdx)
-            try {
-              const ds = computeDerivedStats({
-                build, scenario, classDef, itemMap, itemSets: input.itemSets,
-              })
-              build.derivedStats = ds
-              const itemIdsUsed = Object.values(slots).filter(Boolean) as string[]
-              const constraintCheck = checkConstraints(build, constraints, itemIdsUsed, itemMap)
-              results.push({
-                build,
-                score: objectiveScore(objective, ds),
-                dps: ds.dps,
-                ehp: ds.ehp,
-                satisfies: constraintCheck.ok,
-                reasons: constraintCheck.reasons,
-              })
-            } catch {
-              /* skip */
-            }
-            if (results.length > 5000) break // safety cap
+          candidateIdx++
+          const slots: BuildSlots = {
+            weapon: w?.id ?? null,
+            ability: ab?.id ?? null,
+            armor: ar?.id ?? null,
+            ring: r?.id ?? null,
           }
+          const build = makeBuild(classId, slots, candidateIdx)
+          try {
+            const ds = computeDerivedStats({
+              build, scenario, classDef, itemMap, itemSets: input.itemSets,
+            })
+            build.derivedStats = ds
+            const itemIdsUsed = Object.values(slots).filter(Boolean) as string[]
+            const constraintCheck = checkConstraints(build, constraints, itemIdsUsed, itemMap)
+            results.push({
+              build,
+              score: objectiveScore(objective, ds),
+              dps: ds.dps,
+              ehp: ds.ehp,
+              satisfies: constraintCheck.ok,
+              reasons: constraintCheck.reasons,
+            })
+          } catch {
+            /* skip */
+          }
+          if (results.length > 5000) break // safety cap
         }
       }
     }
@@ -304,7 +292,7 @@ export function optimize(input: OptimizerInput): OptimizationResult[] {
   // Pre-compute baseline (empty build) stats for delta-vs-baseline explanations.
   const baseStats = computeDerivedStats({
     build: makeBuild(classId, {
-      weapon: null, ability: null, armor: null, ring: null, talisman: null,
+      weapon: null, ability: null, armor: null, ring: null,
     } as BuildSlots, -1),
     scenario, classDef, itemMap,
   })
@@ -329,7 +317,7 @@ export function optimize(input: OptimizerInput): OptimizationResult[] {
     if (dDps > 0) explanations.push(`Setup contributes +${dDps.toLocaleString("en-US")} DPS over empty slots`)
     if (dEhp > 0) explanations.push(`Setup contributes +${dEhp.toLocaleString("en-US")} EHP over empty slots`)
 
-    // Notable items: call out UTs, STs, talismans by name
+    // Notable items: call out UTs and STs by name
     for (const slot of SLOTS) {
       const id = cand.build.slots[slot]
       if (!id) continue

@@ -298,8 +298,7 @@ export function OryxLabApp() {
           item.type === "weapon" ? "weapon"
           : item.type === "ability" ? "ability"
           : item.type === "armor" ? "armor"
-          : item.type === "ring" ? "ring"
-          : "talisman"
+          : "ring"
         setBuilds((curr) => [
           ...curr,
           {
@@ -314,7 +313,6 @@ export function OryxLabApp() {
               ability: null,
               armor: null,
               ring: null,
-              talisman: null,
               [slotKey]: itemId,
             } as BuildSlots,
           },
@@ -369,8 +367,8 @@ export function OryxLabApp() {
       },
       // Reassign a build to a different class. Wipes class-restricted slots
       // (weapon / ability / armor) so the user doesn't end up with an item
-      // that no longer fits the new class. Rings + talismans are class-
-      // agnostic and stay equipped.
+      // that no longer fits the new class. Rings are class-agnostic and stay
+      // equipped.
       changeBuildClass: (buildId: string, classId: string) => {
         updateBuild(buildId, (b) => ({
           ...b,
@@ -380,7 +378,6 @@ export function OryxLabApp() {
             ability: null,
             armor: null,
             ring: b.slots.ring,
-            talisman: b.slots.talisman,
           } as BuildSlots,
         }))
       },
@@ -549,7 +546,7 @@ export function OryxLabApp() {
           catalog.map((i) => [i.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim(), i]),
         )
         const slots: BuildSlots = {
-          weapon: null, ability: null, armor: null, ring: null, talisman: null,
+          weapon: null, ability: null, armor: null, ring: null,
         }
         for (const e of equipped) {
           const cleanName = e.name.toLowerCase().replace(/\s*\(sb\)\s*$/, "").trim()
@@ -559,7 +556,6 @@ export function OryxLabApp() {
           else if (item.type === "ability" && !slots.ability) slots.ability = item.id
           else if (item.type === "armor" && !slots.armor) slots.armor = item.id
           else if (item.type === "ring" && !slots.ring) slots.ring = item.id
-          else if (item.type === "talisman" && !slots.talisman) slots.talisman = item.id
         }
         const className = classId.charAt(0).toUpperCase() + classId.slice(1)
         setBuilds((curr) => [

@@ -30,7 +30,7 @@ const STEPS: DriveStep[] = [
     popover: {
       title: "Click any slot to swap an item",
       description:
-        "Weapon, ability, armor, ring, or talisman. The DPS curve and stat block re-render the moment you pick.",
+        "Weapon, ability, armor, or ring. The DPS curve and stat block re-render the moment you pick.",
       side: "right",
       align: "start",
     },

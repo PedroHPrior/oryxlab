@@ -23,14 +23,12 @@ const TYPE_OPTIONS: { id: ItemType; label: string }[] = [
   { id: "ability", label: "Ability" },
   { id: "armor", label: "Armor" },
   { id: "ring", label: "Ring" },
-  { id: "talisman", label: "Talisman" },
 ]
 
 const RARITY_OPTIONS: { id: Rarity; label: string }[] = [
   { id: "tiered", label: "Tiered" },
   { id: "ut", label: "UT" },
   { id: "st", label: "ST" },
-  { id: "talisman", label: "Talisman" },
 ]
 
 export function FilterRail({

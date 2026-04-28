@@ -13,7 +13,6 @@ const TYPE_LABEL: Record<ItemType, string> = {
   ability: "Abilities",
   armor: "Armors",
   ring: "Rings",
-  talisman: "Talismans",
 }
 
 export function InventoryView({
@@ -43,7 +42,6 @@ export function InventoryView({
       ability: [],
       armor: [],
       ring: [],
-      talisman: [],
     }
     filtered.forEach((e) => groups[e.type].push(e))
     return groups
@@ -176,7 +174,7 @@ export function InventoryView({
                       imageUrl={entry.imageUrl}
                       name={entry.name}
                       itemType={entry.type}
-                      rarity={entry.tier === "UT" ? "ut" : entry.tier === "Talisman" ? "talisman" : "tiered"}
+                      rarity={entry.tier === "UT" ? "ut" : "tiered"}
                       size="sm"
                     />
                     <div className="min-w-0 flex-1">
@@ -186,7 +184,7 @@ export function InventoryView({
                         </span>
                         <TierBadge
                           tier={entry.tier}
-                          rarity={entry.tier === "UT" ? "ut" : entry.tier === "Talisman" ? "talisman" : "tiered"}
+                          rarity={entry.tier === "UT" ? "ut" : "tiered"}
                           size="xs"
                         />
                       </div>

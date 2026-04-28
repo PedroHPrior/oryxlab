@@ -25,9 +25,9 @@ export type AbilityType =
 
 export type ArmorType = "robe" | "leather" | "heavy"
 
-export type ItemType = "weapon" | "ability" | "armor" | "ring" | "talisman"
+export type ItemType = "weapon" | "ability" | "armor" | "ring"
 
-export type Rarity = "tiered" | "ut" | "st" | "talisman"
+export type Rarity = "tiered" | "ut" | "st"
 
 export type StatusEffectId = "armorBroken" | "bleeding" | "exposed" | "cursed"
 
@@ -98,7 +98,6 @@ export interface BuildSlots {
   ability: string | null
   armor: string | null
   ring: string | null
-  talisman: string | null
 }
 
 export interface Exaltations {

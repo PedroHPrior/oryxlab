@@ -60,7 +60,6 @@ function makeBuild(slots: Partial<Build["slots"]> = {}): Build {
       ability: null,
       armor: null,
       ring: null,
-      talisman: null,
       ...slots,
     },
     exaltations: { att: 0, dex: 0, wis: 0, vit: 0, spd: 0, def: 0, hp: 0, mp: 0 },
