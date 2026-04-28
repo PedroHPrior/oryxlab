@@ -98,7 +98,7 @@ export function OryxLabApp() {
 
   // Mirror frequently-read state into refs so the giant `actions` object can
   // close over them without re-creating its identity on every keystroke. Each
-  // ref is kept current via a write-only effect — readers never depend on the
+  // ref is kept current via a write-only effect , readers never depend on the
   // ref itself, so the actions surface stays referentially stable.
   const buildsRef = useRef(builds)
   useEffect(() => {
@@ -637,7 +637,7 @@ export function OryxLabApp() {
             await navigator.clipboard.writeText(url)
             toastRef.current.push("Comparator link copied to clipboard", "success")
           } else {
-            toastRef.current.push("Clipboard unavailable — open the URL bar to copy", "info")
+            toastRef.current.push("Clipboard unavailable , open the URL bar to copy", "info")
           }
         } catch (e) {
           log.error("share failed", e)

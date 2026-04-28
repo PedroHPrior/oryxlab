@@ -12,7 +12,7 @@ export function registerServiceWorker() {
   import("workbox-window").then(({ Workbox }) => {
     const wb = new Workbox("/sw.js")
     wb.addEventListener("waiting", () => {
-      // A new version is waiting — activate it on the next nav.
+      // A new version is waiting , activate it on the next nav.
       wb.messageSkipWaiting()
     })
     wb.addEventListener("controlling", () => {
@@ -20,7 +20,7 @@ export function registerServiceWorker() {
       window.location.reload()
     })
     wb.register().catch(() => {
-      /* swallow — non-fatal */
+      /* swallow , non-fatal */
     })
   })
 }

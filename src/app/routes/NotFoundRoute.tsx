@@ -68,7 +68,7 @@ function useParticleBackground(canvasRef: React.RefObject<HTMLCanvasElement | nu
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i]
         p.life++
-        // Cursor influence — gentle push outward when close.
+        // Cursor influence , gentle push outward when close.
         if (mouse.active) {
           const dx = p.x - mouse.x
           const dy = p.y - mouse.y

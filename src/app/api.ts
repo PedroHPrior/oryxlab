@@ -11,7 +11,7 @@ export interface ApiClass extends PlayerClassDef {
   armorType: string | null
 }
 
-// Static data paths — bundled in /public/data and served as-is.
+// Static data paths , bundled in /public/data and served as-is.
 // Vercel serves these as static files. In dev, Vite serves them from public/.
 async function getJSON<T>(path: string): Promise<T> {
   const r = await fetch(path)

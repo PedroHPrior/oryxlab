@@ -31,7 +31,7 @@ const initialState: HistoryState = {
 }
 
 function fingerprintOf(b: Build): string {
-  // Stable identity for change detection — recomputing derivedStats every
+  // Stable identity for change detection , recomputing derivedStats every
   // render mustn't trigger a new history entry. We hash only the user-
   // controlled fields.
   return JSON.stringify({
@@ -55,7 +55,7 @@ function reducer(state: HistoryState, action: HistoryAction): HistoryState {
         ? state.stack.slice(0, state.pointer + 1)
         : state.stack
     const next = [...trimmed, structuredClone(action.build)]
-    // Cap stack size — drop oldest entries first.
+    // Cap stack size , drop oldest entries first.
     const overflow = Math.max(0, next.length - action.capacity)
     const cappedStack = overflow > 0 ? next.slice(overflow) : next
     return {
@@ -71,7 +71,7 @@ function reducer(state: HistoryState, action: HistoryAction): HistoryState {
  * Tracks slot/exalt changes on a single build and exposes undo/redo, both
  * programmatically and via ⌘Z / ⌘⇧Z keybindings.
  *
- * History lives in memory only — a page reload clears it, which matches
+ * History lives in memory only , a page reload clears it, which matches
  * users' mental model of an editor undo stack.
  */
 export function useBuildHistory({

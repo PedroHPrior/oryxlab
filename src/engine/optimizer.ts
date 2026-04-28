@@ -92,7 +92,7 @@ const WEAPON_TYPE_TO_CLASSES: Record<string, string[]> = {
 function classCanEquip(item: Item, classId: string): boolean {
   if (item.classes?.includes(classId)) return true
   if (item.classes && item.classes.length > 0) return false
-  // Empty classes — fall back to ability-type or weapon-type inference.
+  // Empty classes , fall back to ability-type or weapon-type inference.
   if (item.type === "ability" && item.abilityType) {
     const compatible = ABILITY_TYPE_TO_CLASS[item.abilityType]
     if (compatible) return compatible.includes(classId)
@@ -102,7 +102,7 @@ function classCanEquip(item: Item, classId: string): boolean {
     if (compatible) return compatible.includes(classId)
   }
   // Armor / ring with empty classes are usually class-agnostic in ROTMG
-  // (rings especially) — keep the permissive default for those.
+  // (rings especially) , keep the permissive default for those.
   return item.type === "ring" || item.type === "armor"
 }
 
@@ -310,7 +310,7 @@ export function optimize(input: OptimizerInput): OptimizationResult[] {
       explanations.push(`Max-EHP objective ranks builds by survivability vs incoming damage`)
     }
 
-    // Per-slot contribution headlines — what each piece adds vs an empty slot
+    // Per-slot contribution headlines , what each piece adds vs an empty slot
     const ds = cand.build.derivedStats
     const dDps = ds.dps - baseStats.dps
     const dEhp = ds.ehp - baseStats.ehp
@@ -324,9 +324,9 @@ export function optimize(input: OptimizerInput): OptimizationResult[] {
       const item = itemMap.get(id)
       if (!item) continue
       if (item.rarity === "ut") {
-        explanations.push(`${slot.toUpperCase()}: ${item.name} (UT) — selected for ${item.tags.length > 0 ? item.tags.slice(0, 2).join(", ") : "stat profile"}`)
+        explanations.push(`${slot.toUpperCase()}: ${item.name} (UT) , selected for ${item.tags.length > 0 ? item.tags.slice(0, 2).join(", ") : "stat profile"}`)
       } else if (item.rarity === "st") {
-        explanations.push(`${slot.toUpperCase()}: ${item.name} — part of an ST set, may grant set bonus when paired`)
+        explanations.push(`${slot.toUpperCase()}: ${item.name} , part of an ST set, may grant set bonus when paired`)
       }
     }
 

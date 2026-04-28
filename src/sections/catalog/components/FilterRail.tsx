@@ -12,7 +12,7 @@ interface FilterRailProps {
   filters: CatalogFilters
   tagPalette: string[]
   classOptions: { id: string; name: string }[]
-  /** Full item list — used to compute "(N)" counters next to each filter. */
+  /** Full item list , used to compute "(N)" counters next to each filter. */
   items: CatalogItem[]
   onChange?: (filters: CatalogFilters) => void
   onClear?: () => void
@@ -197,7 +197,7 @@ function Chip({
   active: boolean
   onClick: () => void
 }) {
-  // Hide the count when 0 — clutter, not signal.
+  // Hide the count when 0 , clutter, not signal.
   const showCount = typeof count === "number" && count > 0
   return (
     <button

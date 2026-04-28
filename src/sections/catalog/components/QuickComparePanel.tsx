@@ -197,12 +197,12 @@ export function QuickComparePanel({ items, classes, scenario, onClose, onRemove,
 
         {!sameType && (
           <div className="mx-5 mt-4 rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-950/40 dark:text-zinc-400">
-            Items of mixed types selected ({itemTypes.join(", ")}) — DPS comparison disabled.
+            Items of mixed types selected ({itemTypes.join(", ")}) , DPS comparison disabled.
             Compare items of the same type for a meaningful verdict.
           </div>
         )}
 
-        {/* DPS-vs-defense curve — only meaningful when items are weapons or
+        {/* DPS-vs-defense curve , only meaningful when items are weapons or
             damaging abilities. We render it whenever any row has a non-zero
             curve so users can see how each candidate scales. */}
         {sameType && rows.some((r) => r.curve.some((v) => v > 0)) && (

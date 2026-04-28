@@ -53,7 +53,7 @@ export function DpsCurveChart({
       .join(" ")
 
   // Empty values arrays show up briefly when builds are decoded from a share
-  // URL — derivedStats.dpsCurve starts as [] until the recompute pass runs,
+  // URL , derivedStats.dpsCurve starts as [] until the recompute pass runs,
   // and `path([])` yields a string with no leading M, which the browser logs
   // as a "Expected moveto" SVG path error. Returning `undefined` skips the
   // <path d=…> attribute entirely for that frame instead.

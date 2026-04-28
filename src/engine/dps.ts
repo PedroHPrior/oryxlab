@@ -62,7 +62,7 @@ const TAG_TO_SCENARIO_STATUS: Record<string, string> = {
 // Both prefixed (`self-berserk`) and legacy bare (`berserk`) tag forms map here.
 const WEAPON_SELF_BUFF_DPS: Record<string, number> = balance.weaponSelfBuffDps
 
-// Party buffs on caster — multiplicative damage-dealt bonus
+// Party buffs on caster , multiplicative damage-dealt bonus
 // Modeled as effective_uptime × peak_bonus (e.g. Bard Crescendo peaks +20% but cycles ~60% uptime)
 const PARTY_BUFF_DAMAGE_DEALT: Record<string, number> = balance.partyBuffDamageDealt
 
@@ -74,7 +74,7 @@ const PARTY_BUFF_FLAT_STATS: Record<string, Partial<Record<keyof Exaltations, nu
   bardEncore: { att: 12, dex: 12 },
 }
 
-// Per-class DPS modifiers — captures class-unique mechanics that aren't reflected in
+// Per-class DPS modifiers , captures class-unique mechanics that aren't reflected in
 // equipped item stats alone.
 //
 //  - Trickster Prism: clone fires its own shots, effectively ~1.6x weapon DPS while active
@@ -85,13 +85,13 @@ const PARTY_BUFF_FLAT_STATS: Record<string, Partial<Record<keyof Exaltations, nu
 //  - Bard: lute is bow-like but main role is buffer; weaker DPS modeled by lower base RoF
 const CLASS_DPS_MULT: Record<string, number> = balance.classDpsMultiplier
 
-// AoE multiplier when weapon is AoE — assumes 2-3 enemies hit on average
+// AoE multiplier when weapon is AoE , assumes 2-3 enemies hit on average
 const AOE_MULT = 1.6
 
 // Hit rate factor: weapons with very short range (under 5 tiles) get reduced effective DPS
 // at typical 6-7 tile combat distance. Long-range weapons (8+ tiles) get full DPS.
 // Community DPS calculators (NilLY, RealmEye's stat tools, etc.) report
-// "max DPS at optimal range" — they don't penalize short-range weapons
+// "max DPS at optimal range" , they don't penalize short-range weapons
 // for being short-range. We follow that convention so the comparator
 // matches what players see elsewhere; range is shown in the item modal
 // for the player to weigh themselves.
@@ -99,7 +99,7 @@ function hitRateFactor(weapon: Item): number {
   const range = weapon.stats.range
   if (typeof range !== "number") return 1
   // Only penalize weapons with documented projectile-pattern issues
-  // (boomerangs that miss on target shape, etc) — those carry tags.
+  // (boomerangs that miss on target shape, etc) , those carry tags.
   return 1
 }
 
@@ -282,7 +282,7 @@ export function computeDerivedStats(input: ComputeInput): DerivedStats {
   // damaging spell/skull/quiver but no weapon.
   if (weapon || ability) {
     const effectiveAtt = Math.min(totals.att, 150)
-    // Real RotMG damage multiplier is 0.5 + ATT/50 — attack 0 still deals
+    // Real RotMG damage multiplier is 0.5 + ATT/50 , attack 0 still deals
     // 0.5× weapon damage, attack 50 deals 1.5×, attack 100 deals 2.5×.
     // Previous version omitted the 0.5 baseline → engine systematically
     // under-reported all weapon DPS by ~28% on maxed-stat builds.
@@ -354,7 +354,7 @@ export function computeDerivedStats(input: ComputeInput): DerivedStats {
       // Real RotMG rate-of-fire formula: shotsPerSec_multiplier = 1 + DEX/75.
       // DEX 0 fires at the weapon's base RoF (1× baseline), DEX 75 doubles it,
       // DEX 100 caps the engine multiplier at ~2.33×. Previous version had a
-      // 0.5 floor at DEX 0 which made low-DEX classes fire at half speed —
+      // 0.5 floor at DEX 0 which made low-DEX classes fire at half speed , 
       // wrong for every single-class build that hasn't maxed DEX yet.
       const dexMod = 1 + effectiveDex / 75
 
@@ -388,7 +388,7 @@ export function computeDerivedStats(input: ComputeInput): DerivedStats {
       }
     }
 
-    // Ability DPS contribution — works even with no weapon equipped.
+    // Ability DPS contribution , works even with no weapon equipped.
     const abilityCalc = abilityDpsAtDef(ability, totals, attMod, statusMult, classMult)
 
     for (let i = 0; i <= 16; i++) {

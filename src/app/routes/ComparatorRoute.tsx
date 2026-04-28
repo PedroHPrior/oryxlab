@@ -23,7 +23,7 @@ export function ComparatorRoute() {
 
   const items = state.items.length > 0 ? state.items : (comparatorData.items as Item[])
 
-  // Read saved snapshots straight from localStorage on every render — the list
+  // Read saved snapshots straight from localStorage on every render , the list
   // rarely exceeds a few entries and React Compiler will memoize automatically.
   const stored = loadSavedBuilds()
   const savedSnapshots: SavedBuildSnapshot[] =

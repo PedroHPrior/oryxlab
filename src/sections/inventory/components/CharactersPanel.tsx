@@ -7,7 +7,7 @@ interface CharactersPanelProps {
   characters: RealmEyeCharacter[]
   /** Catalog items used to resolve the slug → display sprite. */
   items: Item[]
-  /** Triggered when the user clicks "Compare with optimizer" — passes class +
+  /** Triggered when the user clicks "Compare with optimizer" , passes class +
    *  equipped item slugs so the parent can build a Comparator column from them. */
   onCompareCharacter: (classId: string, equipped: { slug: string; name: string }[]) => void
 }
@@ -40,7 +40,7 @@ export function CharactersPanel({ characters, items, onCompareCharacter }: Chara
       </header>
       <p className="mb-4 max-w-2xl text-sm text-zinc-600 dark:text-zinc-400">
         Each card shows what you have equipped <em>right now</em>. Click "Compare in builder" to
-        drop the loadout into the Comparator — then run the Optimizer for that class to see if any
+        drop the loadout into the Comparator , then run the Optimizer for that class to see if any
         upgrade is worth chasing.
       </p>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">

@@ -5,7 +5,7 @@ interface OryxLogoProps {
 }
 
 /**
- * OryxLab logo — a horned silhouette (Oryx) inside a hex frame (lab/forge),
+ * OryxLab logo , a horned silhouette (Oryx) inside a hex frame (lab/forge),
  * with an amber gem for the "eye". Pixel-art aesthetic to match ROTMG.
  */
 export function OryxLogo({ size = 28, variant = "icon", className = "" }: OryxLogoProps) {
@@ -63,7 +63,7 @@ export function OryxLogo({ size = 28, variant = "icon", className = "" }: OryxLo
         fill="url(#oryx-dark)"
       />
 
-      {/* Oryx horns + face — stylized, two long horns rising up */}
+      {/* Oryx horns + face , stylized, two long horns rising up */}
       <g fill="#fbbf24">
         {/* Left horn */}
         <path d="M11 9 L10 14 L11.2 16 L12 14 L11.8 9 Z" />

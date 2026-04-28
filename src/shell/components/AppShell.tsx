@@ -148,7 +148,7 @@ export function AppShell({
       <footer className="border-t border-zinc-200 px-4 py-3 text-xs text-zinc-500 sm:px-6 dark:border-zinc-800 dark:text-zinc-500">
         <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-x-4 gap-y-2">
           <span style={{ fontFamily: '"JetBrains Mono", ui-monospace, monospace' }}>
-            OryxLab · catalog {catalogVersion ?? "—"}
+            OryxLab · catalog {catalogVersion ?? ", "}
           </span>
           <span className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <button
@@ -189,7 +189,7 @@ export function AppShell({
           </span>
           <span className="basis-full text-[11px] opacity-75">
             Realm of the Mad God is © Deca Games. OryxLab is an unofficial fan
-            tool — not affiliated with, endorsed by, or sponsored by Deca Games
+            tool , not affiliated with, endorsed by, or sponsored by Deca Games
             or Wild Shadow Studios.
           </span>
         </div>

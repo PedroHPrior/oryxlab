@@ -70,14 +70,14 @@ export function ResultCard({
                 <ItemSprite spriteId={item.sprite} imageUrl={item.imageUrl} name={item.name} itemType={item.type} weaponType={item.weaponType} abilityType={item.abilityType} rarity={item.rarity} size="sm" />
               ) : (
                 <span className="inline-flex h-7 w-7 items-center justify-center rounded border border-dashed border-zinc-300 text-zinc-400 dark:border-zinc-700">
-                  —
+                  ·
                 </span>
               )}
               <div className="min-w-0 flex-1">
                 <div className="text-[10px] uppercase tracking-wider text-zinc-500">{label}</div>
                 <div className="flex items-center gap-1">
                   <span className="truncate text-xs font-medium text-zinc-800 dark:text-zinc-200">
-                    {item?.name ?? "—"}
+                    {item?.name ?? "Empty"}
                   </span>
                   {item && <TierBadge tier={item.tier} rarity={item.rarity} size="xs" />}
                 </div>

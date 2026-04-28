@@ -19,7 +19,7 @@ const STEPS: DriveStep[] = [
     popover: {
       title: "Each column is a build",
       description:
-        "Up to 6 builds compare side-by-side. Stats, DPS, EHP — all computed live by the same engine, so you can trust deltas between columns.",
+        "Up to 6 builds compare side-by-side. Stats, DPS, EHP , all computed live by the same engine, so you can trust deltas between columns.",
       side: "right",
       align: "start",
     },
@@ -58,7 +58,7 @@ const STEPS: DriveStep[] = [
   {
     element: '[data-tour="nav-catalog"]',
     popover: {
-      title: "Catalog — 1,500 items",
+      title: "Catalog , 1,500 items",
       description:
         "Browse the full catalog, filter by class / type / tier / rarity / mechanics, and \"Send to comparator\" on any item to spawn a new build column with that item slotted in.",
       side: "bottom",
@@ -68,7 +68,7 @@ const STEPS: DriveStep[] = [
   {
     element: '[data-tour="nav-optimizer"]',
     popover: {
-      title: "Optimizer — beam-search loadouts",
+      title: "Optimizer , beam-search loadouts",
       description:
         "Pick a class, an objective (max DPS, EHP, or balanced), and constraints (min HP, no UTs, …). The optimizer finds the best legal loadout in a Web Worker so the UI stays responsive.",
       side: "bottom",
@@ -78,7 +78,7 @@ const STEPS: DriveStep[] = [
   {
     element: '[data-tour="nav-inventory"]',
     popover: {
-      title: "Inventory — RealmEye import",
+      title: "Inventory , RealmEye import",
       description:
         "Paste your RealmEye username and OryxLab pulls your characters' current loadouts. Compare your real builds against optimizer suggestions in one click.",
       side: "bottom",
@@ -87,9 +87,9 @@ const STEPS: DriveStep[] = [
   },
   {
     popover: {
-      title: "That's it — happy theorycrafting 🛡️",
+      title: "That's it , happy theorycrafting 🛡️",
       description:
-        "Replay this tour any time from the <b>Take the tour</b> link in the footer. If you spot a wrong number or item, please open an issue on GitHub — that signal goes straight into the next data update.",
+        "Replay this tour any time from the <b>Take the tour</b> link in the footer. If you spot a wrong number or item, please open an issue on GitHub , that signal goes straight into the next data update.",
       side: "over",
       align: "center",
     },

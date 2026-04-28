@@ -117,7 +117,7 @@ function safeRemove(key: string) {
   }
 }
 
-// Distinct chart colors. Mirrors the palette in OryxLabApp's pickBuildColor —
+// Distinct chart colors. Mirrors the palette in OryxLabApp's pickBuildColor , 
 // duplicated here intentionally so storage.ts has no dependency on app code.
 const BUILD_COLOR_PALETTE = ["violet", "amber", "lime", "rose", "sky", "emerald"] as const
 

@@ -156,7 +156,7 @@ function SettingsMenu({
             <div className="flex items-center justify-between">
               <span>Catalog</span>
               <span style={{ fontFamily: '"JetBrains Mono", ui-monospace, monospace' }}>
-                {catalogVersion ?? "—"}
+                {catalogVersion ?? ", "}
               </span>
             </div>
           </div>

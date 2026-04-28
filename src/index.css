@@ -1,6 +1,6 @@
-/* OryxLab — DPS calculator, build comparator, build optimizer.
+/* OryxLab , DPS calculator, build comparator, build optimizer.
  * https://www.oryxlab.app · github.com/PedroHPrior/oryxlab
- * v1.0.1 — guided tour + ST set fix + cache hardening. */
+ * v1.0.1 , guided tour + ST set fix + cache hardening. */
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -250,7 +250,7 @@
     border-radius: 6px;
   }
 
-  /* Slow amber halo — used on hero / 404 / empty-state focal points where a
+  /* Slow amber halo , used on hero / 404 / empty-state focal points where a
    * single element should feel "alive" without being noisy. Honors reduced-
    * motion: animation collapses to a static state. */
   .oryx-pulse-glow {
@@ -281,7 +281,7 @@
     transform: translateX(100%);
   }
 
-  /* Route-level fade-in — a touch slower than `.animate-fade-in` and adds a
+  /* Route-level fade-in , a touch slower than `.animate-fade-in` and adds a
    * tiny upward slide so route transitions feel intentional rather than just
    * a flash. Apply at the top of each route's wrapping element. */
   .oryx-route-enter {
@@ -293,7 +293,7 @@
   }
 
   /* Honor user preference: collapse decorative motion to instant. We only
-   * silence the `transform` part — fading elements still fade so the page
+   * silence the `transform` part , fading elements still fade so the page
    * doesn't pop in jarringly. */
   @media (prefers-reduced-motion: reduce) {
     .oryx-sprite-hover, .oryx-card-hover, .oryx-press, .oryx-pulse-glow,
@@ -305,7 +305,7 @@
   }
 }
 
-/* Catalog virtualization — native browser content-visibility */
+/* Catalog virtualization , native browser content-visibility */
 @layer utilities {
   .oryx-virtual-card {
     content-visibility: auto;
@@ -330,13 +330,13 @@
   .oryx-no-scrollbar::-webkit-scrollbar-thumb:hover {
     background-color: rgb(161 161 170 / 0.6);
   }
-  /* Build-id marker — forces a unique CSS output hash on each deploy so the
+  /* Build-id marker , forces a unique CSS output hash on each deploy so the
    * CDN can't serve a stale 500-error response cached against an old hash.
    * The selector itself is never matched in markup. */
   .oryx-build-bid-e54709c-color-migration { display: none; }
 }
 
-/* driver.js — restyle the onboarding tour to match the OryxLab dark theme */
+/* driver.js , restyle the onboarding tour to match the OryxLab dark theme */
 .driver-overlay {
   background: rgb(0 0 0 / 0.7) !important;
 }

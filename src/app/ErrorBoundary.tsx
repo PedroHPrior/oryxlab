@@ -47,7 +47,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
             Something went wrong{this.props.area ? ` in ${this.props.area}` : ""}
           </h2>
           <p className="mt-2 text-sm text-rose-700 dark:text-rose-300">
-            We hit an unexpected error. Your data is safe — you can try again or reload the page.
+            We hit an unexpected error. Your data is safe , you can try again or reload the page.
           </p>
           <details className="mt-3 text-left text-xs text-rose-600 dark:text-rose-400">
             <summary className="cursor-pointer">Technical details</summary>

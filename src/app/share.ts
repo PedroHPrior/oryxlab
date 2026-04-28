@@ -68,7 +68,7 @@ async function decompress(bytes: Uint8Array): Promise<string> {
 }
 
 // derivedStats placeholder for decoded builds. The real values are recomputed
-// from the build + scenario + class data once classesData/items are loaded —
+// from the build + scenario + class data once classesData/items are loaded , 
 // but ComparatorView reads `b.derivedStats.dpsCurve` synchronously on first
 // render, which crashes if derivedStats is undefined. Shipping a zeroed-out
 // shape here lets the chart draw an empty curve for one frame instead of
@@ -80,7 +80,7 @@ const ZERO_DERIVED_STATS = {
 } as Build["derivedStats"]
 
 export async function encodeShareState(builds: Build[], scenario: Scenario): Promise<string> {
-  // Strip derivedStats from the wire payload — they're recomputed on load
+  // Strip derivedStats from the wire payload , they're recomputed on load
   // and would just bloat the URL otherwise.
   const trimmedBuilds = builds.map((b) => {
     const { derivedStats: _omit, ...rest } = b

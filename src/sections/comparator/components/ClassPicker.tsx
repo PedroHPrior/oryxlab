@@ -15,7 +15,7 @@ interface ClassPickerProps {
  * Selecting a class wipes the build's weapon / ability / armor slots since
  * those are class-restricted; rings stay (class-agnostic).
  *
- * Rendered via portal so the modal always anchors to the viewport — the
+ * Rendered via portal so the modal always anchors to the viewport , the
  * BuildColumn's `oryx-card-hover` class applies a hover transform which
  * creates a containing block and would otherwise capture `position: fixed`.
  */
@@ -58,7 +58,7 @@ export function ClassPicker({ classes, currentClassId, onSelect, onClose }: Clas
               Change class
             </h3>
             <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
-              Switching clears Weapon · Ability · Armor — rings stay.
+              Switching clears Weapon · Ability · Armor , rings stay.
             </p>
           </div>
           <button

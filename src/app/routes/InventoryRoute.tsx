@@ -10,7 +10,7 @@ export function InventoryRoute() {
   const fileInputRef = useRef<HTMLInputElement | null>(null)
 
   // RealmEye returns characters with equipped items in `realmEyeImport.preview`
-  // — keep that around even after the modal is closed so users can see + act on
+  // , keep that around even after the modal is closed so users can see + act on
   // their loadouts.
   const previewChars = state.realmEyeImport.preview?.characters ?? []
   const showCharsPanel = previewChars.length > 0 && state.realmEyeImport.step !== "enter-username"

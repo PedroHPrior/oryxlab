@@ -196,7 +196,7 @@ export function OptimizerView({
 
       {results.length === 0 && !isRunning && (
         <div className="rounded-xl border border-dashed border-zinc-300 bg-zinc-50/40 p-10 text-center text-sm text-zinc-500 dark:border-zinc-700 dark:bg-zinc-900/40">
-          Pick a class, mode, and objective — then hit "Run optimization".
+          Pick a class, mode, and objective , then hit "Run optimization".
         </div>
       )}
     </div>
