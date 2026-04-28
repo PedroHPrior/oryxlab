@@ -1,0 +1,688 @@
+[
+  {
+    "name": "Verdant Bow",
+    "ourMin": 135,
+    "ourMax": 165,
+    "jMin": 40,
+    "jMax": 65,
+    "pct": 186
+  },
+  {
+    "name": "Golden Bow",
+    "ourMin": 125,
+    "ourMax": 155,
+    "jMin": 40,
+    "jMax": 60,
+    "pct": 180
+  },
+  {
+    "name": "Ray Katana",
+    "jMin": 60,
+    "jMax": 95,
+    "pct": -100
+  },
+  {
+    "name": "Obsidian Dagger",
+    "ourMin": 60,
+    "ourMax": 125,
+    "jMin": 35,
+    "jMax": 65,
+    "pct": 85
+  },
+  {
+    "name": "St. Abraham's Wand",
+    "ourMin": 155,
+    "ourMax": 180,
+    "jMin": 90,
+    "jMax": 110,
+    "pct": 68
+  },
+  {
+    "name": "Thousand Shot",
+    "ourMin": 65,
+    "ourMax": 130,
+    "jMin": 50,
+    "jMax": 70,
+    "pct": 63
+  },
+  {
+    "name": "Wand of Retribution",
+    "ourMin": 165,
+    "ourMax": 205,
+    "jMin": 95,
+    "jMax": 140,
+    "pct": 57
+  },
+  {
+    "name": "Wand of the Bulwark",
+    "ourMin": 500,
+    "ourMax": 600,
+    "jMin": 300,
+    "jMax": 400,
+    "pct": 57
+  },
+  {
+    "name": "Fire Bow",
+    "ourMin": 75,
+    "ourMax": 95,
+    "jMin": 45,
+    "jMax": 65,
+    "pct": 55
+  },
+  {
+    "name": "Sprite Wand",
+    "ourMin": 10,
+    "ourMax": 290,
+    "jMin": 50,
+    "jMax": 150,
+    "pct": 50
+  },
+  {
+    "name": "Ironwood Bow",
+    "ourMin": 65,
+    "ourMax": 85,
+    "jMin": 35,
+    "jMax": 65,
+    "pct": 50
+  },
+  {
+    "name": "Bow of Covert Havens",
+    "ourMin": 70,
+    "ourMax": 110,
+    "jMin": 50,
+    "jMax": 70,
+    "pct": 50
+  },
+  {
+    "name": "Wand of Evocation",
+    "ourMin": 150,
+    "ourMax": 190,
+    "jMin": 95,
+    "jMax": 135,
+    "pct": 48
+  },
+  {
+    "name": "Bow of Innocent Blood",
+    "ourMin": 25,
+    "ourMax": 35,
+    "jMin": 45,
+    "jMax": 70,
+    "pct": -48
+  },
+  {
+    "name": "Bow of Fey Magic",
+    "ourMin": 25,
+    "ourMax": 35,
+    "jMin": 45,
+    "jMax": 65,
+    "pct": -45
+  },
+  {
+    "name": "Rusty Katana",
+    "ourMin": 35,
+    "ourMax": 80,
+    "jMin": 20,
+    "jMax": 60,
+    "pct": 44
+  },
+  {
+    "name": "Fire Wand",
+    "ourMin": 30,
+    "ourMax": 55,
+    "jMin": 20,
+    "jMax": 40,
+    "pct": 42
+  },
+  {
+    "name": "Dirk of Cronus",
+    "ourMin": 150,
+    "ourMax": 290,
+    "jMin": 105,
+    "jMax": 210,
+    "pct": 40
+  },
+  {
+    "name": "Power Wand",
+    "ourMin": 45,
+    "ourMax": 80,
+    "jMin": 35,
+    "jMax": 55,
+    "pct": 39
+  },
+  {
+    "name": "Wand of Arcane Flame",
+    "ourMin": 110,
+    "ourMax": 140,
+    "jMin": 80,
+    "jMax": 100,
+    "pct": 39
+  },
+  {
+    "name": "Kendo Stick",
+    "ourMin": 40,
+    "ourMax": 85,
+    "jMin": 30,
+    "jMax": 60,
+    "pct": 39
+  },
+  {
+    "name": "Force Wand",
+    "ourMin": 40,
+    "ourMax": 70,
+    "jMin": 30,
+    "jMax": 50,
+    "pct": 38
+  },
+  {
+    "name": "Wand of Dark Magic",
+    "ourMin": 95,
+    "ourMax": 125,
+    "jMin": 70,
+    "jMax": 90,
+    "pct": 38
+  },
+  {
+    "name": "Wand of Recompense",
+    "ourMin": 135,
+    "ourMax": 175,
+    "jMin": 90,
+    "jMax": 135,
+    "pct": 38
+  },
+  {
+    "name": "Bow of Deep Enchantment",
+    "ourMin": 35,
+    "ourMax": 45,
+    "jMin": 55,
+    "jMax": 75,
+    "pct": -38
+  },
+  {
+    "name": "Hell's Fire Wand",
+    "ourMin": 80,
+    "ourMax": 110,
+    "jMin": 60,
+    "jMax": 80,
+    "pct": 36
+  },
+  {
+    "name": "Wand of Ancient Warning",
+    "ourMin": 130,
+    "ourMax": 170,
+    "jMin": 90,
+    "jMax": 130,
+    "pct": 36
+  },
+  {
+    "name": "Bow of Mystical Energy",
+    "ourMin": 35,
+    "ourMax": 45,
+    "jMin": 50,
+    "jMax": 75,
+    "pct": -36
+  },
+  {
+    "name": "Thunder Katana",
+    "ourMin": 55,
+    "ourMax": 95,
+    "jMin": 45,
+    "jMax": 65,
+    "pct": 36
+  },
+  {
+    "name": "Missile Wand",
+    "ourMin": 50,
+    "ourMax": 85,
+    "jMin": 40,
+    "jMax": 60,
+    "pct": 35
+  },
+  {
+    "name": "Wand of Death",
+    "ourMin": 115,
+    "ourMax": 155,
+    "jMin": 80,
+    "jMax": 120,
+    "pct": 35
+  },
+  {
+    "name": "Wand of Shadow",
+    "ourMin": 125,
+    "ourMax": 165,
+    "jMin": 85,
+    "jMax": 130,
+    "pct": 35
+  },
+  {
+    "name": "Plain Katana",
+    "ourMin": 45,
+    "ourMax": 90,
+    "jMin": 30,
+    "jMax": 70,
+    "pct": 35
+  },
+  {
+    "name": "Dagger of Dire Hatred",
+    "ourMin": 140,
+    "ourMax": 235,
+    "jMin": 100,
+    "jMax": 180,
+    "pct": 34
+  },
+  {
+    "name": "Leaf Bow",
+    "ourMin": 120,
+    "ourMax": 175,
+    "jMin": 95,
+    "jMax": 125,
+    "pct": 34
+  },
+  {
+    "name": "Eldritch Wand",
+    "ourMin": 65,
+    "ourMax": 95,
+    "jMin": 50,
+    "jMax": 70,
+    "pct": 33
+  },
+  {
+    "name": "Wand of Deep Sorcery",
+    "ourMin": 120,
+    "ourMax": 160,
+    "jMin": 85,
+    "jMax": 125,
+    "pct": 33
+  },
+  {
+    "name": "Golden Dagger",
+    "ourMin": 50,
+    "ourMax": 110,
+    "jMin": 30,
+    "jMax": 90,
+    "pct": 33
+  },
+  {
+    "name": "Silver Dagger",
+    "ourMin": 45,
+    "ourMax": 100,
+    "jMin": 30,
+    "jMax": 80,
+    "pct": 32
+  },
+  {
+    "name": "Staff of the Fundamental Core",
+    "ourMin": 90,
+    "ourMax": 135,
+    "jMin": 65,
+    "jMax": 105,
+    "pct": 32
+  },
+  {
+    "name": "Bone Dagger",
+    "ourMin": 95,
+    "ourMax": 170,
+    "jMin": 70,
+    "jMax": 130,
+    "pct": 32
+  },
+  {
+    "name": "Greywood Bow",
+    "ourMin": 40,
+    "ourMax": 65,
+    "jMin": 25,
+    "jMax": 55,
+    "pct": 31
+  },
+  {
+    "name": "Line Kutter Katana",
+    "ourMin": 65,
+    "ourMax": 100,
+    "jMin": 53,
+    "jMax": 73,
+    "pct": 31
+  },
+  {
+    "name": "Shortbow",
+    "ourMin": 25,
+    "ourMax": 40,
+    "jMin": 10,
+    "jMax": 40,
+    "pct": 30
+  },
+  {
+    "name": "Night Edge",
+    "ourMin": 65,
+    "ourMax": 115,
+    "jMin": 55,
+    "jMax": 85,
+    "pct": 29
+  },
+  {
+    "name": "Dagger of Sinister Deeds",
+    "ourMin": 125,
+    "ourMax": 220,
+    "jMin": 95,
+    "jMax": 180,
+    "pct": 25
+  },
+  {
+    "name": "Reinforced Bow",
+    "ourMin": 30,
+    "ourMax": 45,
+    "jMin": 15,
+    "jMax": 45,
+    "pct": 25
+  },
+  {
+    "name": "Dusky Rose Dagger",
+    "ourMin": 40,
+    "ourMax": 90,
+    "jMin": 25,
+    "jMax": 80,
+    "pct": 24
+  },
+  {
+    "name": "Staff of the Vital Unity",
+    "ourMin": 75,
+    "ourMax": 130,
+    "jMin": 60,
+    "jMax": 105,
+    "pct": 24
+  },
+  {
+    "name": "Doom Bow",
+    "ourMin": 500,
+    "ourMax": 600,
+    "jMin": 400,
+    "jMax": 500,
+    "pct": 22
+  },
+  {
+    "name": "Crystal Wand",
+    "ourMin": 105,
+    "ourMax": 150,
+    "jMin": 85,
+    "jMax": 125,
+    "pct": 21
+  },
+  {
+    "name": "Blue Steel Dagger",
+    "ourMin": 30,
+    "ourMax": 85,
+    "jMin": 20,
+    "jMax": 75,
+    "pct": 21
+  },
+  {
+    "name": "Coral Bow",
+    "ourMin": 75,
+    "ourMax": 95,
+    "jMin": 60,
+    "jMax": 80,
+    "pct": 21
+  },
+  {
+    "name": "Meteor Staff",
+    "ourMin": 30,
+    "ourMax": 55,
+    "jMin": 25,
+    "jMax": 45,
+    "pct": 21
+  },
+  {
+    "name": "Sky Edge",
+    "ourMin": 85,
+    "ourMax": 120,
+    "jMin": 70,
+    "jMax": 100,
+    "pct": 21
+  },
+  {
+    "name": "Conducting Wand",
+    "ourMin": 100,
+    "ourMax": 175,
+    "jMin": 50,
+    "jMax": 180,
+    "pct": 20
+  },
+  {
+    "name": "Steel Dagger",
+    "ourMin": 25,
+    "ourMax": 70,
+    "jMin": 20,
+    "jMax": 60,
+    "pct": 19
+  },
+  {
+    "name": "Staff of Destruction",
+    "ourMin": 55,
+    "ourMax": 100,
+    "jMin": 45,
+    "jMax": 85,
+    "pct": 19
+  },
+  {
+    "name": "Staff of Astral Knowledge",
+    "ourMin": 65,
+    "ourMax": 120,
+    "jMin": 55,
+    "jMax": 100,
+    "pct": 19
+  },
+  {
+    "name": "Staff of the Cosmic Whole",
+    "ourMin": 70,
+    "ourMax": 120,
+    "jMin": 60,
+    "jMax": 100,
+    "pct": 19
+  },
+  {
+    "name": "Staff of the Crystal Serpent",
+    "ourMin": 70,
+    "ourMax": 85,
+    "jMin": 60,
+    "jMax": 70,
+    "pct": 19
+  },
+  {
+    "name": "Avenger Staff",
+    "ourMin": 45,
+    "ourMax": 85,
+    "jMin": 40,
+    "jMax": 70,
+    "pct": 18
+  },
+  {
+    "name": "Staff of Horror",
+    "ourMin": 60,
+    "ourMax": 105,
+    "jMin": 50,
+    "jMax": 90,
+    "pct": 18
+  },
+  {
+    "name": "Buster Katana",
+    "ourMin": 100,
+    "ourMax": 135,
+    "jMin": 90,
+    "jMax": 110,
+    "pct": 18
+  },
+  {
+    "name": "Dirk",
+    "ourMin": 25,
+    "ourMax": 80,
+    "jMin": 20,
+    "jMax": 70,
+    "pct": 17
+  },
+  {
+    "name": "Dagger of Foul Malevolence",
+    "ourMin": 115,
+    "ourMax": 200,
+    "jMin": 95,
+    "jMax": 175,
+    "pct": 17
+  },
+  {
+    "name": "Slayer Staff",
+    "ourMin": 40,
+    "ourMax": 65,
+    "jMin": 35,
+    "jMax": 55,
+    "pct": 17
+  },
+  {
+    "name": "Staff of Necrotic Arcana",
+    "ourMin": 60,
+    "ourMax": 110,
+    "jMin": 50,
+    "jMax": 95,
+    "pct": 17
+  },
+  {
+    "name": "Staff of Diabolic Secrets",
+    "ourMin": 65,
+    "ourMax": 110,
+    "jMin": 55,
+    "jMax": 95,
+    "pct": 17
+  },
+  {
+    "name": "Staff of Extreme Prejudice",
+    "ourMin": 95,
+    "ourMax": 110,
+    "jMin": 80,
+    "jMax": 95,
+    "pct": 17
+  },
+  {
+    "name": "Ichimonji",
+    "ourMin": 125,
+    "ourMax": 180,
+    "jMin": 112,
+    "jMax": 152,
+    "pct": 16
+  },
+  {
+    "name": "Muramasa",
+    "ourMin": 130,
+    "ourMax": 195,
+    "jMin": 110,
+    "jMax": 170,
+    "pct": 16
+  },
+  {
+    "name": "Spirit Dagger",
+    "ourMin": 50,
+    "ourMax": 280,
+    "jMin": 45,
+    "jMax": 245,
+    "pct": 14
+  },
+  {
+    "name": "Jewel Eye Katana",
+    "ourMin": 110,
+    "ourMax": 175,
+    "jMin": 115,
+    "jMax": 135,
+    "pct": 14
+  },
+  {
+    "name": "Glass Sword",
+    "ourMin": 110,
+    "ourMax": 160,
+    "jMin": 30,
+    "jMax": 210,
+    "pct": 13
+  },
+  {
+    "name": "Demon Edge",
+    "ourMin": 105,
+    "ourMax": 160,
+    "jMin": 100,
+    "jMax": 134,
+    "pct": 13
+  },
+  {
+    "name": "Masamune",
+    "ourMin": 145,
+    "ourMax": 195,
+    "jMin": 140,
+    "jMax": 160,
+    "pct": 13
+  },
+  {
+    "name": "Agateclaw Dagger",
+    "ourMin": 105,
+    "ourMax": 190,
+    "jMin": 90,
+    "jMax": 175,
+    "pct": 11
+  },
+  {
+    "name": "Poison Fang Dagger",
+    "ourMin": 75,
+    "ourMax": 115,
+    "jMin": 55,
+    "jMax": 120,
+    "pct": 9
+  },
+  {
+    "name": "Crystal Sword",
+    "ourMin": 195,
+    "ourMax": 225,
+    "jMin": 180,
+    "jMax": 210,
+    "pct": 8
+  },
+  {
+    "name": "Sword of Majesty",
+    "ourMin": 250,
+    "ourMax": 305,
+    "jMin": 235,
+    "jMax": 290,
+    "pct": 6
+  },
+  {
+    "name": "Emeraldshard Dagger",
+    "ourMin": 100,
+    "ourMax": 175,
+    "jMin": 90,
+    "jMax": 170,
+    "pct": 6
+  },
+  {
+    "name": "Mithril Dagger",
+    "ourMin": 70,
+    "ourMax": 140,
+    "jMin": 60,
+    "jMax": 140,
+    "pct": 5
+  },
+  {
+    "name": "Ragetalon Dagger",
+    "ourMin": 95,
+    "ourMax": 165,
+    "jMin": 85,
+    "jMax": 165,
+    "pct": 4
+  },
+  {
+    "name": "Sword of Splendor",
+    "ourMin": 235,
+    "ourMax": 290,
+    "jMin": 225,
+    "jMax": 285,
+    "pct": 3
+  },
+  {
+    "name": "Ancient Stone Sword",
+    "ourMin": 350,
+    "ourMax": 400,
+    "jMin": 340,
+    "jMax": 390,
+    "pct": 3
+  }
+]

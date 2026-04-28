@@ -34,3 +34,4 @@ coverage/
 # Claude Code workspace state (per-developer, never committed)
 .claude/
 .mcp.json
+scripts/scrape/_tmp/
