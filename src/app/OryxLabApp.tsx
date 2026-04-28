@@ -20,6 +20,7 @@ import {
   loadSavedBuilds, addSavedBuild as storageSaveBuild,
 } from "./storage"
 import { buildShareUrl, decodeShareState } from "./share"
+import { makeEmptyBuild } from "./buildFactory"
 import { createLogger } from "./logger"
 import { useToast } from "../sections/_shared"
 
@@ -275,16 +276,21 @@ export function OryxLabApp() {
         toastRef.current.push(`Saved “${b.name}” · ${total} build${total === 1 ? "" : "s"} in vault`, "success")
       },
       addBuild: () =>
-        setBuilds((curr) => [
-          ...curr,
-          {
-            ...STARTER_BUILDS[0],
-            id: `build-new-${Date.now()}`,
-            name: "New build",
-            color: pickBuildColor(curr),
-            tags: [],
-          },
-        ]),
+        setBuilds((curr) => {
+          // Inherit the rightmost column's class as a sensible default,
+          // but start with empty slots and zero exaltations so the user
+          // is choosing every piece intentionally instead of clearing
+          // a Wiz BIS preset. Behavior change requested by r/RotMG
+          // launch-thread feedback (issue #16).
+          const defaultClass = curr[curr.length - 1]?.classId ?? "wizard"
+          return [
+            ...curr,
+            makeEmptyBuild({
+              classId: defaultClass,
+              color: pickBuildColor(curr),
+            }),
+          ]
+        }),
       // Add a new build column populated with a single item placed in the
       // correct slot based on its type. Used by the Catalog's "Send to comparator"
       // and item-detail "Send to comparator" buttons.

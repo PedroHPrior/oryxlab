@@ -477,3 +477,83 @@ describe("DPS engine reference builds (validation)", () => {
     expect(Math.abs(lowDef.dps - highDef.dps)).toBeLessThan(50)
   })
 })
+
+// Confirmation tests for buff-stat application from abilities. The engine
+// already adds an ability's stat bonuses to the player totals as part of
+// its normal items pass — abilities count like other equipped items.
+// Documenting this so future refactors don't accidentally regress it.
+describe("ability stat bonuses are applied to player totals (regression guard)", () => {
+  const draconicInsignia: Item = {
+    id: "draconic-insignia",
+    name: "Draconic Insignia",
+    tier: "UT",
+    rarity: "ut",
+    type: "ability",
+    abilityType: "sigil",
+    classes: ["druid"],
+    stats: {
+      dmgMin: 15, dmgMax: 15, shots: 3, mpCost: 110, duration: 8.6,
+      def: 15, wis: 40,
+    },
+    tags: [],
+    sprite: "draconic-insignia",
+  }
+
+  const druid: PlayerClassDef = {
+    id: "druid",
+    stats: {
+      hp: { base: 100, cap: 700, atMax: 575 },
+      mp: { base: 150, cap: 400, atMax: 283 },
+      att: { base: 23, cap: 60, atMax: 42 },
+      def: { base: 0, cap: 30, atMax: 12 },
+      spd: { base: 17, cap: 50, atMax: 36 },
+      dex: { base: 17, cap: 70, atMax: 50 },
+      vit: { base: 5, cap: 65, atMax: 60 },
+      wis: { base: 23, cap: 80, atMax: 70 },
+    },
+  }
+
+  function druidBuild(slots: Partial<Build["slots"]> = {}): Build {
+    return {
+      id: "b", name: "Test", classId: "druid", color: "lime", tags: [],
+      slots: { weapon: null, ability: null, armor: null, ring: null, ...slots },
+      exaltations: { att: 0, dex: 0, wis: 0, vit: 0, spd: 0, def: 0, hp: 0, mp: 0 },
+      useCustomScenario: false,
+      derivedStats: { dps: 0, dpsAtZeroDef: 0, ehp: 0, att: 0, dex: 0, spd: 0, vit: 0, wis: 0, def: 0, hp: 0, mp: 0, timeToKill1k: 0, dpsCurve: [] },
+    }
+  }
+
+  it("Draconic Insignia's +40 wis flows into reported wis", () => {
+    const baseline = computeDerivedStats({
+      build: druidBuild(),
+      scenario: scenarioZeroDef,
+      classDef: druid,
+      itemMap: buildItemMap([]),
+    })
+    const withInsignia = computeDerivedStats({
+      build: druidBuild({ ability: "draconic-insignia" }),
+      scenario: scenarioZeroDef,
+      classDef: druid,
+      itemMap: buildItemMap([draconicInsignia]),
+    })
+    expect(withInsignia.wis - baseline.wis).toBeGreaterThan(35)
+    expect(withInsignia.wis - baseline.wis).toBeLessThanOrEqual(40)
+  })
+
+  it("Draconic Insignia's +15 def flows into reported def", () => {
+    const baseline = computeDerivedStats({
+      build: druidBuild(),
+      scenario: scenarioZeroDef,
+      classDef: druid,
+      itemMap: buildItemMap([]),
+    })
+    const withInsignia = computeDerivedStats({
+      build: druidBuild({ ability: "draconic-insignia" }),
+      scenario: scenarioZeroDef,
+      classDef: druid,
+      itemMap: buildItemMap([draconicInsignia]),
+    })
+    expect(withInsignia.def - baseline.def).toBeGreaterThan(13)
+    expect(withInsignia.def - baseline.def).toBeLessThanOrEqual(15)
+  })
+})
